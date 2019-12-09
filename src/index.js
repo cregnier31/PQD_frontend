@@ -5,7 +5,7 @@ import { createStore, combineReducers } from 'redux'
 import {counterReducer} from './reducers'
 import {App} from './components/app';
 import * as serviceWorker from './serviceWorker';
-
+import Layout from './components/layout'
 const rootReducer = combineReducers({
   counterReducer
 })
@@ -13,7 +13,9 @@ const rootReducer = combineReducers({
 const store = createStore(rootReducer);
 render(
   <Provider store={store}>
-    <App />
+    <Layout>
+      <App />
+    </Layout>
   </Provider>,
   document.getElementById('root')
 )
