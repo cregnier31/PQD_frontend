@@ -1,7 +1,7 @@
 import React from "react";
 import Drawer from "./drawer-styles";
 
-export function FooterView(props){
+export function DrawerView(props){
   return (
     <div>
       <Drawer

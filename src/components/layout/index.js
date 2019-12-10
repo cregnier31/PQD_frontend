@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './layout.css';
 import {Header} from '../header';
-import {Footer} from '../footer';
+import {Drawer} from '../drawer';
 
 
 
@@ -12,7 +12,7 @@ class Layout extends Component {
       <div>
         <Header/>
         {this.props.children}
-        <Footer />
+        <Drawer />
       </div>
     )
           
