@@ -1,1 +1,0 @@
-export { DrawerRedux as Drawer } from './drawer-redux';
