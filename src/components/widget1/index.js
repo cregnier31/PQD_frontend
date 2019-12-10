@@ -1,0 +1,1 @@
+export { WidgetRedux as Widget } from './widget-redux';

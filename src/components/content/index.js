@@ -1,0 +1,1 @@
+export { ContentRedux as Content } from './content-redux';
