@@ -1,0 +1,1 @@
+export { FilterView as Filter } from './filters-view';

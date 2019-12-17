@@ -1,1 +1,0 @@
-export { FilterRedux as Filter } from './filter-redux';

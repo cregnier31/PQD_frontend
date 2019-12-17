@@ -1,0 +1,1 @@
+export { SelectorRedux as Selector } from './selector-redux';

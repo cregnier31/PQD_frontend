@@ -17,7 +17,6 @@ export const selectorsReducer = (state = defaultFiltersValuesState, action, data
   switch (action.type) {
     case "DEFINE_ACTIVE_FILTER":
       newState[action.name] = action.value
-      getActiveFiltersTree(newState)
       break;
     default:
       break;
