@@ -1,3 +1,4 @@
 export {incrementCounter, decrementCounter, setCounterToZero} from './counter'
-export {setAllFilters} from './filters'
-export {defineActiveFilter} from './selectors'
+export {setData} from './data'
+export {setUniversFilter, clearUniversFilter, setZoneFilter} from './filters'
+// export {defineActiveFilter, clearFilters, applyFilters} from './selectors'

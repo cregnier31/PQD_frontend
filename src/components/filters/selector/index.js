@@ -1,1 +1,1 @@
-export { SelectorRedux as Selector } from './selector-redux';
+export { SelectorContainer as Selector } from './selector-container';

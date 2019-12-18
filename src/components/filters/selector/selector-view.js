@@ -7,15 +7,15 @@ import FormControl from '@material-ui/core/FormControl';
 export const SelectorView = props => (
   <div>
     <FormControl>
-        <InputLabel id={props.name}>{props.name}</InputLabel>
-        <Select
-          value={ props.value }
-          onChange={ event => props.setValue(event.target.value) }
-        >
-          {props.possible_values.map((item) =>
-            <MenuItem value={item.value}>{item.name}</MenuItem>
-          )}
-        </Select>
-      </FormControl>
-    </div>
+      <InputLabel id={props.name}>{props.name}</InputLabel>
+      <Select
+        value={ props.value }
+        onChange={ event => props.setValue(event.target.value) }
+      >
+        {props.items.map((item) =>
+          <MenuItem value={item.value}>{item.name}</MenuItem>
+        )}
+      </Select>
+    </FormControl>
+  </div>
 )

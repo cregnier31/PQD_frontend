@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { setAllFilters } from "../../actions";
+import { setData } from "../../actions";
 import { AppContainer } from "./app-container";
 
 const mapStateToProps = state => {
@@ -8,7 +8,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    setAllFilters: (data) => dispatch(setAllFilters(data))
+    setData: (data) => dispatch(setData(data))
   };
 };
 

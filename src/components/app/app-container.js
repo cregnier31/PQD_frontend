@@ -12,7 +12,7 @@ export class AppContainer extends Component {
     }
     fetch(url, options)
     .then(response => response.json()) 
-    .then(data => {this.props.setAllFilters(data)})
+    .then(data => {this.props.setData(data)})
   }
 
   render() {
