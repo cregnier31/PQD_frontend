@@ -17,6 +17,6 @@ export class FiltersContainer extends Component {
   }
 
   render() {
-    return <FiltersView set={(name, value) => this.props.set(name, value)} clear={this.props.clear()}/>;
+    return <FiltersView data={this.props.data} filters={this.props.filters} set={(name, value) => this.props.set(name, value)} clear={() => this.props.clear()}/>;
   }
 }

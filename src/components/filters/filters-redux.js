@@ -1,10 +1,14 @@
 import { connect } from "react-redux";
-import { clearUniversFilter, setUniversFilter } from "../../../actions";
+import { clearUniversFilter, setUniversFilter } from "../../actions";
 import { FiltersContainer } from "./filters-container";
 
 const mapStateToProps = (state, props) => {
+    var concerned_data = {}
+    if(state.dataReducer['univers']){
+        concerned_data = state.dataReducer['univers'].filter(univers => univers.id === props.univers)[0];
+    }
     return {
-        data: state.dataReducer["univers"][props.univers_id],
+        data: concerned_data,
         filters: state.filtersReducer["univers"][props.univers_id]
     }
 };

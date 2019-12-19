@@ -1,1 +1,1 @@
-export { FilterView as Filter } from './filters-view';
+export { FiltersRedux as Filter } from './filters-redux';

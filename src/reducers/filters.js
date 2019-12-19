@@ -39,8 +39,13 @@ export const filtersReducer = (state = defaultFiltersValuesState, action, data) 
       newState["univers"][action.id][action.name] = action.value
       break;
     case "CLEAR_UNIVERS_FILTER":
-      const temp = Object.keys(newState["univers"][action.id]).map(key => null);
-      newState["univers"][action.id] = temp
+      // newState["univers"].forEach(function (index, univers) {
+      //   if(univers.id == action.id){
+      //     Object.keys(newState["univers"][index]).map(key => null);
+      //   }
+      // });
+      // const temp = Object.keys(newState["univers"]).map(key => null);
+      // newState["univers"][action.id] = temp
       break;
     case "SET_ZONE_FILTER":
       newState["zone"][action.what][action.name] = action.value
