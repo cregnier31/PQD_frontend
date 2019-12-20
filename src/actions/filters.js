@@ -7,9 +7,9 @@ export function setUniversFilter(id, name, value){
   }
 }
 
-export function clearUniversFilter(id){
+export function applyUniversFilters(id){
   return {
-    type: "CLEAR_UNIVERS_FILTER",
+    type: "APPLY_UNIVERS_FILTER",
     id
   }
 }

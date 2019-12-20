@@ -1,51 +1,44 @@
+const nullValues = {
+  variable: null,
+  dataset: null,
+  product: null,
+  depth: null,
+  stat: null,
+  plot_type: null,
+}
+
 const defaultFiltersValuesState = {
   zone: {
     area: 1,
     subarea: 2,
   },
   univers: {
-    6: {
-      variable: 4,
-      dataset: 5,
-      product: 6,
-      depth: 7,
-      stat: 8,
-      plot_type: 9,
-    },
-    7: {
-      variable: 4,
-      dataset: 5,
-      product: 6,
-      depth: 7,
-      stat: 8,
-      plot_type: 9,
-    },
-    8: {
-      variable: 4,
-      dataset: 5,
-      product: 6,
-      depth: 7,
-      stat: 8,
-      plot_type: 9,
-    }
+    BLUE: nullValues,
+    GREEN: nullValues,
+    WHITE: nullValues
   }
-  
 };
 
-export const filtersReducer = (state = defaultFiltersValuesState, action, data) => {
+const filtersOrder = ['variable', 'dataset', 'product', 'depth', 'stat', 'plot_type']
+
+export const filtersReducer = (state = defaultFiltersValuesState, action) => {
   var newState = JSON.parse(JSON.stringify(state));
   switch (action.type) {
     case "SET_UNIVERS_FILTER":
       newState["univers"][action.id][action.name] = action.value
+      var clearNext = false
+      for(var i=0; i<filtersOrder.length; i++){
+        if(clearNext){
+          newState["univers"][action.id][filtersOrder[i]] = null
+        }
+        if(action.name === filtersOrder[i]){
+          clearNext = true
+        }
+      }
       break;
-    case "CLEAR_UNIVERS_FILTER":
-      // newState["univers"].forEach(function (index, univers) {
-      //   if(univers.id == action.id){
-      //     Object.keys(newState["univers"][index]).map(key => null);
-      //   }
-      // });
-      // const temp = Object.keys(newState["univers"]).map(key => null);
-      // newState["univers"][action.id] = temp
+    case "APPLY_UNIVERS_FILTER":
+      // TODO get corresponding plot and save its name somewhere in store or not
+      // and think about plot type which is constant and not displayed through selectors
       break;
     case "SET_ZONE_FILTER":
       newState["zone"][action.what][action.name] = action.value

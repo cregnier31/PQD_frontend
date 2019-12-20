@@ -10,10 +10,13 @@ export const SelectorView = props => (
       <InputLabel id={props.name}>{props.name}</InputLabel>
       <Select
         value={ props.value }
-        onChange={ event => props.setValue(event.target.value) }
+        onChange={ event => {
+            props.updateValue(event.target.value) 
+          }
+        }
       >
         {props.items.map((item) =>
-          <MenuItem key={item.id} value={item.value}>{item.name}</MenuItem>
+          <MenuItem key={item.id} value={item.id}>{item.name}</MenuItem>
         )}
       </Select>
     </FormControl>

@@ -7,11 +7,11 @@ export class SelectorContainer extends Component {
     this.updateValue = this.updateValue.bind(this)
   }
 
-  updateValue(name, value){
-    this.props.updateValue(name, value)
+  updateValue(value){
+    this.props.updateValue(this.props.name, value)
   }
 
   render() {
-    return <SelectorView items={this.props.items} name={this.props.name} updateValue={(name, value) => this.updateValue(name, value)}/>
+    return <SelectorView items={this.props.items} name={this.props.name} value={this.props.value} updateValue={(value) => this.updateValue(value)}/>
   }
 }

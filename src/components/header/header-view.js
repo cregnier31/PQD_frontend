@@ -65,7 +65,7 @@ export function HeaderView() {
         <Divider />
         <List>
           <div className={'container-filters'}>
-            <Filter univers={6}/>
+            <Filter univers="BLUE"/>
           </div>
         </List>
       </Drawer>
