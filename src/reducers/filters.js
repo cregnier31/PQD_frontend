@@ -1,10 +1,10 @@
-const nullValues = {
-  variable: null,
-  dataset: null,
-  product: null,
-  depth: null,
-  stat: null,
-  plot_type: null,
+const emptyValues = {
+  variable: "",
+  dataset: "",
+  product: "",
+  depth: "",
+  stat: "",
+  plot_type: "",
 }
 
 const defaultFiltersValuesState = {
@@ -13,9 +13,9 @@ const defaultFiltersValuesState = {
     subarea: 2,
   },
   univers: {
-    BLUE: nullValues,
-    GREEN: nullValues,
-    WHITE: nullValues
+    BLUE: emptyValues,
+    GREEN: emptyValues,
+    WHITE: emptyValues
   }
 };
 
@@ -29,7 +29,7 @@ export const filtersReducer = (state = defaultFiltersValuesState, action) => {
       var clearNext = false
       for(var i=0; i<filtersOrder.length; i++){
         if(clearNext){
-          newState["univers"][action.id][filtersOrder[i]] = null
+          newState["univers"][action.id][filtersOrder[i]] = ""
         }
         if(action.name === filtersOrder[i]){
           clearNext = true

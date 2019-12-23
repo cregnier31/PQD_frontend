@@ -8,7 +8,7 @@ export class SelectorContainer extends Component {
   }
 
   updateValue(value){
-    var id = null
+    var id = ""
     if(value.length){
       id = parseInt(value)
     }

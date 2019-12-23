@@ -15,7 +15,7 @@ function get_selector(name, items, props){
 }
 
 function filter_is_set_and_data_exists(filters, name, data){
-  return (filters[name] != null && data.filter(item => item.id === filters[name]))
+  return (typeof(filters[name]) == "number" && data.filter(item => item.id === filters[name]))
 }
 
 const SelectorList = ({props}) => {
@@ -41,6 +41,11 @@ const SelectorList = ({props}) => {
           if(filter_is_set_and_data_exists(filters, "depth", depths)){
             const stats = depths.filter(item => item.id === filters['depth'])[0].stats
             list.push(get_selector("stat", stats, props))
+            // Select PlotType
+            if(filter_is_set_and_data_exists(filters, "stat", stats)){
+              const plot_types = stats.filter(item => item.id === filters['stat'])[0].plot_types
+              list.push(get_selector("plot_type", plot_types, props))
+            }
           }
         }
       }
@@ -51,13 +56,24 @@ const SelectorList = ({props}) => {
   }
 }
 
+function get_validation_button(props){
+  var displayButton = true
+  Object.keys(props.filters).map(key => {
+    if(props.filters[key] === ""){
+      displayButton = false
+    }
+  })
+  if(displayButton){
+    return (<Button onClick={() => props.apply()}>Apply</Button>)
+  }
+}
+
 export function FiltersView(props){
   return (
     <div>
       <h3>Criteria</h3>
       <SelectorList props={props}/>
-      {/* <ValidateBtn props={props}/> */}
-      <Button onClick={() => props.apply()}>Apply</Button>
+      {get_validation_button(props)}
     </div>
   );
 }
