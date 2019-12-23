@@ -8,7 +8,11 @@ export class SelectorContainer extends Component {
   }
 
   updateValue(value){
-    this.props.updateValue(this.props.name, value)
+    var id = null
+    if(value.length){
+      id = parseInt(value)
+    }
+    this.props.updateValue(this.props.name, id)
   }
 
   render() {
