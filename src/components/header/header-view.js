@@ -1,14 +1,11 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Drawer from '@material-ui/core/Drawer';
+
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import Divider from '@material-ui/core/Divider';
-import {Filter} from '../filter';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
 
 
 const drawerWidth = 200;
@@ -19,6 +16,7 @@ const useStyles = makeStyles(theme => ({
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
+    backgroundColor: '#273b4b',
   },
   drawer: {
     width: drawerWidth,
@@ -29,46 +27,43 @@ const useStyles = makeStyles(theme => ({
   },
   toolbar: theme.mixins.toolbar,
   region: {
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   }
 }));
 
 export function HeaderView() {
-  const classes = useStyles();
+  const [value, setValue] = React.useState(0);
 
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  const classes = useStyles();
+  const regions = [
+    'GLOBAL',
+    'ARTIC',
+    'BALTIC SEA',
+    'BLACK SEA',
+    'IBERIAN-BISCAYIRELAND',
+    'NORTH WESTERN SHELVES',
+    'MEDITERRANEAN SEA'
+  ];
   return (
     <div className={classes.root}>
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar className={classes.region}>
-          {['REGION1', 'REGION2', 'REGION3', 'REGION4', 'REGION5'].map((text, index) => (
-            <Typography variant="h6" noWrap key={text}>
-              {text}
-          </Typography>
-          ))}
+          <ArrowBackIcon />
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            aria-label="simple tabs example" 
+          >
+            {regions.map(region =>
+              <Tab key={region} label={region}/>
+            )}
+          </Tabs>
         </Toolbar>
       </AppBar>
-      <Drawer
-        className={classes.drawer}
-        variant="permanent"
-        classes={{
-          paper: classes.drawerPaper,
-        }}
-      >
-        <div className={classes.toolbar} />
-        <List>
-          {['BLUE', 'GREEN', 'WHITE'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
-        <Divider />
-        <List>
-          <div className={'container-filters'}>
-            <Filter />
-          </div>
-        </List>
-      </Drawer>
     </div>
   );
 }
