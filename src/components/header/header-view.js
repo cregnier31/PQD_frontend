@@ -36,14 +36,13 @@ const useStyles = makeStyles(theme => ({
 
 const AreaList = ({props}) => {
   var list = []
-  const filters = props.filters
   if(props.data.length){
     props.data.map( item => {
        var active = 0
       if(item.id === props.filters["area"]){
         active = 1
       }
-      list.push(
+      return list.push(
         <Button key={item.id} value={item.id} active={active} onClick={ () => props.set("area", item.id)}>
           <Typography variant="h6" noWrap>
             {item.name}

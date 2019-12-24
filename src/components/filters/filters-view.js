@@ -61,6 +61,7 @@ function get_validation_button(props){
     if(props.filters[key] === ""){
       displayButton = false
     }
+    return null
   })
   if(displayButton){
     return (<Button onClick={() => props.apply()}>Apply</Button>)
