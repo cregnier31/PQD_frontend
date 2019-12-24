@@ -14,11 +14,10 @@ export function applyUniversFilters(id){
   }
 }
 
-export function setZoneFilter(what, name, value){
+export function setZoneFilter(what, value){
   return {
     type: "SET_ZONE_FILTER",
     what,
-    name,
     value
   }
 }

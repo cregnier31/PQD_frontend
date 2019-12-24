@@ -51,9 +51,8 @@ const SelectorList = ({props}) => {
       }
     }
     return list
-  }else{
-    return null
   }
+  return null
 }
 
 function get_validation_button(props){

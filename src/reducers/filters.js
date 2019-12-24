@@ -9,7 +9,7 @@ const emptyValues = {
 
 const defaultFiltersValuesState = {
   zone: {
-    area: 1,
+    area: 16,
     subarea: 2,
   },
   univers: {
@@ -41,7 +41,7 @@ export const filtersReducer = (state = defaultFiltersValuesState, action) => {
       // and think about plot type which is constant and not displayed through selectors
       break;
     case "SET_ZONE_FILTER":
-      newState["zone"][action.what][action.name] = action.value
+      newState["zone"][action.what] = action.value
       break;
     default:
       break;
