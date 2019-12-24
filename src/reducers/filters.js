@@ -1,21 +1,21 @@
-const emptyValues = {
-  variable: "",
-  dataset: "",
-  product: "",
-  depth: "",
-  stat: "",
-  plot_type: "",
+const defaultValues = {
+  variable: 15,
+  dataset: 92,
+  product: 308,
+  depth: 455,
+  stat: 540,
+  plot_type: 507,
 }
 
 const defaultFiltersValuesState = {
   zone: {
-    area: 16,
-    subarea: 2,
+    area: 14,
+    subarea: 135,
   },
   univers: {
-    BLUE: emptyValues,
-    GREEN: emptyValues,
-    WHITE: emptyValues
+    BLUE: defaultValues,
+    GREEN: defaultValues,
+    WHITE: defaultValues
   }
 };
 
