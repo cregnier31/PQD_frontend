@@ -40,7 +40,7 @@ export function PanelView(props){
   const classes = useStyles();
   return (
     <div>
-      <ExpansionPanel>
+      <ExpansionPanel defaultExpanded>
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
