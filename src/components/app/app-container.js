@@ -3,7 +3,7 @@ import {AppView} from "./app-view";
 
 export class AppContainer extends Component {
 
-  componentDidMount() {
+  async componentDidMount() {
     const url = "http://127.0.0.1:8000/data/filters"
     const options = {
       method: "post",
@@ -12,7 +12,9 @@ export class AppContainer extends Component {
     }
     fetch(url, options)
     .then(response => response.json()) 
-    .then(data => {this.props.setAllFilters(data)})
+    .then(data => {
+      this.props.setData(data)
+    })
   }
 
   render() {
