@@ -45,7 +45,7 @@ const AreaList = ({props}) => {
       return list.push(
         <Button key={item.id} value={item.id} active={active} onClick={ () => props.set("area", item.id)}>
           <Typography variant="h6" noWrap>
-            {item.name}
+            {item.fullname}
           </Typography>
         </Button>
       )
@@ -84,7 +84,7 @@ export function HeaderView(props) {
         <Divider />
         <List>
           <div className={'container-filters'}>
-            <Filter univers="BLUE"/>
+            <Filter universe="BLUE"/>
           </div>
         </List>
       </Drawer>

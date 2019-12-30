@@ -8,7 +8,7 @@ export class FiltersContainer extends Component {
     const args = {
       "area": this.props.zone["area"],
       "subarea": this.props.zone["subarea"],
-      "univers": this.props.univers,
+      "universe": this.props.universe,
       "variable": this.props.filters["variable"],
       "dataset": this.props.filters["dataset"],
       "product": this.props.filters["product"],
@@ -35,7 +35,7 @@ export class FiltersContainer extends Component {
       <FiltersView 
         data={this.props.data} 
         filters={this.props.filters} 
-        set={(name, value) => this.props.set(this.props.univers, name, value)} 
+        set={(name, value) => this.props.set(this.props.universe, name, value)} 
         apply={() => this.get_plot()}
       />
     );
