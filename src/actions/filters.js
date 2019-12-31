@@ -1,15 +1,15 @@
-export function setUniversFilter(id, name, value){
+export function setUniverseFilter(id, name, value){
   return {
-    type: "SET_UNIVERS_FILTER",
+    type: "SET_UNIVERSE_FILTER",
     id,
     name,
     value
   }
 }
 
-export function applyUniversFilters(id){
+export function applyUniverseFilters(id){
   return {
-    type: "APPLY_UNIVERS_FILTER",
+    type: "APPLY_UNIVERSE_FILTER",
     id
   }
 }
