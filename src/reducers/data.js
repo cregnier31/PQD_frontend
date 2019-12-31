@@ -1,4 +1,4 @@
-export const dataReducer = (state = {}, action, data) => {
+export const dataReducer = (state = {}, action) => {
   var newState = JSON.parse(JSON.stringify(state));
   switch (action.type) {
     case "SET_DATA":
