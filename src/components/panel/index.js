@@ -1,0 +1,1 @@
+export { PanelView as Panel } from './panel-view';

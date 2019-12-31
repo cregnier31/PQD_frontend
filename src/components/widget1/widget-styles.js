@@ -5,9 +5,8 @@ export default styled(Card)`
   && {
     width: calc(100% - 30px);
     height: 300px;
-    color: black;
-    background-color: red;
-    margin-top: 100px;
+    float : left;
+    margin : 10px 0 10px 10px;
     margin-bottom: 20px;
   }
 `;
