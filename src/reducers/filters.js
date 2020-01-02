@@ -1,7 +1,7 @@
 const defaultFiltersValuesState = {
   zone: {
     area: 14,
-    subarea: 135,
+    subarea: "full-domain",
   },
   universe: {
     BLUE: {
@@ -48,12 +48,11 @@ export const filtersReducer = (state = defaultFiltersValuesState, action) => {
         }
       }
       break;
-    case "APPLY_UNIVERSE_FILTER":
-      // TODO get corresponding plot and save its name somewhere in store or not
-      // and think about plot type which is constant and not displayed through selectors
-      break;
     case "SET_ZONE_FILTER":
       newState["zone"][action.what] = action.value
+      if(action.what === "area"){
+        newState["zone"]["subarea"] = "full-domain"
+      }
       break;
     default:
       break;
