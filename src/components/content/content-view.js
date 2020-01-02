@@ -10,16 +10,16 @@ export function ContentView(props){
           <Widget/>
         </Grid>
         <Grid item xs={12} md={4}>
-          <Widget/>
+          {/* <Widget/> */}
         </Grid>
         <Grid item xs={12} md={4}>
-          <Widget/>
+          {/* <Widget/> */}
         </Grid>
         <Grid item xs={12} md={4}>
-          <Widget/>
+          {/* <Widget/> */}
         </Grid>
         <Grid item xs={12} md={4}>
-          <Widget/>
+          {/* <Widget/> */}
         </Grid>
       </Grid>
     </div>

@@ -228,9 +228,8 @@ export class LeafletMapView extends Component {
         className='LeafletMap'
         id='weathermap'
         style={{
-          width: '100 %',
+          width: '100%',
           height: '90%',
-          marginTop: '30px'
         }}
       />
     );
