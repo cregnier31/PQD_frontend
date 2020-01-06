@@ -6,20 +6,25 @@ const mapStateToProps = (state, props) => {
     var concerned_data = {} 
     var concerned_filters = {}
     const zone = state.filtersReducer['zone']
-    if(state.dataReducer['areas']){
-        if(typeof(zone['subarea']) === "string"){
-            concerned_data = state.dataReducer['areas']
-            .filter(area => area.id === zone['area'])[0]['subareas']
-            .filter(subarea => subarea.name === zone['subarea'])[0]['universes']
-            .filter(universe => universe.name === props.universe)[0]
-        }else{
-            concerned_data = state.dataReducer['areas']
-            .filter(area => area.id === zone['area'])[0]['subareas']
-            .filter(subarea => subarea.id === zone['subarea'])[0]['universes']
-            .filter(universe => universe.name === props.universe)[0]
+    try {
+        if(state.dataReducer['areas']){
+            if(typeof(zone['subarea']) === "string"){
+                concerned_data = state.dataReducer['areas']
+                .filter(area => area.id === zone['area'])[0]['subareas']
+                .filter(subarea => subarea.name === zone['subarea'])[0]['universes']
+                .filter(universe => universe.name === props.universe)[0]
+            }else{
+                concerned_data = state.dataReducer['areas']
+                .filter(area => area.id === zone['area'])[0]['subareas']
+                .filter(subarea => subarea.id === zone['subarea'])[0]['universes']
+                .filter(universe => universe.name === props.universe)[0]
+            }
+            concerned_filters = state.filtersReducer['universe'][concerned_data['name']]
         }
-        concerned_filters = state.filtersReducer['universe'][concerned_data['name']]
+    } catch (error) {
+        console.log(error)
     }
+    console.log(concerned_data)
     return {
         data: concerned_data,
         filters: concerned_filters,

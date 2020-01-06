@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import {FiltersView} from "./filters-view";
+import {config} from "./../../utils";
 
 export class FiltersContainer extends Component {
 
   async get_plot() {
-    const url = "http://127.0.0.1:8000/data/plot"
     const args = {
       "area": this.props.zone["area"],
       "subarea": this.props.zone["subarea"],
@@ -21,7 +21,7 @@ export class FiltersContainer extends Component {
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify(args),
     }
-    fetch(url, options)
+    fetch(config['urls']['plot'], options)
     .then(response => response.json())
     .then( data => {
       if("filename" in data){
