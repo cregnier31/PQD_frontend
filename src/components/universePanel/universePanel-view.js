@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export function ContentView(props){
+export function UniversePanelView(props){
   const classes = useStyles();
   return (
     <div>

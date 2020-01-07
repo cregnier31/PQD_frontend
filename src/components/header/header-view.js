@@ -16,7 +16,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import {Filter} from '../filters';
 import Typography from '@material-ui/core/Typography';
-import {Content} from '../content';
+import {UniversePanel} from '../universePanel';
 import { Button } from '@material-ui/core';
 
 
@@ -159,7 +159,7 @@ export function HeaderView(props) {
           >
             <FilterListIcon />
           </IconButton>
-        <Content />
+        <UniversePanel />
       </main>
     </div>
   );
