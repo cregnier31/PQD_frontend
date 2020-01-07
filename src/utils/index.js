@@ -4,5 +4,6 @@ export const config = {
   urls:{
     filters: host + "/data/filters",
     plot: host + "/data/plot",
+    kpi: host + "/data/kpi",
   }
 }
