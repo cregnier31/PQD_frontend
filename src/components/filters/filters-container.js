@@ -25,7 +25,7 @@ export class FiltersContainer extends Component {
     .then(response => response.json())
     .then( data => {
       if("filename" in data){
-        alert(data["filename"])
+        this.props.setPlot(this.props.universe, data["filename"])
       }
     })
   }
@@ -45,7 +45,7 @@ export class FiltersContainer extends Component {
     .then(response => response.json())
     .then( data => {
       if("id" in data){
-        alert(data["content"])
+        this.props.setKpi(this.props.universe, data["what"], data["content"])
       }
     })
   }
