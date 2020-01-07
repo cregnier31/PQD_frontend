@@ -1,5 +1,5 @@
 import React from "react";
-import ExpansionPanel from "./panel-styles";
+import ExpansionPanel from "./topPanel-styles";
 import { makeStyles } from '@material-ui/core/styles';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
@@ -36,7 +36,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export function PanelView(props){
+export function TopPanelView(props){
   const classes = useStyles();
   return (
     <div>

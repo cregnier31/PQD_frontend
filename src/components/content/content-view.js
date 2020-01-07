@@ -7,7 +7,7 @@ import Crop169Icon from '@material-ui/icons/Crop169';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import WebIcon from '@material-ui/icons/Web';
 import {Widget} from '../widget1';
-import {Panel} from '../panel';
+import {TopPanel} from '../topPanel';
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -21,7 +21,7 @@ export function ContentView(props){
     <div>
       <Grid container>
         <Grid item xs={12} md={12}>
-          <Panel/>
+          <TopPanel/>
         </Grid>
       </Grid>
 

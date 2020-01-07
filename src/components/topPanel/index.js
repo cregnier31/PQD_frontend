@@ -1,0 +1,1 @@
+export { TopPanelView as TopPanel } from './topPanel-view';
