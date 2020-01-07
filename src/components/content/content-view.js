@@ -42,7 +42,7 @@ export function ContentView(props){
             <Widget/>
           </Grid>
           <Grid item xs={12} md={4}>
-            <Widget/>
+            {/* <Widget/> */}
           </Grid>
         </Grid>
 
@@ -64,13 +64,13 @@ export function ContentView(props){
 
         <Grid container>
           <Grid item xs={12} md={4}>
-            <Widget/>
+            {/* <Widget/> */}
           </Grid>
           <Grid item xs={12} md={4}>
-            <Widget/>
+            {/* <Widget/> */}
           </Grid>
           <Grid item xs={12} md={4}>
-            <Widget/>
+            {/* <Widget/> */}
           </Grid>
         </Grid>
       </Card>
