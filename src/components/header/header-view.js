@@ -1,23 +1,16 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
-import Drawer from '@material-ui/core/Drawer';
+import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import FilterListIcon from '@material-ui/icons/FilterList';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import {Filter} from '../filters';
 import Typography from '@material-ui/core/Typography';
-import {Content} from '../content';
+import {UniversePanel} from '../universePanel';
 import { Button } from '@material-ui/core';
+import { Drawer } from './drawer';
 
 
 const drawerWidth = 240;
@@ -29,10 +22,6 @@ const useStyles = makeStyles(theme => ({
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
     backgroundColor: '#273b4b',
-  },
-  drawer: {
-    width: drawerWidth,
-    flexShrink: 0,
   },
   drawerPaper: {
     width: drawerWidth,
@@ -92,7 +81,6 @@ const AreaList = ({props}) => {
 
 export function HeaderView(props) {
   const classes = useStyles();
-  const theme = useTheme();
   const [open, setOpen] = React.useState(true);
 
   const handleDrawerOpen = () => {
@@ -117,34 +105,7 @@ export function HeaderView(props) {
           <AreaList props={props} />
         </Toolbar>
       </AppBar>
-      <Drawer
-        className={classes.drawer}
-        variant="persistent"
-        open={open}
-        classes={{
-          paper: classes.drawerPaper,
-        }}
-      >
-        <div className={classes.toolbar} />
-        <div className={classes.drawerHeader}>
-          <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-          </IconButton>
-        </div>
-        <List>
-          {['BLUE', 'GREEN', 'WHITE'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
-        <Divider />
-        <List>
-          <div className={'container-filters'}>
-            <Filter universe="BLUE"/>
-          </div>
-        </List>
-      </Drawer>
+      <Drawer handleDrawerClose={handleDrawerClose} open={open}/>
       <main
         className={clsx(classes.content, {
           [classes.contentShift]: open,
@@ -159,7 +120,7 @@ export function HeaderView(props) {
           >
             <FilterListIcon />
           </IconButton>
-        <Content />
+        <UniversePanel />
       </main>
     </div>
   );

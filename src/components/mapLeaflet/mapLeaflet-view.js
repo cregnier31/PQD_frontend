@@ -229,7 +229,7 @@ export class LeafletMapView extends Component {
         id='weathermap'
         style={{
           width: '100%',
-          height: '90%',
+          height: '86%',
         }}
       />
     );

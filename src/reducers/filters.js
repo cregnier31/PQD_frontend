@@ -1,4 +1,4 @@
-const defaultFiltersValuesState = {
+const default_filters_values = {
   zone: {
     area: 14,
     subarea: "full-domain",
@@ -33,7 +33,7 @@ const defaultFiltersValuesState = {
 
 const filtersOrder = ['variable', 'dataset', 'product', 'depth', 'stat', 'plot_type']
 
-export const filtersReducer = (state = defaultFiltersValuesState, action) => {
+export const filtersReducer = (state = default_filters_values, action) => {
   var newState = JSON.parse(JSON.stringify(state));
   switch (action.type) {
     case "SET_UNIVERSE_FILTER":

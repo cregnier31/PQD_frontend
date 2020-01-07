@@ -7,7 +7,8 @@ import Crop169Icon from '@material-ui/icons/Crop169';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import WebIcon from '@material-ui/icons/Web';
 import {Widget} from '../widget1';
-import {Panel} from '../panel';
+import {WidgetChart} from '../widgetChart';
+import {TopPanel} from '../topPanel';
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -15,13 +16,13 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export function ContentView(props){
+export function UniversePanelView(props){
   const classes = useStyles();
   return (
     <div>
       <Grid container>
         <Grid item xs={12} md={12}>
-          <Panel/>
+          <TopPanel/>
         </Grid>
       </Grid>
 
@@ -42,7 +43,7 @@ export function ContentView(props){
             <Widget/>
           </Grid>
           <Grid item xs={12} md={4}>
-            {/* <Widget/> */}
+            <WidgetChart/>
           </Grid>
         </Grid>
 
@@ -64,13 +65,13 @@ export function ContentView(props){
 
         <Grid container>
           <Grid item xs={12} md={4}>
-            {/* <Widget/> */}
+            <WidgetChart/>
           </Grid>
           <Grid item xs={12} md={4}>
-            {/* <Widget/> */}
+            <WidgetChart/>
           </Grid>
           <Grid item xs={12} md={4}>
-            {/* <Widget/> */}
+            <WidgetChart/>
           </Grid>
         </Grid>
       </Card>

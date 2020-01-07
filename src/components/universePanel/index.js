@@ -1,0 +1,1 @@
+export { UniversePanelRedux as UniversePanel } from './universePanel-redux';

@@ -1,0 +1,1 @@
+export { WidgetChartRedux as WidgetChart } from './widgetChart-redux';
