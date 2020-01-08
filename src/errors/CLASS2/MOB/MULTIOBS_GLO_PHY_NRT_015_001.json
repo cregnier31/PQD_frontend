@@ -1,0 +1,41 @@
+{
+ "type": "FeatureCollection", 
+ "features": [
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -3.13, 
+     43.397
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.8090074590408953, 
+    "NAME": "Bilbao-coast-buoy", 
+    "rmse": 1.1383618738002836, 
+    "variance_exp": 648.0048769264172, 
+    "scatter_index": 7.998093557669581, 
+    "correlation": -0.5826999995977322
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -5.664, 
+     43.615
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 9.116675100479473, 
+    "NAME": "Gijon-coast-buoy", 
+    "rmse": 9.114436628298934, 
+    "variance_exp": 13370.218138779626, 
+    "scatter_index": 67.90105748474791, 
+    "correlation": 0.9154446418626884
+   }
+  }
+ ]
+}
