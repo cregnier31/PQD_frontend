@@ -33,6 +33,7 @@ export function WidgetView(props){
   const handleClose = () => {
     setOpen(false);
   };
+
   return (
     <div>
       <Card>
@@ -45,7 +46,7 @@ export function WidgetView(props){
           <MoreVertSharpIcon />
         </div>
         {!open && 
-          <LeafletMap />
+          <LeafletMap area={props.area} />
         }
         <Modal
           aria-labelledby="simple-modal-title"
@@ -56,7 +57,7 @@ export function WidgetView(props){
           <DialogContent className={classes.content}>
             <Card className={classes.content}>
               <CloseIcon className={classes.right} onClick={handleClose} />
-              <LeafletMap/>
+              <LeafletMap area={props.area} />
             </Card>
           </DialogContent>
         </Modal>

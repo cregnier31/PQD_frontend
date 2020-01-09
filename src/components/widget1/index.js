@@ -1,1 +1,1 @@
-export { WidgetRedux as Widget } from './widget-redux';
+export { WidgetView as Widget } from './widget-view';

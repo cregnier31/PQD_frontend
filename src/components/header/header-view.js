@@ -58,6 +58,8 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+let area = null;
+
 const AreaList = ({props}) => {
   var list = []
   if(props.data.length){
@@ -68,7 +70,7 @@ const AreaList = ({props}) => {
       }
       return list.push(
         <Grid item xs={2} md={2} key={item.id}>
-          <Button value={item.id} active={active} onClick={ () => props.set("area", item.id)} color="inherit">
+          <Button value={item.id} active={active} onClick={() => {props.set("area", item.id); area = item.name}} color="inherit">
             {item.fullname}
           </Button>
         </Grid>
@@ -83,10 +85,17 @@ export function HeaderView(props) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
   const [universe, setUniverse] = React.useState(null);
+  // const [area, setArea] = React.useState(null);
+  
+  // const getArea = (area) => {
+  //   setArea(area);
+  //   console.log('area', area);
+  // };
 
   const getUniverse = (universe) => {
     setUniverse(universe);
   };
+
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -129,7 +138,7 @@ export function HeaderView(props) {
           >
             <FilterListIcon />
           </IconButton>
-        <UniversePanel universe={universe} />
+        <UniversePanel universe={universe} area={area} />
       </main>
     </div>
   );

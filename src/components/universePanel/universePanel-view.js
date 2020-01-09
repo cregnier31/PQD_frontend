@@ -37,17 +37,15 @@ export function UniversePanelView(props){
         <Grid container direction="row" alignItems="center">
           <Grid item xs={1} md={1}>
             {style(props.universe && props.universe.name)}
-            {/* Props color */}
           </Grid>
           <Grid item xs={1} md={1}>
             <h3>{props.universe ? props.universe.name : "BLUE"}</h3>
-            {/* Props color */}
           </Grid>
         </Grid>
 
         <Grid container>
           <Grid item xs={12} md={8}>
-            <Widget/>
+            <Widget area={props.area} />
           </Grid>
           <Grid item xs={12} md={4}>
             <WidgetChart/>
