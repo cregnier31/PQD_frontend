@@ -34,9 +34,21 @@ const errorMarkers = {
   'balticsea':[],
   'nws': []
 };
+let geojsonMarkerOptions = {
+  radius: 4,
+  weight: 1,
+  opacity: 1,
+  fillOpacity: 0.5,
+  color: 'red',
+};
 
 export class LeafletMapView extends Component {
-
+  constructor(props) {
+    super(props);
+    this.state = {
+      area: null,
+    };
+  }
 
   componentDidMount() {
     document.getElementById('weathermap').innerHTML = "<div id='map' style='width: 100%; height: 100%;'></div>";
@@ -145,10 +157,8 @@ export class LeafletMapView extends Component {
           }
       }
     }
-    // for (let y = 0; y < bounds.length; y += 1) {
-    //   L.rectangle(bounds[y].bb, {color: "green", weight: 1}).addTo(this.map).bindPopup(bounds[y].name);
-    // }
-    switch ('nws') { // Props region 
+
+    switch (this.state.area) {
       case 'medsea':
         L.geoJson( meadSea, {
           color: "yellow", weight: 1,
@@ -184,7 +194,8 @@ export class LeafletMapView extends Component {
         L.geoJson( baltic, {
           color: "yellow", weight: 1,
           onEachFeature(feature, layer) { onEachFeature(feature,layer) }
-        }).addTo(this.map)
+        }).addTo(this.map);
+        this.showGeojsonMap2('baltic');
       break;
       case 'nws':
         L.geoJson( nws, {
@@ -204,23 +215,50 @@ export class LeafletMapView extends Component {
     }
   }
 
-  componentWillReceiveProps(newProps) {
-    // if (newProps.areas !== this.props.areas) {
-    //   if (this.geojsonLayer) {
-    //     this.geojsonLayer.removeFrom(this.map);
-    //   }
-    //   this.geojsonLayer = L.geoJSON(newProps.areas)
-    //   .bindPopup(function (layer) {
-    //     const { zone, name } = layer.feature.properties;
-    //     return ( zone !== '' ? `[${zone}] ` : '' ) + name;
-    //   });
-    //   this.geojsonLayer.addTo(this.map);
-    // }
+  async componentWillReceiveProps(nextProps) {
+    if (this.state.area !== nextProps.area) {
+      await this.setState({ area: nextProps.area});
+    }
   }
 
-  shouldComponentUpdate() {
-    return false;
-  }
+  async showGeojsonMap2() {
+    const errorsFile = await import('../../errors/CLASS2/BAL/BALTICSEA_ANALYSIS_FORECAST_PHYS_003_006.json');
+    // Use Props
+    const imgfiles = await import('../../plots_class2/BAL/resize/FehmarnBelt_BALTICSEA_ANALYSIS_FORECAST_PHYS_003_006.png');
+    //Use Props
+    this.pointToLayer(errorsFile, imgfiles);
+  };
+
+  pointToLayer(latlng, imgfiles) {
+    const customOptions =
+      {
+        'maxWidth': '900',
+        'maxHeight': '600',
+      }
+      latlng.features.map((data) => {
+        let rmsd = data.properties.rmse;
+        if (rmsd <= 0.3) {
+          geojsonMarkerOptions.color = "green"
+        }
+        if (rmsd > 0.3 && rmsd <= 0.5) {
+          geojsonMarkerOptions.color = "yellow"
+        }
+        if (rmsd > 0.5 && rmsd <= 1) {
+          geojsonMarkerOptions.color = "orange"
+        }
+        if (rmsd > 1 ) {
+          geojsonMarkerOptions.color = "red"
+        }
+        const popupText = "<b>Ref:</b> " + data.properties.NAME.bold() +
+          "<br><b>RMSD:</b> " + data.properties.rmse.toFixed(2) +
+          "<br><b>Corr:</b> " + data.properties.correlation.toFixed(2) +
+          "<br><b>Variance explained:</b> " + data.properties.variance_exp.toFixed(2) +
+          "<br><b>Scatter index:</b> " + data.properties.scatter_index.toFixed(2) +
+          "<img src=" + imgfiles.default + "/>";
+        return L.circleMarker(data && data.geometry && data.geometry.coordinates,geojsonMarkerOptions).bindPopup(popupText, customOptions).addTo(this.map)
+      }
+    )
+  };
 
   render() {
     return (

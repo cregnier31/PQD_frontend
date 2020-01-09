@@ -1,0 +1,8753 @@
+{
+ "type": "FeatureCollection", 
+ "features": [
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -87.823, 
+     30.416002
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 3.016948325545698, 
+    "NAME": "WKQA1", 
+    "rmse": 3.194471598975063, 
+    "variance_exp": 217.42673970951944, 
+    "scatter_index": 11.51091722628379, 
+    "correlation": 0.5182231825415249
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     23.508099, 
+     58.576107
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.06311644299364438, 
+    "NAME": "Virtsu", 
+    "rmse": 1.0902763112947014, 
+    "variance_exp": 2.291432524773203, 
+    "scatter_index": 10.936364485180738, 
+    "correlation": 0.9883761416522902
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     24.666203, 
+     59.5102
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.14866097918659005, 
+    "NAME": "Vahemadal", 
+    "rmse": 1.5997708533575503, 
+    "variance_exp": 8.356891493903467, 
+    "scatter_index": 22.424597540752025, 
+    "correlation": 0.9599836723514179
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     14.8333, 
+     55.25
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.3187322611525918, 
+    "NAME": "Tejn", 
+    "rmse": 1.0831432296624213, 
+    "variance_exp": 3.216426503430452, 
+    "scatter_index": 9.729511226537662, 
+    "correlation": 0.9851219963753135
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     24.731398, 
+     59.71191
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.16590518158177314, 
+    "NAME": "Tallinnamadal", 
+    "rmse": 0.7425724192732496, 
+    "variance_exp": 2.2227040135390657, 
+    "scatter_index": 8.576187315972705, 
+    "correlation": 0.9923083723539611
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -117.13099, 
+     32.567993
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.8920710905015454, 
+    "NAME": "TIQC1", 
+    "rmse": 2.510184569923249, 
+    "variance_exp": 16.686957538651676, 
+    "scatter_index": 12.65613418707211, 
+    "correlation": 0.8045348575441087
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -122.44702, 
+     37.890995
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.02520858288192329, 
+    "NAME": "TIBC1", 
+    "rmse": 1.4820588954964613, 
+    "variance_exp": 19.54624138836617, 
+    "scatter_index": 10.166906076038824, 
+    "correlation": 0.8433448036208384
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -140.0, 
+     9.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.11893716642319063, 
+    "NAME": "T9N140W", 
+    "rmse": 0.30333007232591497, 
+    "variance_exp": 64.65542349115, 
+    "scatter_index": 1.0880435995827182, 
+    "correlation": 0.9181694041818069
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -95.0, 
+     -8.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.06458446836619558, 
+    "NAME": "T8S95W", 
+    "rmse": 0.20339965370483795, 
+    "variance_exp": 7.099059530381589, 
+    "scatter_index": 0.850397838701332, 
+    "correlation": 0.9937361846266883
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     180.0, 
+     -8.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.05084478874873, 
+    "NAME": "T8S180W", 
+    "rmse": 0.15443977825922658, 
+    "variance_exp": 191.5391135065812, 
+    "scatter_index": 0.5179621253915132, 
+    "correlation": 0.8943980560889486
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -170.0, 
+     -8.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.03810597489319889, 
+    "NAME": "T8S170W", 
+    "rmse": 0.15855694618236543, 
+    "variance_exp": 91.9061152107434, 
+    "scatter_index": 0.535814831765261, 
+    "correlation": 0.9380328673601896
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     165.0, 
+     -8.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.06437239784871451, 
+    "NAME": "T8S165E", 
+    "rmse": 0.20536287358910935, 
+    "variance_exp": 106.74486784107691, 
+    "scatter_index": 0.6893101570000316, 
+    "correlation": 0.9162373887294725
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -155.0, 
+     -8.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.02671265778717924, 
+    "NAME": "T8S155W", 
+    "rmse": 0.1431279757579618, 
+    "variance_exp": 43.0270319678277, 
+    "scatter_index": 0.4916164053113446, 
+    "correlation": 0.9711794836658313
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -95.0, 
+     8.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.0133073650257991, 
+    "NAME": "T8N95W", 
+    "rmse": 0.37500199568641757, 
+    "variance_exp": 60.70887015444576, 
+    "scatter_index": 1.350555907084427, 
+    "correlation": 0.8905352161796491
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -125.0, 
+     -8.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.007416339678872674, 
+    "NAME": "T8S125W", 
+    "rmse": 0.14368430689188486, 
+    "variance_exp": 16.331060623581926, 
+    "scatter_index": 0.536985810785968, 
+    "correlation": 0.9885263948666965
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -110.0, 
+     -8.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.01551589346279414, 
+    "NAME": "T8S110W", 
+    "rmse": 0.13764182901688862, 
+    "variance_exp": 9.06750830243501, 
+    "scatter_index": 0.5417972969613971, 
+    "correlation": 0.9938415829512681
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     180.0, 
+     8.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.12716750683991762, 
+    "NAME": "T8N180W", 
+    "rmse": 0.16274909393332954, 
+    "variance_exp": 84.15442056913169, 
+    "scatter_index": 0.5674075746776766, 
+    "correlation": 0.9730169125688563
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -170.0, 
+     8.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.10406764330877749, 
+    "NAME": "T8N170W", 
+    "rmse": 0.21388907210032695, 
+    "variance_exp": 41.70344483571186, 
+    "scatter_index": 0.743633580383189, 
+    "correlation": 0.9658446061573421
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     165.0, 
+     8.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.11970509536755358, 
+    "NAME": "T8N165E", 
+    "rmse": 0.2117292338145256, 
+    "variance_exp": 105.2702070483327, 
+    "scatter_index": 0.717644293976628, 
+    "correlation": 0.9318858006605886
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -155.0, 
+     8.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.056456573301577606, 
+    "NAME": "T8N155W", 
+    "rmse": 0.22351999444555906, 
+    "variance_exp": 36.95662510260057, 
+    "scatter_index": 0.7849978309594136, 
+    "correlation": 0.9605561170365017
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -125.0, 
+     8.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.04090347249145765, 
+    "NAME": "T8N125W", 
+    "rmse": 0.20447034931375513, 
+    "variance_exp": 85.33433581815088, 
+    "scatter_index": 0.7306373074816019, 
+    "correlation": 0.9277570827595466
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -110.0, 
+     8.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.0284350733108667, 
+    "NAME": "T8N110W", 
+    "rmse": 0.22471962230179562, 
+    "variance_exp": 31.811932502099076, 
+    "scatter_index": 0.8036730072107552, 
+    "correlation": 0.964204895819539
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -95.0, 
+     -5.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.08492382867548898, 
+    "NAME": "T5S95W", 
+    "rmse": 0.24655396392316783, 
+    "variance_exp": 8.12996781300772, 
+    "scatter_index": 1.0475167760740174, 
+    "correlation": 0.9911727029570822
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     180.0, 
+     -5.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.3394340796251498, 
+    "NAME": "T5S180W", 
+    "rmse": 0.42684664158589614, 
+    "variance_exp": 410.92219938651084, 
+    "scatter_index": 1.4524234377086365, 
+    "correlation": 0.728544487536714
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -170.0, 
+     -5.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.010325311764017187, 
+    "NAME": "T5S170W", 
+    "rmse": 0.19560461017808994, 
+    "variance_exp": 94.46379548684824, 
+    "scatter_index": 0.6729081903834768, 
+    "correlation": 0.9112443637197211
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -155.0, 
+     -5.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.04629752907933238, 
+    "NAME": "T5S155W", 
+    "rmse": 0.15662344521954422, 
+    "variance_exp": 111.08834357508404, 
+    "scatter_index": 0.5609601037741876, 
+    "correlation": 0.9195001008394317
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -140.0, 
+     -5.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.035479327056954446, 
+    "NAME": "T5S140W", 
+    "rmse": 0.20268880760248412, 
+    "variance_exp": 28.915018432813643, 
+    "scatter_index": 0.7383867509555991, 
+    "correlation": 0.971248522464508
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -125.0, 
+     -5.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.02350185423163964, 
+    "NAME": "T5S125W", 
+    "rmse": 0.19523203457559776, 
+    "variance_exp": 14.855205093808499, 
+    "scatter_index": 0.7361916342163594, 
+    "correlation": 0.9859362822113894
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -110.0, 
+     -5.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.028869246903390433, 
+    "NAME": "T5S110W", 
+    "rmse": 0.21933423395915227, 
+    "variance_exp": 10.294573640094146, 
+    "scatter_index": 0.8718150296043707, 
+    "correlation": 0.9888652291074219
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -95.0, 
+     5.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.17001606852690898, 
+    "NAME": "T5N95W", 
+    "rmse": 0.306905072170248, 
+    "variance_exp": 47.29842978764216, 
+    "scatter_index": 1.0997411206571388, 
+    "correlation": 0.9579293126365579
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     180.0, 
+     5.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.054897948646438266, 
+    "NAME": "T5N180W", 
+    "rmse": 0.2065461893598878, 
+    "variance_exp": 45.47354067606019, 
+    "scatter_index": 0.7052498114583982, 
+    "correlation": 0.9598873351021664
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -170.0, 
+     5.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.041049468917794485, 
+    "NAME": "T5N170W", 
+    "rmse": 0.2372804487382015, 
+    "variance_exp": 66.43193261617186, 
+    "scatter_index": 0.8261692651816704, 
+    "correlation": 0.927353939528504
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     165.0, 
+     5.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.06522372757287798, 
+    "NAME": "T5N165E", 
+    "rmse": 0.1891200001830234, 
+    "variance_exp": 109.20286297935742, 
+    "scatter_index": 0.6390718654221959, 
+    "correlation": 0.9138023338628447
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -155.0, 
+     5.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.014492372614025584, 
+    "NAME": "T5N155W", 
+    "rmse": 0.2970655830290265, 
+    "variance_exp": 38.155612798320035, 
+    "scatter_index": 1.059713157498407, 
+    "correlation": 0.9440863406600892
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -140.0, 
+     5.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.06648542513406142, 
+    "NAME": "T5N140W", 
+    "rmse": 0.37077917874976735, 
+    "variance_exp": 49.716510103688705, 
+    "scatter_index": 1.3385303411976615, 
+    "correlation": 0.9202294070072872
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -125.0, 
+     5.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.04389351573070144, 
+    "NAME": "T5N125W", 
+    "rmse": 0.4242465976692126, 
+    "variance_exp": 35.68485484870996, 
+    "scatter_index": 1.5417436465920304, 
+    "correlation": 0.9258380526830337
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -110.0, 
+     5.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.0012217269948173737, 
+    "NAME": "T5N110W", 
+    "rmse": 0.38248746543264134, 
+    "variance_exp": 46.73222875182214, 
+    "scatter_index": 1.3864443328789908, 
+    "correlation": 0.9158741867977045
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -95.0, 
+     -2.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.2335826072552898, 
+    "NAME": "T2S95W", 
+    "rmse": 0.4858258316768967, 
+    "variance_exp": 8.562822794390353, 
+    "scatter_index": 2.1372132207803163, 
+    "correlation": 0.9844923036243416
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     180.0, 
+     -2.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.05972290256713819, 
+    "NAME": "T2S180W", 
+    "rmse": 0.24812695291132347, 
+    "variance_exp": 114.01172459855225, 
+    "scatter_index": 0.865478242670543, 
+    "correlation": 0.8615113868001332
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -170.0, 
+     -2.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.046023620774480634, 
+    "NAME": "T2S170W", 
+    "rmse": 0.24911906663928576, 
+    "variance_exp": 55.86906436863084, 
+    "scatter_index": 0.8803425480721012, 
+    "correlation": 0.9316475418860853
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     165.0, 
+     -2.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.11558318682775948, 
+    "NAME": "T2S165E", 
+    "rmse": 0.26912148594084656, 
+    "variance_exp": 161.80581535406336, 
+    "scatter_index": 0.8978088331255719, 
+    "correlation": 0.8464817254016619
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -155.0, 
+     -2.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.0827010525685914, 
+    "NAME": "T2S155W", 
+    "rmse": 0.22667764712646357, 
+    "variance_exp": 39.2626523279744, 
+    "scatter_index": 0.8152694005131489, 
+    "correlation": 0.960762608397634
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -95.0, 
+     2.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.20756510949750506, 
+    "NAME": "T2N95W", 
+    "rmse": 0.4774359995035841, 
+    "variance_exp": 39.91158223767729, 
+    "scatter_index": 1.7933499296052746, 
+    "correlation": 0.9198453662748626
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -140.0, 
+     -2.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.07660659533049952, 
+    "NAME": "T2S140W", 
+    "rmse": 0.23370716342067943, 
+    "variance_exp": 18.329830701850273, 
+    "scatter_index": 0.8692508003599732, 
+    "correlation": 0.9807204477444308
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -125.0, 
+     -2.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.06726782455763569, 
+    "NAME": "T2S125W", 
+    "rmse": 0.24717126179368062, 
+    "variance_exp": 9.904991808849426, 
+    "scatter_index": 0.9525974943940659, 
+    "correlation": 0.9886128875927244
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -110.0, 
+     -2.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.007904302847265399, 
+    "NAME": "T2S110W", 
+    "rmse": 0.3572283078339055, 
+    "variance_exp": 9.585562009578243, 
+    "scatter_index": 1.440212288015653, 
+    "correlation": 0.984548441145104
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     180.0, 
+     2.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.06200506582013787, 
+    "NAME": "T2N180W", 
+    "rmse": 0.22749052196897113, 
+    "variance_exp": 35.47425514988213, 
+    "scatter_index": 0.7854028394370278, 
+    "correlation": 0.9619458529584692
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -170.0, 
+     2.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.0336572526127199, 
+    "NAME": "T2N170W", 
+    "rmse": 0.2366253565265385, 
+    "variance_exp": 31.884124832189524, 
+    "scatter_index": 0.8338498923938891, 
+    "correlation": 0.9623578115064688
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     165.0, 
+     2.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.0657152826698777, 
+    "NAME": "T2N165E", 
+    "rmse": 0.23376454962168872, 
+    "variance_exp": 137.5264847193479, 
+    "scatter_index": 0.7837615888071617, 
+    "correlation": 0.8558038659903119
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -155.0, 
+     2.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.04402895554148145, 
+    "NAME": "T2N155W", 
+    "rmse": 0.261004725420566, 
+    "variance_exp": 34.662284986160984, 
+    "scatter_index": 0.9377490006241561, 
+    "correlation": 0.9557123888703486
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -140.0, 
+     2.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.014386359913601154, 
+    "NAME": "T2N140W", 
+    "rmse": 0.27832999012350973, 
+    "variance_exp": 19.613202661557583, 
+    "scatter_index": 1.0460351284845377, 
+    "correlation": 0.9724039857011233
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -125.0, 
+     2.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.019516998950432907, 
+    "NAME": "T2N125W", 
+    "rmse": 0.4135104152962773, 
+    "variance_exp": 20.394364721273334, 
+    "scatter_index": 1.5675238355154293, 
+    "correlation": 0.9571122530556903
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -110.0, 
+     2.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.0273108616997213, 
+    "NAME": "T2N110W", 
+    "rmse": 0.7425327534803086, 
+    "variance_exp": 29.588292298723694, 
+    "scatter_index": 2.8920725577084414, 
+    "correlation": 0.8894900560573281
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -95.0, 
+     0.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.5162796943199197, 
+    "NAME": "T0N95W", 
+    "rmse": 1.234262879090747, 
+    "variance_exp": 17.084660634600326, 
+    "scatter_index": 5.1894274803550084, 
+    "correlation": 0.9137670141589855
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     180.0, 
+     0.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.05591394108937209, 
+    "NAME": "T0N180W", 
+    "rmse": 0.21550127647455708, 
+    "variance_exp": 28.873943532583095, 
+    "scatter_index": 0.7493777482020051, 
+    "correlation": 0.9705537585344018
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -170.0, 
+     0.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.07772638094218465, 
+    "NAME": "T0N170W", 
+    "rmse": 0.22373918942363372, 
+    "variance_exp": 29.20032425105528, 
+    "scatter_index": 0.7980451696562222, 
+    "correlation": 0.9708595714657084
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     165.0, 
+     0.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.08895817220014024, 
+    "NAME": "T0N165E", 
+    "rmse": 0.2492080597473884, 
+    "variance_exp": 79.71556571805795, 
+    "scatter_index": 0.8354956837783842, 
+    "correlation": 0.9204686926354372
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -155.0, 
+     0.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.05665393070065505, 
+    "NAME": "T0N155W", 
+    "rmse": 0.21705900149819116, 
+    "variance_exp": 29.335650495444515, 
+    "scatter_index": 0.7915148795339753, 
+    "correlation": 0.9698774393035162
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -140.0, 
+     0.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.06879138392474005, 
+    "NAME": "T0N140W", 
+    "rmse": 0.2713778803330293, 
+    "variance_exp": 20.475139904840724, 
+    "scatter_index": 1.0430812408169428, 
+    "correlation": 0.9737114081754543
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -125.0, 
+     0.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.02011873095450767, 
+    "NAME": "T0N125W", 
+    "rmse": 0.36643696796826086, 
+    "variance_exp": 20.272080279525483, 
+    "scatter_index": 1.4190765562824255, 
+    "correlation": 0.9622617428221923
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -110.0, 
+     0.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.06900302228030597, 
+    "NAME": "T0N110W", 
+    "rmse": 0.5922010163296377, 
+    "variance_exp": 13.901315408867582, 
+    "scatter_index": 2.4278323479374735, 
+    "correlation": 0.9595782042289402
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     10.8333, 
+     55.283295
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.12451802043801052, 
+    "NAME": "Slipshavn", 
+    "rmse": 1.8547486641341295, 
+    "variance_exp": 7.460269790752903, 
+    "scatter_index": 17.139521793733902, 
+    "correlation": 0.9818456935267966
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.322014, 
+     43.317005
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.753493370648485, 
+    "NAME": "SOQO3", 
+    "rmse": 1.2618247116095251, 
+    "variance_exp": 83.61204159581786, 
+    "scatter_index": 12.238908320977686, 
+    "correlation": 0.5712941567602208
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     3.8263595, 
+     39.992306
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.05049778675704175, 
+    "NAME": "SON-BLANC", 
+    "rmse": 0.5487024507496083, 
+    "variance_exp": 5.67027817232275, 
+    "scatter_index": 3.3324142947255546, 
+    "correlation": 0.9846037999515913
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     2.9532602, 
+     39.360294
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.062492294272605164, 
+    "NAME": "SA-RAPITA", 
+    "rmse": 0.5772567473594621, 
+    "variance_exp": 2.188031652101789, 
+    "scatter_index": 2.968574128527583, 
+    "correlation": 0.9939836371944101
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     11.349998, 
+     54.649994
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.24970461421404266, 
+    "NAME": "Rodby", 
+    "rmse": 1.1967806100464151, 
+    "variance_exp": 3.1388459220213063, 
+    "scatter_index": 10.080030287340655, 
+    "correlation": 0.9836699180138907
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -81.73301, 
+     26.026
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.3988057117485653, 
+    "NAME": "RKQF1", 
+    "rmse": 1.4560230618520078, 
+    "variance_exp": 8.45407180585125, 
+    "scatter_index": 5.583433680457484, 
+    "correlation": 0.9415306193058366
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     21.389997, 
+     61.62
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.47688492813765215, 
+    "NAME": "PoriKaijakari", 
+    "rmse": 1.7960190005909638, 
+    "variance_exp": 8.432520341297527, 
+    "scatter_index": 16.890200069555195, 
+    "correlation": 0.9287467134475461
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     24.4868, 
+     58.388912
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.26592022450464015, 
+    "NAME": "Parnu", 
+    "rmse": 1.9792813616422698, 
+    "variance_exp": 3.686853149896932, 
+    "scatter_index": 18.88147770854401, 
+    "correlation": 0.9740684507702557
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     24.079601, 
+     59.334896
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.4768437742777163, 
+    "NAME": "Paldiski", 
+    "rmse": 1.9886533699940419, 
+    "variance_exp": 6.436104143782032, 
+    "scatter_index": 22.358767192417282, 
+    "correlation": 0.9514401633597764
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -87.55601, 
+     30.278997
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.060835777049977224, 
+    "NAME": "PPTA1", 
+    "rmse": 2.2918792944867215, 
+    "variance_exp": 6.864333047127526, 
+    "scatter_index": 9.603974260661166, 
+    "correlation": 0.9189342022824185
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     24.9704, 
+     65.2356
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 1.107067763954241, 
+    "NAME": "OuluSantapankki", 
+    "rmse": 1.4841137816615269, 
+    "variance_exp": 16.73284942066036, 
+    "scatter_index": 11.22814655163287, 
+    "correlation": 0.9677810753361467
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     11.919, 
+     57.39199
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.22511233753382243, 
+    "NAME": "Onsala", 
+    "rmse": 0.9980766748054953, 
+    "variance_exp": 2.364368828806271, 
+    "scatter_index": 8.532488189990858, 
+    "correlation": 0.9897485024352837
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -79.193, 
+     33.349
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.5056582772714968, 
+    "NAME": "NIQS1", 
+    "rmse": 2.156579528145202, 
+    "variance_exp": 6.305603805947352, 
+    "scatter_index": 9.11827551121564, 
+    "correlation": 0.9341167515333911
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     24.118498, 
+     58.228004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.19871132634440425, 
+    "NAME": "Munalaid", 
+    "rmse": 1.8680284551472655, 
+    "variance_exp": 4.33755997595947, 
+    "scatter_index": 19.48481584027436, 
+    "correlation": 0.969078851918058
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -87.93599, 
+     30.666994
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.35460480509974346, 
+    "NAME": "MHPA1", 
+    "rmse": 1.8375013480394637, 
+    "variance_exp": 4.468686921787827, 
+    "scatter_index": 8.223303456297785, 
+    "correlation": 0.966749806731223
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     22.6969, 
+     59.068993
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.33169072763157104, 
+    "NAME": "Lehtma", 
+    "rmse": 2.3065679880286436, 
+    "variance_exp": 5.348563282665865, 
+    "scatter_index": 24.247924197717072, 
+    "correlation": 0.9377462104575529
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     17.8589, 
+     58.768906
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.2327040236250868, 
+    "NAME": "LandsortNorra", 
+    "rmse": 1.0651852685508463, 
+    "variance_exp": 2.6445175833447103, 
+    "scatter_index": 10.73133214216218, 
+    "correlation": 0.9865454973463841
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     15.5894, 
+     56.10529
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.16288265223778176, 
+    "NAME": "Kungsholmsfort", 
+    "rmse": 1.8153141359855147, 
+    "variance_exp": 4.555366286074086, 
+    "scatter_index": 16.747552675390658, 
+    "correlation": 0.9585874598000006
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     11.729999, 
+     54.15
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.14873816558074537, 
+    "NAME": "Kuehlungsborn", 
+    "rmse": 1.1179002129727262, 
+    "variance_exp": 3.191372015040798, 
+    "scatter_index": 9.968327331946886, 
+    "correlation": 0.9897888950920574
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     27.109896, 
+     60.272297
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.10731906963346027, 
+    "NAME": "KotkaKuusenkari", 
+    "rmse": 0.693197764668953, 
+    "variance_exp": 4.283407300114827, 
+    "scatter_index": 5.921396457064687, 
+    "correlation": 0.9855786408271884
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     11.133301, 
+     55.333305
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.8569626222416282, 
+    "NAME": "Korsor", 
+    "rmse": 1.4327072933313538, 
+    "variance_exp": 3.8009033961278944, 
+    "scatter_index": 11.690958181613942, 
+    "correlation": 0.9849602960394809
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     12.599999, 
+     55.700005
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.21243840495131927, 
+    "NAME": "Kobenhavn", 
+    "rmse": 0.8114534567251603, 
+    "variance_exp": 2.1644537419329484, 
+    "scatter_index": 6.975348614990777, 
+    "correlation": 0.99246704222588
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     22.628204, 
+     59.904198
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.7228150971914324, 
+    "NAME": "KemionsaariKalvoren", 
+    "rmse": 1.7613648052359592, 
+    "variance_exp": 8.700543201820818, 
+    "scatter_index": 14.960833954435135, 
+    "correlation": 0.96336084870771
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     23.535002, 
+     64.30671
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.9080306457866492, 
+    "NAME": "KalajokiMaakalla", 
+    "rmse": 1.8676772880619814, 
+    "variance_exp": 22.121737058750384, 
+    "scatter_index": 16.73694142014982, 
+    "correlation": 0.8319441100444527
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -66.211, 
+     17.929998
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.47064755615163634, 
+    "NAME": "JOQP4", 
+    "rmse": 0.744838363031365, 
+    "variance_exp": 50.254056346451456, 
+    "scatter_index": 2.6420215468399366, 
+    "correlation": 0.907457472022474
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -66.239006, 
+     17.943998
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -1.19751013509417, 
+    "NAME": "JOBP4", 
+    "rmse": 1.8321602577781626, 
+    "variance_exp": 56.81796639193838, 
+    "scatter_index": 6.254441556632223, 
+    "correlation": 0.6366019283319445
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     4.555134, 
+     52.463352
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.9535095319935802, 
+    "NAME": "Ijmuiden", 
+    "rmse": 1.238557946156495, 
+    "variance_exp": 3.807493425344651, 
+    "scatter_index": 8.784590227789502, 
+    "correlation": 0.9910573146044005
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     8.300001, 
+     54.75
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.4531212869059331, 
+    "NAME": "Hoernum", 
+    "rmse": 1.5937037726636907, 
+    "variance_exp": 3.30364004352667, 
+    "scatter_index": 13.01181408021803, 
+    "correlation": 0.9774320939024351
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     7.9000006, 
+     54.166996
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.3162381576756488, 
+    "NAME": "HelgolandRM", 
+    "rmse": 1.258624399348943, 
+    "variance_exp": 5.298449936958763, 
+    "scatter_index": 10.573718271006328, 
+    "correlation": 0.9778387770117875
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     7.8882, 
+     54.1862
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.4926686555017028, 
+    "NAME": "HelgolandFerryBox", 
+    "rmse": 1.0614118885024797, 
+    "variance_exp": 4.474914096684694, 
+    "scatter_index": 7.946470765580867, 
+    "correlation": 0.9863812484452398
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     2.2272997, 
+     59.574203
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.15205297775339588, 
+    "NAME": "Heimdal", 
+    "rmse": 0.5471839216129405, 
+    "variance_exp": 6.240381919082339, 
+    "scatter_index": 5.316200341378805, 
+    "correlation": 0.9880837142287654
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     23.902895, 
+     65.771706
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.8568483203793311, 
+    "NAME": "Haparanda", 
+    "rmse": 0.8932253996133881, 
+    "variance_exp": 1436.8924165001165, 
+    "scatter_index": 140.27373978351739, 
+    "correlation": -0.17638302033214032
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     23.219603, 
+     59.757195
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.19318766546474642, 
+    "NAME": "HankoLangden", 
+    "rmse": 1.2670150261583262, 
+    "variance_exp": 5.428314420777255, 
+    "scatter_index": 12.597557512122393, 
+    "correlation": 0.9820655796299219
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     13.919999, 
+     54.25
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.2668034514582107, 
+    "NAME": "GreifswalderOie", 
+    "rmse": 1.26399309132822, 
+    "variance_exp": 2.740941029989905, 
+    "scatter_index": 11.016545294313955, 
+    "correlation": 0.9915725293187129
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     11.790601, 
+     57.684696
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.2382406235377985, 
+    "NAME": "GoteborgTorshamnen", 
+    "rmse": 0.8592704730671813, 
+    "variance_exp": 2.0262697930147247, 
+    "scatter_index": 7.618622766742339, 
+    "correlation": 0.992304084493089
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     11.9333, 
+     54.566704
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.36572576976544546, 
+    "NAME": "Gedser", 
+    "rmse": 1.0871263793560748, 
+    "variance_exp": 2.706698330690895, 
+    "scatter_index": 9.06633371549021, 
+    "correlation": 0.9869720865192403
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     9.983301, 
+     55.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.08864285586885678, 
+    "NAME": "Fynshav", 
+    "rmse": 1.189289621463543, 
+    "variance_exp": 3.3853919306777294, 
+    "scatter_index": 10.390462281104758, 
+    "correlation": 0.9898421744252203
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     9.75, 
+     55.566704
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.012154029366595154, 
+    "NAME": "Fredericia", 
+    "rmse": 2.155494514991981, 
+    "variance_exp": 6.728204443272577, 
+    "scatter_index": 18.871482661856824, 
+    "correlation": 0.9661169683920594
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     12.8443, 
+     55.591396
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.26916700077736433, 
+    "NAME": "Flinten7BS", 
+    "rmse": 0.499114839365687, 
+    "variance_exp": 87.17701089472605, 
+    "scatter_index": 8.079883002457112, 
+    "correlation": 0.9034393704327345
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     3.2763886, 
+     51.998608
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.9651136116838952, 
+    "NAME": "Europlatform", 
+    "rmse": 1.401298408475938, 
+    "variance_exp": 5.80863738112355, 
+    "scatter_index": 10.880487459013304, 
+    "correlation": 0.9802979610985865
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     24.717, 
+     60.057796
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.25577088653177427, 
+    "NAME": "EspooKyto", 
+    "rmse": 1.8917677937296264, 
+    "variance_exp": 13.4966207897152, 
+    "scatter_index": 16.129635684868003, 
+    "correlation": 0.9670161523492303
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -121.74599, 
+     36.811
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.4621684042917291, 
+    "NAME": "EVMC1", 
+    "rmse": 1.2819191991570582, 
+    "variance_exp": 51.430461676246544, 
+    "scatter_index": 9.014591390294797, 
+    "correlation": 0.7464747016507622
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -121.739006, 
+     36.817997
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -1.5185127007378352, 
+    "NAME": "ELQC1", 
+    "rmse": 2.5057094155647968, 
+    "variance_exp": 27.674135402846517, 
+    "scatter_index": 15.342757477802854, 
+    "correlation": 0.7764306738426546
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     4.7453265, 
+     52.965446
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.2321323641093631, 
+    "NAME": "DenHelder", 
+    "rmse": 0.9516810467432877, 
+    "variance_exp": 2.886819786371457, 
+    "scatter_index": 7.355173787266818, 
+    "correlation": 0.9885172927156584
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.32101, 
+     43.338005
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.5782624845990778, 
+    "NAME": "CWQO3", 
+    "rmse": 0.907977896424072, 
+    "variance_exp": 118.49272242899373, 
+    "scatter_index": 8.867329836886222, 
+    "correlation": 0.6066241188040854
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.32, 
+     43.28201
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.08932025851681935, 
+    "NAME": "CHQO3", 
+    "rmse": 3.144859523071307, 
+    "variance_exp": 22.548261225663254, 
+    "scatter_index": 26.420753390289313, 
+    "correlation": 0.6259713931173461
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     6.75, 
+     53.570004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.5734985328803521, 
+    "NAME": "Borkum", 
+    "rmse": 0.9548258064142001, 
+    "variance_exp": 2.6228695240007176, 
+    "scatter_index": 7.763422892379151, 
+    "correlation": 0.9924472932260385
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     13.866701, 
+     54.883297
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.17043487505860178, 
+    "NAME": "Arkona", 
+    "rmse": 0.8186133353647949, 
+    "variance_exp": 3.4269549817719485, 
+    "scatter_index": 6.9286852877535114, 
+    "correlation": 0.9867132472579844
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     2.37846, 
+     39.5442
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.19280464002178022, 
+    "NAME": "ANDRATX", 
+    "rmse": 0.5901023697394683, 
+    "variance_exp": 2.2096164423090303, 
+    "scatter_index": 3.0398967896697213, 
+    "correlation": 0.9941726977370997
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     67.0, 
+     -8.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.0022888722139242645, 
+    "NAME": "8s67e", 
+    "rmse": 0.16344906396289743, 
+    "variance_exp": 397.5847839505787, 
+    "scatter_index": 0.6009404616979267, 
+    "correlation": 0.7512001832572865
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -9.999137, 
+     54.999966
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.12168361467429811, 
+    "NAME": "62093", 
+    "rmse": 0.2977957402667128, 
+    "variance_exp": 10.05801213955843, 
+    "scatter_index": 2.5045604118972395, 
+    "correlation": 0.9877350327568343
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -1.8335999, 
+     45.916294
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.18867821158791287, 
+    "NAME": "62080", 
+    "rmse": 0.6864630616535831, 
+    "variance_exp": 4.188524908168548, 
+    "scatter_index": 4.559355716657549, 
+    "correlation": 0.9871354480917246
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -2.7870002, 
+     47.23901
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.11573695374667992, 
+    "NAME": "62078", 
+    "rmse": 0.597663212401122, 
+    "variance_exp": 4.581369219096142, 
+    "scatter_index": 4.2503290514491185, 
+    "correlation": 0.9871543233275973
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -3.2850006, 
+     47.285
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.3501891560950128, 
+    "NAME": "62074", 
+    "rmse": 0.8184909272167, 
+    "variance_exp": 7.873969738659388, 
+    "scatter_index": 5.689033944478485, 
+    "correlation": 0.9735724527610075
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -4.9683, 
+     48.290295
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.6475153739746364, 
+    "NAME": "62069", 
+    "rmse": 1.1268997515832657, 
+    "variance_exp": 25.811023503388707, 
+    "scatter_index": 8.778612902197674, 
+    "correlation": 0.9591523412926601
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -2.295, 
+     46.8332
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 11.188247500279893, 
+    "NAME": "62067", 
+    "rmse": 13.230357343199227, 
+    "variance_exp": 57.29927650154871, 
+    "scatter_index": 241.60290664307692, 
+    "correlation": -0.22118617863913514
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -1.6140001, 
+     43.53
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.5438336559138612, 
+    "NAME": "62066", 
+    "rmse": 0.889635780775569, 
+    "variance_exp": 5.446808870920611, 
+    "scatter_index": 5.705344159915386, 
+    "correlation": 0.9859310431629654
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -1.4477998, 
+     44.6503
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.17682041265244308, 
+    "NAME": "62064", 
+    "rmse": 0.7323314820407875, 
+    "variance_exp": 4.647618860154441, 
+    "scatter_index": 4.422936206618731, 
+    "correlation": 0.9843908883821404
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -2.6567, 
+     47.46
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.8441588323993088, 
+    "NAME": "62021", 
+    "rmse": 1.227594643852277, 
+    "variance_exp": 27.0245886930582, 
+    "scatter_index": 10.867754642510606, 
+    "correlation": 0.9429059382852039
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -3.3632, 
+     53.5338
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.11452342962583195, 
+    "NAME": "6201077", 
+    "rmse": 0.6520954657107296, 
+    "variance_exp": 4.358802930094346, 
+    "scatter_index": 5.773644923603272, 
+    "correlation": 0.9867179866255944
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     1.0499998, 
+     53.530003
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.5359127391797109, 
+    "NAME": "6201071", 
+    "rmse": 1.938596823603947, 
+    "variance_exp": 20.273102704458932, 
+    "scatter_index": 19.386297847892298, 
+    "correlation": 0.9689758652584214
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -8.7823305, 
+     42.626823
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.011359910574796572, 
+    "NAME": "6201038", 
+    "rmse": 0.8492150010760933, 
+    "variance_exp": 10.647570185762904, 
+    "scatter_index": 5.457632895012457, 
+    "correlation": 0.9538152917171984
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -9.580001, 
+     41.149998
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.5812900065257658, 
+    "NAME": "62001", 
+    "rmse": 1.3399266801840624, 
+    "variance_exp": 43.21449567793975, 
+    "scatter_index": 8.427276722706457, 
+    "correlation": 0.8760426830283247
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     4.133301, 
+     43.424995
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.1932732245792188, 
+    "NAME": "61431", 
+    "rmse": 1.0566354709101193, 
+    "variance_exp": 6.362628033334772, 
+    "scatter_index": 6.267793429562177, 
+    "correlation": 0.9673125538040327
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     9.643301, 
+     42.261696
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.1743469864027105, 
+    "NAME": "61295", 
+    "rmse": 0.6374190674621607, 
+    "variance_exp": 3.826304796441045, 
+    "scatter_index": 3.5300756742688586, 
+    "correlation": 0.9925384160747331
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     8.650001, 
+     42.569202
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.06914664728448017, 
+    "NAME": "61294", 
+    "rmse": 0.4557229391241249, 
+    "variance_exp": 2.1683190685348794, 
+    "scatter_index": 2.3832500712046247, 
+    "correlation": 0.995248921044887
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     5.2299995, 
+     43.20834
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.09657062035552855, 
+    "NAME": "61289", 
+    "rmse": 0.8622649132822668, 
+    "variance_exp": 12.323920681743042, 
+    "scatter_index": 5.5308356785699955, 
+    "correlation": 0.9554934655256768
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     3.1244996, 
+     42.9162
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.026087431164608432, 
+    "NAME": "61191", 
+    "rmse": 0.7613076078402151, 
+    "variance_exp": 4.6912449888905945, 
+    "scatter_index": 4.575624715291961, 
+    "correlation": 0.9831974918410793
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     3.7797, 
+     43.37149
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.12532752745584474, 
+    "NAME": "61190", 
+    "rmse": 1.0231643891748743, 
+    "variance_exp": 6.163186121048038, 
+    "scatter_index": 6.102532877682263, 
+    "correlation": 0.9687809633479003
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     0.78366697, 
+     38.824497
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.11998931762354559, 
+    "NAME": "61141", 
+    "rmse": 0.46710190274315927, 
+    "variance_exp": 2.2140068927985004, 
+    "scatter_index": 2.3467640457062675, 
+    "correlation": 0.9951695978154398
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     6.207, 
+     42.929996
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.24402866718818927, 
+    "NAME": "61021", 
+    "rmse": 0.6157661560475881, 
+    "variance_exp": 3.632896905067564, 
+    "scatter_index": 3.3558524799388394, 
+    "correlation": 0.9907432195247572
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     7.42617, 
+     43.713585
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.15844192723787032, 
+    "NAME": "6100022", 
+    "rmse": 0.9462064215517362, 
+    "variance_exp": 4.61109607807206, 
+    "scatter_index": 5.0134405781317195, 
+    "correlation": 0.9785810686430607
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     6.2048297, 
+     42.96667
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.1646650180807896, 
+    "NAME": "6100021", 
+    "rmse": 0.6459450331189653, 
+    "variance_exp": 4.252962201072455, 
+    "scatter_index": 3.5205246181084484, 
+    "correlation": 0.9874861480542725
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     4.6474123, 
+     42.063446
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.014774625737349112, 
+    "NAME": "6100002", 
+    "rmse": 0.162170361830813, 
+    "variance_exp": 80.76029239575838, 
+    "scatter_index": 1.1816022132368045, 
+    "correlation": 0.9357248377933246
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     7.8254843, 
+     43.37951
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.08026204957430849, 
+    "NAME": "6100001", 
+    "rmse": 0.33692496963186774, 
+    "variance_exp": 7.666754809795476, 
+    "scatter_index": 2.2197508252448777, 
+    "correlation": 0.987934342150468
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     80.5, 
+     -12.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.01723360895861603, 
+    "NAME": "53006", 
+    "rmse": 0.18513116784577238, 
+    "variance_exp": 18.698319018824545, 
+    "scatter_index": 0.6628731418091419, 
+    "correlation": 0.984631744369302
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     144.81102, 
+     13.682001
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.09170251134344198, 
+    "NAME": "52202", 
+    "rmse": 0.2405506696273956, 
+    "variance_exp": 32.42594710983241, 
+    "scatter_index": 0.8338013333740766, 
+    "correlation": 0.9696947880433534
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     171.402, 
+     7.0889997
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.004043213281224922, 
+    "NAME": "52201", 
+    "rmse": 0.20199719920610393, 
+    "variance_exp": 73.51349268471162, 
+    "scatter_index": 0.6863215741975436, 
+    "correlation": 0.9305650361554113
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -170.494, 
+     -14.265
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.112538710122287, 
+    "NAME": "51209", 
+    "rmse": 0.2658590396922722, 
+    "variance_exp": 52.337251684416984, 
+    "scatter_index": 0.91716610261471, 
+    "correlation": 0.9502220682948628
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -159.57399, 
+     22.285002
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.002256109914874571, 
+    "NAME": "51208", 
+    "rmse": 0.3715831193976104, 
+    "variance_exp": 20.717581476289336, 
+    "scatter_index": 1.4574084224291672, 
+    "correlation": 0.9711283809995936
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -156.42502, 
+     21.018
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.22770705247890888, 
+    "NAME": "51205", 
+    "rmse": 0.4983773350652411, 
+    "variance_exp": 39.53130050393414, 
+    "scatter_index": 1.967074189719581, 
+    "correlation": 0.9361386539157734
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -158.12401, 
+     21.281002
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.37647987067153466, 
+    "NAME": "51204", 
+    "rmse": 0.4923604649480749, 
+    "variance_exp": 845.2199875733164, 
+    "scatter_index": 1.9746306242731184, 
+    "correlation": 0.5131707006748624
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -157.01001, 
+     20.787998
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.06500359723745675, 
+    "NAME": "51203", 
+    "rmse": 0.37381289463323236, 
+    "variance_exp": 118.25773563512018, 
+    "scatter_index": 1.4710583104773847, 
+    "correlation": 0.8398771380976061
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -158.11598, 
+     21.673004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 1.5385533162252472, 
+    "NAME": "51201", 
+    "rmse": 1.5850668255704812, 
+    "variance_exp": 121.2304809699009, 
+    "scatter_index": 6.62970404663767, 
+    "correlation": 0.9431461181862638
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -162.058, 
+     24.321001
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.10180837379647656, 
+    "NAME": "51101", 
+    "rmse": 0.4228447368760359, 
+    "variance_exp": 13.54134494702983, 
+    "scatter_index": 1.7164484646210996, 
+    "correlation": 0.9732799071258259
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -152.38199, 
+     17.524998
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.0772267948851102, 
+    "NAME": "51004", 
+    "rmse": 0.2322405501232822, 
+    "variance_exp": 26.31755857699695, 
+    "scatter_index": 0.8952466599434963, 
+    "correlation": 0.9742595397516775
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -160.58202, 
+     19.018002
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.07882831893645204, 
+    "NAME": "51003", 
+    "rmse": 0.23625852735046574, 
+    "variance_exp": 19.918816614543417, 
+    "scatter_index": 0.8905842522674959, 
+    "correlation": 0.9793584036027697
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -157.69601, 
+     17.037
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.012701049606992143, 
+    "NAME": "51002", 
+    "rmse": 0.2307903701432246, 
+    "variance_exp": 44.001543214377996, 
+    "scatter_index": 0.8839345634082622, 
+    "correlation": 0.955020894823455
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -162.12698, 
+     24.39
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.5853674966199343, 
+    "NAME": "51001", 
+    "rmse": 1.4291579442206948, 
+    "variance_exp": 44.085483952895466, 
+    "scatter_index": 5.6493790919345965, 
+    "correlation": 0.7358461433110108
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -154.05603, 
+     23.546
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.09141162177727225, 
+    "NAME": "51000", 
+    "rmse": 0.3190859706702689, 
+    "variance_exp": 19.667093510510185, 
+    "scatter_index": 1.2967736925515372, 
+    "correlation": 0.9711917558192767
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -123.91003, 
+     39.368
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.6315036719357643, 
+    "NAME": "46263", 
+    "rmse": 1.0323040645451382, 
+    "variance_exp": 76.23160670878936, 
+    "scatter_index": 8.679974163400663, 
+    "correlation": 0.787590498872508
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -119.0, 
+     33.679005
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.12304825127362307, 
+    "NAME": "46262", 
+    "rmse": 0.7801462554587661, 
+    "variance_exp": 11.27369060696501, 
+    "scatter_index": 4.194445736062373, 
+    "correlation": 0.956333688257617
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.22498, 
+     43.760006
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.620775388953902, 
+    "NAME": "46261", 
+    "rmse": 1.1125968772003647, 
+    "variance_exp": 75.66829466712362, 
+    "scatter_index": 9.908567344256435, 
+    "correlation": 0.7414434805712717
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.290016, 
+     43.586002
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.39448074127973776, 
+    "NAME": "46260", 
+    "rmse": 0.8838532392466827, 
+    "variance_exp": 62.291586026783044, 
+    "scatter_index": 7.729592246679035, 
+    "correlation": 0.8036277940760789
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -121.66402, 
+     34.732
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.3117556549986382, 
+    "NAME": "46259", 
+    "rmse": 0.7435498502167892, 
+    "variance_exp": 33.338991831841625, 
+    "scatter_index": 4.937614570448937, 
+    "correlation": 0.9129624041214425
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -117.5, 
+     32.75
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.13144423095371138, 
+    "NAME": "46258", 
+    "rmse": 0.6650823650406051, 
+    "variance_exp": 9.187180479785608, 
+    "scatter_index": 3.585753889125811, 
+    "correlation": 0.9723263186304403
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -120.766, 
+     34.438995
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.9322717078068212, 
+    "NAME": "46257", 
+    "rmse": 1.2840880984677596, 
+    "variance_exp": 97.42421513338802, 
+    "scatter_index": 9.789004898910163, 
+    "correlation": 0.7758304724012395
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -118.201, 
+     33.700005
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 1.3809048395452734, 
+    "NAME": "46256", 
+    "rmse": 1.7463107293392497, 
+    "variance_exp": 31.75809469664567, 
+    "scatter_index": 10.285413366121313, 
+    "correlation": 0.9278635946021759
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -119.65101, 
+     33.399998
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.1024702793751473, 
+    "NAME": "46255", 
+    "rmse": 0.6311824753660902, 
+    "variance_exp": 326.8511457476865, 
+    "scatter_index": 4.489119535860754, 
+    "correlation": 0.22027195563067906
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -117.26698, 
+     32.868004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.4247349648811287, 
+    "NAME": "46254", 
+    "rmse": 0.8863409376225162, 
+    "variance_exp": 10.912086802552277, 
+    "scatter_index": 4.722272732539321, 
+    "correlation": 0.9620779826554805
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -118.18399, 
+     33.578
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.650954381040421, 
+    "NAME": "46253", 
+    "rmse": 1.0643200352094762, 
+    "variance_exp": 15.129082323860827, 
+    "scatter_index": 5.974028752530953, 
+    "correlation": 0.9529779813018645
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -119.55, 
+     33.76
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.2919061548690891, 
+    "NAME": "46251", 
+    "rmse": 0.9448309792696303, 
+    "variance_exp": 18.089402354465715, 
+    "scatter_index": 5.61064949360492, 
+    "correlation": 0.9358812265139274
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.667, 
+     46.133
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.07229309791122063, 
+    "NAME": "46248", 
+    "rmse": 0.6053626912015274, 
+    "variance_exp": 11.269647767713122, 
+    "scatter_index": 4.810382281657747, 
+    "correlation": 0.9695371382384246
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -145.19998, 
+     50.033
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.13684785468772986, 
+    "NAME": "46246", 
+    "rmse": 0.5431641621694283, 
+    "variance_exp": 5.35442921848953, 
+    "scatter_index": 5.524791506817108, 
+    "correlation": 0.9882874869493001
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.35702, 
+     40.888
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.577934072273516, 
+    "NAME": "46244", 
+    "rmse": 1.0447654492550709, 
+    "variance_exp": 93.26973663147884, 
+    "scatter_index": 8.739785754330477, 
+    "correlation": 0.7788977114289097
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.12801, 
+     46.216
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.09660839008727784, 
+    "NAME": "46243", 
+    "rmse": 1.0163295706889346, 
+    "variance_exp": 14.399642862457629, 
+    "scatter_index": 8.50172307408322, 
+    "correlation": 0.9246570946041102
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -117.439, 
+     33.22
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.7732134848525831, 
+    "NAME": "46242", 
+    "rmse": 1.1222031057725863, 
+    "variance_exp": 12.444508416007297, 
+    "scatter_index": 6.09533249964905, 
+    "correlation": 0.963034001099807
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -121.907, 
+     36.626003
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.38462630309120804, 
+    "NAME": "46240", 
+    "rmse": 1.0224278765121633, 
+    "variance_exp": 55.704675286099715, 
+    "scatter_index": 7.2537765921536685, 
+    "correlation": 0.7943994023918731
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -122.101, 
+     36.338005
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 1.2845275388189705, 
+    "NAME": "46239", 
+    "rmse": 1.662775805266147, 
+    "variance_exp": 76.25822244844956, 
+    "scatter_index": 12.375459014231483, 
+    "correlation": 0.738184125900139
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -117.43102, 
+     32.53
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.20792222327112597, 
+    "NAME": "46232", 
+    "rmse": 0.66422733577948, 
+    "variance_exp": 10.04088021869082, 
+    "scatter_index": 3.601144277246635, 
+    "correlation": 0.9699961724553801
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.54899, 
+     43.772003
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.1131409185456338, 
+    "NAME": "46229", 
+    "rmse": 0.749331577194064, 
+    "variance_exp": 34.07733167449359, 
+    "scatter_index": 6.161684805614622, 
+    "correlation": 0.8807555362282029
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -117.39299, 
+     32.929996
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.28704924105732843, 
+    "NAME": "46225", 
+    "rmse": 0.7108382203774913, 
+    "variance_exp": 9.253639512263746, 
+    "scatter_index": 3.8390687470007427, 
+    "correlation": 0.9729256342341951
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -117.47099, 
+     33.179005
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.4221859383273987, 
+    "NAME": "46224", 
+    "rmse": 0.8392173430387692, 
+    "variance_exp": 10.60108557278302, 
+    "scatter_index": 4.540162142001389, 
+    "correlation": 0.9671058366328364
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -118.317, 
+     33.618004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.899739027752009, 
+    "NAME": "46222", 
+    "rmse": 1.2392970523345732, 
+    "variance_exp": 18.29811899798194, 
+    "scatter_index": 7.068685434504044, 
+    "correlation": 0.9495338918516419
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -118.63301, 
+     33.854004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.5942335578385851, 
+    "NAME": "46221", 
+    "rmse": 1.0156213850893085, 
+    "variance_exp": 14.78739453093153, 
+    "scatter_index": 5.763117743727653, 
+    "correlation": 0.9545432833004708
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -119.88201, 
+     33.221004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.32490280223009016, 
+    "NAME": "46219", 
+    "rmse": 0.7156342133216236, 
+    "variance_exp": 20.3246851069546, 
+    "scatter_index": 4.524632425632779, 
+    "correlation": 0.9470584018107846
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -120.769, 
+     34.450996
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.8777027045152863, 
+    "NAME": "46218", 
+    "rmse": 1.3050461819335732, 
+    "variance_exp": 39.46876531060231, 
+    "scatter_index": 8.94259787555503, 
+    "correlation": 0.8643602409780555
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -119.43501, 
+     34.166996
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 1.3012433649996105, 
+    "NAME": "46217", 
+    "rmse": 1.5476204290581368, 
+    "variance_exp": 24.522498308881747, 
+    "scatter_index": 9.526845690138916, 
+    "correlation": 0.9616809480027533
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -120.85999, 
+     35.204
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.7624864722529558, 
+    "NAME": "46215", 
+    "rmse": 1.5432029806014214, 
+    "variance_exp": 44.94708422041269, 
+    "scatter_index": 10.850240065681472, 
+    "correlation": 0.7475286650295896
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -123.46998, 
+     37.945004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.16932649142512268, 
+    "NAME": "46214", 
+    "rmse": 1.0334055658172878, 
+    "variance_exp": 41.25166831916392, 
+    "scatter_index": 7.86445759944763, 
+    "correlation": 0.7743038799252584
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.740005, 
+     40.294003
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.9720387103048811, 
+    "NAME": "46213", 
+    "rmse": 1.6380151049683203, 
+    "variance_exp": 103.93236860202606, 
+    "scatter_index": 13.640125107201358, 
+    "correlation": 0.587783839783824
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.23999, 
+     46.857
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.09456314205724325, 
+    "NAME": "46211", 
+    "rmse": 0.773513251627189, 
+    "variance_exp": 16.41672038597235, 
+    "scatter_index": 6.724657707205858, 
+    "correlation": 0.9454657899851278
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -132.69202, 
+     52.51501
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.11143434428504051, 
+    "NAME": "46208", 
+    "rmse": 0.7586409059671981, 
+    "variance_exp": 9.383864418244324, 
+    "scatter_index": 6.723712498738488, 
+    "correlation": 0.9645872693637159
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -129.915, 
+     50.875
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.15347746702010667, 
+    "NAME": "46207", 
+    "rmse": 0.5927454044436581, 
+    "variance_exp": 8.45115878786543, 
+    "scatter_index": 5.301195530577427, 
+    "correlation": 0.9780087444557529
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -125.998, 
+     48.834995
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.6718780569868574, 
+    "NAME": "46206", 
+    "rmse": 1.8339026800647074, 
+    "variance_exp": 36.59002675067444, 
+    "scatter_index": 15.34607095738287, 
+    "correlation": 0.730838445882523
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -134.323, 
+     54.185
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.2657622411547429, 
+    "NAME": "46205", 
+    "rmse": 0.46024244713737367, 
+    "variance_exp": 5.489556292349618, 
+    "scatter_index": 4.360406063045234, 
+    "correlation": 0.991735231825811
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -128.76697, 
+     51.383003
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.16095930774961076, 
+    "NAME": "46204", 
+    "rmse": 0.4664892210256183, 
+    "variance_exp": 6.901821357235908, 
+    "scatter_index": 4.250100430017129, 
+    "correlation": 0.9857271270814792
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -129.792, 
+     52.425
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -1.436966722225998, 
+    "NAME": "46185", 
+    "rmse": 1.6506796478236958, 
+    "variance_exp": 25.878525150142224, 
+    "scatter_index": 14.2790970131081, 
+    "correlation": 0.9478826825420072
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -138.84999, 
+     53.915
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.27967107440962025, 
+    "NAME": "46184", 
+    "rmse": 0.4648367578834421, 
+    "variance_exp": 5.612506493932793, 
+    "scatter_index": 5.0471979569653875, 
+    "correlation": 0.9931143227174389
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -131.105, 
+     53.616997
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -1.1367220081151999, 
+    "NAME": "46183", 
+    "rmse": 1.7199692051087103, 
+    "variance_exp": 25.801148671213564, 
+    "scatter_index": 15.058891697077925, 
+    "correlation": 0.8919968709896421
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -131.22499, 
+     51.827995
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.32772048951613186, 
+    "NAME": "46147", 
+    "rmse": 0.7204074929279464, 
+    "variance_exp": 13.316076565564398, 
+    "scatter_index": 7.003331188024241, 
+    "correlation": 0.9700762717879297
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -123.727005, 
+     49.34
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.5207312583487695, 
+    "NAME": "46146", 
+    "rmse": 1.0685077715113072, 
+    "variance_exp": 6.246026725918678, 
+    "scatter_index": 9.602609925105927, 
+    "correlation": 0.980950290078141
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -132.443, 
+     54.367
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.3577321176989301, 
+    "NAME": "46145", 
+    "rmse": 0.6324364014903061, 
+    "variance_exp": 10.978401141416185, 
+    "scatter_index": 6.751109207789405, 
+    "correlation": 0.9806739083137047
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -127.93199, 
+     49.738003
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.13276687335582693, 
+    "NAME": "46132", 
+    "rmse": 0.63535583232724, 
+    "variance_exp": 11.698187081971403, 
+    "scatter_index": 5.878084279600242, 
+    "correlation": 0.9681091475546136
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.98499, 
+     49.907005
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.2662333136561337, 
+    "NAME": "46131", 
+    "rmse": 1.1630712628819424, 
+    "variance_exp": 7.119390426047448, 
+    "scatter_index": 9.742281484156278, 
+    "correlation": 0.9694590618798938
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.016, 
+     46.286995
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.08304822852960392, 
+    "NAME": "46116", 
+    "rmse": 2.2916285753947716, 
+    "variance_exp": 9.912780519127049, 
+    "scatter_index": 18.07403651697887, 
+    "correlation": 0.9686493768900156
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -122.34201, 
+     36.70999
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.652263036995425, 
+    "NAME": "46114", 
+    "rmse": 1.0967770117560158, 
+    "variance_exp": 57.24133151836399, 
+    "scatter_index": 7.928902675657596, 
+    "correlation": 0.8322485192357567
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -151.817, 
+     59.590008
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.1027389802663059, 
+    "NAME": "46108", 
+    "rmse": 0.9352249995445403, 
+    "variance_exp": 15.140685724821315, 
+    "scatter_index": 12.290134071968584, 
+    "correlation": 0.9631783933049348
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.97201, 
+     46.85101
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.055807985459983556, 
+    "NAME": "46100", 
+    "rmse": 0.6417100118954657, 
+    "variance_exp": 12.539623212720189, 
+    "scatter_index": 5.348005695919631, 
+    "correlation": 0.9631512790139864
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.56602, 
+     46.986004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.22659506845572253, 
+    "NAME": "46099", 
+    "rmse": 0.7004845723137031, 
+    "variance_exp": 27.128167938731483, 
+    "scatter_index": 5.397090909531392, 
+    "correlation": 0.9133726661629348
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.95601, 
+     44.381004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.003929920910112017, 
+    "NAME": "46098", 
+    "rmse": 0.642265981671238, 
+    "variance_exp": 17.20254303717802, 
+    "scatter_index": 4.957410168507288, 
+    "correlation": 0.9473622765439154
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.304, 
+     44.638996
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.21206739566884636, 
+    "NAME": "46097", 
+    "rmse": 0.5929866442502751, 
+    "variance_exp": 28.40565646774682, 
+    "scatter_index": 5.193967718341706, 
+    "correlation": 0.9238596746934485
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -125.818985, 
+     45.893
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.19457409942710413, 
+    "NAME": "46089", 
+    "rmse": 0.5664990190018631, 
+    "variance_exp": 6.224017072955592, 
+    "scatter_index": 4.135205533059194, 
+    "correlation": 0.9870646504680418
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.72802, 
+     48.494
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.46607111740644314, 
+    "NAME": "46087", 
+    "rmse": 0.9654579245344015, 
+    "variance_exp": 65.86917746922431, 
+    "scatter_index": 10.238058255920098, 
+    "correlation": 0.8756691318691662
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -118.03397, 
+     32.491
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.12298669079583036, 
+    "NAME": "46086", 
+    "rmse": 0.6078999492537244, 
+    "variance_exp": 13.14438378491477, 
+    "scatter_index": 3.365641609057247, 
+    "correlation": 0.9624259357004354
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -142.49197, 
+     55.868008
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.3849451231397847, 
+    "NAME": "46085", 
+    "rmse": 0.5172205775265679, 
+    "variance_exp": 4.954037521461476, 
+    "scatter_index": 5.4706808022923346, 
+    "correlation": 0.9955201465031398
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -136.101, 
+     56.6
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.137129947888738, 
+    "NAME": "46084", 
+    "rmse": 0.5354484284294224, 
+    "variance_exp": 8.29443181244135, 
+    "scatter_index": 5.9794956648747375, 
+    "correlation": 0.9791101374173153
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -137.98598, 
+     58.236996
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.1359640242156388, 
+    "NAME": "46083", 
+    "rmse": 0.5500991134347016, 
+    "variance_exp": 5.941470699930662, 
+    "scatter_index": 5.871476955527342, 
+    "correlation": 0.9849038937894833
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -143.39198, 
+     59.66799
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.5023160014769523, 
+    "NAME": "46082", 
+    "rmse": 0.6631548535082525, 
+    "variance_exp": 10.624197506193452, 
+    "scatter_index": 7.482958907473028, 
+    "correlation": 0.9848700439879231
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -148.26299, 
+     60.802998
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.01712503502611984, 
+    "NAME": "46081", 
+    "rmse": 1.2001374873838333, 
+    "variance_exp": 12.589701259653996, 
+    "scatter_index": 15.324976061502346, 
+    "correlation": 0.962409951408419
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -150.04199, 
+     57.947002
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.1891020785136419, 
+    "NAME": "46080", 
+    "rmse": 0.5156791958808716, 
+    "variance_exp": 7.963655138605742, 
+    "scatter_index": 5.5596945163482525, 
+    "correlation": 0.9822712001125655
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -152.64, 
+     55.989998
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.06599006314189193, 
+    "NAME": "46078", 
+    "rmse": 0.5827340954710136, 
+    "variance_exp": 5.399636416098997, 
+    "scatter_index": 6.816965391298141, 
+    "correlation": 0.988658291285094
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -154.291, 
+     57.891987
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.12296411817356212, 
+    "NAME": "46077", 
+    "rmse": 0.545331852551004, 
+    "variance_exp": 6.55835024716377, 
+    "scatter_index": 6.810896178607042, 
+    "correlation": 0.9829293268045125
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -147.99, 
+     59.502007
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.09232549271207802, 
+    "NAME": "46076", 
+    "rmse": 0.6383504510344062, 
+    "variance_exp": 6.744856947433085, 
+    "scatter_index": 6.92205829509244, 
+    "correlation": 0.9786970600754484
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -160.80602, 
+     53.911003
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.0029562818184309947, 
+    "NAME": "46075", 
+    "rmse": 0.39873778913659313, 
+    "variance_exp": 5.257479283132597, 
+    "scatter_index": 5.102822266641456, 
+    "correlation": 0.9894999460892377
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -172.00099, 
+     55.030994
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.48476541442236076, 
+    "NAME": "46073", 
+    "rmse": 0.6884140829963444, 
+    "variance_exp": 11.458649501075897, 
+    "scatter_index": 10.320400704950847, 
+    "correlation": 0.9803732204672552
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     179.01198, 
+     51.125
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.27413280850037136, 
+    "NAME": "46071", 
+    "rmse": 0.8530233059084005, 
+    "variance_exp": 23.219469517049657, 
+    "scatter_index": 14.287691485419064, 
+    "correlation": 0.9488003635203237
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     175.15298, 
+     55.082
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.17434932369768452, 
+    "NAME": "46070", 
+    "rmse": 0.2995913544296393, 
+    "variance_exp": 990.9113534797686, 
+    "scatter_index": 9.856041364512265, 
+    "correlation": 0.41109702062871717
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -120.19999, 
+     33.669994
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.6336512914084729, 
+    "NAME": "46069", 
+    "rmse": 1.000378616130967, 
+    "variance_exp": 27.502758067269756, 
+    "scatter_index": 6.520801467883522, 
+    "correlation": 0.9185340147756431
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -155.047, 
+     52.784996
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.03364114208849944, 
+    "NAME": "46066", 
+    "rmse": 0.2922412269904186, 
+    "variance_exp": 3.344064163371415, 
+    "scatter_index": 3.8492528915375295, 
+    "correlation": 0.9963821847634581
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -146.83398, 
+     60.23301
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.008078231326047458, 
+    "NAME": "46061", 
+    "rmse": 0.6610860729030089, 
+    "variance_exp": 6.654577255571911, 
+    "scatter_index": 7.651761726655754, 
+    "correlation": 0.9800141649665022
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -146.80495, 
+     60.583992
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.10563373791217145, 
+    "NAME": "46060", 
+    "rmse": 0.5775100656257732, 
+    "variance_exp": 5.22903374046691, 
+    "scatter_index": 6.516092999610352, 
+    "correlation": 0.9865326158265877
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -129.96901, 
+     38.047
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.15542402913779796, 
+    "NAME": "46059", 
+    "rmse": 0.41333988741954164, 
+    "variance_exp": 8.841248199390893, 
+    "scatter_index": 2.703211704323821, 
+    "correlation": 0.9858432940485312
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -120.45899, 
+     34.273994
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.7738679922798664, 
+    "NAME": "46054", 
+    "rmse": 1.272389076161065, 
+    "variance_exp": 32.21839903015379, 
+    "scatter_index": 8.68201566956372, 
+    "correlation": 0.8662046974537644
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -119.84101, 
+     34.247997
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.6122884475044614, 
+    "NAME": "46053", 
+    "rmse": 1.121050256686577, 
+    "variance_exp": 18.54427949329284, 
+    "scatter_index": 6.803167071098596, 
+    "correlation": 0.9258166146411939
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.53399, 
+     44.639004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.21305518414223634, 
+    "NAME": "46050", 
+    "rmse": 0.8048014613433948, 
+    "variance_exp": 25.152497350925536, 
+    "scatter_index": 6.5764803135615795, 
+    "correlation": 0.9106527151413076
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -119.536, 
+     32.403004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.07314701999998618, 
+    "NAME": "46047", 
+    "rmse": 0.6366690574342202, 
+    "variance_exp": 17.73473804274292, 
+    "scatter_index": 3.8325851334412713, 
+    "correlation": 0.9462615837089626
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -122.469, 
+     36.785
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.6260600593347405, 
+    "NAME": "46042", 
+    "rmse": 1.068923672914897, 
+    "variance_exp": 54.69427311673773, 
+    "scatter_index": 7.737857102551741, 
+    "correlation": 0.8383518754132774
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.70399, 
+     47.348995
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.09504905111560547, 
+    "NAME": "46041", 
+    "rmse": 0.8854423218950301, 
+    "variance_exp": 19.6638719295209, 
+    "scatter_index": 7.681508304738978, 
+    "correlation": 0.9118276210127554
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -133.938, 
+     48.355003
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.19868851550293165, 
+    "NAME": "46036", 
+    "rmse": 0.37608113727802167, 
+    "variance_exp": 3.6980968648578845, 
+    "scatter_index": 3.3106780219944953, 
+    "correlation": 0.9958031684844112
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -177.75, 
+     57.068993
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.279366613911777, 
+    "NAME": "46035", 
+    "rmse": 0.5238199853260075, 
+    "variance_exp": 6.002302985749529, 
+    "scatter_index": 8.086417001957487, 
+    "correlation": 0.991323518336685
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.51401, 
+     46.159
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.18320617525056804, 
+    "NAME": "46029", 
+    "rmse": 0.7524789444318601, 
+    "variance_exp": 13.159326358106357, 
+    "scatter_index": 6.016713250036631, 
+    "correlation": 0.9531035425425345
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -121.88402, 
+     35.747997
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.6689122588100496, 
+    "NAME": "46028", 
+    "rmse": 1.0178993300808352, 
+    "variance_exp": 49.426270258168934, 
+    "scatter_index": 7.205629826676815, 
+    "correlation": 0.8584862751915817
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.381, 
+     41.850006
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.4972855256791835, 
+    "NAME": "46027", 
+    "rmse": 1.0601247415430675, 
+    "variance_exp": 73.44036108872439, 
+    "scatter_index": 9.204405734309809, 
+    "correlation": 0.7196601695938455
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -122.83299, 
+     37.758995
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.24390141394261633, 
+    "NAME": "46026", 
+    "rmse": 0.7416057127698992, 
+    "variance_exp": 37.12749725979362, 
+    "scatter_index": 5.806997208249578, 
+    "correlation": 0.8847953217073614
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -119.05299, 
+     33.748993
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.044911422588583605, 
+    "NAME": "46025", 
+    "rmse": 0.7826483371881362, 
+    "variance_exp": 11.269711288480128, 
+    "scatter_index": 4.399852278486477, 
+    "correlation": 0.9551817000878702
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.57801, 
+     40.724
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.8688674825347427, 
+    "NAME": "46022", 
+    "rmse": 1.2650597934888337, 
+    "variance_exp": 102.44475150302247, 
+    "scatter_index": 10.728597092347217, 
+    "correlation": 0.7671529322737696
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -124.87401, 
+     42.778996
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.3182689292527616, 
+    "NAME": "46015", 
+    "rmse": 1.1486552087899138, 
+    "variance_exp": 49.28233299627317, 
+    "scatter_index": 9.543197264678764, 
+    "correlation": 0.7304055901128733
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -123.30101, 
+     38.241997
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.5450716727799136, 
+    "NAME": "46013", 
+    "rmse": 1.104774882431252, 
+    "variance_exp": 53.90166721151649, 
+    "scatter_index": 9.056828888367464, 
+    "correlation": 0.7536206175207469
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -122.881, 
+     37.363007
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.3320037700976144, 
+    "NAME": "46012", 
+    "rmse": 0.9504748472951934, 
+    "variance_exp": 39.23769819161636, 
+    "scatter_index": 7.026733322907332, 
+    "correlation": 0.8415444143183014
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -120.99199, 
+     35.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.754925130124219, 
+    "NAME": "46011", 
+    "rmse": 1.096770676758661, 
+    "variance_exp": 39.74398815518942, 
+    "scatter_index": 7.610597056896869, 
+    "correlation": 0.8969445157562953
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -137.464, 
+     40.754
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.011375457355615737, 
+    "NAME": "46006", 
+    "rmse": 0.5852224602760214, 
+    "variance_exp": 5.46886968508055, 
+    "scatter_index": 4.057402932976794, 
+    "correlation": 0.9843830285123892
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -131.0, 
+     45.958004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.31045339397868865, 
+    "NAME": "46005", 
+    "rmse": 0.5092656548424098, 
+    "variance_exp": 9.526665811826863, 
+    "scatter_index": 3.3825573287032134, 
+    "correlation": 0.988750694064481
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -136.09499, 
+     50.93
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.16136690633646644, 
+    "NAME": "46004", 
+    "rmse": 0.3198720790613187, 
+    "variance_exp": 2.790540271619022, 
+    "scatter_index": 3.020528151581401, 
+    "correlation": 0.9972641287703955
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -130.474, 
+     42.589005
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.1138093984509343, 
+    "NAME": "46002", 
+    "rmse": 0.3223095699528511, 
+    "variance_exp": 3.8783269545963805, 
+    "scatter_index": 2.288623667961607, 
+    "correlation": 0.9953804842873641
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -147.92, 
+     56.304012
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.3238416693635502, 
+    "NAME": "46001", 
+    "rmse": 0.5488314729418489, 
+    "variance_exp": 5.595579513694967, 
+    "scatter_index": 6.507629983904478, 
+    "correlation": 0.9910091987437871
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -65.71001, 
+     49.538
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.7653818635874874, 
+    "NAME": "45138", 
+    "rmse": 2.259346233386501, 
+    "variance_exp": 10.27354799162027, 
+    "scatter_index": 21.66877559787356, 
+    "correlation": 0.8934083088412164
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -57.619003, 
+     47.617
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.37732803947711113, 
+    "NAME": "44255", 
+    "rmse": 0.6249746839702571, 
+    "variance_exp": 141.40483633104324, 
+    "scatter_index": 58.08841389899949, 
+    "correlation": 0.7166076431763474
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -53.392, 
+     46.442993
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.18569006209082092, 
+    "NAME": "44251", 
+    "rmse": 0.8841990943684538, 
+    "variance_exp": 76.23652629614512, 
+    "scatter_index": 79.75152521009115, 
+    "correlation": 0.6031951175371678
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -64.018, 
+     42.505
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.5272834810863731, 
+    "NAME": "44150", 
+    "rmse": 2.664402715262982, 
+    "variance_exp": 8.253486981177586, 
+    "scatter_index": 21.060920149283685, 
+    "correlation": 0.8975477129421026
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -57.103, 
+     44.239998
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.9239959876913844, 
+    "NAME": "44139", 
+    "rmse": 2.5035088109229457, 
+    "variance_exp": 6.131579924726737, 
+    "scatter_index": 23.863273761382324, 
+    "correlation": 0.9401699442220395
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -61.997993, 
+     42.261993
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.043542489102140536, 
+    "NAME": "44137", 
+    "rmse": 3.2592300414445745, 
+    "variance_exp": 7.8588856002457685, 
+    "scatter_index": 22.887778577718148, 
+    "correlation": 0.8849397625712784
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -75.591, 
+     36.258
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.5901700993859134, 
+    "NAME": "44100", 
+    "rmse": 1.2885791188092506, 
+    "variance_exp": 2.545638177550828, 
+    "scatter_index": 7.378938908237924, 
+    "correlation": 0.9876248296666044
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -75.72001, 
+     36.900993
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.08253883013295038, 
+    "NAME": "44099", 
+    "rmse": 1.0965182824370792, 
+    "variance_exp": 2.031267329973843, 
+    "scatter_index": 6.254174797848183, 
+    "correlation": 0.989018640065292
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -70.16799, 
+     42.798004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.08183689651035131, 
+    "NAME": "44098", 
+    "rmse": 0.8120479733979065, 
+    "variance_exp": 2.824073074904697, 
+    "scatter_index": 6.678938562021948, 
+    "correlation": 0.9885898741759973
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -71.12701, 
+     40.968998
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.18810243675173233, 
+    "NAME": "44097", 
+    "rmse": 0.8840366790682704, 
+    "variance_exp": 2.4656935180224675, 
+    "scatter_index": 7.027930030145351, 
+    "correlation": 0.9897275690181478
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -75.809006, 
+     37.023003
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.04591143211302828, 
+    "NAME": "44096", 
+    "rmse": 1.2660167143967147, 
+    "variance_exp": 3.0849414136957374, 
+    "scatter_index": 8.699501421053657, 
+    "correlation": 0.9809663238291377
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -75.33002, 
+     35.75
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 1.2042077574539185, 
+    "NAME": "44095", 
+    "rmse": 2.240115048262975, 
+    "variance_exp": 4.85532505310159, 
+    "scatter_index": 11.95560952914128, 
+    "correlation": 0.9664638957716748
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -75.492, 
+     36.872005
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.047670549688270114, 
+    "NAME": "44093", 
+    "rmse": 0.7164843355663795, 
+    "variance_exp": 58.99652077641828, 
+    "scatter_index": 7.849141945290354, 
+    "correlation": 0.7674903638352195
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -73.770004, 
+     39.769
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.5777107896034988, 
+    "NAME": "44091", 
+    "rmse": 0.8841374350035077, 
+    "variance_exp": 1.7033441014096447, 
+    "scatter_index": 5.887724774727759, 
+    "correlation": 0.9957870320970984
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -70.328995, 
+     41.84
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.26637360720274295, 
+    "NAME": "44090", 
+    "rmse": 0.8555520525711265, 
+    "variance_exp": 2.147314289535586, 
+    "scatter_index": 7.154967457173942, 
+    "correlation": 0.9916854077055027
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -75.33399, 
+     37.756004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.5394567027573043, 
+    "NAME": "44089", 
+    "rmse": 0.9421809782238916, 
+    "variance_exp": 1.7474071238107551, 
+    "scatter_index": 5.862669800006177, 
+    "correlation": 0.9945978196465369
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -74.83801, 
+     36.612
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.17957512987968371, 
+    "NAME": "44088", 
+    "rmse": 1.8602861645791013, 
+    "variance_exp": 5.5605904384329055, 
+    "scatter_index": 10.477522680142878, 
+    "correlation": 0.9474866881087544
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -73.08599, 
+     40.699
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.9907185209014102, 
+    "NAME": "44069", 
+    "rmse": 3.4092112888604964, 
+    "variance_exp": 6.6255642781648385, 
+    "scatter_index": 17.334709622613047, 
+    "correlation": 0.9037148995018406
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -72.61799, 
+     39.601006
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.3643986436983102, 
+    "NAME": "44066", 
+    "rmse": 1.1473838820257107, 
+    "variance_exp": 3.8844907129384425, 
+    "scatter_index": 7.8905422651519075, 
+    "correlation": 0.9809053834611725
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -73.703, 
+     40.369
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.14678761399157025, 
+    "NAME": "44065", 
+    "rmse": 0.8062335128920614, 
+    "variance_exp": 1.675586605710834, 
+    "scatter_index": 5.57117622849953, 
+    "correlation": 0.9934561055859155
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -75.714005, 
+     36.200005
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 1.1975931940313043, 
+    "NAME": "44056", 
+    "rmse": 2.5328716041256634, 
+    "variance_exp": 5.043106820719237, 
+    "scatter_index": 15.018819095644032, 
+    "correlation": 0.9613076688511638
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -76.39101, 
+     39.152004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.14011527169785865, 
+    "NAME": "44043", 
+    "rmse": 0.5713172329160131, 
+    "variance_exp": 1.7482862593313406, 
+    "scatter_index": 2.6771243444162587, 
+    "correlation": 0.9953033311551722
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -67.879005, 
+     43.491
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.015298004081683914, 
+    "NAME": "44037", 
+    "rmse": 0.6798161337616634, 
+    "variance_exp": 2.605372742839426, 
+    "scatter_index": 5.486238426996091, 
+    "correlation": 0.9914608196905182
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -68.112, 
+     44.103
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.892834552720073, 
+    "NAME": "44034", 
+    "rmse": 1.7617133866972818, 
+    "variance_exp": 13.166847244605476, 
+    "scatter_index": 19.344734861368696, 
+    "correlation": 0.9690985752681981
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -69.0, 
+     44.06
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.24759851986652404, 
+    "NAME": "44033", 
+    "rmse": 1.039818396202251, 
+    "variance_exp": 3.9468523010578154, 
+    "scatter_index": 10.956393255641045, 
+    "correlation": 0.9834929342636994
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -69.35801, 
+     43.715
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.6835645328343745, 
+    "NAME": "44032", 
+    "rmse": 1.2971660386864519, 
+    "variance_exp": 5.704085322417346, 
+    "scatter_index": 11.807263000758669, 
+    "correlation": 0.9827321039536681
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -70.41799, 
+     43.182995
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.1763018484121126, 
+    "NAME": "44030", 
+    "rmse": 0.7990248762085012, 
+    "variance_exp": 2.850978796961897, 
+    "scatter_index": 7.203609349651996, 
+    "correlation": 0.9893514349149789
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -70.57, 
+     42.519997
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.0823746785289412, 
+    "NAME": "44029", 
+    "rmse": 0.7171713986580677, 
+    "variance_exp": 2.3955254710669167, 
+    "scatter_index": 6.712444268453906, 
+    "correlation": 0.9915123527448721
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -67.31401, 
+     44.273006
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.27407974714263794, 
+    "NAME": "44027", 
+    "rmse": 1.1659776325344264, 
+    "variance_exp": 8.79344256108808, 
+    "scatter_index": 12.863651327797468, 
+    "correlation": 0.9740566779918416
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -73.167, 
+     40.25
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.11651968170972182, 
+    "NAME": "44025", 
+    "rmse": 0.9306681675894254, 
+    "variance_exp": 2.052158143087943, 
+    "scatter_index": 6.6280724630759, 
+    "correlation": 0.992568178071739
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -65.911995, 
+     42.327
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.15310576355456718, 
+    "NAME": "44024", 
+    "rmse": 0.8772693368393326, 
+    "variance_exp": 7.233906518292607, 
+    "scatter_index": 13.14087459805302, 
+    "correlation": 0.9690690301512195
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -70.186, 
+     41.443
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.14389255706665338, 
+    "NAME": "44020", 
+    "rmse": 1.2719099855864797, 
+    "variance_exp": 2.3375305661111274, 
+    "scatter_index": 9.807446745644905, 
+    "correlation": 0.9880416241360302
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -72.04799, 
+     40.692005
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.18570324601368426, 
+    "NAME": "44017", 
+    "rmse": 0.7765551165677614, 
+    "variance_exp": 1.7903863393902888, 
+    "scatter_index": 5.514717325340375, 
+    "correlation": 0.9942581144742267
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -74.842, 
+     36.610992
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.19921961387528597, 
+    "NAME": "44014", 
+    "rmse": 2.140092361022952, 
+    "variance_exp": 5.8264240416258515, 
+    "scatter_index": 12.127812948436151, 
+    "correlation": 0.9362523000067487
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -70.651, 
+     42.346004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.6681897522383959, 
+    "NAME": "44013", 
+    "rmse": 1.0008743963547528, 
+    "variance_exp": 3.059110112503104, 
+    "scatter_index": 8.216514227552615, 
+    "correlation": 0.9915208263172154
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -66.59999, 
+     41.105003
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.07255406606451764, 
+    "NAME": "44011", 
+    "rmse": 3.003463953408339, 
+    "variance_exp": 10.876454076703377, 
+    "scatter_index": 23.762587769476827, 
+    "correlation": 0.8621690234572751
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -74.703, 
+     38.461
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.08492392334098575, 
+    "NAME": "44009", 
+    "rmse": 0.8055618075472971, 
+    "variance_exp": 1.580931084950593, 
+    "scatter_index": 4.913529314679132, 
+    "correlation": 0.9954302647306761
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -69.24799, 
+     40.50299
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.6853918995037631, 
+    "NAME": "44008", 
+    "rmse": 1.3601171413746342, 
+    "variance_exp": 4.660068609373768, 
+    "scatter_index": 9.958538673158024, 
+    "correlation": 0.9762096589820708
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -70.14399, 
+     43.531
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.32193105821122714, 
+    "NAME": "44007", 
+    "rmse": 0.8997756687344547, 
+    "variance_exp": 3.3976760924446534, 
+    "scatter_index": 8.53741881087392, 
+    "correlation": 0.9868745574764403
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -69.128, 
+     43.204006
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.08940086543797143, 
+    "NAME": "44005", 
+    "rmse": 1.033421051845481, 
+    "variance_exp": 3.2198879286038387, 
+    "scatter_index": 9.035883547508645, 
+    "correlation": 0.9886298183927799
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -56.183327, 
+     46.700005
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.2713398068109578, 
+    "NAME": "4400050", 
+    "rmse": 1.0929930661651845, 
+    "variance_exp": 3.6351411028210956, 
+    "scatter_index": 13.545607694519726, 
+    "correlation": 0.9822500497436698
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -84.27501, 
+     27.345
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.17872477525673602, 
+    "NAME": "42099", 
+    "rmse": 0.8923595961446005, 
+    "variance_exp": 9.664890672129719, 
+    "scatter_index": 3.5462125224056633, 
+    "correlation": 0.9579925443713919
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -82.93101, 
+     27.589998
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.007195374727750448, 
+    "NAME": "42098", 
+    "rmse": 0.4893548810198471, 
+    "variance_exp": 2.320347692860613, 
+    "scatter_index": 2.0529229729064626, 
+    "correlation": 0.9949131360385467
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -83.65, 
+     25.700003
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.014250866273705753, 
+    "NAME": "42097", 
+    "rmse": 0.4713033862159777, 
+    "variance_exp": 5.830355204264805, 
+    "scatter_index": 1.761093966684359, 
+    "correlation": 0.9861915498297469
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -69.57999, 
+     18.432001
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.013629233541564645, 
+    "NAME": "42090", 
+    "rmse": 0.19817222761674777, 
+    "variance_exp": 49.64013205840841, 
+    "scatter_index": 0.7282790905640684, 
+    "correlation": 0.949847299689764
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -60.521, 
+     11.301001
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.11961639452917794, 
+    "NAME": "42088", 
+    "rmse": 0.2374517878868367, 
+    "variance_exp": 33.50754499201406, 
+    "scatter_index": 0.8679062563515255, 
+    "correlation": 0.9725963072396613
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -66.523994, 
+     17.86
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.026227886309762027, 
+    "NAME": "42085", 
+    "rmse": 0.2127981372115939, 
+    "variance_exp": 18.811092405818954, 
+    "scatter_index": 0.7643227021260914, 
+    "correlation": 0.9810466416955376
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -63.187992, 
+     16.406
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.009797351638642482, 
+    "NAME": "42060", 
+    "rmse": 0.15908377393596068, 
+    "variance_exp": 18.176193473536344, 
+    "scatter_index": 0.5712972973586522, 
+    "correlation": 0.9855899051023209
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -67.47199, 
+     15.054
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.012261703137962598, 
+    "NAME": "42059", 
+    "rmse": 0.1474793845900293, 
+    "variance_exp": 17.278123311862046, 
+    "scatter_index": 0.5256479314918938, 
+    "correlation": 0.9877428333471697
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -74.917984, 
+     14.923003
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.13495004128958143, 
+    "NAME": "42058", 
+    "rmse": 0.26498485832484053, 
+    "variance_exp": 29.109699514197995, 
+    "scatter_index": 0.9517045405126039, 
+    "correlation": 0.9726755181706135
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -81.422005, 
+     16.908
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.16198888411081924, 
+    "NAME": "42057", 
+    "rmse": 0.2583221329031882, 
+    "variance_exp": 34.85393421925059, 
+    "scatter_index": 0.914244939486792, 
+    "correlation": 0.9768747953102289
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -84.93799, 
+     19.918001
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.0455074702667595, 
+    "NAME": "42056", 
+    "rmse": 0.2333957126898928, 
+    "variance_exp": 14.620601064399082, 
+    "scatter_index": 0.8312735012599503, 
+    "correlation": 0.9866191750656322
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -94.0, 
+     22.203003
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.023628417320672668, 
+    "NAME": "42055", 
+    "rmse": 0.34573192777021844, 
+    "variance_exp": 7.899433194242636, 
+    "scatter_index": 1.2736001111105306, 
+    "correlation": 0.9868633765582013
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -88.20701, 
+     29.212002
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.012576131312258099, 
+    "NAME": "42040", 
+    "rmse": 1.3985259457707817, 
+    "variance_exp": 12.282188498724516, 
+    "scatter_index": 5.34512260992498, 
+    "correlation": 0.9185733619373402
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -86.007996, 
+     28.791004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.0007568545596967624, 
+    "NAME": "42039", 
+    "rmse": 0.5369557739391096, 
+    "variance_exp": 5.205134486937852, 
+    "scatter_index": 2.0516471176484123, 
+    "correlation": 0.9859806757806694
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -84.51699, 
+     28.5
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.019032749464415133, 
+    "NAME": "42036", 
+    "rmse": 0.6491586894490189, 
+    "variance_exp": 5.136942155016688, 
+    "scatter_index": 2.5278157223990476, 
+    "correlation": 0.9836479759502478
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -94.413025, 
+     29.231997
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.11170913034519003, 
+    "NAME": "42035", 
+    "rmse": 0.5480180370215507, 
+    "variance_exp": 1.8888251536889868, 
+    "scatter_index": 2.423080842503044, 
+    "correlation": 0.9950300173566328
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -83.08599, 
+     26.010002
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.06612154223477518, 
+    "NAME": "42023", 
+    "rmse": 0.3925472501829041, 
+    "variance_exp": 3.8560809131509797, 
+    "scatter_index": 1.4737473036074886, 
+    "correlation": 0.9927551845802534
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -83.74098, 
+     27.505003
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.1307860979089135, 
+    "NAME": "42022", 
+    "rmse": 0.5191814240681862, 
+    "variance_exp": 4.592475159486005, 
+    "scatter_index": 2.043848831077506, 
+    "correlation": 0.9887935667001359
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -96.69401, 
+     26.968
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.4125930903425221, 
+    "NAME": "42020", 
+    "rmse": 0.9001557320739363, 
+    "variance_exp": 7.643874753310012, 
+    "scatter_index": 3.7027296381919177, 
+    "correlation": 0.9740492784447349
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -95.353, 
+     27.912998
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.1173459944891917, 
+    "NAME": "42019", 
+    "rmse": 0.7211457052019403, 
+    "variance_exp": 6.305514475800811, 
+    "scatter_index": 2.85241148125305, 
+    "correlation": 0.9776203280223389
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -82.924, 
+     27.173004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.18766172966935102, 
+    "NAME": "42013", 
+    "rmse": 0.42786129140435436, 
+    "variance_exp": 2.2815176765590808, 
+    "scatter_index": 1.714935241008083, 
+    "correlation": 0.996619295798983
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -87.55101, 
+     30.064
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.23831979989972396, 
+    "NAME": "42012", 
+    "rmse": 0.7051267301275456, 
+    "variance_exp": 3.914851202523902, 
+    "scatter_index": 2.8053031576907728, 
+    "correlation": 0.9882855395156348
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -85.648, 
+     26.007002
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.24070550277249936, 
+    "NAME": "42003", 
+    "rmse": 0.7341813068725683, 
+    "variance_exp": 15.886054760256037, 
+    "scatter_index": 2.719642212710136, 
+    "correlation": 0.9465225703281304
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -93.666016, 
+     25.790007
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.013877131472927573, 
+    "NAME": "42002", 
+    "rmse": 0.37249785615382214, 
+    "variance_exp": 4.790925247870674, 
+    "scatter_index": 1.411228628082948, 
+    "correlation": 0.9921016563278224
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -89.658005, 
+     25.888
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.16287152345342903, 
+    "NAME": "42001", 
+    "rmse": 0.60876321750632, 
+    "variance_exp": 10.644199810792205, 
+    "scatter_index": 2.250142621958869, 
+    "correlation": 0.9737536489065198
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -76.948, 
+     34.20999
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.016779899846287805, 
+    "NAME": "41159", 
+    "rmse": 1.214284944661714, 
+    "variance_exp": 5.672044722545571, 
+    "scatter_index": 5.478720811080197, 
+    "correlation": 0.964978665829575
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -81.08001, 
+     30.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.8823841014936953, 
+    "NAME": "41117", 
+    "rmse": 1.3653984596069866, 
+    "variance_exp": 5.440884055960302, 
+    "scatter_index": 5.966315589814808, 
+    "correlation": 0.9783945126217977
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -67.28001, 
+     18.378998
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.14455750009249257, 
+    "NAME": "41115", 
+    "rmse": 0.36308132050498626, 
+    "variance_exp": 36.39840902396195, 
+    "scatter_index": 1.3028442224734906, 
+    "correlation": 0.9590841805905523
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -80.22499, 
+     27.551
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.5788014516354139, 
+    "NAME": "41114", 
+    "rmse": 1.1543220652185584, 
+    "variance_exp": 16.570538542428732, 
+    "scatter_index": 4.602045817173768, 
+    "correlation": 0.9346975413047696
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -80.53001, 
+     28.399998
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.8618383276776491, 
+    "NAME": "41113", 
+    "rmse": 1.3533168559605904, 
+    "variance_exp": 10.014429952712103, 
+    "scatter_index": 5.612874160779473, 
+    "correlation": 0.9652410930290976
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -81.292, 
+     30.708996
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.3949572032695734, 
+    "NAME": "41112", 
+    "rmse": 0.9926193990841201, 
+    "variance_exp": 3.1738933850890167, 
+    "scatter_index": 4.441358614579531, 
+    "correlation": 0.9869986711116354
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -77.70899, 
+     34.140995
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.4785646909653458, 
+    "NAME": "41110", 
+    "rmse": 0.9457442234719347, 
+    "variance_exp": 2.414876237438459, 
+    "scatter_index": 4.663744624806946, 
+    "correlation": 0.9933359745345457
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -78.01501, 
+     33.721004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.7220382611149674, 
+    "NAME": "41108", 
+    "rmse": 1.4316873119653752, 
+    "variance_exp": 3.5394763576735184, 
+    "scatter_index": 7.0004532791174245, 
+    "correlation": 0.9864519989572872
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -60.93439, 
+     14.1761
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.04250648885566477, 
+    "NAME": "41099", 
+    "rmse": 0.2529237748323791, 
+    "variance_exp": 30.30613809199341, 
+    "scatter_index": 0.9095115663351302, 
+    "correlation": 0.9643659162709152
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -61.0969, 
+     14.5480995
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.13334737615944903, 
+    "NAME": "41097", 
+    "rmse": 0.2725326644891981, 
+    "variance_exp": 39.43318930326774, 
+    "scatter_index": 0.9769293289501796, 
+    "correlation": 0.9583940866471548
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -76.94899, 
+     34.207
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.03363482467213785, 
+    "NAME": "41064", 
+    "rmse": 1.1617126092496775, 
+    "variance_exp": 4.891892602330271, 
+    "scatter_index": 5.187206366996701, 
+    "correlation": 0.9712395469079255
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -65.15699, 
+     18.475998
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.06947760082426413, 
+    "NAME": "41058", 
+    "rmse": 0.13047843031193915, 
+    "variance_exp": 296.83846496464594, 
+    "scatter_index": 0.44478587411997544, 
+    "correlation": 0.8912203477765922
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -65.464, 
+     18.261
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.005779861260137409, 
+    "NAME": "41056", 
+    "rmse": 0.20173878781041765, 
+    "variance_exp": 22.072871335077117, 
+    "scatter_index": 0.7325749013914814, 
+    "correlation": 0.9809504466735114
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -64.76301, 
+     18.248999
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.09551694847365155, 
+    "NAME": "41052", 
+    "rmse": 0.1592990985921486, 
+    "variance_exp": 13.276380495405474, 
+    "scatter_index": 0.5768920508123139, 
+    "correlation": 0.9934724319040084
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -63.0, 
+     27.5
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.11360690182456779, 
+    "NAME": "41049", 
+    "rmse": 0.4012805571776927, 
+    "variance_exp": 7.931570655720326, 
+    "scatter_index": 1.5629605367730435, 
+    "correlation": 0.986380049204941
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -69.496994, 
+     31.949997
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.016541846338292032, 
+    "NAME": "41048", 
+    "rmse": 0.38730070500122205, 
+    "variance_exp": 4.379530893201512, 
+    "scatter_index": 1.5968777776370222, 
+    "correlation": 0.9915497187136832
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -71.48301, 
+     27.517
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.00419674721973351, 
+    "NAME": "41047", 
+    "rmse": 0.4546815308751326, 
+    "variance_exp": 7.824179076638392, 
+    "scatter_index": 1.7249511787612908, 
+    "correlation": 0.9827116458034953
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -68.333, 
+     23.838001
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.06707082775498918, 
+    "NAME": "41046", 
+    "rmse": 0.34673328029133943, 
+    "variance_exp": 15.309697807877617, 
+    "scatter_index": 1.2827049011552873, 
+    "correlation": 0.9757011486901593
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -58.614006, 
+     21.638998
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.054324404124354686, 
+    "NAME": "41044", 
+    "rmse": 0.21025150066550347, 
+    "variance_exp": 15.16738371426332, 
+    "scatter_index": 0.7933957473503012, 
+    "correlation": 0.9852253062517679
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -64.966, 
+     21.061003
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.05757449895389399, 
+    "NAME": "41043", 
+    "rmse": 0.2387586853426096, 
+    "variance_exp": 17.416572697193534, 
+    "scatter_index": 0.8766320405283468, 
+    "correlation": 0.980701102528598
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -45.997997, 
+     14.175001
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.06297540451827999, 
+    "NAME": "41041", 
+    "rmse": 0.18338233633563752, 
+    "variance_exp": 16.39027402237578, 
+    "scatter_index": 0.6852813417702769, 
+    "correlation": 0.987890816463475
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -53.008003, 
+     14.477001
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.05051408704925464, 
+    "NAME": "41040", 
+    "rmse": 0.21725830298513968, 
+    "variance_exp": 27.232333801699255, 
+    "scatter_index": 0.7928636894207699, 
+    "correlation": 0.9719752096872237
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -77.71801, 
+     34.144005
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.3961951018156391, 
+    "NAME": "41038", 
+    "rmse": 0.9126731934546466, 
+    "variance_exp": 2.266307298487214, 
+    "scatter_index": 4.4342856582107455, 
+    "correlation": 0.993398661358387
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -77.362, 
+     33.988007
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.020173238736944654, 
+    "NAME": "41037", 
+    "rmse": 1.3805246311964472, 
+    "variance_exp": 6.246906429949122, 
+    "scatter_index": 6.162993860194634, 
+    "correlation": 0.955932867520889
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -80.406, 
+     32.278996
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.2895165767686514, 
+    "NAME": "41033", 
+    "rmse": 0.5875742001329589, 
+    "variance_exp": 1.3037505694712463, 
+    "scatter_index": 2.7514144229293844, 
+    "correlation": 0.9972939766207812
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -79.62401, 
+     32.803005
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.2553641903405577, 
+    "NAME": "41029", 
+    "rmse": 0.6681241318061991, 
+    "variance_exp": 1.7719116124917242, 
+    "scatter_index": 3.0465571510981158, 
+    "correlation": 0.9955304040458911
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -75.402, 
+     35.006004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.7364230577178006, 
+    "NAME": "41025", 
+    "rmse": 2.655902759785409, 
+    "variance_exp": 18.576296929953372, 
+    "scatter_index": 10.85553708103429, 
+    "correlation": 0.7383199940787222
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -78.477, 
+     33.837
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.3091429029314021, 
+    "NAME": "41024", 
+    "rmse": 0.6991930477999405, 
+    "variance_exp": 1.790893403502875, 
+    "scatter_index": 3.243381685135395, 
+    "correlation": 0.9951701661207353
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -77.74299, 
+     33.435997
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.2775665028772458, 
+    "NAME": "41013", 
+    "rmse": 1.4229417573332237, 
+    "variance_exp": 9.062820824767535, 
+    "scatter_index": 6.125309418065789, 
+    "correlation": 0.9421331625100664
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -78.49299, 
+     28.872
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.21740669618818842, 
+    "NAME": "41010", 
+    "rmse": 0.6110916455415364, 
+    "variance_exp": 13.163022032022093, 
+    "scatter_index": 2.2803763434703193, 
+    "correlation": 0.9726653368257153
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -80.184, 
+     28.501005
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.002903353452261115, 
+    "NAME": "41009", 
+    "rmse": 0.9099980614530252, 
+    "variance_exp": 15.174019478833925, 
+    "scatter_index": 3.5089581193044284, 
+    "correlation": 0.9328856406869691
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -80.86799, 
+     31.399998
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.5750896060515629, 
+    "NAME": "41008", 
+    "rmse": 0.9868294828858805, 
+    "variance_exp": 3.0143178585773094, 
+    "scatter_index": 4.477703201977927, 
+    "correlation": 0.990942035208502
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -79.099, 
+     32.501003
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.19598855814859206, 
+    "NAME": "41004", 
+    "rmse": 1.0209900578619577, 
+    "variance_exp": 8.9252898851697, 
+    "scatter_index": 4.27326090925308, 
+    "correlation": 0.9557221667336595
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -74.835, 
+     31.861998
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.08510321147389277, 
+    "NAME": "41002", 
+    "rmse": 0.6675957738634852, 
+    "variance_exp": 10.113161662368004, 
+    "scatter_index": 2.646780653906209, 
+    "correlation": 0.9664215428638203
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -61.77573, 
+     16.122763
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.06151518649001275, 
+    "NAME": "41001", 
+    "rmse": 0.9521421123105598, 
+    "variance_exp": 24.014187075035593, 
+    "scatter_index": 3.7686248478266218, 
+    "correlation": 0.9058098525512832
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -90.0, 
+     -55.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.05138040077157413, 
+    "NAME": "34002", 
+    "rmse": 0.2512042736700104, 
+    "variance_exp": 34.64991508092209, 
+    "scatter_index": 3.7807824161990995, 
+    "correlation": 0.9587765865628565
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -42.20351, 
+     -23.630138
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.3016403792307969, 
+    "NAME": "3101000", 
+    "rmse": 0.8469243774224583, 
+    "variance_exp": 29.539131011006486, 
+    "scatter_index": 3.3623681217959356, 
+    "correlation": 0.9088611767736999
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -39.70361, 
+     -19.935074
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.10043397435914514, 
+    "NAME": "3100380", 
+    "rmse": 0.43737981681196714, 
+    "variance_exp": 30.706523158358667, 
+    "scatter_index": 1.7259830916632741, 
+    "correlation": 0.9390368852236108
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -45.03623, 
+     -25.440773
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.1598020586884239, 
+    "NAME": "3100374", 
+    "rmse": 0.6295230876404542, 
+    "variance_exp": 20.930358437937493, 
+    "scatter_index": 2.4343563402590003, 
+    "correlation": 0.9369089484615122
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -42.206696, 
+     -23.63115
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.044237598370202136, 
+    "NAME": "3100262", 
+    "rmse": 1.2689155111354518, 
+    "variance_exp": 27.58312961034239, 
+    "scatter_index": 5.634211216409719, 
+    "correlation": 0.8610940953091506
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -47.26619, 
+     -27.406174
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.13806775978493135, 
+    "NAME": "3100231", 
+    "rmse": 0.43597747141822585, 
+    "variance_exp": 9.260672814589144, 
+    "scatter_index": 1.7523358024965126, 
+    "correlation": 0.9818815545564864
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -38.432564, 
+     -3.2129397
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.13295086393964795, 
+    "NAME": "3100229", 
+    "rmse": 0.19289081157936383, 
+    "variance_exp": 151.41217428439882, 
+    "scatter_index": 0.7180081238608758, 
+    "correlation": 0.9203019053836936
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -52.009872, 
+     5.0064607
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.38193050252980143, 
+    "NAME": "3100218", 
+    "rmse": 0.587492458499279, 
+    "variance_exp": 189.51738338836068, 
+    "scatter_index": 2.17180351401657, 
+    "correlation": 0.5999044296384654
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -49.887665, 
+     -31.582535
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.21505063638015187, 
+    "NAME": "3100053", 
+    "rmse": 0.7433749087901579, 
+    "variance_exp": 9.389862135685851, 
+    "scatter_index": 3.254475383194791, 
+    "correlation": 0.9705152021208714
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -43.143166, 
+     -22.985134
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 2.3971118635803705, 
+    "NAME": "3100051", 
+    "rmse": 2.781702021721867, 
+    "variance_exp": 79.96053139025422, 
+    "scatter_index": 12.014475195573269, 
+    "correlation": 0.6599543700238549
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     80.5, 
+     -4.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.060735085344976625, 
+    "NAME": "23010", 
+    "rmse": 0.22648379372262648, 
+    "variance_exp": 55.01468992150742, 
+    "scatter_index": 0.7745903597195742, 
+    "correlation": 0.9444792234411311
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     66.69255, 
+     1.7495483
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.0912636503539872, 
+    "NAME": "2300014", 
+    "rmse": 0.2679017860763073, 
+    "variance_exp": 49.609213125115154, 
+    "scatter_index": 0.9111996957035285, 
+    "correlation": 0.9467002054673727
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     67.0, 
+     -12.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.0013034966551508376, 
+    "NAME": "14043", 
+    "rmse": 0.20708691373065494, 
+    "variance_exp": 10.91135687364882, 
+    "scatter_index": 0.7414553467660417, 
+    "correlation": 0.9888288885903326
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     67.0, 
+     -8.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.12857937564110244, 
+    "NAME": "14040", 
+    "rmse": 0.27990826340622105, 
+    "variance_exp": 23.568188895150236, 
+    "scatter_index": 0.9790388095264996, 
+    "correlation": 0.9736294640537185
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -38.015312, 
+     7.9425488
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.043903863730548665, 
+    "NAME": "1300009", 
+    "rmse": 0.15818907034977164, 
+    "variance_exp": 75.91544005146524, 
+    "scatter_index": 0.5838695480037174, 
+    "correlation": 0.9536519687634425
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -23.0, 
+     12.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.05622785827095811, 
+    "NAME": "12n23w", 
+    "rmse": 0.2555177410020375, 
+    "variance_exp": 7.008081479496103, 
+    "scatter_index": 0.9688450695382566, 
+    "correlation": 0.9922882595242103
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -10.0, 
+     -10.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.007738648016683669, 
+    "NAME": "10s10w", 
+    "rmse": 0.12346547406726878, 
+    "variance_exp": 6.666286576315991, 
+    "scatter_index": 0.48238286750622117, 
+    "correlation": 0.9959310938017641
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -23.0, 
+     0.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.0012614793743495056, 
+    "NAME": "0n23w", 
+    "rmse": 0.27887576441737527, 
+    "variance_exp": 17.58731435286866, 
+    "scatter_index": 1.0395190662858431, 
+    "correlation": 0.9752216405449797
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -61.77573, 
+     16.122763
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.1829698118445009, 
+    "NAME": "4100136", 
+    "rmse": 0.30875411958056403, 
+    "variance_exp": 333.923206761446, 
+    "scatter_index": 1.153489374309016, 
+    "correlation": 0.5753912601334226
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     30.700003, 
+     46.299988
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.17475461823130978, 
+    "NAME": "33836", 
+    "rmse": 1.0511445330357774, 
+    "variance_exp": 2.1748728574927894, 
+    "scatter_index": 8.939688227110375, 
+    "correlation": 0.9895644215290209
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -38.432663, 
+     -3.2132053
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.5659429681928536, 
+    "NAME": "3101530", 
+    "rmse": 0.705079266246672, 
+    "variance_exp": 244.63318089416458, 
+    "scatter_index": 2.5006722797871266, 
+    "correlation": 0.6220764810954593
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -23.0, 
+     0.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.06517864808598972, 
+    "NAME": "31007", 
+    "rmse": 0.32792100016458053, 
+    "variance_exp": 34.087357275418604, 
+    "scatter_index": 1.1596443199273074, 
+    "correlation": 0.9506339478409377
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     66.67852, 
+     4.2292547
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.025167369629180314, 
+    "NAME": "2300013", 
+    "rmse": 0.24217381469279536, 
+    "variance_exp": 124.66424639947479, 
+    "scatter_index": 0.8283953184934668, 
+    "correlation": 0.8762041180046645
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     67.1044, 
+     7.9184513
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.09861341581139627, 
+    "NAME": "2300012", 
+    "rmse": 0.2331333917526112, 
+    "variance_exp": 80.8257557149772, 
+    "scatter_index": 0.7985782523885093, 
+    "correlation": 0.9374244796551102
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     41.42972, 
+     41.421112
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 2.130529165685246, 
+    "NAME": "17467", 
+    "rmse": 2.8664296780983123, 
+    "variance_exp": 9.02334960870018, 
+    "scatter_index": 16.69501433242312, 
+    "correlation": 0.9719332191787339
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     32.259445, 
+     41.68639
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 1.2891967453290665, 
+    "NAME": "17426", 
+    "rmse": 1.6522118884223598, 
+    "variance_exp": 4.64307828179977, 
+    "scatter_index": 11.386451412114859, 
+    "correlation": 0.9848826704082503
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -10.0, 
+     -10.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.031688386167928684, 
+    "NAME": "15001", 
+    "rmse": 0.15648673774946806, 
+    "variance_exp": 17.87430242448195, 
+    "scatter_index": 0.5853469851266369, 
+    "correlation": 0.987501642442529
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -16.945002, 
+     32.622303
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.40480558984544146, 
+    "NAME": "1301000", 
+    "rmse": 0.5883219067722176, 
+    "variance_exp": 16.836540357925887, 
+    "scatter_index": 2.6997252553523157, 
+    "correlation": 0.9652447305933136
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -23.0, 
+     12.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.1579176822854187, 
+    "NAME": "13001", 
+    "rmse": 0.26408426021822323, 
+    "variance_exp": 134.13827848109295, 
+    "scatter_index": 1.0915434110950866, 
+    "correlation": 0.8959489647692594
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     21.5712, 
+     63.0815
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.4395829801064117, 
+    "NAME": "Vaasa", 
+    "rmse": 1.620175776042916, 
+    "variance_exp": 3.126802203745781, 
+    "scatter_index": 17.475568302425362, 
+    "correlation": 0.9789736786494264
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     21.463398, 
+     61.13349
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.2172152872126185, 
+    "NAME": "Rauma", 
+    "rmse": 1.0127513148307217, 
+    "variance_exp": 2.012496076065613, 
+    "scatter_index": 10.461952377883005, 
+    "correlation": 0.9928139082701518
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     24.4071, 
+     64.6659
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.5248675231949305, 
+    "NAME": "Raahe", 
+    "rmse": 2.1377648277183443, 
+    "variance_exp": 5.093781841889959, 
+    "scatter_index": 24.773164397183624, 
+    "correlation": 0.9578744044693488
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     25.625095, 
+     60.205803
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.17923849950593418, 
+    "NAME": "Porvoo", 
+    "rmse": 1.1100609066534808, 
+    "variance_exp": 2.1235065561095654, 
+    "scatter_index": 10.899451014488392, 
+    "correlation": 0.9896854980898059
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     21.463398, 
+     61.594402
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.5440937327270641, 
+    "NAME": "Pori", 
+    "rmse": 2.7932742775250943, 
+    "variance_exp": 4.903589924505089, 
+    "scatter_index": 27.652596390098726, 
+    "correlation": 0.9329384009690325
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     22.689602, 
+     63.708603
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.7287799762362077, 
+    "NAME": "Pietarsaari", 
+    "rmse": 2.489996866242527, 
+    "variance_exp": 5.369450185877043, 
+    "scatter_index": 26.89309373738539, 
+    "correlation": 0.9427033707576868
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     25.4182, 
+     65.04029
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.0575940749781827, 
+    "NAME": "Oulu", 
+    "rmse": 1.4930602756730793, 
+    "variance_exp": 3.5071223784408216, 
+    "scatter_index": 17.566245251328137, 
+    "correlation": 0.9893064557018374
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -121.79101, 
+     36.802
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.4923398557756755, 
+    "NAME": "MLSC1", 
+    "rmse": 1.204672904427268, 
+    "variance_exp": 81.01847544651469, 
+    "scatter_index": 8.975928838767118, 
+    "correlation": 0.500404491949416
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     24.866198, 
+     59.5531
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.6257212306923425, 
+    "NAME": "Leppneeme", 
+    "rmse": 1.3368002240779542, 
+    "variance_exp": 18.198537038997898, 
+    "scatter_index": 32.43319473953185, 
+    "correlation": 0.9042995504785833
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     24.515303, 
+     65.672905
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.26307637800577943, 
+    "NAME": "Kemi", 
+    "rmse": 1.6024026079297318, 
+    "variance_exp": 3.295093824441043, 
+    "scatter_index": 18.765079588440635, 
+    "correlation": 0.9756706643021387
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     25.015, 
+     59.638
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.9751652510595794, 
+    "NAME": "Kelnase", 
+    "rmse": 1.6421397327963636, 
+    "variance_exp": 18.6125722851274, 
+    "scatter_index": 35.55890531111578, 
+    "correlation": 0.9216613879602157
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     21.2148, 
+     62.344
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.4980232251177332, 
+    "NAME": "Kaskinen", 
+    "rmse": 1.7000518625771952, 
+    "variance_exp": 4.14648628802492, 
+    "scatter_index": 19.815687820518903, 
+    "correlation": 0.9732676103300038
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     25.235, 
+     59.965004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.2762053603515815, 
+    "NAME": "Helsinki", 
+    "rmse": 2.1101663414545015, 
+    "variance_exp": 4.7699080721045615, 
+    "scatter_index": 22.78150813095809, 
+    "correlation": 0.9597812118603906
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     22.976599, 
+     59.822895
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.0870520923692002, 
+    "NAME": "Hanko", 
+    "rmse": 2.3276603212194265, 
+    "variance_exp": 5.447728513092138, 
+    "scatter_index": 24.7572259715159, 
+    "correlation": 0.945096055997748
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     27.1792, 
+     60.562798
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.0161110523917829, 
+    "NAME": "Hamina", 
+    "rmse": 1.644743995420327, 
+    "variance_exp": 2.614211919863161, 
+    "scatter_index": 15.578413057165152, 
+    "correlation": 0.9783620869517157
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -88.40501, 
+     30.418
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.4095670601646617, 
+    "NAME": "GBHM6", 
+    "rmse": 0.9310066273473612, 
+    "variance_exp": 36.000923144113465, 
+    "scatter_index": 4.397658041402174, 
+    "correlation": 0.8684570546046629
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     5.2852597, 
+     43.23877
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.2423728960734728, 
+    "NAME": "EXIN0004", 
+    "rmse": 0.7966172150290246, 
+    "variance_exp": 8.952316455884395, 
+    "scatter_index": 4.157604741995902, 
+    "correlation": 0.9758796316230289
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -121.73801, 
+     36.83499
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.4033866743787389, 
+    "NAME": "EHSC1", 
+    "rmse": 2.2384238655113218, 
+    "variance_exp": 37.945568252669034, 
+    "scatter_index": 16.016438271889793, 
+    "correlation": 0.46015143658285107
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     20.384798, 
+     60.031902
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.9410747824693164, 
+    "NAME": "Degerby", 
+    "rmse": 1.4213013217661736, 
+    "variance_exp": 3.094140160833808, 
+    "scatter_index": 14.446396612956933, 
+    "correlation": 0.9879418185290493
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -120.74098, 
+     35.169994
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.21256123887076228, 
+    "NAME": "CPXC1", 
+    "rmse": 0.394054171359071, 
+    "variance_exp": 88.09309338593081, 
+    "scatter_index": 2.965309975457623, 
+    "correlation": 0.8752223043843813
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -82.68599, 
+     27.735996
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -1.760895639622504, 
+    "NAME": "CLBF1", 
+    "rmse": 2.222298657682421, 
+    "variance_exp": 12.571124811519402, 
+    "scatter_index": 9.545789366297441, 
+    "correlation": 0.9470474234856167
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -10.271276, 
+     54.285427
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.01428801925094092, 
+    "NAME": "BelmulletA-coast-buoy", 
+    "rmse": 0.28602298019488187, 
+    "variance_exp": 31.555928004533584, 
+    "scatter_index": 2.53168646828004, 
+    "correlation": 0.9754463900664286
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     1.8864354, 
+     56.12463
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.31087587616098666, 
+    "NAME": "68992", 
+    "rmse": 0.3758688504144905, 
+    "variance_exp": 82.16736476529329, 
+    "scatter_index": 4.796045430262559, 
+    "correlation": 0.9556186384205634
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     2.0, 
+     51.239994
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.24262681006654674, 
+    "NAME": "62170", 
+    "rmse": 0.7282441641268544, 
+    "variance_exp": 4.8136419259839425, 
+    "scatter_index": 5.53239037556096, 
+    "correlation": 0.9860607432990894
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     2.1100001, 
+     51.9545
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.7479392246608327, 
+    "NAME": "6201084", 
+    "rmse": 0.9916134023628084, 
+    "variance_exp": 65.38769810054326, 
+    "scatter_index": 9.284106974177725, 
+    "correlation": 0.9850859032069187
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -2.8894198, 
+     49.026424
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.5232692312095271, 
+    "NAME": "6200058", 
+    "rmse": 1.188787666666955, 
+    "variance_exp": 8.616567336509384, 
+    "scatter_index": 8.364845526509056, 
+    "correlation": 0.9752382511582749
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -1.8984503, 
+     49.542904
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.6979214757197134, 
+    "NAME": "6200055", 
+    "rmse": 0.795860813124429, 
+    "variance_exp": 78.52063223521048, 
+    "scatter_index": 7.501170599078271, 
+    "correlation": 0.9417449222233919
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     2.7003996, 
+     39.4928
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.2488125490709514, 
+    "NAME": "61499", 
+    "rmse": 0.5545997456447658, 
+    "variance_exp": 15.583411221046104, 
+    "scatter_index": 3.4363992998749886, 
+    "correlation": 0.964872473718967
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     7.42617, 
+     43.713585
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.21726396779958534, 
+    "NAME": "61022", 
+    "rmse": 0.8187673746596219, 
+    "variance_exp": 2.8575222721243168, 
+    "scatter_index": 4.045529217784526, 
+    "correlation": 0.9891251601453801
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     4.9203706, 
+     43.316124
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.13596199631721717, 
+    "NAME": "6100290", 
+    "rmse": 0.8429361764875128, 
+    "variance_exp": 39.125446853284, 
+    "scatter_index": 6.104831108189169, 
+    "correlation": 0.8256811385242473
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -164.32115, 
+     -47.237057
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.4129355487314825, 
+    "NAME": "5500061", 
+    "rmse": 1.5645009827981695, 
+    "variance_exp": 143.27605646703645, 
+    "scatter_index": 13.525596308394308, 
+    "correlation": 0.22105108051662203
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     160.35732, 
+     -46.96279
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.16209141443531117, 
+    "NAME": "5500048", 
+    "rmse": 0.4089967576402933, 
+    "variance_exp": 58.59735327405181, 
+    "scatter_index": 3.1347080576423316, 
+    "correlation": 0.898987493974546
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     145.662, 
+     15.268002
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.12046595403826288, 
+    "NAME": "52211", 
+    "rmse": 0.25790657913465675, 
+    "variance_exp": 163.57733959023372, 
+    "scatter_index": 0.8838774448111751, 
+    "correlation": 0.8267545945724363
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -157.00302, 
+     20.75
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.14223164981610736, 
+    "NAME": "51213", 
+    "rmse": 0.4563349818759966, 
+    "variance_exp": 27.09040761017067, 
+    "scatter_index": 1.7370976591404237, 
+    "correlation": 0.959743164288292
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -158.14902, 
+     21.322998
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.27477519763216307, 
+    "NAME": "51212", 
+    "rmse": 0.4863003369419606, 
+    "variance_exp": 28.847376588291596, 
+    "scatter_index": 1.8532496301674888, 
+    "correlation": 0.9557751334647984
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -117.16701, 
+     32.571995
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 1.1361704932795043, 
+    "NAME": "46235", 
+    "rmse": 1.454448574988287, 
+    "variance_exp": 42.739935389202465, 
+    "scatter_index": 8.642471618574318, 
+    "correlation": 0.9290090722941856
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -172.058, 
+     51.655994
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.11668647318189063, 
+    "NAME": "46072", 
+    "rmse": 0.5627511916917861, 
+    "variance_exp": 11.796520186117885, 
+    "scatter_index": 7.522397134531651, 
+    "correlation": 0.9677234792770242
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -123.97399, 
+     39.234997
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.4599501772946244, 
+    "NAME": "46014", 
+    "rmse": 1.1057814543559072, 
+    "variance_exp": 65.63316028033024, 
+    "scatter_index": 8.756069042768786, 
+    "correlation": 0.6608312933980585
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -63.403008, 
+     44.502003
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.03493353879978667, 
+    "NAME": "44258", 
+    "rmse": 0.6029721232707004, 
+    "variance_exp": 8.703971605191107, 
+    "scatter_index": 15.53333316618384, 
+    "correlation": 0.9798309727627986
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -76.151, 
+     37.026
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.15778747889643974, 
+    "NAME": "44087", 
+    "rmse": 0.7274563509013938, 
+    "variance_exp": 1.1202064807296293, 
+    "scatter_index": 4.222173208349082, 
+    "correlation": 0.9969224186299027
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -75.421005, 
+     36.001003
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.8601767770405964, 
+    "NAME": "44086", 
+    "rmse": 1.5840095148074207, 
+    "variance_exp": 4.074085016515955, 
+    "scatter_index": 9.722852682658239, 
+    "correlation": 0.978760186134961
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -72.65501, 
+     41.138
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.656729454995217, 
+    "NAME": "44039", 
+    "rmse": 0.9807931719452916, 
+    "variance_exp": 1.486184041032371, 
+    "scatter_index": 5.58216308112415, 
+    "correlation": 0.9973426818675709
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -81.966995, 
+     24.407001
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.20544933314949887, 
+    "NAME": "42095", 
+    "rmse": 0.528162358066503, 
+    "variance_exp": 64.69441912691843, 
+    "scatter_index": 2.0192653104409644, 
+    "correlation": 0.8922897839802988
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -88.21199, 
+     30.089996
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.1472693777544336, 
+    "NAME": "42031", 
+    "rmse": 0.9837781570799042, 
+    "variance_exp": 18.138424459671075, 
+    "scatter_index": 3.3816776603059937, 
+    "correlation": 0.9637985361582253
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -61.114395, 
+     14.890302
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.13666955274374715, 
+    "NAME": "41098", 
+    "rmse": 0.2454942688420809, 
+    "variance_exp": 24.721242787413512, 
+    "scatter_index": 0.8894688490846369, 
+    "correlation": 0.9828594685583268
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -9.703683, 
+     52.754696
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.5875359412932237, 
+    "NAME": "WestwaveMK4-coast-buoy", 
+    "rmse": 0.64438405881273, 
+    "variance_exp": 2851.583748853218, 
+    "scatter_index": 6.782202596433787, 
+    "correlation": 0.3794409319653967
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     4.6616664, 
+     53.276943
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.18872945382954232, 
+    "NAME": "WaddenEierlandseGat", 
+    "rmse": 0.5319581248240131, 
+    "variance_exp": 56.86334042676005, 
+    "scatter_index": 7.370729462617268, 
+    "correlation": 0.8654048618301423
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     10.931021, 
+     58.489353
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.028897387567443644, 
+    "NAME": "VaderoarnaWR", 
+    "rmse": 0.7417847929876364, 
+    "variance_exp": 9.559287161939075, 
+    "scatter_index": 9.187940521901885, 
+    "correlation": 0.9756067608218817
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     1.194415, 
+     41.072044
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.061413859136536075, 
+    "NAME": "Tarragona-coast-buoy", 
+    "rmse": 0.3524653139666356, 
+    "variance_exp": 18.84491528656583, 
+    "scatter_index": 2.352028439125784, 
+    "correlation": 0.9673917486520233
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -5.592126, 
+     36.0026
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.557969370726525, 
+    "NAME": "Tarifa-coast-buoy", 
+    "rmse": 0.9520881507066196, 
+    "variance_exp": 349.3095104170726, 
+    "scatter_index": 5.904251090084261, 
+    "correlation": 0.70282385431785
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     8.089301, 
+     54.918888
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.30087672484041494, 
+    "NAME": "Sylt", 
+    "rmse": 0.5299264834464208, 
+    "variance_exp": 7.1821194091324845, 
+    "scatter_index": 9.451981149440611, 
+    "correlation": 0.989278018245856
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -9.268114, 
+     53.228233
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.06793259805248475, 
+    "NAME": "SmartBayWaveBuoy", 
+    "rmse": 0.42554508244467043, 
+    "variance_exp": 54.65577584115054, 
+    "scatter_index": 3.4571282740610534, 
+    "correlation": 0.917857929891685
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     6.166699, 
+     53.595493
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.0717780790807172, 
+    "NAME": "SchiermonnikoogNoord", 
+    "rmse": 0.49207939594533817, 
+    "variance_exp": 92.97265415782834, 
+    "scatter_index": 8.348443075265395, 
+    "correlation": 0.7988520893233418
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     21.0, 
+     59.25
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.8752365837488938, 
+    "NAME": "NorthernBaltic", 
+    "rmse": 1.124664215099743, 
+    "variance_exp": 26.852329997735108, 
+    "scatter_index": 24.250949641721732, 
+    "correlation": 0.9573928776339775
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -4.4402633, 
+     36.661438
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.25032152323212387, 
+    "NAME": "Malaga-coast-buoy", 
+    "rmse": 0.7598759189659118, 
+    "variance_exp": 41.24704014415721, 
+    "scatter_index": 4.698866281000511, 
+    "correlation": 0.9286879994042462
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     3.6697216, 
+     51.92584
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.028594100872100014, 
+    "NAME": "LichteilandGoeree2", 
+    "rmse": 0.8309206417108054, 
+    "variance_exp": 59.875721677268245, 
+    "scatter_index": 11.50180472324826, 
+    "correlation": 0.7860816007433064
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     3.6697216, 
+     51.92584
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.034644265691717635, 
+    "NAME": "LichteilandGoeree1", 
+    "rmse": 0.8793852751458725, 
+    "variance_exp": 65.49526802437298, 
+    "scatter_index": 12.58655220859462, 
+    "correlation": 0.7158808940244707
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     17.625614, 
+     58.801884
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.30644856463657355, 
+    "NAME": "Asko", 
+    "rmse": 0.5526898764722318, 
+    "variance_exp": 42.69702546538894, 
+    "scatter_index": 5.827591448232797, 
+    "correlation": 0.9152274646673667
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     10.2667, 
+     54.5
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.5142856998075853, 
+    "NAME": "LTKiel", 
+    "rmse": 0.7822335954527342, 
+    "variance_exp": 9.236138053808936, 
+    "scatter_index": 11.086067915520797, 
+    "correlation": 0.9929140888207516
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     11.459449, 
+     58.257576
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.21759063037782767, 
+    "NAME": "Kristineberg", 
+    "rmse": 0.5941494120540557, 
+    "variance_exp": 16.50943350513264, 
+    "scatter_index": 5.558196281680281, 
+    "correlation": 0.9569808919363595
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     11.097536, 
+     58.883305
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.397841049049231, 
+    "NAME": "Koster", 
+    "rmse": 0.9121679198991369, 
+    "variance_exp": 15.057557694407459, 
+    "scatter_index": 15.538285563850055, 
+    "correlation": 0.9436765073913349
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     17.61687, 
+     57.51627
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.32622700251745584, 
+    "NAME": "Knollsgrund", 
+    "rmse": 0.6119585797175703, 
+    "variance_exp": 18.817462089703643, 
+    "scatter_index": 13.059001020781569, 
+    "correlation": 0.9675441960144937
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     19.159254, 
+     58.936043
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -1.0371282709286982, 
+    "NAME": "HuvudskarOst", 
+    "rmse": 1.2984867534407767, 
+    "variance_exp": 39.4244587117917, 
+    "scatter_index": 18.47144846496344, 
+    "correlation": 0.9472454958254841
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     9.966699, 
+     57.600002
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.123817473492295, 
+    "NAME": "HirtshalsTG", 
+    "rmse": 0.6379134724168685, 
+    "variance_exp": 17.513122396403, 
+    "scatter_index": 12.285721239293713, 
+    "correlation": 0.9510658061096267
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     24.972502, 
+     60.123295
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.22865512079864914, 
+    "NAME": "HelsinkiSuomenlinna", 
+    "rmse": 0.9008868511722933, 
+    "variance_exp": 12.82725469498301, 
+    "scatter_index": 11.133339109136848, 
+    "correlation": 0.9454024931374143
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     25.235, 
+     59.965004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.36253834010328934, 
+    "NAME": "HelsinkiBuoy", 
+    "rmse": 0.8209564373294593, 
+    "variance_exp": 11.864057855606092, 
+    "scatter_index": 18.45494582616, 
+    "correlation": 0.9623672734949811
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -6.704338, 
+     51.69043
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.27177880162316015, 
+    "NAME": "62094", 
+    "rmse": 0.4657943303287212, 
+    "variance_exp": 37.55319651414512, 
+    "scatter_index": 4.387538168012329, 
+    "correlation": 0.9627267636976581
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     7.891111, 
+     54.17973
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.3050717140170178, 
+    "NAME": "HelgolandWR", 
+    "rmse": 0.9542687856328057, 
+    "variance_exp": 28.73270210728392, 
+    "scatter_index": 13.416222815024867, 
+    "correlation": 0.8889060439757688
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     7.818299, 
+     54.219303
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.1343640924421301, 
+    "NAME": "Helgoland-NorthWR", 
+    "rmse": 0.8275728251939678, 
+    "variance_exp": 25.309297073964405, 
+    "scatter_index": 11.431092285716069, 
+    "correlation": 0.9095914071641222
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     8.599999, 
+     57.116608
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.359350770225614, 
+    "NAME": "HanstholmTG", 
+    "rmse": 0.5636665987530777, 
+    "variance_exp": 9.691613218893917, 
+    "scatter_index": 8.263497644644179, 
+    "correlation": 0.984110839616442
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -5.6602507, 
+     43.619385
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.48420408357169364, 
+    "NAME": "Gijon-coast-buoy", 
+    "rmse": 0.7779180294802075, 
+    "variance_exp": 129.3707065837046, 
+    "scatter_index": 5.965516246876976, 
+    "correlation": 0.8384990880870946
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -9.260933, 
+     53.230793
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.5177595935650725, 
+    "NAME": "Galway-coast-buoy", 
+    "rmse": 0.72244194729746, 
+    "variance_exp": 27.368633252408326, 
+    "scatter_index": 7.343860396858777, 
+    "correlation": 0.9619504234937858
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     18.608858, 
+     60.89937
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.19934129610069506, 
+    "NAME": "FinngrundetWR", 
+    "rmse": 0.83029543373003, 
+    "variance_exp": 24.17214693364765, 
+    "scatter_index": 19.55514025241839, 
+    "correlation": 0.910177225788081
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     11.150002, 
+     54.599995
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.30881817693203395, 
+    "NAME": "FehmarnBelt", 
+    "rmse": 0.6396013253356302, 
+    "variance_exp": 8.055217892866127, 
+    "scatter_index": 9.554411600567654, 
+    "correlation": 0.9892460234175993
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     13.154201, 
+     55.008297
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.07776135062391365, 
+    "NAME": "FINO2WR", 
+    "rmse": 0.23738633396966194, 
+    "variance_exp": 40.41349571290122, 
+    "scatter_index": 5.438668140757739, 
+    "correlation": 0.9637290993308824
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     3.2763886, 
+     51.998608
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.07262290820384187, 
+    "NAME": "Europlatform3", 
+    "rmse": 0.5849314708964986, 
+    "variance_exp": 63.95001242098065, 
+    "scatter_index": 7.294256721933838, 
+    "correlation": 0.808811518113731
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     8.113899, 
+     54.016705
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.150015520702806, 
+    "NAME": "ElbeWR", 
+    "rmse": 0.5767934953891761, 
+    "variance_exp": 10.298860179217103, 
+    "scatter_index": 7.541434508395442, 
+    "correlation": 0.9721248614357845
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -1.9991773, 
+     43.572254
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.5371005525605312, 
+    "NAME": "Donostia-buoy", 
+    "rmse": 1.2752001585534838, 
+    "variance_exp": 42.07096537853006, 
+    "scatter_index": 8.580761705853112, 
+    "correlation": 0.7613318705534508
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     12.689, 
+     54.687004
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.11250570974301777, 
+    "NAME": "DarsserSWR", 
+    "rmse": 0.6520258416176969, 
+    "variance_exp": 7.805830107077118, 
+    "scatter_index": 10.022775035409827, 
+    "correlation": 0.98431413460434
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     8.272, 
+     54.792
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.22048597570360684, 
+    "NAME": "BuoyBunkerHill1", 
+    "rmse": 0.4441161080542038, 
+    "variance_exp": 7.211155499936807, 
+    "scatter_index": 5.064598457658079, 
+    "correlation": 0.9911491800727004
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     11.222596, 
+     58.25173
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.01838959709367849, 
+    "NAME": "BrofjordenWR", 
+    "rmse": 0.9261476710612782, 
+    "variance_exp": 11.256084072235312, 
+    "scatter_index": 13.162188514766443, 
+    "correlation": 0.95002399213791
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     20.233301, 
+     61.79999
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.19324631873752152, 
+    "NAME": "BothnianSea", 
+    "rmse": 0.5806154675782494, 
+    "variance_exp": 17.6743090991998, 
+    "scatter_index": 18.018630911039093, 
+    "correlation": 0.9775652366120273
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -10.145999, 
+     54.23099
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.3510575571157819, 
+    "NAME": "BelmulletB-coast-buoy", 
+    "rmse": 0.47863812269772565, 
+    "variance_exp": 499.4979341310549, 
+    "scatter_index": 4.013206031549809, 
+    "correlation": 0.683206580925224
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     2.209368, 
+     41.32297
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.5259741083107397, 
+    "NAME": "Barcelona-coast-buoy", 
+    "rmse": 0.7107036838202717, 
+    "variance_exp": 58.40927491167863, 
+    "scatter_index": 4.853667547809408, 
+    "correlation": 0.975209837472815
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     28.165007, 
+     43.403996
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.265997264991066, 
+    "NAME": "Balchik", 
+    "rmse": 1.012202456175924, 
+    "variance_exp": 4.805647622309447, 
+    "scatter_index": 9.36011448513965, 
+    "correlation": 0.9775622607545007
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     13.866701, 
+     54.883297
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.12395543173783619, 
+    "NAME": "ArkonaWR", 
+    "rmse": 0.38496810527613584, 
+    "variance_exp": 7.4062583326991085, 
+    "scatter_index": 6.521790006595804, 
+    "correlation": 0.9880025372300223
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     5.574422, 
+     53.47845
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.16598882599029263, 
+    "NAME": "Amelander21", 
+    "rmse": 0.5890891390703415, 
+    "variance_exp": 20.117012784089237, 
+    "scatter_index": 9.98501399967216, 
+    "correlation": 0.9620884039609833
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     5.484865, 
+     53.50873
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.26369039584980136, 
+    "NAME": "Amelander12", 
+    "rmse": 0.6004087353206828, 
+    "variance_exp": 77.35229742771558, 
+    "scatter_index": 9.348200603630188, 
+    "correlation": 0.7942243082952569
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     5.48185, 
+     53.508755
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.38791042003057186, 
+    "NAME": "Amelander11", 
+    "rmse": 0.6238251282715458, 
+    "variance_exp": 94.40992575882822, 
+    "scatter_index": 9.526727275419047, 
+    "correlation": 0.8042826631782672
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -5.4149365, 
+     36.065887
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.59204148134571, 
+    "NAME": "Algeciras-coast-buoy", 
+    "rmse": 1.0011231960099953, 
+    "variance_exp": 238.2506285307052, 
+    "scatter_index": 6.298024011052733, 
+    "correlation": 0.6875192262010041
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -10.145999, 
+     54.23099
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.3510575571157819, 
+    "NAME": "AMETSBerthBWaveBuoy", 
+    "rmse": 0.47863812269772565, 
+    "variance_exp": 499.4979341310549, 
+    "scatter_index": 4.013206031549809, 
+    "correlation": 0.683206580925224
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -10.271499, 
+     54.28559
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.040795745388154, 
+    "NAME": "AMETSBerthAWaveBuoy", 
+    "rmse": 0.30418061061552987, 
+    "variance_exp": 55.99902194933711, 
+    "scatter_index": 2.574479665278555, 
+    "correlation": 0.964147120383658
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     21.6068, 
+     36.8288
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.03201727867126536, 
+    "NAME": "68422", 
+    "rmse": 0.27874171690979693, 
+    "variance_exp": 32.62329421113, 
+    "scatter_index": 1.5234152552370464, 
+    "correlation": 0.9542715514526319
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -4.5, 
+     60.700996
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.34249301649566455, 
+    "NAME": "64046", 
+    "rmse": 0.973263091555076, 
+    "variance_exp": 208.254601656951, 
+    "scatter_index": 10.523608771392235, 
+    "correlation": -0.33091925202886324
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -11.401, 
+     59.1
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.20512540796253553, 
+    "NAME": "64045", 
+    "rmse": 0.3324324405974844, 
+    "variance_exp": 160.82169142220113, 
+    "scatter_index": 3.4474659671757832, 
+    "correlation": 0.8191089405792532
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     0.0, 
+     50.399998
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.16114846691225893, 
+    "NAME": "62305", 
+    "rmse": 0.353171293156316, 
+    "variance_exp": 57.49850178136323, 
+    "scatter_index": 3.525274280718348, 
+    "correlation": 0.9211086184741836
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     1.8, 
+     51.103
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.3441266614543501, 
+    "NAME": "62304", 
+    "rmse": 0.644720891345617, 
+    "variance_exp": 110.48954177924364, 
+    "scatter_index": 7.267046993832136, 
+    "correlation": 0.7177443913537846
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -6.0999994, 
+     50.103
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.027661139858823347, 
+    "NAME": "62107", 
+    "rmse": 0.28548171964876445, 
+    "variance_exp": 49.64927331277428, 
+    "scatter_index": 2.6615323240159054, 
+    "correlation": 0.9578039344051763
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -2.8999999, 
+     49.899998
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.08281927765446184, 
+    "NAME": "62103", 
+    "rmse": 0.32489064892183805, 
+    "variance_exp": 61.60169279897131, 
+    "scatter_index": 2.988720647902163, 
+    "correlation": 0.9409797439273349
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -15.88135, 
+     53.07482
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.10891368396937295, 
+    "NAME": "62095", 
+    "rmse": 0.32953091364054493, 
+    "variance_exp": 97.14810527975217, 
+    "scatter_index": 3.0473044399753917, 
+    "correlation": 0.8457228687683815
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -10.548262, 
+     51.21595
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.06362510968977553, 
+    "NAME": "62092", 
+    "rmse": 0.24130966583326566, 
+    "variance_exp": 36.87328721697803, 
+    "scatter_index": 2.070305489286359, 
+    "correlation": 0.9644690544565125
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -13.301, 
+     51.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.015374514206728307, 
+    "NAME": "62081", 
+    "rmse": 0.17663197303451517, 
+    "variance_exp": 221.8648156408336, 
+    "scatter_index": 1.5630420060625743, 
+    "correlation": 0.782641563560929
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -12.401, 
+     48.700993
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.11263236752516903, 
+    "NAME": "62029", 
+    "rmse": 0.2425219378522352, 
+    "variance_exp": 72.73306361195597, 
+    "scatter_index": 1.9981803014071577, 
+    "correlation": 0.9283833859330864
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -8.068299, 
+     36.398308
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.020208726504016283, 
+    "NAME": "6200200", 
+    "rmse": 0.3650372672960266, 
+    "variance_exp": 55.43325068662172, 
+    "scatter_index": 2.117886190495484, 
+    "correlation": 0.893588064929473
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -9.21, 
+     39.56
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.26495487799362394, 
+    "NAME": "6200199", 
+    "rmse": 0.5903755782747585, 
+    "variance_exp": 89.97724432555216, 
+    "scatter_index": 4.040611531584969, 
+    "correlation": 0.8616876424075794
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -9.64, 
+     39.510002
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.3509424106850805, 
+    "NAME": "6200192", 
+    "rmse": 0.4387838976771187, 
+    "variance_exp": 54.62932686722917, 
+    "scatter_index": 2.9167500439018625, 
+    "correlation": 0.9559552185386643
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -9.580001, 
+     41.149998
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.019608301615846813, 
+    "NAME": "6200191", 
+    "rmse": 0.3050775535758392, 
+    "variance_exp": 58.807081562649145, 
+    "scatter_index": 2.106178393846816, 
+    "correlation": 0.9195265554545936
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     95.04373, 
+     -8.006164
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.14768407686024076, 
+    "NAME": "53040", 
+    "rmse": 0.2891386384673353, 
+    "variance_exp": 156.93638589612289, 
+    "scatter_index": 0.9813446044086093, 
+    "correlation": 0.8479430158626037
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     95.0, 
+     -5.0
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.1414821817736076, 
+    "NAME": "5300056", 
+    "rmse": 0.2697759155515845, 
+    "variance_exp": 121.3743969421078, 
+    "scatter_index": 0.903912248461955, 
+    "correlation": 0.8916477536599225
+   }
+  }
+ ]
+}

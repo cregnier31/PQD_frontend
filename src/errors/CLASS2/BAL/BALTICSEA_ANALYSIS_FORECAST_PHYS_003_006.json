@@ -1,0 +1,131 @@
+{
+ "type": "FeatureCollection", 
+ "features": [
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     11.152777671813965, 
+     54.60832977294922
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.019630195024615382, 
+    "NAME": "FehmarnBelt", 
+    "rmse": 0.45733627572200386, 
+    "variance_exp": 3.8479152587693863, 
+    "scatter_index": 5.585608596022964, 
+    "correlation": 0.9951691859117016
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     18.65277862548828, 
+     61.00832748413086
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.1552346580045887, 
+    "NAME": "Finngrundet", 
+    "rmse": 0.9941878109727473, 
+    "variance_exp": 27.23146968710181, 
+    "scatter_index": 23.360697053411062, 
+    "correlation": 0.9150791794754387
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     10.93055534362793, 
+     58.47499465942383
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.33790715834059704, 
+    "NAME": "Vaderoarna", 
+    "rmse": 1.0101425098481398, 
+    "variance_exp": 34.48185512230928, 
+    "scatter_index": 9.401252507854503, 
+    "correlation": 0.8547694702893521
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     21.01388931274414, 
+     59.25832748413086
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.018341916087724286, 
+    "NAME": "NorthernBaltic", 
+    "rmse": 0.9943957036748995, 
+    "variance_exp": 23.863655835015468, 
+    "scatter_index": 13.107924901386985, 
+    "correlation": 0.8909652382279061
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     10.263888359069824, 
+     54.491661071777344
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.2182045256834595, 
+    "NAME": "LTKiel", 
+    "rmse": 0.4952310806222923, 
+    "variance_exp": 26.587636847448387, 
+    "scatter_index": 4.395806751410001, 
+    "correlation": 0.9473725432739093
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     17.625, 
+     57.22499465942383
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.7852592369547837, 
+    "NAME": "Knollsgrund", 
+    "rmse": 1.008063361480774, 
+    "variance_exp": 47.04496886288765, 
+    "scatter_index": 13.850651681204134, 
+    "correlation": 0.8998427834297336
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     19.15277862548828, 
+     58.92499542236328
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.5395535782858998, 
+    "NAME": "HuvudskarOst", 
+    "rmse": 0.8570523637583244, 
+    "variance_exp": 28.08593442835823, 
+    "scatter_index": 11.734202091401869, 
+    "correlation": 0.9218554185126461
+   }
+  }
+ ]
+}

@@ -1,0 +1,347 @@
+{
+ "type": "FeatureCollection", 
+ "features": [
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -9.56, 
+     41.16
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.3938349808978501, 
+    "NAME": "6200191", 
+    "rmse": 0.7572307130172219, 
+    "variance_exp": 15.756412785059723, 
+    "scatter_index": 4.607991623278992, 
+    "correlation": 0.9646003015893387
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -9.64, 
+     39.51
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.27550003400928347, 
+    "NAME": "6200192", 
+    "rmse": 0.7255953378162339, 
+    "variance_exp": 17.26279815596859, 
+    "scatter_index": 4.389059123930427, 
+    "correlation": 0.9476053025700939
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -9.19, 
+     39.75
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.024597591211541925, 
+    "NAME": "6200199", 
+    "rmse": 0.742911421500782, 
+    "variance_exp": 66.46605665149214, 
+    "scatter_index": 4.933322725990516, 
+    "correlation": 0.8594014521226727
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -8.0683, 
+     36.3983
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.057468288159903125, 
+    "NAME": "6200200", 
+    "rmse": 0.4592050475890564, 
+    "variance_exp": 17.752411999797424, 
+    "scatter_index": 2.5480730557008617, 
+    "correlation": 1.024921488293839
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -10.548261, 
+     51.215958
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -1.6862431025345366, 
+    "NAME": "62092", 
+    "rmse": 0.30113042390351463, 
+    "variance_exp": 4.38139422338522, 
+    "scatter_index": 2.1418518334264296, 
+    "correlation": 0.5846026852944505
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -6.704336, 
+     51.690426
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -1.1951793945247946, 
+    "NAME": "62094", 
+    "rmse": 0.6523873790652573, 
+    "variance_exp": 8.876249880907903, 
+    "scatter_index": 5.125193061711712, 
+    "correlation": 0.7535114549621293
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -5.41521, 
+     36.065693
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.6725020206069452, 
+    "NAME": "Algeciras-coast-buoy", 
+    "rmse": 1.1538297499915449, 
+    "variance_exp": 25.718731401563495, 
+    "scatter_index": 6.726599765625887, 
+    "correlation": 0.9089732733696212
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     2.208, 
+     41.323
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.03689669478194446, 
+    "NAME": "Barcelona-coast-buoy", 
+    "rmse": 0.6468804229612871, 
+    "variance_exp": 2.8244043716746337, 
+    "scatter_index": 3.3393573643873125, 
+    "correlation": 0.991028631423709
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -3.13, 
+     43.4
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.03781993620670221, 
+    "NAME": "Bilbao-coast-buoy", 
+    "rmse": 0.9601049877711539, 
+    "variance_exp": 6.381938327722748, 
+    "scatter_index": 5.632709557275348, 
+    "correlation": 0.9720270449855742
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -5.33222, 
+     35.9
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.10337214046950649, 
+    "NAME": "Ceuta-coast-buoy", 
+    "rmse": 1.113974520968686, 
+    "variance_exp": 103.01881446011511, 
+    "scatter_index": 6.562614167508373, 
+    "correlation": 0.6721677925930593
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -1.924, 
+     43.563
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.8603640574972076, 
+    "NAME": "Donostia-buoy", 
+    "rmse": 1.0017653259843964, 
+    "variance_exp": 6.623682146921481, 
+    "scatter_index": 5.239600151920479, 
+    "correlation": 0.9147787625550218
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -5.56, 
+     43.62
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.3869167341801436, 
+    "NAME": "Gijon-coast-buoy", 
+    "rmse": 1.0207447577661475, 
+    "variance_exp": 11.649875345352726, 
+    "scatter_index": 6.548078630551036, 
+    "correlation": 0.9505088272148915
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -8.56, 
+     43.35
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.583464311650431, 
+    "NAME": "Langosteira-coast-buoy", 
+    "rmse": 1.0442503912785919, 
+    "variance_exp": 51.19689042854041, 
+    "scatter_index": 7.196156759381855, 
+    "correlation": 0.862743722092712
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -15.3914, 
+     28.0458
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.2127715133018846, 
+    "NAME": "LasPalmas-coast-buoy", 
+    "rmse": 0.4657919208750847, 
+    "variance_exp": 16.88378234451028, 
+    "scatter_index": 2.2188915593471505, 
+    "correlation": 0.9724256209095371
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -4.44167, 
+     36.6589
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.6693128715127017, 
+    "NAME": "Malaga-coast-buoy", 
+    "rmse": 1.382670152844737, 
+    "variance_exp": 12.69430572072457, 
+    "scatter_index": 7.420211942152652, 
+    "correlation": 0.949237750030171
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -2.94278, 
+     35.3186
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.46370403332907273, 
+    "NAME": "Melilla-coast-buoy", 
+    "rmse": 0.8484878986762586, 
+    "variance_exp": 6.640348522191061, 
+    "scatter_index": 4.181016473344765, 
+    "correlation": 0.9822244327612996
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -5.59139, 
+     36.0028
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": 0.448322725018496, 
+    "NAME": "Tarifa-coast-buoy", 
+    "rmse": 1.2036596509045123, 
+    "variance_exp": 49.40162893861889, 
+    "scatter_index": 6.958665718543486, 
+    "correlation": 0.8135655139224147
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     1.19543, 
+     41.0724
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.1350129816434027, 
+    "NAME": "Tarragona-coast-buoy", 
+    "rmse": 0.7253779564696439, 
+    "variance_exp": 2.6934377572010906, 
+    "scatter_index": 3.534852458379826, 
+    "correlation": 0.990642493244982
+   }
+  }, 
+  {
+   "geometry": {
+    "type": "Point", 
+    "coordinates": [
+     -16.2403, 
+     28.46
+    ]
+   }, 
+   "type": "Feature", 
+   "properties": {
+    "mean_diff": -0.4077461406827574, 
+    "NAME": "Tenerife-coast-buoy", 
+    "rmse": 0.36262126408615697, 
+    "variance_exp": 13.692273654460879, 
+    "scatter_index": 1.656031704179213, 
+    "correlation": 1.0575464720289875
+   }
+  }
+ ]
+}
