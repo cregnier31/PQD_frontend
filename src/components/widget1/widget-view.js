@@ -26,6 +26,12 @@ const useStyles = makeStyles(theme => ({
 export function WidgetView(props){
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
+  const [area, setArea] = React.useState(null);
+
+  const getArea = (value) => {
+    setArea(value);
+  };
+
   const handleOpen = () => {
     setOpen(true);
   };
@@ -46,7 +52,7 @@ export function WidgetView(props){
           <MoreVertSharpIcon />
         </div>
         {!open && 
-          <LeafletMap area={props.area} />
+          <LeafletMap area={props.area} getArea={getArea} />
         }
         <Modal
           aria-labelledby="simple-modal-title"
@@ -57,7 +63,7 @@ export function WidgetView(props){
           <DialogContent className={classes.content}>
             <Card className={classes.content}>
               <CloseIcon className={classes.right} onClick={handleClose} />
-              <LeafletMap area={props.area} />
+              <LeafletMap area={area} />
             </Card>
           </DialogContent>
         </Modal>

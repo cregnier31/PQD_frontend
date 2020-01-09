@@ -85,12 +85,6 @@ export function HeaderView(props) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
   const [universe, setUniverse] = React.useState(null);
-  // const [area, setArea] = React.useState(null);
-  
-  // const getArea = (area) => {
-  //   setArea(area);
-  //   console.log('area', area);
-  // };
 
   const getUniverse = (universe) => {
     setUniverse(universe);
