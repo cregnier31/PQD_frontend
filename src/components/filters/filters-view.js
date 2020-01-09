@@ -72,7 +72,7 @@ export function FiltersView(props){
   return (
     <div>
       <h3>Criteria</h3>
-      <SelectorList props={props}/>
+      <SelectorList props={props} />
       {get_validation_button(props)}
     </div>
   );
