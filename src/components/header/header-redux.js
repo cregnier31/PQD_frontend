@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { setZoneFilter } from "../../actions";
+import { setAreaFilter } from "../../actions";
 import { HeaderContainer } from "./header-container";
 
 const mapStateToProps = (state, props) => {
@@ -7,7 +7,7 @@ const mapStateToProps = (state, props) => {
     var concerned_filters = {}
     if(state.dataReducer['areas']){
         concerned_data = state.dataReducer['areas']
-        concerned_filters = state.filtersReducer['zone']
+        concerned_filters = state.filtersReducer['area']
     }
     return {
         data: concerned_data,
@@ -17,7 +17,7 @@ const mapStateToProps = (state, props) => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        set: (what, value) => dispatch(setZoneFilter(what, value)),
+        set: (value) => dispatch(setAreaFilter(value)),
     };
 };
 

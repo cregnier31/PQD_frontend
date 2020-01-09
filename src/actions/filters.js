@@ -1,16 +1,15 @@
-export function setUniverseFilter(id, name, value){
+export function setUniverseFilter(universe, name, value){
   return {
     type: "SET_UNIVERSE_FILTER",
-    id,
+    universe,
     name,
     value
   }
 }
 
-export function setZoneFilter(what, value){
+export function setAreaFilter(value){
   return {
-    type: "SET_ZONE_FILTER",
-    what,
+    type: "SET_AREA_FILTER",
     value
   }
 }

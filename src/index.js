@@ -2,11 +2,11 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore, combineReducers } from 'redux'
-import {dataReducer, filtersReducer} from './reducers'
+import {dataReducer, filtersReducer, resultsReducer} from './reducers'
 import {App} from './components/app';
 import * as serviceWorker from './serviceWorker';
 const rootReducer = combineReducers({
-  dataReducer, filtersReducer
+  dataReducer, filtersReducer, resultsReducer
 })
 
 const store = createStore(rootReducer);

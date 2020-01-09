@@ -6,10 +6,9 @@ export function setPlot(universe, data){
   }
 }
 
-export function setKpi(universe, what, data){
+export function setKpis(universe, data){
   return {
-    type: "SET_UNIVERSE_KPI",
-    what,
+    type: "SET_UNIVERSE_KPIS",
     universe,
     data
   }

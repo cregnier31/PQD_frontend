@@ -7,11 +7,11 @@ export class FiltersContainer extends Component {
   async get_plot() {
     const args = {
       "area": this.props.zone["area"],
-      "subarea": this.props.zone["subarea"],
       "universe": this.props.universe,
       "variable": this.props.filters["variable"],
       "dataset": this.props.filters["dataset"],
       "product": this.props.filters["product"],
+      "subarea": this.props.filters["subarea"],
       "depth": this.props.filters["depth"],
       "stat": this.props.filters["stat"],
       "plot_type": this.props.filters["plot_type"]
@@ -44,8 +44,8 @@ export class FiltersContainer extends Component {
     fetch(config['urls']['kpi'], options)
     .then(response => response.json())
     .then( data => {
-      if("id" in data){
-        this.props.setKpi(this.props.universe, data["what"], data["content"])
+      if(data.length){
+        this.props.setKpis(this.props.universe, data)
       }
     })
   }

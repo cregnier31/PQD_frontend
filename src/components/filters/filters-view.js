@@ -33,18 +33,23 @@ const SelectorList = ({props}) => {
       if(filter_is_set_and_data_exists(filters, "dataset", datasets)){
         const products = datasets.filter(item => item.id === filters['dataset'])[0].products
         list.push(get_selector("product", products, props))
-        // Select Depth
+        // Select Subarea
         if(filter_is_set_and_data_exists(filters, "product", products)){
-          const depths = products.filter(item => item.id === filters['product'])[0].depths
-          list.push(get_selector("depth", depths, props))
-          // Select Stat
-          if(filter_is_set_and_data_exists(filters, "depth", depths)){
-            const stats = depths.filter(item => item.id === filters['depth'])[0].stats
-            list.push(get_selector("stat", stats, props))
-            // Select PlotType
-            if(filter_is_set_and_data_exists(filters, "stat", stats)){
-              const plot_types = stats.filter(item => item.id === filters['stat'])[0].plot_types
-              list.push(get_selector("plot_type", plot_types, props))
+          const subareas = products.filter(item => item.id === filters['product'])[0].subareas
+          list.push(get_selector("subarea", subareas, props))
+          // Select Depth
+          if(filter_is_set_and_data_exists(filters, "subarea", subareas)){
+            const depths = subareas.filter(item => item.id === filters['subarea'])[0].depths
+            list.push(get_selector("depth", depths, props))
+            // Select Stat
+            if(filter_is_set_and_data_exists(filters, "depth", depths)){
+              const stats = depths.filter(item => item.id === filters['depth'])[0].stats
+              list.push(get_selector("stat", stats, props))
+              // Select PlotType
+              if(filter_is_set_and_data_exists(filters, "stat", stats)){
+                const plot_types = stats.filter(item => item.id === filters['stat'])[0].plot_types
+                list.push(get_selector("plot_type", plot_types, props))
+              }
             }
           }
         }

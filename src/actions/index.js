@@ -1,3 +1,3 @@
 export {setData} from './data'
-export {setUniverseFilter, setZoneFilter} from './filters'
-export {setPlot, setKpi} from './results'
+export {setUniverseFilter, setAreaFilter} from './filters'
+export {setPlot, setKpis} from './results'
