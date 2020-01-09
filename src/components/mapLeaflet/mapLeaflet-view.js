@@ -43,7 +43,12 @@ let geojsonMarkerOptions = {
 };
 
 export class LeafletMapView extends Component {
-
+  constructor(props) {
+    super(props);
+    this.state = {
+      area: null,
+    };
+  }
 
   componentDidMount() {
     document.getElementById('weathermap').innerHTML = "<div id='map' style='width: 100%; height: 100%;'></div>";
@@ -153,7 +158,7 @@ export class LeafletMapView extends Component {
       }
     }
 
-    switch ('baltic') { // Props region 
+    switch (this.state.area) {
       case 'medsea':
         L.geoJson( meadSea, {
           color: "yellow", weight: 1,
@@ -207,6 +212,12 @@ export class LeafletMapView extends Component {
           radius: '2',
           }).addTo(this.map).bindPopup(l._popup);
       })
+    }
+  }
+
+  async componentWillReceiveProps(nextProps) {
+    if (this.state.area !== nextProps.area) {
+      await this.setState({ area: nextProps.area});
     }
   }
 
