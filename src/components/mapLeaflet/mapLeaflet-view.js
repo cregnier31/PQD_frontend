@@ -34,13 +34,25 @@ const errorMarkers = {
   'balticsea':[],
   'nws': []
 };
+let geojsonMarkerOptions = {
+  radius: 4,
+  weight: 1,
+  opacity: 1,
+  fillOpacity: 0.5,
+  color: 'red',
+};
 
 export class LeafletMapView extends Component {
-
+  constructor(props) {
+    super(props);
+    this.state = {
+      area: props.area,
+    };
+  }
 
   componentDidMount() {
     document.getElementById('weathermap').innerHTML = "<div id='map' style='width: 100%; height: 100%;'></div>";
-    const initialCenter = new L.LatLng(0.94184, 13.71094);
+    const initialCenter = new L.LatLng(51.505, -0.09);
     this.map = L.map('map').setView(initialCenter, 2);
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -145,82 +157,112 @@ export class LeafletMapView extends Component {
           }
       }
     }
-    // for (let y = 0; y < bounds.length; y += 1) {
-    //   L.rectangle(bounds[y].bb, {color: "green", weight: 1}).addTo(this.map).bindPopup(bounds[y].name);
-    // }
-    switch ('nws') { // Props region 
+    switch (this.state.area) {
       case 'medsea':
         L.geoJson( meadSea, {
           color: "yellow", weight: 1,
           onEachFeature: function(feature, layer) { onEachFeature(feature,layer) }
         }).addTo(this.map);
-        
+        this.showGeojsonMap2('MED');
       break;
       case 'ibi':
         L.geoJson( ibi, {
           color: "yellow", weight: 1,
           onEachFeature(feature, layer) { onEachFeature(feature,layer) }
-        }).addTo(this.map)
+        }).addTo(this.map);
+        this.showGeojsonMap2('IBI');
       break;
-      case 'blackSea':
+      case 'blacksea':
         L.geoJson( blackSea, {
           color: "yellow", weight: 1,
           onEachFeature(feature, layer) { onEachFeature(feature,layer) }
-        }).addTo(this.map)
+        }).addTo(this.map);
+        this.showGeojsonMap2('BS');
       break;
       case 'global':
         L.geoJson( global, {
           color: "yellow", weight: 1,
           onEachFeature(feature, layer) { onEachFeature(feature,layer) }
-        }).addTo(this.map)
+        }).addTo(this.map);
+        this.showGeojsonMap2('GLO');
       break;
-      case 'artic':
+      case 'arctic':
         L.geoJson( artic, {
           color: "yellow", weight: 1,
           onEachFeature(feature, layer) { onEachFeature(feature,layer) }
-        }).addTo(this.map)
+        }).addTo(this.map);
+        this.showGeojsonMap2('ARC');
       break;
-      case 'baltic':
+      case 'balticsea':
         L.geoJson( baltic, {
           color: "yellow", weight: 1,
           onEachFeature(feature, layer) { onEachFeature(feature,layer) }
-        }).addTo(this.map)
+        }).addTo(this.map);
+        this.showGeojsonMap2('BAL');
       break;
       case 'nws':
         L.geoJson( nws, {
           color: "yellow", weight: 1,
           onEachFeature(feature, layer) { onEachFeature(feature,layer) }
-        }).addTo(this.map)
+        }).addTo(this.map);
+        this.showGeojsonMap2('NWS');
       break;
       default:
-    }
-
-    if(errorMarkers['nws']) {
-      errorMarkers['nws'].forEach((l) => {
-        L.circleMarker(l._latlng, {
-          radius: '2',
-          }).addTo(this.map).bindPopup(l._popup);
-      })
+        L.geoJson( global, {
+          color: "yellow", weight: 1,
+          onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+        }).addTo(this.map);
+        this.showGeojsonMap2('GLO');
+      break;
     }
   }
 
-  componentWillReceiveProps(newProps) {
-    // if (newProps.areas !== this.props.areas) {
-    //   if (this.geojsonLayer) {
-    //     this.geojsonLayer.removeFrom(this.map);
-    //   }
-    //   this.geojsonLayer = L.geoJSON(newProps.areas)
-    //   .bindPopup(function (layer) {
-    //     const { zone, name } = layer.feature.properties;
-    //     return ( zone !== '' ? `[${zone}] ` : '' ) + name;
-    //   });
-    //   this.geojsonLayer.addTo(this.map);
-    // }
+  async componentWillReceiveProps(nextProps) {
+    if (this.state.area !== nextProps.area) {
+      await this.setState({ area: nextProps.area});
+      await this.props.getArea(nextProps.area);
+    }
+    this.componentDidMount();
   }
 
-  shouldComponentUpdate() {
-    return false;
-  }
+  async showGeojsonMap2(area) {
+    const errorsFile = await import('../../errors/CLASS2/BAL/BALTICSEA_ANALYSIS_FORECAST_PHYS_003_006.json');
+    // Use Props and product
+    const imgfiles = await import('../../plots_class2/BAL/resize/FehmarnBelt_BALTICSEA_ANALYSIS_FORECAST_PHYS_003_006.png');
+    //Use Props and product
+    this.pointToLayer(errorsFile, imgfiles);
+  };
+
+  pointToLayer(latlng, imgfiles) {
+    const customOptions =
+      {
+        'maxWidth': '900',
+        'maxHeight': '600',
+      }
+      latlng.features.map((data) => {
+        let rmsd = data.properties.rmse;
+        if (rmsd <= 0.3) {
+          geojsonMarkerOptions.color = "green"
+        }
+        if (rmsd > 0.3 && rmsd <= 0.5) {
+          geojsonMarkerOptions.color = "yellow"
+        }
+        if (rmsd > 0.5 && rmsd <= 1) {
+          geojsonMarkerOptions.color = "orange"
+        }
+        if (rmsd > 1 ) {
+          geojsonMarkerOptions.color = "red"
+        }
+        const popupText = "<b>Ref:</b> " + data.properties.NAME.bold() +
+          "<br><b>RMSD:</b> " + data.properties.rmse.toFixed(2) +
+          "<br><b>Corr:</b> " + data.properties.correlation.toFixed(2) +
+          "<br><b>Variance explained:</b> " + data.properties.variance_exp.toFixed(2) +
+          "<br><b>Scatter index:</b> " + data.properties.scatter_index.toFixed(2) +
+          "<img src=" + imgfiles.default + "/>";
+        return L.circleMarker(data && data.geometry && data.geometry.coordinates,geojsonMarkerOptions).bindPopup(popupText, customOptions).addTo(this.map)
+      }
+    )
+  };
 
   render() {
     return (

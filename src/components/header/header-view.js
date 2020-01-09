@@ -7,7 +7,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import FilterListIcon from '@material-ui/icons/FilterList';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
 import {UniversePanel} from '../universePanel';
 import { Button } from '@material-ui/core';
 import { Drawer } from './drawer';
@@ -58,6 +58,8 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+let area = null;
+
 const AreaList = ({props}) => {
   var list = []
   if(props.data.length){
@@ -67,11 +69,11 @@ const AreaList = ({props}) => {
         active = 1
       }
       return list.push(
-        <Button key={item.id} value={item.id} active={active} onClick={ () => props.set("area", item.id)}>
-          <Typography variant="h6" noWrap>
+        <Grid item xs={2} md={2} key={item.id}>
+          <Button value={item.id} active={active} onClick={() => {props.set("area", item.id); area = item.name}} color="inherit">
             {item.fullname}
-          </Typography>
-        </Button>
+          </Button>
+        </Grid>
       )
     })
     return list
@@ -82,6 +84,12 @@ const AreaList = ({props}) => {
 export function HeaderView(props) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
+  const [universe, setUniverse] = React.useState(null);
+
+  const getUniverse = (universe) => {
+    setUniverse(universe);
+  };
+
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -105,7 +113,11 @@ export function HeaderView(props) {
           <AreaList props={props} />
         </Toolbar>
       </AppBar>
-      <Drawer handleDrawerClose={handleDrawerClose} open={open}/>
+      <Drawer 
+        handleDrawerClose={handleDrawerClose}
+        open={open}
+        getUniverse={getUniverse}
+      />
       <main
         className={clsx(classes.content, {
           [classes.contentShift]: open,
@@ -120,7 +132,7 @@ export function HeaderView(props) {
           >
             <FilterListIcon />
           </IconButton>
-        <UniversePanel />
+        <UniversePanel universe={universe} area={area} />
       </main>
     </div>
   );

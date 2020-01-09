@@ -8,10 +8,26 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
+import Crop169Icon from '@material-ui/icons/Crop169';
 import {Filter} from '../../filters';
 
 
 const drawerWidth = 240;
+
+const universes = [
+  {
+    name: "BLUE",
+    color: '#92AFCD'
+  },
+  {
+    name: "GREEN",
+    color: '#C6FAE0'
+  },
+  {
+    name: "WHITE",
+    color: '#DEE2E0'
+  },
+]
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -31,10 +47,11 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(0, 1),
     ...theme.mixins.toolbar,
     justifyContent: 'flex-end',
+    height: "120px !important",
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
+    padding: theme.spacing(5),
     transition: theme.transitions.create('margin', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -42,6 +59,19 @@ const useStyles = makeStyles(theme => ({
     marginLeft: -drawerWidth,
   },
 }));
+
+const style = (color) => {
+  switch (color) {
+    case 'BLUE':
+      return <Crop169Icon fontSize="large" style={{ color: 'blue'}} />
+    case 'GREEN':
+      return <Crop169Icon fontSize="large" style={{ color: 'green'}} />
+    case 'WHITE':
+      return <Crop169Icon fontSize="large" style={{ color: 'grey'}} />
+    default:
+      return <Crop169Icon fontSize="large" style={{ color: 'blue'}} />
+  }
+}
 
 export function DrawerView(props) {
   const classes = useStyles();
@@ -64,9 +94,10 @@ export function DrawerView(props) {
           </IconButton>
         </div>
         <List>
-          {['BLUE', 'GREEN', 'WHITE'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemText primary={text} />
+          {universes.map((text) => (
+            <ListItem button key={text.name} onClick={() => props.getUniverse(text)}>
+              <ListItemText primary={text.name}/>
+              {style(text.name)}
             </ListItem>
           ))}
         </List>
