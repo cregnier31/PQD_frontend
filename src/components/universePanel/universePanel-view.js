@@ -44,8 +44,11 @@ export function UniversePanelView(props){
         </Grid>
 
         <Grid container>
-          <Grid item xs={12} md={8}>
-            <Widget area={props.area} />
+          <Grid item xs={12} md={4}>
+            <WidgetChart/>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <WidgetChart/>
           </Grid>
           <Grid item xs={12} md={4}>
             <WidgetChart/>
@@ -69,11 +72,8 @@ export function UniversePanelView(props){
         </Grid>
 
         <Grid container>
-          <Grid item xs={12} md={4}>
-            <WidgetChart/>
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <WidgetChart/>
+          <Grid item xs={12} md={8}>
+            <Widget area={props.area} />
           </Grid>
           <Grid item xs={12} md={4}>
             <WidgetChart/>
