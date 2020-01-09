@@ -1,1 +1,1 @@
-export { UniversePanelRedux as UniversePanel } from './universePanel-redux';
+export { UniversePanelView as UniversePanel } from './universePanel-view';

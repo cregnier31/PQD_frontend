@@ -82,6 +82,11 @@ const AreaList = ({props}) => {
 export function HeaderView(props) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
+  const [universe, setUniverse] = React.useState(null);
+
+  const getUniverse = (universe) => {
+    setUniverse(universe);
+  };
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -105,7 +110,11 @@ export function HeaderView(props) {
           <AreaList props={props} />
         </Toolbar>
       </AppBar>
-      <Drawer handleDrawerClose={handleDrawerClose} open={open}/>
+      <Drawer 
+        handleDrawerClose={handleDrawerClose}
+        open={open}
+        getUniverse={getUniverse}
+      />
       <main
         className={clsx(classes.content, {
           [classes.contentShift]: open,
@@ -120,7 +129,7 @@ export function HeaderView(props) {
           >
             <FilterListIcon />
           </IconButton>
-        <UniversePanel />
+        <UniversePanel universe={universe} />
       </main>
     </div>
   );
