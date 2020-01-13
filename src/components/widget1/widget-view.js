@@ -15,6 +15,7 @@ const useStyles = makeStyles(theme => ({
   },
   left: {
     float: 'left',
+    marginLeft: '10px'
   },
   content: {
     height: '100% !important',
@@ -44,8 +45,8 @@ export function WidgetView(props){
     <div>
       <Card>
         <div className={classes.left}>
-          title
-          <InfoIcon />
+          Title
+          <InfoIcon style={{ marginLeft: '5px'}}/>
         </div>
         <div className={classes.right}>
           <FullscreenIcon onClick={handleOpen} />
