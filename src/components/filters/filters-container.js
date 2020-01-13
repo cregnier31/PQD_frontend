@@ -54,6 +54,7 @@ export class FiltersContainer extends Component {
     return (
       <FiltersView 
         data={this.props.data} 
+        name={this.props.name}
         filters={this.props.filters} 
         set={(name, value) => this.props.set(this.props.universe, name, value)} 
         apply={() => {

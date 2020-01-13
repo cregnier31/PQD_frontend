@@ -25,10 +25,12 @@ const SelectorList = ({props}) => {
     // Select Variable
     const variables = props.data.variables
     list.push(get_selector("variable", variables, props))
+    props.name(false)
     // Select Dataset
     if(filter_is_set_and_data_exists(filters, "variable", variables)){
       const datasets = variables.filter(item => item.id === filters['variable'])[0].datasets
       list.push(get_selector("dataset", datasets, props))
+      props.name(false)
       // Select Product
       if(filter_is_set_and_data_exists(filters, "dataset", datasets)){
         const products = datasets.filter(item => item.id === filters['dataset'])[0].products
@@ -41,6 +43,7 @@ const SelectorList = ({props}) => {
           if(filter_is_set_and_data_exists(filters, "subarea", subareas)){
             const depths = subareas.filter(item => item.id === filters['subarea'])[0].depths
             list.push(get_selector("depth", depths, props))
+            props.name(true)
             // Select Stat
             if(filter_is_set_and_data_exists(filters, "depth", depths)){
               const stats = depths.filter(item => item.id === filters['depth'])[0].stats

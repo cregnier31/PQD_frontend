@@ -28,6 +28,7 @@ const mapStateToProps = (state, props) => {
         zone: selected_area,
         kpi: state.resultsReducer[props.universe]['kpis'],
         plot: state.resultsReducer[props.universe]['plot'],
+        name: props.name
     }
 };
   

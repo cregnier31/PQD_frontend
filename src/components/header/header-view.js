@@ -85,6 +85,11 @@ export function HeaderView(props) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
   const [universe, setUniverse] = React.useState(null);
+  const [product, setProduct] = React.useState(false);
+
+  const getProduct = (name) => {
+    setProduct(name);
+  };
 
   const getUniverse = (universe) => {
     setUniverse(universe);
@@ -117,6 +122,7 @@ export function HeaderView(props) {
         handleDrawerClose={handleDrawerClose}
         open={open}
         getUniverse={getUniverse}
+        getProduct={getProduct}
       />
       <main
         className={clsx(classes.content, {
@@ -132,7 +138,7 @@ export function HeaderView(props) {
           >
             <FilterListIcon />
           </IconButton>
-        <UniversePanel universe={universe} area={area} />
+        <UniversePanel universe={universe} area={area} product={product} />
       </main>
     </div>
   );
