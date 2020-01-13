@@ -7,6 +7,7 @@ import InfoIcon from '@material-ui/icons/Info';
 import MoreVertSharpIcon from '@material-ui/icons/MoreVertSharp';
 import DialogContent from '@material-ui/core/DialogContent';
 import CloseIcon from '@material-ui/icons/Close';
+import Divider from '@material-ui/core/Divider';
 
 const useStyles = makeStyles(theme => ({
   right: {
@@ -14,12 +15,19 @@ const useStyles = makeStyles(theme => ({
   },
   left: {
     float: 'left',
+    marginLeft: '10px'
+  },
+  header: {
+    height: '10%',
   },
   content: {
     height: '100% !important',
-    marginTop: '0px !important',
+    marginTop: '0x !important',
     marginBottom: '0px !important',
-  }
+  },
+  divider: {
+    width: '100% !important',
+  },
 }));
 
 export function WidgetChartView(props){
@@ -35,16 +43,21 @@ export function WidgetChartView(props){
   return (
     <div>
       <Card>
-        <div className={classes.left}>
-          title
-          <InfoIcon />
+        <div className={classes.header}>
+          <div className={classes.left}>
+            Title
+            <InfoIcon style={{ marginLeft: '5px'}}/>
+          </div>
+          <div className={classes.right}>
+            <FullscreenIcon onClick={handleOpen} />
+            <MoreVertSharpIcon />
+          </div>
         </div>
-        <div className={classes.right}>
-          <FullscreenIcon onClick={handleOpen} />
-          <MoreVertSharpIcon />
-        </div>
-        {!open && 
-          'Chart'
+        <Divider className={classes.divider} />
+        {!open &&
+          <div className={classes.content}>
+            Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
+          </div>
         }
         <Modal
           aria-labelledby="simple-modal-title"
