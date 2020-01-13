@@ -77,6 +77,10 @@ export function DrawerView(props) {
   const classes = useStyles();
   const theme = useTheme();
 
+  const getFilter = (bool) => {
+    props.getProduct(bool)
+  };
+
   return (
     <div className={classes.root}>
       <Drawer
@@ -104,7 +108,7 @@ export function DrawerView(props) {
         <Divider />
         <List>
           <div className={'container-filters'}>
-            <Filter universe="BLUE"/>
+            <Filter universe="BLUE" name={getFilter} />
           </div>
         </List>
       </Drawer>

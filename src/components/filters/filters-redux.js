@@ -28,7 +28,8 @@ const mapStateToProps = (state, props) => {
     return {
         data: concerned_data,
         filters: concerned_filters,
-        zone: zone
+        zone: zone,
+        name: props.name
     }
 };
   

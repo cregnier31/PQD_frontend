@@ -49,7 +49,7 @@ export function UniversePanelView(props){
           </Grid>
         </Grid>
 
-        <Grid container>
+        <Grid container style={{opacity: props.product && '0.1'}}>
           <Grid item xs={12} md={4}>
             <WidgetChart/>
           </Grid>
