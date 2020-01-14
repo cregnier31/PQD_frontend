@@ -7,7 +7,10 @@ import InfoIcon from '@material-ui/icons/Info';
 import MoreVertSharpIcon from '@material-ui/icons/MoreVertSharp';
 import DialogContent from '@material-ui/core/DialogContent';
 import CloseIcon from '@material-ui/icons/Close';
+import Popover from '@material-ui/core/Popover';
 import Divider from '@material-ui/core/Divider';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
 
 const useStyles = makeStyles(theme => ({
   right: {
@@ -33,6 +36,16 @@ const useStyles = makeStyles(theme => ({
 export function WidgetChartView(props){
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClickPopover = event => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClosePopover = () => {
+    setAnchorEl(null);
+  };
+
   const handleOpen = () => {
     setOpen(true);
   };
@@ -40,6 +53,8 @@ export function WidgetChartView(props){
   const handleClose = () => {
     setOpen(false);
   };
+  const openAnchor = Boolean(anchorEl);
+  const id = open ? 'simple-popover' : undefined;
   return (
     <div>
       <Card>
@@ -50,7 +65,33 @@ export function WidgetChartView(props){
           </div>
           <div className={classes.right}>
             <FullscreenIcon onClick={handleOpen} />
-            <MoreVertSharpIcon />
+            <MoreVertSharpIcon onClick={handleClickPopover} />
+            <Popover
+              id={id}
+              open={openAnchor}
+              anchorEl={anchorEl}
+              onClose={handleClosePopover}
+              anchorOrigin={{
+                vertical: 'center',
+                horizontal: 'right',
+              }}
+              transformOrigin={{
+                vertical: 'center',
+                horizontal: 'left',
+              }}
+            >
+              <List className={classes.list}>
+                <ListItem button key='partager'>
+                  Partager
+                </ListItem>
+                <ListItem button key='doc'>
+                    Partager
+                </ListItem>
+                <ListItem button key='imprimer'>
+                  Partager
+                </ListItem>
+              </List>
+            </Popover>
           </div>
         </div>
         <Divider className={classes.divider} />

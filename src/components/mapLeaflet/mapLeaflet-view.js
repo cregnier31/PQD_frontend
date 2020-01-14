@@ -217,10 +217,10 @@ export class LeafletMapView extends Component {
     }
   }
 
-  async componentWillReceiveProps(nextProps) {
-    if (this.state.area !== nextProps.area) {
-      await this.setState({ area: nextProps.area});
-      await this.props.getArea(nextProps.area);
+  async componentDidUpdate() {
+    if (this.state.area !== this.props.area) {
+      await this.setState({ area: this.props.area});
+      await this.props.getArea(this.props.area);
     }
     this.componentDidMount();
   }
