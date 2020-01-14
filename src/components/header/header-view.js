@@ -71,7 +71,7 @@ const AreaList = ({props}) => {
       }
       return list.push(
         <Grid item xs={2} md={2} key={item.id}>
-          <Button value={item.id} active={active} onClick={() => {props.set("area", item.id); area = item.name}} color="inherit">
+          <Button value={item.id} active={active} onClick={() => {props.set(item.name)}} color="inherit">
             {item.fullname}
           </Button>
         </Grid>

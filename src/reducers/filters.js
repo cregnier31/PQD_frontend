@@ -48,6 +48,18 @@ export const filtersReducer = (state = default_filters_values, action) => {
       break;
     case "SET_AREA_FILTER":
       newState["area"] = action.value
+      const emptyObj = {
+        variable: "",
+        dataset: "",
+        product: "",
+        subarea: "",
+        depth: "",
+        stat: "",
+        plot_type: "",
+      }
+      newState["BLUE"] = emptyObj
+      newState["GREEN"] = emptyObj
+      newState["WHITE"] = emptyObj
       break;
     default:
       break;
