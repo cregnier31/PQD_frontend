@@ -1,5 +1,6 @@
 const default_filters_values = {
   area: "global",
+  universe: "BLUE",
   BLUE: {
     variable: 56,
     dataset: 436,
@@ -60,6 +61,9 @@ export const filtersReducer = (state = default_filters_values, action) => {
       newState["BLUE"] = emptyObj
       newState["GREEN"] = emptyObj
       newState["WHITE"] = emptyObj
+      break;
+    case "SET_CURRENT_UNIVERSE":
+      newState["universe"] = action.value
       break;
     default:
       break;

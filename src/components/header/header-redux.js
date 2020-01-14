@@ -1,23 +1,25 @@
 import { connect } from "react-redux";
-import { setAreaFilter } from "../../actions";
+import { setAreaFilter, setCurrentUniverse } from "../../actions";
 import { HeaderContainer } from "./header-container";
 
 const mapStateToProps = (state, props) => {
     var concerned_data = {} 
-    var concerned_filters = {}
+    const concerned_filters = state.filtersReducer['area']
+    const universe = state.filtersReducer['universe']
     if(state.dataReducer['areas']){
         concerned_data = state.dataReducer['areas']
-        concerned_filters = state.filtersReducer['area']
     }
     return {
         data: concerned_data,
-        filters: concerned_filters
+        filters: concerned_filters,
+        universe: universe
     }
 };
 
 const mapDispatchToProps = dispatch => {
     return {
         set: (value) => dispatch(setAreaFilter(value)),
+        setUniverse: (value) => dispatch(setCurrentUniverse(value)),
     };
 };
 

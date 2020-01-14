@@ -2,8 +2,6 @@ import React from "react";
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import Divider from '@material-ui/core/Divider';
-import { makeStyles } from '@material-ui/core/styles';
-
 import { WidgetMap } from './widgetMap';
 import { TitleRaw } from './titleRaw';
 import { ChartList} from './chartList';
@@ -11,15 +9,7 @@ import { LinkRaw } from './linkRaw';
 import { Plot } from './plot';
 import { color } from './../../utils';
 
-const useStyles = makeStyles(theme => ({
-  universePanel: {
-    marginTop: '20px',
-  },
-}));
-
 export function UniversePanelView(props){
-  const classes = useStyles();
-  console.log(props)
   return (
     <Card style={{backgroundColor: color[props.universe]['background']}}>
       <TitleRaw universe={props.universe}/>

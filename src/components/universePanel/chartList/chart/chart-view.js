@@ -37,7 +37,6 @@ const useStyles = makeStyles(theme => ({
 export default class ChartContent extends Component {
   constructor(props) {
     super(props);
-    console.log('ChartContent', this.props)
     this.state = {
       crosshairValues: []
     };
@@ -90,7 +89,6 @@ export function ChartView(props){
   const handleClose = () => {
     setOpen(false);
   };
-  console.log("ChartView \t",props)
 
   if( typeof(props.data) ==="undefined"){
     return null

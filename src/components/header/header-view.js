@@ -59,8 +59,6 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-let area = null;
-
 const AreaList = ({props}) => {
   var list = []
   if(props.data.length){
@@ -85,16 +83,6 @@ const AreaList = ({props}) => {
 export function HeaderView(props) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
-  const [universe, setUniverse] = React.useState('BLUE');
-  const [product, setProduct] = React.useState(null)
-
-  const defineUniverse = (universe) => {
-    setUniverse(universe)
-  }
-
-  const defineProduct = (product) => {
-    setProduct(product)
-  }
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -118,11 +106,7 @@ export function HeaderView(props) {
           <AreaList props={props} />
         </Toolbar>
       </AppBar>
-      <Drawer 
-        handleDrawerClose={handleDrawerClose}
-        open={open}
-        setUniverse={(universe) => defineUniverse(universe)}
-        getProduct={(product) => defineProduct(product)}
+      <Drawer handleDrawerClose={handleDrawerClose} open={open} setUniverse={(universe) => props.setUniverse(universe)}
       />
       <main
         className={clsx(classes.content, {
@@ -139,7 +123,7 @@ export function HeaderView(props) {
             <FilterListIcon />
           </IconButton>
         <TopPanel/>
-        <UniversePanel universe={universe} area={area} />
+        <UniversePanel universe={props.universe}/>
       </main>
     </div>
   );

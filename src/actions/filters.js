@@ -13,3 +13,10 @@ export function setAreaFilter(value){
     value
   }
 }
+
+export function setCurrentUniverse(value){
+  return {
+    type: "SET_CURRENT_UNIVERSE",
+    value
+  }
+}

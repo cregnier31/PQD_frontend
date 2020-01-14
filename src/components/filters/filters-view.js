@@ -28,17 +28,15 @@ function filter_is_set_and_data_exists(filters, name, data){
 
 const SelectorList = ({props}) => {
   const filters = props.filters
-  if(props.data.variables){
+  if(typeof(props.data) !== "undefined" && typeof(props.data.variables) !== "undefined"){
     var list = []
     // Select Variable
     const variables = props.data.variables
     list.push(get_selector("variable", variables, props))
-    props.name(false)
     // Select Dataset
     if(filter_is_set_and_data_exists(filters, "variable", variables)){
       const datasets = variables.filter(item => item.id === filters['variable'])[0].datasets
       list.push(get_selector("dataset", datasets, props))
-      props.name(false)
       // Select Product
       if(filter_is_set_and_data_exists(filters, "dataset", datasets)){
         const products = datasets.filter(item => item.id === filters['dataset'])[0].products
@@ -51,7 +49,6 @@ const SelectorList = ({props}) => {
           if(filter_is_set_and_data_exists(filters, "subarea", subareas)){
             const depths = subareas.filter(item => item.id === filters['subarea'])[0].depths
             list.push(get_selector("depth", depths, props))
-            props.name(true)
             // Select Stat
             if(filter_is_set_and_data_exists(filters, "depth", depths)){
               const stats = depths.filter(item => item.id === filters['depth'])[0].stats
@@ -72,16 +69,19 @@ const SelectorList = ({props}) => {
 }
 
 function get_validation_button(props){
-  var displayButton = true
+  // If some filters are not selected yet
   Object.keys(props.filters).map(key => {
     if(props.filters[key] === ""){
-      displayButton = false
+      return null
     }
-    return null
   })
-  if(displayButton){
-    return (<Button onClick={() => props.apply()}>Apply</Button>)
+  // If no data exists for this area/universe
+  if(typeof(props.data) === "undefined"){
+    return (
+      <div>No Data for this Area/Universe</div>
+    )
   }
+  return (<Button onClick={() => props.apply()}>Apply</Button>)
 }
 
 export function FiltersView(props){

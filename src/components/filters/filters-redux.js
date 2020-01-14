@@ -5,17 +5,18 @@ import { FiltersContainer } from "./filters-container";
 const mapStateToProps = (state, props) => {
     var concerned_data = {} 
     var concerned_filters = {}
+    const selected_universe = state.filtersReducer['universe']
     const selected_area = state.filtersReducer['area']
     try {
         if(state.dataReducer['areas']){
             if(typeof(selected_area) === "string"){
                 concerned_data = state.dataReducer['areas']
                 .filter(area => area.name === selected_area)[0]['universes']
-                .filter(universe => universe.name === props.universe)[0]
+                .filter(universe => universe.name === selected_universe)[0]
             }else{
                 concerned_data = state.dataReducer['areas']
                 .filter(area => area.id === selected_area)[0]['universes']
-                .filter(universe => universe.name === props.universe)[0]
+                .filter(universe => universe.name === selected_universe)[0]
             }
             concerned_filters = state.filtersReducer[concerned_data['name']]
         }
@@ -26,8 +27,9 @@ const mapStateToProps = (state, props) => {
         data: concerned_data,
         filters: concerned_filters,
         zone: selected_area,
-        kpi: state.resultsReducer[props.universe]['kpis'],
-        plot: state.resultsReducer[props.universe]['plot'],
+        universe: selected_universe,
+        kpi: state.resultsReducer[selected_universe]['kpis'],
+        plot: state.resultsReducer[selected_universe]['plot'],
         name: props.name
     }
 };

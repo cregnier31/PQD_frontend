@@ -8,7 +8,9 @@ export class HeaderContainer extends Component {
       <HeaderView
         data={this.props.data} 
         filters={this.props.filters} 
-        set={(value) => this.props.set(value)} />
+        universe={this.props.universe}
+        set={(value) => this.props.set(value)}
+        setUniverse={(value) => this.props.setUniverse(value)} />
     )
   }
 }

@@ -13,7 +13,6 @@ import PanoramaFishEyeRoundedIcon from '@material-ui/icons/PanoramaFishEyeRounde
 import {Filter} from '../../filters';
 import { color } from './../../../utils';
 
-
 const drawerWidth = 280;
 
 const useStyles = makeStyles(theme => ({
@@ -61,10 +60,6 @@ export function DrawerView(props) {
   const classes = useStyles();
   const theme = useTheme();
 
-  const getFilter = (bool) => {
-    props.getProduct(bool)
-  };
-
   return (
     <div className={classes.root}>
       <Drawer
@@ -95,7 +90,7 @@ export function DrawerView(props) {
         </List>
         <List>
           <div className={'container-filters'}>
-            <Filter universe="BLUE" name={getFilter} />
+            <Filter universe="BLUE"/>
           </div>
         </List>
       </Drawer>

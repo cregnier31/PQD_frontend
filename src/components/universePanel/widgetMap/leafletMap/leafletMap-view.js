@@ -116,7 +116,6 @@ export class LeafletMapView extends Component {
               errorMarkers[feature.properties.zoneCode].push(m);
             }
             m.on('click', function(){
-              console.log(this)
               let pc = this._icon.firstChild.getAttribute('data-popup');
               if(pc) this.setPopupContent(pc.split('|').join('<br>'));
             })
