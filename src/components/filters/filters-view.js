@@ -69,19 +69,21 @@ const SelectorList = ({props}) => {
 }
 
 function get_validation_button(props){
-  // If some filters are not selected yet
-  Object.keys(props.filters).map(key => {
-    if(props.filters[key] === ""){
-      return null
-    }
-  })
   // If no data exists for this area/universe
   if(typeof(props.data) === "undefined"){
-    return (
-      <div>No Data for this Area/Universe</div>
-    )
+    return (<div>No Data for this Area/Universe</div>)
   }
-  return (<Button onClick={() => props.apply()}>Apply</Button>)
+  // If some filters are not selected yet
+  var displayButton = true
+  Object.keys(props.filters).map(key => {
+    if(props.filters[key] === ""){
+      displayButton = false
+    }
+    return null
+  })
+  if(displayButton){
+    return (<Button onClick={() => props.apply()}>Apply</Button>)
+  }
 }
 
 export function FiltersView(props){
