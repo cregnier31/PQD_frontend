@@ -8,6 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import FilterListIcon from '@material-ui/icons/FilterList';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import Grid from '@material-ui/core/Grid';
+import {TopPanel} from './topPanel';
 import {UniversePanel} from '../universePanel';
 import { Button } from '@material-ui/core';
 import { Drawer } from './drawer';
@@ -84,17 +85,16 @@ const AreaList = ({props}) => {
 export function HeaderView(props) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
-  const [universe, setUniverse] = React.useState(null);
-  const [product, setProduct] = React.useState(false);
+  const [universe, setUniverse] = React.useState('BLUE');
+  const [product, setProduct] = React.useState(null)
 
-  const getProduct = (name) => {
-    setProduct(name);
-  };
+  const defineUniverse = (universe) => {
+    setUniverse(universe)
+  }
 
-  const getUniverse = (universe) => {
-    setUniverse(universe);
-  };
-
+  const defineProduct = (product) => {
+    setProduct(product)
+  }
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -121,8 +121,8 @@ export function HeaderView(props) {
       <Drawer 
         handleDrawerClose={handleDrawerClose}
         open={open}
-        getUniverse={getUniverse}
-        getProduct={getProduct}
+        setUniverse={(universe) => defineUniverse(universe)}
+        getProduct={(product) => defineProduct(product)}
       />
       <main
         className={clsx(classes.content, {
@@ -138,7 +138,8 @@ export function HeaderView(props) {
           >
             <FilterListIcon />
           </IconButton>
-        <UniversePanel universe={universe} area={area} product={product} />
+        <TopPanel/>
+        <UniversePanel universe={universe} area={area} />
       </main>
     </div>
   );

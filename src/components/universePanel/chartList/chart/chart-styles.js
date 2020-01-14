@@ -1,14 +1,12 @@
-
 import styled from "styled-components";
 import Card from "@material-ui/core/Card";
 
 export default styled(Card)`
   && {
-    width: 500px;
+    width: calc(100% - 30px);
     height: 300px;
-    color: black;
-    background-color: red;
-    margin: 15px;
-    justify-content: space-between;
+    float : left;
+    margin : 10px 0 10px 10px;
+    margin-bottom: 20px;
   }
 `;

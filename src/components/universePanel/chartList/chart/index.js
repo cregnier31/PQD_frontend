@@ -1,0 +1,1 @@
+export { ChartRedux as Chart } from './chart-redux';

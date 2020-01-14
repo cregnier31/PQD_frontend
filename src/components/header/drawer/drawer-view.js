@@ -8,26 +8,13 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import Crop169Icon from '@material-ui/icons/Crop169';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import PanoramaFishEyeRoundedIcon from '@material-ui/icons/PanoramaFishEyeRounded';
 import {Filter} from '../../filters';
+import { color } from './../../../utils';
 
 
-const drawerWidth = 240;
-
-const universes = [
-  {
-    name: "BLUE",
-    color: '#92AFCD'
-  },
-  {
-    name: "GREEN",
-    color: '#C6FAE0'
-  },
-  {
-    name: "WHITE",
-    color: '#DEE2E0'
-  },
-]
+const drawerWidth = 280;
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -68,18 +55,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const style = (color) => {
-  switch (color) {
-    case 'BLUE':
-      return <Crop169Icon fontSize="large" style={{ color: 'blue'}} />
-    case 'GREEN':
-      return <Crop169Icon fontSize="large" style={{ color: 'green'}} />
-    case 'WHITE':
-      return <Crop169Icon fontSize="large" style={{ color: 'grey'}} />
-    default:
-      return <Crop169Icon fontSize="large" style={{ color: 'blue'}} />
-  }
-}
+const universes = ['BLUE', 'GREEN', 'WHITE']
 
 export function DrawerView(props) {
   const classes = useStyles();
@@ -108,10 +84,12 @@ export function DrawerView(props) {
         <h4 className={classes.title}>Universes</h4>
         <Divider />
         <List className={classes.list}>
-          {universes.map((text) => (
-            <ListItem button key={text.name} onClick={() => props.getUniverse(text)}>
-              <ListItemText primary={text.name}/>
-              {style(text.name)}
+          {universes.map((universe) => (
+            <ListItem button key={universe} onClick={() => props.setUniverse(universe)}>
+              <ListItemIcon>
+                <PanoramaFishEyeRoundedIcon fontSize="large" style={{ color: color[universe]['icon']}} />
+              </ListItemIcon>
+              <ListItemText primary={universe}/>
             </ListItem>
           ))}
         </List>

@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./widgetChart-styles";
+import Card from "./plot-styles";
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import FullscreenIcon from '@material-ui/icons/Fullscreen';
@@ -11,6 +11,7 @@ import Popover from '@material-ui/core/Popover';
 import Divider from '@material-ui/core/Divider';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
+import { config } from './../../../utils';
 
 const useStyles = makeStyles(theme => ({
   right: {
@@ -33,7 +34,16 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export function WidgetChartView(props){
+function ImagePlot(props){
+  return(
+    <img 
+      src={config['urls']['png']+props.data}
+      alt="Plot"
+    />
+  )
+}
+
+export function PlotView(props){
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -97,7 +107,7 @@ export function WidgetChartView(props){
         <Divider className={classes.divider} />
         {!open &&
           <div className={classes.content}>
-            Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
+            <ImagePlot data={props.data}/>
           </div>
         }
         <Modal
@@ -109,6 +119,7 @@ export function WidgetChartView(props){
           <DialogContent className={classes.content}>
             <Card className={classes.content}>
               <CloseIcon className={classes.right} onClick={handleClose} />
+              <ImagePlot data={props.data}/>
             </Card>
           </DialogContent>
         </Modal>

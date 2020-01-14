@@ -1,1 +1,0 @@
-export { LeafletMapView as LeafletMap } from './mapLeaflet-view';

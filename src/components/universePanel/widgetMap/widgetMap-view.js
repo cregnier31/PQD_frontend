@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "./widget-styles";
-import {LeafletMap} from "../mapLeaflet";
+import Card from "./widgetMap-styles";
+import { LeafletMap } from "./leafletMap";
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import FullscreenIcon from '@material-ui/icons/Fullscreen';
@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export function WidgetView(props){
+export function WidgetMapView(props){
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const [area, setArea] = React.useState(null);

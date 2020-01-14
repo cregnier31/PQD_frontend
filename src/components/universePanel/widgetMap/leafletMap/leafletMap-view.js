@@ -3,13 +3,13 @@ import L from 'leaflet';
 
 import 'leaflet/dist/leaflet.css';
 
-import meadSea from "../../geodata/medsea_zones.geo.json";
-import ibi from "../../geodata/ibi_zones.json";
-import blackSea from "../../geodata/blacksea.json";
-import global from "../../geodata/global.geo.json";
-import artic from "../../geodata/arctic_zone.geo.json";
-import baltic from "../../geodata/baltic_zone.geo.json";
-import nws from "../../geodata/nws_zone.geo.json";
+import meadSea from "../../../../geodata/medsea_zones.geo.json";
+import ibi from "../../../../geodata/ibi_zones.json";
+import blackSea from "../../../../geodata/blacksea.json";
+import global from "../../../../geodata/global.geo.json";
+import artic from "../../../../geodata/arctic_zone.geo.json";
+import baltic from "../../../../geodata/baltic_zone.geo.json";
+import nws from "../../../../geodata/nws_zone.geo.json";
 
 const bounds = [
   {name:'arctic', bb:  [[44.59046718130883,-79.8046875],[87.25291244998124,100.546875]], aliases: ['arctic-ocean']},
@@ -226,9 +226,9 @@ export class LeafletMapView extends Component {
   }
 
   async showGeojsonMap2(area) {
-    const errorsFile = await import('../../errors/CLASS2/BAL/BALTICSEA_ANALYSIS_FORECAST_PHYS_003_006.json');
+    const errorsFile = await import('../../../../errors/CLASS2/BAL/BALTICSEA_ANALYSIS_FORECAST_PHYS_003_006.json');
     // Use Props and product
-    const imgfiles = await import('../../plots_class2/BAL/resize/FehmarnBelt_BALTICSEA_ANALYSIS_FORECAST_PHYS_003_006.png');
+    const imgfiles = await import('../../../../plots_class2/BAL/resize/FehmarnBelt_BALTICSEA_ANALYSIS_FORECAST_PHYS_003_006.png');
     //Use Props and product
     this.pointToLayer(errorsFile, imgfiles);
   };

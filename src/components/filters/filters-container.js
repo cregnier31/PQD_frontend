@@ -44,7 +44,7 @@ export class FiltersContainer extends Component {
     fetch(config['urls']['kpi'], options)
     .then(response => response.json())
     .then( data => {
-      if(data.length){
+      if(data){
         this.props.setKpis(this.props.universe, data)
       }
     })

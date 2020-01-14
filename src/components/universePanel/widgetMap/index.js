@@ -1,0 +1,1 @@
+export { WidgetMapView as WidgetMap } from './widgetMap-view';
