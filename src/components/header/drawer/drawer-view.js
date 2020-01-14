@@ -43,11 +43,11 @@ const useStyles = makeStyles(theme => ({
   toolbar: theme.mixins.toolbar,
   drawerHeader: {
     display: 'flex',
-    alignItems: 'center',
+    alignItems: 'flex-end',
     padding: theme.spacing(0, 1),
     ...theme.mixins.toolbar,
     justifyContent: 'flex-end',
-    height: "120px !important",
+    height: '80px !important',
   },
   content: {
     flexGrow: 1,
@@ -58,6 +58,14 @@ const useStyles = makeStyles(theme => ({
     }),
     marginLeft: -drawerWidth,
   },
+  list: {
+    padding: theme.spacing(0),
+    marginBottom: '10px'
+  },
+  title: {
+    margin: '8px',
+    alignContent: 'flex-start'
+  }
 }));
 
 const style = (color) => {
@@ -97,7 +105,9 @@ export function DrawerView(props) {
             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>
         </div>
-        <List>
+        <h4 className={classes.title}>Universes</h4>
+        <Divider />
+        <List className={classes.list}>
           {universes.map((text) => (
             <ListItem button key={text.name} onClick={() => props.getUniverse(text)}>
               <ListItemText primary={text.name}/>
@@ -105,7 +115,6 @@ export function DrawerView(props) {
             </ListItem>
           ))}
         </List>
-        <Divider />
         <List>
           <div className={'container-filters'}>
             <Filter universe="BLUE" name={getFilter} />

@@ -1,6 +1,14 @@
 import React from "react";
 import {Selector} from './selector';
+import { makeStyles } from '@material-ui/core/styles';
 import Button from "@material-ui/core/Button";
+import Divider from '@material-ui/core/Divider';
+
+const useStyles = makeStyles(theme => ({
+  title: {
+    margin: '8px',
+  }
+}));
 
 function get_selector(name, items, props){
   return (
@@ -72,9 +80,11 @@ function get_validation_button(props){
 }
 
 export function FiltersView(props){
+  const classes = useStyles();
   return (
     <div>
-      <h3>Criteria</h3>
+      <h4 className={classes.title}>Criteria</h4>
+      <Divider />
       <SelectorList props={props} />
       {get_validation_button(props)}
     </div>
