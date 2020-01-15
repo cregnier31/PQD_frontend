@@ -1,0 +1,3973 @@
+{
+ "balticsea-analysis-forecast-phys-003-006": {
+  "sss-ferrybox": {
+   "kattegat-skagerak": {
+    "ind": "RMSD", 
+    "units": "(1e-3)", 
+    "values": {
+     "12 hours": 2.814643003452618, 
+     "36 hours": 2.8368767731950033, 
+     "60 hours": 2.8382156093553372
+    }
+   }, 
+   "baltic-proper": {
+    "ind": "RMSD", 
+    "units": "(1e-3)", 
+    "values": {
+     "12 hours": 0.6628577573131637, 
+     "36 hours": 0.6629166732172902, 
+     "60 hours": 0.6635739855614398
+    }
+   }, 
+   "gulf-of-bothnia": {
+    "ind": "RMSD", 
+    "units": "(1e-3)", 
+    "values": {
+     "12 hours": 0.7285764196405131, 
+     "36 hours": 0.7279985129703795, 
+     "60 hours": 0.7197596260426504
+    }
+   }, 
+   "gulf-of-finland-gulf-of-riga": {
+    "ind": "RMSD", 
+    "units": "(1e-3)", 
+    "values": {
+     "12 hours": 0.8385301626897788, 
+     "36 hours": 0.8373691937325313, 
+     "60 hours": 0.8378725775904093
+    }
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(1e-3)", 
+    "values": {
+     "12 hours": 0.9267248060240989, 
+     "36 hours": 0.9276900679376894, 
+     "60 hours": 0.928406474683917
+    }
+   }, 
+   "danish-straits-ore-sound": {
+    "ind": "RMSD", 
+    "units": "(1e-3)", 
+    "values": {
+     "12 hours": 1.8076215522920647, 
+     "36 hours": 1.8047785307864677, 
+     "60 hours": 1.7985279849228941
+    }
+   }
+  }, 
+  "temperature": {
+   "kattegat-skagerak": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.8104463188001334, 
+     "36 hours": 0.8176038205574983, 
+     "60 hours": 0.817743796126931
+    }
+   }, 
+   "baltic-proper": {
+    "ind": "RMSE", 
+    "img": "plots_prof/balticsea-analysis-forecast-phys-003-006_profile_temperature_baltic-proper.png"
+   }, 
+   "gulf-of-bothnia": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.4900271430003357, 
+     "36 hours": 0.4862280163850956, 
+     "60 hours": 0.4947216255434555
+    }
+   }, 
+   "gulf-of-finland-gulf-of-riga": {
+    "ind": "RMSE", 
+    "img": "plots_prof/balticsea-analysis-forecast-phys-003-006_profile_temperature_gulf-of-finland-gulf-of-riga.png"
+   }, 
+   "full-domain": {
+    "ind": "RMSE", 
+    "img": "plots_prof/balticsea-analysis-forecast-phys-003-006_profile_temperature_full-domain.png"
+   }, 
+   "danish-straits-ore-sound": {
+    "ind": "RMSE", 
+    "img": "plots_prof/balticsea-analysis-forecast-phys-003-006_profile_temperature_danish-straits-ore-sound.png"
+   }
+  }, 
+  "sst-metop": {
+   "kattegat-skagerak": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 1.15852144653404, 
+     "36 hours": 1.1353468489495444, 
+     "60 hours": 1.1414679655267743
+    }
+   }, 
+   "baltic-proper": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 1.0834530247339902, 
+     "36 hours": 1.0717510959194343, 
+     "60 hours": 1.077620238902368
+    }
+   }, 
+   "gulf-of-bothnia": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 1.1777765530218038, 
+     "36 hours": 1.1775156162009581, 
+     "60 hours": 1.1849693170110356
+    }
+   }, 
+   "gulf-of-finland-gulf-of-riga": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 1.2936087519330293, 
+     "36 hours": 1.2925650489801301, 
+     "60 hours": 1.2961136718964172
+    }
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 1.143440046560248, 
+     "36 hours": 1.131201752239308, 
+     "60 hours": 1.1371276472467777
+    }
+   }, 
+   "danish-straits-ore-sound": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 1.0514196878558508, 
+     "36 hours": 1.0127398841319513, 
+     "60 hours": 1.0208553485100715
+    }
+   }
+  }, 
+  "sst-ferrybox": {
+   "kattegat-skagerak": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.7749811575024969, 
+     "36 hours": 0.7789213005292317, 
+     "60 hours": 0.7856600690417104
+    }
+   }, 
+   "baltic-proper": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 1.1765067077751332, 
+     "36 hours": 1.1692382255630631, 
+     "60 hours": 1.158962689869984
+    }
+   }, 
+   "gulf-of-bothnia": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 1.3722419408878983, 
+     "36 hours": 1.381282960146434, 
+     "60 hours": 1.3842724923141294
+    }
+   }, 
+   "gulf-of-finland-gulf-of-riga": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 1.3146844995614053, 
+     "36 hours": 1.3083407398874476, 
+     "60 hours": 1.3264471479080084
+    }
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 1.154949599677257, 
+     "36 hours": 1.1482499894007836, 
+     "60 hours": 1.1301368146931525
+    }
+   }, 
+   "danish-straits-ore-sound": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.8387500327633828, 
+     "36 hours": 0.838552223184804, 
+     "60 hours": 0.845340627465827
+    }
+   }
+  }, 
+  "sst-osisafl3sco": {
+   "kattegat-skagerak": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 1.1553651090037833, 
+     "36 hours": 1.162507061568346, 
+     "60 hours": 1.1670923228011956
+    }
+   }, 
+   "baltic-proper": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 1.0841308848518938, 
+     "36 hours": 1.0870223608049374, 
+     "60 hours": 1.0958776913328019
+    }
+   }, 
+   "gulf-of-bothnia": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 1.376231520519509, 
+     "36 hours": 1.3811120281671885, 
+     "60 hours": 1.3870042972304388
+    }
+   }, 
+   "gulf-of-finland-gulf-of-riga": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 1.5780476349393548, 
+     "36 hours": 1.5916421261311664, 
+     "60 hours": 1.592403794235787
+    }
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 1.236011900479514, 
+     "36 hours": 1.2404091085020421, 
+     "60 hours": 1.2463901424752348
+    }
+   }, 
+   "danish-straits-ore-sound": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 1.1359736403888916, 
+     "36 hours": 1.140210414794741, 
+     "60 hours": 1.1473620839575709
+    }
+   }
+  }, 
+  "salinity": {
+   "kattegat-skagerak": {
+    "ind": "RMSD", 
+    "units": "(1e-3)", 
+    "values": {
+     "12 hours": 3.2275068129949047, 
+     "36 hours": 3.103357538233131, 
+     "60 hours": 3.1613722982776675
+    }
+   }, 
+   "baltic-proper": {
+    "ind": "RMSE", 
+    "img": "plots_prof/balticsea-analysis-forecast-phys-003-006_profile_salinity_baltic-proper.png"
+   }, 
+   "gulf-of-bothnia": {
+    "ind": "RMSD", 
+    "units": "(1e-3)", 
+    "values": ""
+   }, 
+   "gulf-of-finland-gulf-of-riga": {
+    "ind": "RMSE", 
+    "img": "plots_prof/balticsea-analysis-forecast-phys-003-006_profile_salinity_gulf-of-finland-gulf-of-riga.png"
+   }, 
+   "full-domain": {
+    "ind": "RMSE", 
+    "img": "plots_prof/balticsea-analysis-forecast-phys-003-006_profile_salinity_full-domain.png"
+   }, 
+   "danish-straits-ore-sound": {
+    "ind": "RMSE", 
+    "img": "plots_prof/balticsea-analysis-forecast-phys-003-006_profile_salinity_danish-straits-ore-sound.png"
+   }
+  }, 
+  "slev-insitu": {
+   "kattegat-skagerak": {
+    "ind": "RMSD", 
+    "units": "(cm)", 
+    "values": {
+     "12 hours": 9.916604851366209, 
+     "36 hours": 10.31195434754911, 
+     "60 hours": 10.55668669355443
+    }
+   }, 
+   "baltic-proper": {
+    "ind": "RMSD", 
+    "units": "(cm)", 
+    "values": {
+     "12 hours": 7.525473822470814, 
+     "36 hours": 7.658624167952613, 
+     "60 hours": 7.923621869765312
+    }
+   }, 
+   "gulf-of-bothnia": {
+    "ind": "RMSD", 
+    "units": "(cm)", 
+    "values": {
+     "12 hours": 6.8997928812710345, 
+     "36 hours": 6.9584342130028425, 
+     "60 hours": 7.194616645294305
+    }
+   }, 
+   "gulf-of-finland-gulf-of-riga": {
+    "ind": "RMSD", 
+    "units": "(cm)", 
+    "values": {
+     "12 hours": 7.67618864109407, 
+     "36 hours": 7.706226616777319, 
+     "60 hours": 7.991595216326856
+    }
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(cm)", 
+    "values": {
+     "12 hours": 8.220342709194059, 
+     "36 hours": 8.422351354607192, 
+     "60 hours": 8.757256691030133
+    }
+   }, 
+   "danish-straits-ore-sound": {
+    "ind": "RMSD", 
+    "units": "(cm)", 
+    "values": {
+     "12 hours": 8.620586457376557, 
+     "36 hours": 8.907202615976756, 
+     "60 hours": 9.359697148123715
+    }
+   }
+  }
+ },
+
+
+
+
+
+ "global-multiobs-glo-phy-nrt-015-001": {
+  "temperature": {}, 
+  "salinity": {}
+ }, 
+ "medsea-analysis-forecast-phy-006-013": {
+  "sst": {
+   "north-west-med": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.5561180025015002, 
+     "108 hours": 0.557581649774215, 
+     "analysis": 0.5307400373763804
+    }
+   }, 
+   "levantine-sea-central-northern-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.6778415058437226, 
+     "108 hours": 0.6742924452519319, 
+     "analysis": 0.643522180192135
+    }
+   }, 
+   "levantine-sea-western-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.5164510127892014, 
+     "108 hours": 0.5177261169434986, 
+     "analysis": 0.4994317762929927
+    }
+   }, 
+   "ionian-sea-north-eastern-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.5804189864566681, 
+     "108 hours": 0.5737224551124254, 
+     "analysis": 0.5462826605497815
+    }
+   }, 
+   "levantine-sea-central-southern-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.47986943591976666, 
+     "108 hours": 0.4791437402675782, 
+     "analysis": 0.4665554371198482
+    }
+   }, 
+   "ionian-sea-western-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.5990223764833487, 
+     "108 hours": 0.5990835594452237, 
+     "analysis": 0.5662355571237738
+    }
+   }, 
+   "tyrrhenian-sea-southern-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.5626989438997704, 
+     "108 hours": 0.5593526913160763, 
+     "analysis": 0.5325658669974389
+    }
+   }, 
+   "ionian-sea-south-eastern-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.5326690757141661, 
+     "108 hours": 0.5306020877834745, 
+     "analysis": 0.5152438924687908
+    }
+   }, 
+   "tyrrhenian-sea-northern-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.5669467588068315, 
+     "108 hours": 0.5657825446884784, 
+     "analysis": 0.5367790958175326
+    }
+   }, 
+   "aegean-sea": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.6163076178969431, 
+     "108 hours": 0.6157724499797825, 
+     "analysis": 0.5903526705237494
+    }
+   }, 
+   "south-west-med-eastern-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.44573689629931795, 
+     "108 hours": 0.44518185202934035, 
+     "analysis": 0.4376092651557342
+    }
+   }, 
+   "south-west-med-western-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.48255279258572636, 
+     "108 hours": 0.48257175900570276, 
+     "analysis": 0.47403264677145357
+    }
+   }, 
+   "alboran-sea": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.6223111283925932, 
+     "108 hours": 0.6233256398624548, 
+     "analysis": 0.601889859707209
+    }
+   }, 
+   "levantine-sea-eastern-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.5556238479466197, 
+     "108 hours": 0.553195786702575, 
+     "analysis": 0.5355663947792666
+    }
+   }, 
+   "mediterranean-sea": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.568350192339721, 
+     "108 hours": 0.5671082689251867, 
+     "analysis": 0.5431052050631346
+    }
+   }, 
+   "adriatic-sea-northern-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.7331627529551082, 
+     "108 hours": 0.7406437654715483, 
+     "analysis": 0.6780440938420677
+    }
+   }, 
+   "adriatic-sea-southern-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.6970108992762852, 
+     "108 hours": 0.6901850595558787, 
+     "analysis": 0.6486811961734706
+    }
+   }
+  }, 
+  "sstl3s": {
+   "north-west-med": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.5966510113933315, 
+     "108 hours": 0.5954636448324799, 
+     "analysis": 0.570796592035557
+    }
+   }, 
+   "levantine-sea-central-northern-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.7750822332398782, 
+     "108 hours": 0.7709162830076904, 
+     "analysis": 0.7364308145806009
+    }
+   }, 
+   "levantine-sea-western-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.5983585981176746, 
+     "108 hours": 0.598834678848532, 
+     "analysis": 0.5814536233234273
+    }
+   }, 
+   "ionian-sea-north-eastern-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.6861303712509668, 
+     "108 hours": 0.6772663851831164, 
+     "analysis": 0.6485435356065496
+    }
+   }, 
+   "levantine-sea-central-southern-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.5706216305705761, 
+     "108 hours": 0.5680289533841031, 
+     "analysis": 0.5511810480185326
+    }
+   }, 
+   "ionian-sea-western-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.6847352036283401, 
+     "108 hours": 0.6824940778186473, 
+     "analysis": 0.6505607646654351
+    }
+   }, 
+   "tyrrhenian-sea-southern-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.6514768160623657, 
+     "108 hours": 0.6443543639330179, 
+     "analysis": 0.6181505413272071
+    }
+   }, 
+   "ionian-sea-south-eastern-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.6286727309137959, 
+     "108 hours": 0.6258646005106097, 
+     "analysis": 0.6077632288229902
+    }
+   }, 
+   "tyrrhenian-sea-northern-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.6848548968951375, 
+     "108 hours": 0.6811946682712425, 
+     "analysis": 0.6577540715022067
+    }
+   }, 
+   "aegean-sea": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.7080920853535292, 
+     "108 hours": 0.7054831521828887, 
+     "analysis": 0.6783412023097252
+    }
+   }, 
+   "south-west-med-eastern-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.5082741340951685, 
+     "108 hours": 0.5050025905291379, 
+     "analysis": 0.5016731383239638
+    }
+   }, 
+   "south-west-med-western-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.5183955066140086, 
+     "108 hours": 0.516303016744651, 
+     "analysis": 0.5104233617104833
+    }
+   }, 
+   "alboran-sea": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.6823477940838021, 
+     "108 hours": 0.6828739468700615, 
+     "analysis": 0.6631304776284705
+    }
+   }, 
+   "levantine-sea-eastern-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.6284246234407249, 
+     "108 hours": 0.6233823002525285, 
+     "analysis": 0.6032330309942276
+    }
+   }, 
+   "mediterranean-sea": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.6216925780376591, 
+     "108 hours": 0.618384187689422, 
+     "analysis": 0.5943722160965534
+    }
+   }, 
+   "adriatic-sea-northern-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.8060522353976269, 
+     "108 hours": 0.8066766925278283, 
+     "analysis": 0.7628623346051983
+    }
+   }, 
+   "adriatic-sea-southern-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.8004671390722552, 
+     "108 hours": 0.790137639941194, 
+     "analysis": 0.7538686260344512
+    }
+   }
+  }, 
+  "sla": {
+   "north-west-med": {
+    "ind": "RMSD", 
+    "units": "(cm)", 
+    "values": {
+     "12 hours": 3.7370584466689967, 
+     "108 hours": 3.744079730927489, 
+     "analysis": 3.7020842345379563
+    }
+   }, 
+   "levantine-sea-central-northern-part": {
+    "ind": "RMSD", 
+    "units": "(cm)", 
+    "values": {
+     "12 hours": 3.8293998319329274, 
+     "108 hours": 3.830543644464543, 
+     "analysis": 3.8145145574558077
+    }
+   }, 
+   "levantine-sea-western-part": {
+    "ind": "RMSD", 
+    "units": "(cm)", 
+    "values": {
+     "12 hours": 4.662008740535757, 
+     "108 hours": 4.664504849043589, 
+     "analysis": 4.645993269067573
+    }
+   }, 
+   "ionian-sea-north-eastern-part": {
+    "ind": "RMSD", 
+    "units": "(cm)", 
+    "values": {
+     "12 hours": 3.858874782461251, 
+     "108 hours": 3.8730673944132015, 
+     "analysis": 3.832985694037397
+    }
+   }, 
+   "levantine-sea-central-southern-part": {
+    "ind": "RMSD", 
+    "units": "(cm)", 
+    "values": {
+     "12 hours": 5.02650389001968, 
+     "108 hours": 5.038975624972713, 
+     "analysis": 4.976156162433564
+    }
+   }, 
+   "ionian-sea-western-part": {
+    "ind": "RMSD", 
+    "units": "(cm)", 
+    "values": {
+     "12 hours": 3.1104400395415652, 
+     "108 hours": 3.104141915990668, 
+     "analysis": 3.1007801356427667
+    }
+   }, 
+   "tyrrhenian-sea-southern-part": {
+    "ind": "RMSD", 
+    "units": "(cm)", 
+    "values": {
+     "12 hours": 3.4589474404994816, 
+     "108 hours": 3.456976076537123, 
+     "analysis": 3.4306547895359403
+    }
+   }, 
+   "ionian-sea-south-eastern-part": {
+    "ind": "RMSD", 
+    "units": "(cm)", 
+    "values": {
+     "12 hours": 3.9209409396541437, 
+     "108 hours": 3.92546555809071, 
+     "analysis": 3.8951243187817246
+    }
+   }, 
+   "tyrrhenian-sea-northern-part": {
+    "ind": "RMSD", 
+    "units": "(cm)", 
+    "values": {
+     "12 hours": 3.6165797007588476, 
+     "108 hours": 3.615502158945274, 
+     "analysis": 3.618836036082024
+    }
+   }, 
+   "aegean-sea": {
+    "ind": "RMSD", 
+    "units": "(cm)", 
+    "values": {
+     "12 hours": 4.065697020574066, 
+     "108 hours": 4.06270781106204, 
+     "analysis": 4.062786642079441
+    }
+   }, 
+   "south-west-med-eastern-part": {
+    "ind": "RMSD", 
+    "units": "(cm)", 
+    "values": {
+     "12 hours": 5.006442999511024, 
+     "108 hours": 5.026214140340503, 
+     "analysis": 4.897441981234573
+    }
+   }, 
+   "south-west-med-western-part": {
+    "ind": "RMSD", 
+    "units": "(cm)", 
+    "values": {
+     "12 hours": 5.272975343505248, 
+     "108 hours": 5.274631629092967, 
+     "analysis": 5.232810376617259
+    }
+   }, 
+   "alboran-sea": {
+    "ind": "RMSD", 
+    "units": "(cm)", 
+    "values": {
+     "12 hours": 5.426774050120149, 
+     "108 hours": 5.423284289402637, 
+     "analysis": 5.393546704627065
+    }
+   }, 
+   "levantine-sea-eastern-part": {
+    "ind": "RMSD", 
+    "units": "(cm)", 
+    "values": {
+     "12 hours": 3.2603601485321207, 
+     "108 hours": 3.2613188416581953, 
+     "analysis": 3.25628416466927
+    }
+   }, 
+   "mediterranean-sea": {
+    "ind": "RMSD", 
+    "units": "(cm)", 
+    "values": {
+     "12 hours": 4.091288179192644, 
+     "108 hours": 4.095851842778802, 
+     "analysis": 4.063551436562234
+    }
+   }, 
+   "adriatic-sea-northern-part": {
+    "ind": "RMSD", 
+    "units": "(cm)", 
+    "values": {
+     "12 hours": 2.616928349708221, 
+     "108 hours": 2.6178955427251083, 
+     "analysis": 2.616364201934388
+    }
+   }, 
+   "adriatic-sea-southern-part": {
+    "ind": "RMSD", 
+    "units": "(cm)", 
+    "values": {
+     "12 hours": 2.650813764878896, 
+     "108 hours": 2.652969046756756, 
+     "analysis": 2.646498746400195
+    }
+   }
+  }, 
+  "temperature": {
+   "north-west-med": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_temperature_north-west-med.png"
+   }, 
+   "levantine-sea-central-northern-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_temperature_levantine-sea-central-northern-part.png"
+   }, 
+   "levantine-sea-western-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_temperature_levantine-sea-western-part.png"
+   }, 
+   "ionian-sea-north-eastern-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_temperature_ionian-sea-north-eastern-part.png"
+   }, 
+   "levantine-sea-central-southern-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_temperature_levantine-sea-central-southern-part.png"
+   }, 
+   "ionian-sea-western-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_temperature_ionian-sea-western-part.png"
+   }, 
+   "tyrrhenian-sea-southern-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_temperature_tyrrhenian-sea-southern-part.png"
+   }, 
+   "ionian-sea-south-eastern-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_temperature_ionian-sea-south-eastern-part.png"
+   }, 
+   "tyrrhenian-sea-northern-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_temperature_tyrrhenian-sea-northern-part.png"
+   }, 
+   "aegean-sea": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_temperature_aegean-sea.png"
+   }, 
+   "south-west-med-eastern-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_temperature_south-west-med-eastern-part.png"
+   }, 
+   "south-west-med-western-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_temperature_south-west-med-western-part.png"
+   }, 
+   "alboran-sea": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_temperature_alboran-sea.png"
+   }, 
+   "levantine-sea-eastern-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_temperature_levantine-sea-eastern-part.png"
+   }, 
+   "mediterranean-sea": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_temperature_mediterranean-sea.png"
+   }, 
+   "adriatic-sea-northern-part": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "adriatic-sea-southern-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_temperature_adriatic-sea-southern-part.png"
+   }
+  }, 
+  "salinity": {
+   "north-west-med": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_salinity_north-west-med.png"
+   }, 
+   "levantine-sea-central-northern-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_salinity_levantine-sea-central-northern-part.png"
+   }, 
+   "levantine-sea-western-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_salinity_levantine-sea-western-part.png"
+   }, 
+   "ionian-sea-north-eastern-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_salinity_ionian-sea-north-eastern-part.png"
+   }, 
+   "levantine-sea-central-southern-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_salinity_levantine-sea-central-southern-part.png"
+   }, 
+   "ionian-sea-western-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_salinity_ionian-sea-western-part.png"
+   }, 
+   "tyrrhenian-sea-southern-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_salinity_tyrrhenian-sea-southern-part.png"
+   }, 
+   "ionian-sea-south-eastern-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_salinity_ionian-sea-south-eastern-part.png"
+   }, 
+   "tyrrhenian-sea-northern-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_salinity_tyrrhenian-sea-northern-part.png"
+   }, 
+   "aegean-sea": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_salinity_aegean-sea.png"
+   }, 
+   "south-west-med-eastern-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_salinity_south-west-med-eastern-part.png"
+   }, 
+   "south-west-med-western-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_salinity_south-west-med-western-part.png"
+   }, 
+   "alboran-sea": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_salinity_alboran-sea.png"
+   }, 
+   "levantine-sea-eastern-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_salinity_levantine-sea-eastern-part.png"
+   }, 
+   "mediterranean-sea": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_salinity_mediterranean-sea.png"
+   }, 
+   "adriatic-sea-northern-part": {
+    "ind": "RMSD", 
+    "units": "(1e-3)", 
+    "values": ""
+   }, 
+   "adriatic-sea-southern-part": {
+    "ind": "RMSE", 
+    "img": "plots_prof/medsea-analysis-forecast-phy-006-013_profile_salinity_adriatic-sea-southern-part.png"
+   }
+  }
+ },
+
+
+
+ "global-analysis-forecast-bio-001-014": {
+  "chl-a": {
+   "indian-ocean": {
+    "ind": "RMSD", 
+    "units": "(mg/m3)", 
+    "values": {
+     "analysis": 0.47014622550833185
+    }
+   }, 
+   "north-sea": {
+    "ind": "RMSD", 
+    "units": "(mg/m3)", 
+    "values": {
+     "analysis": 0.45357678490224285
+    }
+   }, 
+   "antarctic-circumpolar": {
+    "ind": "RMSD", 
+    "units": "(mg/m3)", 
+    "values": {
+     "analysis": 0.4264171705672698
+    }
+   }, 
+   "tropical-pacific-ocean": {
+    "ind": "RMSD", 
+    "units": "(mg/m3)", 
+    "values": {
+     "analysis": 0.36400533010027614
+    }
+   }, 
+   "baltic-sea": {
+    "ind": "RMSD", 
+    "units": "(mg/m3)", 
+    "values": {
+     "analysis": 0.6735544538842893
+    }
+   }, 
+   "north-pacific-ocean": {
+    "ind": "RMSD", 
+    "units": "(mg/m3)", 
+    "values": {
+     "analysis": 0.41591937486252795
+    }
+   }, 
+   "south-atlantic-ocean": {
+    "ind": "RMSD", 
+    "units": "(mg/m3)", 
+    "values": {
+     "analysis": 0.41834255776235757
+    }
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(mg/m3)", 
+    "values": {
+     "analysis": 0.45270318065804843
+    }
+   }, 
+   "tropical-atlantic-ocean": {
+    "ind": "RMSD", 
+    "units": "(mg/m3)", 
+    "values": {
+     "analysis": 0.4580838769348553
+    }
+   }, 
+   "arctic-ocean": {
+    "ind": "RMSD", 
+    "units": "(mg/m3)", 
+    "values": {
+     "analysis": 0.6416889479197478
+    }
+   }, 
+   "mediterranean-sea": {
+    "ind": "RMSD", 
+    "units": "(mg/m3)", 
+    "values": {
+     "analysis": 0.48824235217405043
+    }
+   }, 
+   "north-atlantic-ocean": {
+    "ind": "RMSD", 
+    "units": "(mg/m3)", 
+    "values": {
+     "analysis": 0.48660145136063904
+    }
+   }, 
+   "iberian-biscay-irish": {
+    "ind": "RMSD", 
+    "units": "(mg/m3)", 
+    "values": {
+     "analysis": 0.5122504555305937
+    }
+   }, 
+   "south-pacific-ocean": {
+    "ind": "RMSD", 
+    "units": "(mg/m3)", 
+    "values": {
+     "analysis": 0.3721225964332397
+    }
+   }
+  }
+ },
+ 
+ 
+ "medsea-analysis-forecast-bio-006-014": {
+  "log10-chlorophyll": {
+   "northern-adriatic": {
+    "ind": "RMSD", 
+    "units": "(log(mg Chl*m^-3))", 
+    "values": {
+     "12 hours": 0.1814356354226577
+    }
+   }, 
+   "aegean-sea": {
+    "ind": "RMSD", 
+    "units": "(log(mg Chl*m^-3))", 
+    "values": {
+     "12 hours": 0.13097978403489738
+    }
+   }, 
+   "western-ionian": {
+    "ind": "RMSD", 
+    "units": "(log(mg Chl*m^-3))", 
+    "values": {
+     "12 hours": 0.11328096667995488
+    }
+   }, 
+   "southern-tyrrhenian": {
+    "ind": "RMSD", 
+    "units": "(log(mg Chl*m^-3))", 
+    "values": {
+     "12 hours": 0.15423338022247143
+    }
+   }, 
+   "north-western-mediterranean": {
+    "ind": "RMSD", 
+    "units": "(log(mg Chl*m^-3))", 
+    "values": {
+     "12 hours": 0.22591717706521675
+    }
+   }, 
+   "south-western-mediterranean-east": {
+    "ind": "RMSD", 
+    "units": "(log(mg Chl*m^-3))", 
+    "values": {
+     "12 hours": 0.15242370974959993
+    }
+   }, 
+   "western-levantine": {
+    "ind": "RMSD", 
+    "units": "(log(mg Chl*m^-3))", 
+    "values": {
+     "12 hours": 0.10690070574308036
+    }
+   }, 
+   "southern-levantine": {
+    "ind": "RMSD", 
+    "units": "(log(mg Chl*m^-3))", 
+    "values": {
+     "12 hours": 0.10327784778862008
+    }
+   }, 
+   "eastern-levantine": {
+    "ind": "RMSD", 
+    "units": "(log(mg Chl*m^-3))", 
+    "values": {
+     "12 hours": 0.12537030852951592
+    }
+   }, 
+   "mediterranean-sea": {
+    "ind": "RMSD", 
+    "units": "(log(mg Chl*m^-3))", 
+    "values": {
+     "12 hours": 0.15626836815488007
+    }
+   }, 
+   "northern-ionian": {
+    "ind": "RMSD", 
+    "units": "(log(mg Chl*m^-3))", 
+    "values": {
+     "12 hours": 0.1458943801654599
+    }
+   }, 
+   "alboran-sea": {
+    "ind": "RMSD", 
+    "units": "(log(mg Chl*m^-3))", 
+    "values": {
+     "12 hours": 0.31014035750932734
+    }
+   }, 
+   "northern-levantine": {
+    "ind": "RMSD", 
+    "units": "(log(mg Chl*m^-3))", 
+    "values": {
+     "12 hours": 0.1208118536835967
+    }
+   }, 
+   "northern-tyrrhenian": {
+    "ind": "RMSD", 
+    "units": "(log(mg Chl*m^-3))", 
+    "values": {
+     "12 hours": 0.20196174535453
+    }
+   }, 
+   "southern-adriatic": {
+    "ind": "RMSD", 
+    "units": "(log(mg Chl*m^-3))", 
+    "values": {
+     "12 hours": 0.20828375348652461
+    }
+   }, 
+   "south-western-mediterranean-west": {
+    "ind": "RMSD", 
+    "units": "(log(mg Chl*m^-3))", 
+    "values": {
+     "12 hours": 0.17434619576964738
+    }
+   }, 
+   "eastern-ionian": {
+    "ind": "RMSD", 
+    "units": "(log(mg Chl*m^-3))", 
+    "values": {
+     "12 hours": 0.10129489668260568
+    }
+   }
+  }
+ },
+
+
+
+ "global-analysis-forecast-phys-001-024": {
+  "sla": {
+   "indian-ocean": {
+    "ind": "RMSD", 
+    "units": "(meters)", 
+    "values": {
+     "12 hours": 0.05817836549481468, 
+     "108 hours": 0.06556666507003427, 
+     "60 hours": 0.06350021716317962
+    }
+   }, 
+   "north-sea": {
+    "ind": "RMSD", 
+    "units": "(meters)", 
+    "values": {
+     "12 hours": 0.1170758823698502, 
+     "108 hours": 0.11909312264785306, 
+     "60 hours": 0.11787228122708783
+    }
+   }, 
+   "antarctic-circumpolar": {
+    "ind": "RMSD", 
+    "units": "(meters)", 
+    "values": {
+     "12 hours": 0.0748743290379329, 
+     "108 hours": 0.08748212093074421, 
+     "60 hours": 0.08443986529588048
+    }
+   }, 
+   "tropical-pacific-ocean": {
+    "ind": "RMSD", 
+    "units": "(meters)", 
+    "values": {
+     "12 hours": 0.06042592782528927, 
+     "108 hours": 0.06593074568267072, 
+     "60 hours": 0.06426687006350033
+    }
+   }, 
+   "baltic-sea": {
+    "ind": "RMSD", 
+    "units": "(meters)", 
+    "values": {
+     "12 hours": 0.17075223884163088, 
+     "108 hours": 0.1758435998181946, 
+     "60 hours": 0.17531485970660965
+    }
+   }, 
+   "north-pacific-ocean": {
+    "ind": "RMSD", 
+    "units": "(meters)", 
+    "values": {
+     "12 hours": 0.06667276698120636, 
+     "108 hours": 0.07478005175699046, 
+     "60 hours": 0.072644745725612
+    }
+   }, 
+   "south-atlantic-ocean": {
+    "ind": "RMSD", 
+    "units": "(meters)", 
+    "values": {
+     "12 hours": 0.053551366458261515, 
+     "108 hours": 0.06593093795536087, 
+     "60 hours": 0.06300125231747399
+    }
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(meters)", 
+    "values": {
+     "12 hours": 0.06841971748429941, 
+     "108 hours": 0.07733825953384482, 
+     "60 hours": 0.07505020410494342
+    }
+   }, 
+   "tropical-atlantic-ocean": {
+    "ind": "RMSD", 
+    "units": "(meters)", 
+    "values": {
+     "12 hours": 0.0434093923564363, 
+     "108 hours": 0.047122686057726494, 
+     "60 hours": 0.04617775013264545
+    }
+   }, 
+   "arctic-ocean": {
+    "ind": "RMSD", 
+    "units": "(meters)", 
+    "values": {
+     "12 hours": 0.09520640907242182, 
+     "108 hours": 0.09748086648083018, 
+     "60 hours": 0.09654738853733558
+    }
+   }, 
+   "mediterranean-sea": {
+    "ind": "RMSD", 
+    "units": "(meters)", 
+    "values": {
+     "12 hours": 0.0830329196045623, 
+     "108 hours": 0.08497204344216536, 
+     "60 hours": 0.08484195981171931
+    }
+   }, 
+   "north-atlantic-ocean": {
+    "ind": "RMSD", 
+    "units": "(meters)", 
+    "values": {
+     "12 hours": 0.07566589927017148, 
+     "108 hours": 0.08765904972972682, 
+     "60 hours": 0.08484567189717475
+    }
+   }, 
+   "iberian-biscay-irish": {
+    "ind": "RMSD", 
+    "units": "(meters)", 
+    "values": {
+     "12 hours": 0.08084290782099295, 
+     "108 hours": 0.08197296387221839, 
+     "60 hours": 0.08143190049159522
+    }
+   }, 
+   "south-pacific-ocean": {
+    "ind": "RMSD", 
+    "units": "(meters)", 
+    "values": {
+     "12 hours": 0.06366057438614242, 
+     "108 hours": 0.07212814323273495, 
+     "60 hours": 0.06979481186851233
+    }
+   }
+  }, 
+  "sst": {
+   "indian-ocean": {
+    "ind": "RMSD", 
+    "units": "(Kelvin)", 
+    "values": {
+     "12 hours": 0.42529124716198774, 
+     "108 hours": 0.49153133613084127, 
+     "60 hours": 0.46791408488058234
+    }
+   }, 
+   "north-sea": {
+    "ind": "RMSD", 
+    "units": "(Kelvin)", 
+    "values": {
+     "12 hours": 0.6181546621853983, 
+     "108 hours": 0.6470540427660831, 
+     "60 hours": 0.639843659210376
+    }
+   }, 
+   "antarctic-circumpolar": {
+    "ind": "RMSD", 
+    "units": "(Kelvin)", 
+    "values": {
+     "12 hours": 0.6957808930487231, 
+     "108 hours": 0.7717509320731137, 
+     "60 hours": 0.7526294169904114
+    }
+   }, 
+   "tropical-pacific-ocean": {
+    "ind": "RMSD", 
+    "units": "(Kelvin)", 
+    "values": {
+     "12 hours": 0.3731458091701708, 
+     "108 hours": 0.44072540565229956, 
+     "60 hours": 0.4179999907800175
+    }
+   }, 
+   "baltic-sea": {
+    "ind": "RMSD", 
+    "units": "(Kelvin)", 
+    "values": {
+     "12 hours": 0.9783334838033635, 
+     "108 hours": 1.0770083032269715, 
+     "60 hours": 1.0484268812858326
+    }
+   }, 
+   "north-pacific-ocean": {
+    "ind": "RMSD", 
+    "units": "(Kelvin)", 
+    "values": {
+     "12 hours": 0.5552412030240732, 
+     "108 hours": 0.6354147935453995, 
+     "60 hours": 0.6111828238821505
+    }
+   }, 
+   "south-atlantic-ocean": {
+    "ind": "RMSD", 
+    "units": "(Kelvin)", 
+    "values": {
+     "12 hours": 0.5298721133204565, 
+     "108 hours": 0.6173485068758767, 
+     "60 hours": 0.597605063882327
+    }
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(Kelvin)", 
+    "values": {
+     "12 hours": 0.6244459481464988, 
+     "108 hours": 0.7059739619173094, 
+     "60 hours": 0.6844279984650907
+    }
+   }, 
+   "tropical-atlantic-ocean": {
+    "ind": "RMSD", 
+    "units": "(Kelvin)", 
+    "values": {
+     "12 hours": 0.3446492570200115, 
+     "108 hours": 0.4035511669697608, 
+     "60 hours": 0.3869218608256615
+    }
+   }, 
+   "arctic-ocean": {
+    "ind": "RMSD", 
+    "units": "(Kelvin)", 
+    "values": {
+     "12 hours": 1.201044937163777, 
+     "108 hours": 1.2804184788005795, 
+     "60 hours": 1.2681769366371185
+    }
+   }, 
+   "mediterranean-sea": {
+    "ind": "RMSD", 
+    "units": "(Kelvin)", 
+    "values": {
+     "12 hours": 0.6425076969561472, 
+     "108 hours": 0.6513925017187561, 
+     "60 hours": 0.6496327322269466
+    }
+   }, 
+   "north-atlantic-ocean": {
+    "ind": "RMSD", 
+    "units": "(Kelvin)", 
+    "values": {
+     "12 hours": 0.723206926454753, 
+     "108 hours": 0.8532228437219742, 
+     "60 hours": 0.8217051250120102
+    }
+   }, 
+   "iberian-biscay-irish": {
+    "ind": "RMSD", 
+    "units": "(Kelvin)", 
+    "values": {
+     "12 hours": 0.4646796197348294, 
+     "108 hours": 0.494080730321133, 
+     "60 hours": 0.4832212502054178
+    }
+   }, 
+   "south-pacific-ocean": {
+    "ind": "RMSD", 
+    "units": "(Kelvin)", 
+    "values": {
+     "12 hours": 0.43092251380141616, 
+     "108 hours": 0.49320340211776204, 
+     "60 hours": 0.4746783625207167
+    }
+   }
+  }, 
+  "temperature": {
+   "indian-ocean": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_temperature_indian-ocean.png"
+   }, 
+   "north-sea": {
+    "ind": "RMSD", 
+    "units": "(Kelvin)", 
+    "values": ""
+   }, 
+   "antarctic-circumpolar": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_temperature_antarctic-circumpolar.png"
+   }, 
+   "tropical-pacific-ocean": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_temperature_tropical-pacific-ocean.png"
+   }, 
+   "baltic-sea": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_temperature_baltic-sea.png"
+   }, 
+   "north-pacific-ocean": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_temperature_north-pacific-ocean.png"
+   }, 
+   "south-atlantic-ocean": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_temperature_south-atlantic-ocean.png"
+   }, 
+   "full-domain": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_temperature_full-domain.png"
+   }, 
+   "tropical-atlantic-ocean": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_temperature_tropical-atlantic-ocean.png"
+   }, 
+   "arctic-ocean": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_temperature_arctic-ocean.png"
+   }, 
+   "mediterranean-sea": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_temperature_mediterranean-sea.png"
+   }, 
+   "north-atlantic-ocean": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_temperature_north-atlantic-ocean.png"
+   }, 
+   "iberian-biscay-irish": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_temperature_iberian-biscay-irish.png"
+   }, 
+   "south-pacific-ocean": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_temperature_south-pacific-ocean.png"
+   }
+  }, 
+  "salinity": {
+   "indian-ocean": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_salinity_indian-ocean.png"
+   }, 
+   "north-sea": {
+    "ind": "RMSD", 
+    "units": "(1e-3)", 
+    "values": ""
+   }, 
+   "antarctic-circumpolar": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_salinity_antarctic-circumpolar.png"
+   }, 
+   "tropical-pacific-ocean": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_salinity_tropical-pacific-ocean.png"
+   }, 
+   "baltic-sea": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_salinity_baltic-sea.png"
+   }, 
+   "north-pacific-ocean": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_salinity_north-pacific-ocean.png"
+   }, 
+   "south-atlantic-ocean": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_salinity_south-atlantic-ocean.png"
+   }, 
+   "full-domain": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_salinity_full-domain.png"
+   }, 
+   "tropical-atlantic-ocean": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_salinity_tropical-atlantic-ocean.png"
+   }, 
+   "arctic-ocean": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_salinity_arctic-ocean.png"
+   }, 
+   "mediterranean-sea": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_salinity_mediterranean-sea.png"
+   }, 
+   "north-atlantic-ocean": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_salinity_north-atlantic-ocean.png"
+   }, 
+   "iberian-biscay-irish": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_salinity_iberian-biscay-irish.png"
+   }, 
+   "south-pacific-ocean": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-024_profile_salinity_south-pacific-ocean.png"
+   }
+  }
+ },
+
+
+
+ "arctic-analysis-forecast-phys-002-001-a": {
+  "temperature": {
+   "arctic-sector-65w-55e": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "arctic-svalbard": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "atlantic-sector": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "south-domain": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "arctic-sector-175e-65w": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "nordic-seas-south": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "nordic-seas": {
+    "ind": "RMSE", 
+    "img": "plots_prof/arctic-analysis-forecast-phys-002-001-a_profile_temperature_nordic-seas.png"
+   }, 
+   "full-domain": {
+    "ind": "RMSE", 
+    "img": "plots_prof/arctic-analysis-forecast-phys-002-001-a_profile_temperature_full-domain.png"
+   }, 
+   "barents-sea": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "arctic-sector-55e-175e": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }
+  }, 
+  "seaice-edge": {
+   "arctic-sector-65w-55e": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": ""
+   }, 
+   "arctic-svalbard": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": {
+     "12 hours": 75670.99030231686, 
+     "108 hours": 106263.78302186332, 
+     "60 hours": 83742.3645235791
+    }
+   }, 
+   "atlantic-sector": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": ""
+   }, 
+   "south-domain": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": ""
+   }, 
+   "arctic-sector-175e-65w": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": ""
+   }, 
+   "nordic-seas-south": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": ""
+   }, 
+   "nordic-seas": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": ""
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": ""
+   }, 
+   "barents-sea": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": ""
+   }, 
+   "arctic-sector-55e-175e": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": ""
+   }
+  }, 
+  "seaice-concentration": {
+   "arctic-sector-65w-55e": {
+    "ind": "RMSD", 
+    "units": "(1)", 
+    "values": ""
+   }, 
+   "arctic-svalbard": {
+    "ind": "RMSD", 
+    "units": "(1)", 
+    "values": {
+     "12 hours": 0.20128387522871302, 
+     "108 hours": 0.6764551576187677, 
+     "60 hours": 0.3557289138960072
+    }
+   }, 
+   "atlantic-sector": {
+    "ind": "RMSD", 
+    "units": "(1)", 
+    "values": ""
+   }, 
+   "south-domain": {
+    "ind": "RMSD", 
+    "units": "(1)", 
+    "values": ""
+   }, 
+   "arctic-sector-175e-65w": {
+    "ind": "RMSD", 
+    "units": "(1)", 
+    "values": ""
+   }, 
+   "nordic-seas-south": {
+    "ind": "RMSD", 
+    "units": "(1)", 
+    "values": ""
+   }, 
+   "nordic-seas": {
+    "ind": "RMSD", 
+    "units": "(1)", 
+    "values": ""
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(1)", 
+    "values": ""
+   }, 
+   "barents-sea": {
+    "ind": "RMSD", 
+    "units": "(1)", 
+    "values": ""
+   }, 
+   "arctic-sector-55e-175e": {
+    "ind": "RMSD", 
+    "units": "(1)", 
+    "values": ""
+   }
+  }, 
+  "salinity": {
+   "arctic-sector-65w-55e": {
+    "ind": "RMSD", 
+    "units": "(1e-3)", 
+    "values": ""
+   }, 
+   "arctic-svalbard": {
+    "ind": "RMSD", 
+    "units": "(1e-3)", 
+    "values": ""
+   }, 
+   "atlantic-sector": {
+    "ind": "RMSD", 
+    "units": "(1e-3)", 
+    "values": ""
+   }, 
+   "south-domain": {
+    "ind": "RMSD", 
+    "units": "(1e-3)", 
+    "values": ""
+   }, 
+   "arctic-sector-175e-65w": {
+    "ind": "RMSD", 
+    "units": "(1e-3)", 
+    "values": ""
+   }, 
+   "nordic-seas-south": {
+    "ind": "RMSD", 
+    "units": "(1e-3)", 
+    "values": ""
+   }, 
+   "nordic-seas": {
+    "ind": "RMSE", 
+    "img": "plots_prof/arctic-analysis-forecast-phys-002-001-a_profile_salinity_nordic-seas.png"
+   }, 
+   "full-domain": {
+    "ind": "RMSE", 
+    "img": "plots_prof/arctic-analysis-forecast-phys-002-001-a_profile_salinity_full-domain.png"
+   }, 
+   "barents-sea": {
+    "ind": "RMSD", 
+    "units": "(1e-3)", 
+    "values": ""
+   }, 
+   "arctic-sector-55e-175e": {
+    "ind": "RMSD", 
+    "units": "(1e-3)", 
+    "values": ""
+   }
+  }, 
+  "sst-avhrr": {
+   "arctic-sector-65w-55e": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "arctic-svalbard": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "atlantic-sector": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "south-domain": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "arctic-sector-175e-65w": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "nordic-seas-south": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "nordic-seas": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.7160108635068139, 
+     "108 hours": 0.7529986399293328, 
+     "60 hours": 0.7227775671604203
+    }
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.8663209280602879, 
+     "108 hours": 0.9146459833645123, 
+     "60 hours": 0.8916769165482132
+    }
+   }, 
+   "barents-sea": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.7032384532265401, 
+     "108 hours": 0.7403850288428979, 
+     "60 hours": 0.737679993158231
+    }
+   }, 
+   "arctic-sector-55e-175e": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }
+  }, 
+  "seaice-drift": {
+   "arctic-sector-65w-55e": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": {
+     "12 hours": 6100.094446315422, 
+     "108 hours": 6713.967446014445, 
+     "60 hours": 5791.371587820717
+    }
+   }, 
+   "arctic-svalbard": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": ""
+   }, 
+   "atlantic-sector": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": ""
+   }, 
+   "south-domain": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": ""
+   }, 
+   "arctic-sector-175e-65w": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": {
+     "12 hours": 5407.9623314815535, 
+     "108 hours": 5528.39954962075, 
+     "60 hours": 5353.803709880894
+    }
+   }, 
+   "nordic-seas-south": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": ""
+   }, 
+   "nordic-seas": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": ""
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": {
+     "12 hours": 6040.308135479638, 
+     "108 hours": 5891.09470195494, 
+     "60 hours": 5730.340001006204
+    }
+   }, 
+   "barents-sea": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": ""
+   }, 
+   "arctic-sector-55e-175e": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": {
+     "12 hours": 5987.391069230369, 
+     "108 hours": 6143.124766192212, 
+     "60 hours": 5930.728018084272
+    }
+   }
+  }, 
+  "sst-insitu": {
+   "arctic-sector-65w-55e": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "arctic-svalbard": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "atlantic-sector": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "south-domain": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "arctic-sector-175e-65w": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "nordic-seas-south": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "nordic-seas": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.6861819631275414, 
+     "108 hours": 0.7137461837352307, 
+     "60 hours": 0.6984024462134447
+    }
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 1.0986962469048318, 
+     "108 hours": 1.1332843101891534, 
+     "60 hours": 1.079526423479706
+    }
+   }, 
+   "barents-sea": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "12 hours": 0.7160379441327737, 
+     "108 hours": 0.7328440374180434, 
+     "60 hours": 0.7423590405578369
+    }
+   }, 
+   "arctic-sector-55e-175e": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }
+  }, 
+  "sla": {
+   "arctic-sector-65w-55e": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": ""
+   }, 
+   "arctic-svalbard": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": ""
+   }, 
+   "atlantic-sector": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": ""
+   }, 
+   "south-domain": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": {
+     "12 hours": 0.06687774417466474, 
+     "108 hours": 0.06804334629566426, 
+     "60 hours": 0.06798756771945308
+    }
+   }, 
+   "arctic-sector-175e-65w": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": ""
+   }, 
+   "nordic-seas-south": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": {
+     "12 hours": 0.05262819628415875, 
+     "108 hours": 0.05322550958691428, 
+     "60 hours": 0.05281218523878878
+    }
+   }, 
+   "nordic-seas": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": ""
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": ""
+   }, 
+   "barents-sea": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": ""
+   }, 
+   "arctic-sector-55e-175e": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": ""
+   }
+  }
+ },
+
+
+
+ "northwestshelf-analysis-forecast-bio-004-002-b": {
+  "log10-chlorophyll": {
+   "northern-north-sea": {
+    "ind": "RMSD", 
+    "units": "(log10(mg))", 
+    "values": ""
+   }, 
+   "on-shelf": {
+    "ind": "RMSD", 
+    "units": "(log10(mg))", 
+    "values": {
+     "12 hours": 1.0633743425608968, 
+     "108 hours": 1.0620372342353765, 
+     "60 hours": 1.062460604133658
+    }
+   }, 
+   "southern-north-sea": {
+    "ind": "RMSD", 
+    "units": "(log10(mg))", 
+    "values": ""
+   }, 
+   "norwegian-trench": {
+    "ind": "RMSD", 
+    "units": "(log10(mg))", 
+    "values": ""
+   }, 
+   "irish-sea": {
+    "ind": "RMSD", 
+    "units": "(log10(mg))", 
+    "values": ""
+   }, 
+   "south-western-approach": {
+    "ind": "RMSD", 
+    "units": "(log10(mg))", 
+    "values": ""
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(log10(mg))", 
+    "values": {
+     "12 hours": 0.9975099910562599, 
+     "108 hours": 0.9931085407783129, 
+     "60 hours": 0.9954553490106735
+    }
+   }, 
+   "north-western-approach": {
+    "ind": "RMSD", 
+    "units": "(log10(mg))", 
+    "values": ""
+   }, 
+   "off-shelf": {
+    "ind": "RMSD", 
+    "units": "(log10(mg))", 
+    "values": {
+     "12 hours": 0.9651085664000661, 
+     "108 hours": 0.9573863924388539, 
+     "60 hours": 0.9621217230524397
+    }
+   }
+  }, 
+  "spm": {
+   "northern-north-sea": {
+    "ind": "RMSD", 
+    "units": "(g/m3)", 
+    "values": ""
+   }, 
+   "on-shelf": {
+    "ind": "RMSD", 
+    "units": "(g/m3)", 
+    "values": {
+     "12 hours": 4.501485498600632, 
+     "108 hours": 4.504288243336704, 
+     "60 hours": 4.504748842275896
+    }
+   }, 
+   "southern-north-sea": {
+    "ind": "RMSD", 
+    "units": "(g/m3)", 
+    "values": ""
+   }, 
+   "norwegian-trench": {
+    "ind": "RMSD", 
+    "units": "(g/m3)", 
+    "values": ""
+   }, 
+   "irish-sea": {
+    "ind": "RMSD", 
+    "units": "(g/m3)", 
+    "values": ""
+   }, 
+   "south-western-approach": {
+    "ind": "RMSD", 
+    "units": "(g/m3)", 
+    "values": ""
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(g/m3)", 
+    "values": {
+     "12 hours": 3.51847440396806, 
+     "108 hours": 3.5208385855607762, 
+     "60 hours": 3.5216772190683288
+    }
+   }, 
+   "north-western-approach": {
+    "ind": "RMSD", 
+    "units": "(g/m3)", 
+    "values": ""
+   }, 
+   "off-shelf": {
+    "ind": "RMSD", 
+    "units": "(g/m3)", 
+    "values": {
+     "12 hours": 1.5469598369299493, 
+     "108 hours": 1.5476614229710985, 
+     "60 hours": 1.5470860350525601
+    }
+   }
+  }
+ },
+
+
+
+ "global-analysis-forecast-phys-001-015": {
+  "temperature": {
+   "indian-ocean": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-015_profile_temperature_indian-ocean.png"
+   }, 
+   "north-pacific": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-015_profile_temperature_north-pacific.png"
+   }, 
+   "tropical-atlantic": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-015_profile_temperature_tropical-atlantic.png"
+   }, 
+   "south-pacific": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-015_profile_temperature_south-pacific.png"
+   }, 
+   "southern-ocean": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-015_profile_temperature_southern-ocean.png"
+   }, 
+   "south-atlantic": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-015_profile_temperature_south-atlantic.png"
+   }, 
+   "global-ocean": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-015_profile_temperature_global-ocean.png"
+   }, 
+   "north-atlantic": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-015_profile_temperature_north-atlantic.png"
+   }, 
+   "tropical-pacific": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-015_profile_temperature_tropical-pacific.png"
+   }
+  }, 
+  "sst-all": {
+   "indian-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.22914044658950952, 
+     "132 hours": 0.2973370316322526, 
+     "analysis": 0.34317834369046696
+    }
+   }, 
+   "north-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.45529063548662985, 
+     "132 hours": 0.5150671634635839, 
+     "analysis": 0.5584132541908831
+    }
+   }, 
+   "tropical-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.28404744671615917, 
+     "132 hours": 0.3248795813992675, 
+     "analysis": 0.35758070241077294
+    }
+   }, 
+   "south-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.4210853833062007, 
+     "132 hours": 0.5641304684146722, 
+     "analysis": 0.6478070359814636
+    }
+   }, 
+   "southern-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.4650570480154151, 
+     "132 hours": 0.6276183477369126, 
+     "analysis": 0.7212294237763787
+    }
+   }, 
+   "south-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.35367819466720163, 
+     "132 hours": 0.45819880447142347, 
+     "analysis": 0.5190081478413106
+    }
+   }, 
+   "global-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.4128110348556897, 
+     "132 hours": 0.5096447346593479, 
+     "analysis": 0.5724655308556172
+    }
+   }, 
+   "north-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.4597092593183499, 
+     "132 hours": 0.5841967772075931, 
+     "analysis": 0.6707739512940044
+    }
+   }, 
+   "tropical-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.2980905156520386, 
+     "132 hours": 0.3419598754007047, 
+     "analysis": 0.37386946812037863
+    }
+   }
+  }, 
+  "sst-hullsensorship": {
+   "indian-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "north-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.7672932892939146, 
+     "132 hours": 0.8127665454561811, 
+     "analysis": 0.8407003308141129
+    }
+   }, 
+   "tropical-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "south-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "southern-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "south-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "global-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.653636598535892, 
+     "132 hours": 0.7004820437059847, 
+     "analysis": 0.7355525486591522
+    }
+   }, 
+   "north-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.9127614687852224, 
+     "132 hours": 0.9545597202628139, 
+     "analysis": 0.9906155600370579
+    }
+   }, 
+   "tropical-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.5715362465920405, 
+     "132 hours": 0.619736616884041, 
+     "analysis": 0.6549655189154117
+    }
+   }
+  }, 
+  "sst-bucketship": {
+   "indian-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "north-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "tropical-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "south-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "southern-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "south-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "global-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.7007990069631452, 
+     "132 hours": 0.7241981923243739, 
+     "analysis": 0.7426604504256106
+    }
+   }, 
+   "north-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "tropical-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }
+  }, 
+  "salinity": {
+   "indian-ocean": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-015_profile_salinity_indian-ocean.png"
+   }, 
+   "north-pacific": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-015_profile_salinity_north-pacific.png"
+   }, 
+   "tropical-atlantic": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-015_profile_salinity_tropical-atlantic.png"
+   }, 
+   "south-pacific": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-015_profile_salinity_south-pacific.png"
+   }, 
+   "southern-ocean": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-015_profile_salinity_southern-ocean.png"
+   }, 
+   "south-atlantic": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-015_profile_salinity_south-atlantic.png"
+   }, 
+   "global-ocean": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-015_profile_salinity_global-ocean.png"
+   }, 
+   "north-atlantic": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-015_profile_salinity_north-atlantic.png"
+   }, 
+   "tropical-pacific": {
+    "ind": "RMSE", 
+    "img": "plots_prof/global-analysis-forecast-phys-001-015_profile_salinity_tropical-pacific.png"
+   }
+  }, 
+  "sst-fixedbuoy": {
+   "indian-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.27286227635173377, 
+     "132 hours": 0.316379021249401, 
+     "analysis": 0.34424360957516753
+    }
+   }, 
+   "north-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.38456512925013564, 
+     "132 hours": 0.4830614833617173, 
+     "analysis": 0.5521075420430871
+    }
+   }, 
+   "tropical-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.2579934732441037, 
+     "132 hours": 0.3133551921593351, 
+     "analysis": 0.347069748176036
+    }
+   }, 
+   "south-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "southern-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "south-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "global-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.41524141225687927, 
+     "132 hours": 0.5109135915609724, 
+     "analysis": 0.5808517819180034
+    }
+   }, 
+   "north-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.5977665611338715, 
+     "132 hours": 0.7395615613840703, 
+     "analysis": 0.8471340072353691
+    }
+   }, 
+   "tropical-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.29635948020101643, 
+     "132 hours": 0.3406874889278998, 
+     "analysis": 0.37205872903195564
+    }
+   }
+  }, 
+  "sst-eriship": {
+   "indian-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.6872219543188199, 
+     "132 hours": 0.7398932068943969, 
+     "analysis": 0.7685100588068691
+    }
+   }, 
+   "north-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.7114664148632238, 
+     "132 hours": 0.7577755033901372, 
+     "analysis": 0.7964806428398405
+    }
+   }, 
+   "tropical-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.4557295057767154, 
+     "132 hours": 0.47688529338336594, 
+     "analysis": 0.49300575428164867
+    }
+   }, 
+   "south-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.6188152836889138, 
+     "132 hours": 0.6606677266177982, 
+     "analysis": 0.6908099264448119
+    }
+   }, 
+   "southern-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "south-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.5919903346218335, 
+     "132 hours": 0.6669442268670919, 
+     "analysis": 0.7154733216807607
+    }
+   }, 
+   "global-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.6244713723495849, 
+     "132 hours": 0.675346924588409, 
+     "analysis": 0.7146819799028014
+    }
+   }, 
+   "north-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.8393803064759664, 
+     "132 hours": 0.9061054496382815, 
+     "analysis": 0.9528259712270594
+    }
+   }, 
+   "tropical-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.547565376541856, 
+     "132 hours": 0.5899649575446689, 
+     "analysis": 0.6218523687704637
+    }
+   }
+  }, 
+  "sst-ship": {
+   "indian-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "north-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.6073529942902037, 
+     "132 hours": 0.658920299626201, 
+     "analysis": 0.6954310418155679
+    }
+   }, 
+   "tropical-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.5143580025669054, 
+     "132 hours": 0.5416533384522659, 
+     "analysis": 0.5554486277781104
+    }
+   }, 
+   "south-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.6352073957433316, 
+     "132 hours": 0.6821023294499802, 
+     "analysis": 0.7130314051609583
+    }
+   }, 
+   "southern-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.4686605469494854, 
+     "132 hours": 0.5062423467953453, 
+     "analysis": 0.529694996069265
+    }
+   }, 
+   "south-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.4825171839985575, 
+     "132 hours": 0.5212525203960631, 
+     "analysis": 0.5416054409301347
+    }
+   }, 
+   "global-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.6216529454744163, 
+     "132 hours": 0.6739611098031046, 
+     "analysis": 0.7074223454666567
+    }
+   }, 
+   "north-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.9012371093181452, 
+     "132 hours": 0.961638972069725, 
+     "analysis": 0.9957249246128962
+    }
+   }, 
+   "tropical-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.5957604074160515, 
+     "132 hours": 0.6596309324216095, 
+     "analysis": 0.6918473335640545
+    }
+   }
+  }, 
+  "sla-altimeter": {
+   "indian-ocean": {
+    "ind": "RMSD", 
+    "units": "(Meters)", 
+    "values": ""
+   }, 
+   "north-pacific": {
+    "ind": "RMSD", 
+    "units": "(Meters)", 
+    "values": ""
+   }, 
+   "tropical-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Meters)", 
+    "values": ""
+   }, 
+   "south-pacific": {
+    "ind": "RMSD", 
+    "units": "(Meters)", 
+    "values": {
+     "84 hours": 0.09320885828403043, 
+     "132 hours": 0.10106655079345044, 
+     "analysis": 0.10771402043824634
+    }
+   }, 
+   "southern-ocean": {
+    "ind": "RMSD", 
+    "units": "(Meters)", 
+    "values": {
+     "84 hours": 0.10285818188153287, 
+     "132 hours": 0.11190462899935454, 
+     "analysis": 0.11855377711047012
+    }
+   }, 
+   "south-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Meters)", 
+    "values": ""
+   }, 
+   "global-ocean": {
+    "ind": "RMSD", 
+    "units": "(Meters)", 
+    "values": {
+     "84 hours": 0.07781423697815734, 
+     "132 hours": 0.08380171081731348, 
+     "analysis": 0.08850898966641285
+    }
+   }, 
+   "north-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Meters)", 
+    "values": ""
+   }, 
+   "tropical-pacific": {
+    "ind": "RMSD", 
+    "units": "(Meters)", 
+    "values": ""
+   }
+  }, 
+  "sst-driftingbuoy": {
+   "indian-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.21331161174246213, 
+     "132 hours": 0.28583878323367573, 
+     "analysis": 0.3343830502754368
+    }
+   }, 
+   "north-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.35108832110741783, 
+     "132 hours": 0.41070329006887357, 
+     "analysis": 0.45086810053271165
+    }
+   }, 
+   "tropical-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.2776030938792578, 
+     "132 hours": 0.31877870738273095, 
+     "analysis": 0.3522137177482052
+    }
+   }, 
+   "south-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.41939203354916643, 
+     "132 hours": 0.5638842117020786, 
+     "analysis": 0.6481872363017029
+    }
+   }, 
+   "southern-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.4655280957630938, 
+     "132 hours": 0.6300405298944177, 
+     "analysis": 0.7245867430196226
+    }
+   }, 
+   "south-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.3476540830500518, 
+     "132 hours": 0.45475039429146574, 
+     "analysis": 0.5167844038196955
+    }
+   }, 
+   "global-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.3951428178907734, 
+     "132 hours": 0.4970472940493091, 
+     "analysis": 0.5615538106613559
+    }
+   }, 
+   "north-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.4076406699826894, 
+     "132 hours": 0.5363028953405984, 
+     "analysis": 0.6220063080952432
+    }
+   }, 
+   "tropical-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "84 hours": 0.28234939802827197, 
+     "132 hours": 0.3257226100772241, 
+     "analysis": 0.3577723571628444
+    }
+   }
+  }, 
+  "sst-cmansst": {
+   "indian-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "north-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "tropical-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "south-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "southern-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "south-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "global-ocean": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "north-atlantic": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "tropical-pacific": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }
+  }
+ },
+
+
+
+ "arctic-analysis-forecast-wav-002-006": {
+  "vhm0-platform": {
+   "north-sea-and-norwegian-sea": {
+    "ind": "RMSD", 
+    "units": "(m)", 
+    "values": {
+     "12 hours": 0.4703591165687752, 
+     "108 hours": 0.5501257592043309, 
+     "60 hours": 0.4855783443999999
+    }
+   }
+  }
+ },
+
+
+ "northwestshelf-analysis-forecast-phys-004-001-b": {
+  "sst-all": {
+   "northern-north-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "on-shelf": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.4232259439616399, 
+     "108 hours": 0.4475672658680432, 
+     "60 hours": 0.4327454124506043
+    }
+   }, 
+   "southern-north-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.3947870075420058, 
+     "108 hours": 0.4216725016135859, 
+     "60 hours": 0.4054653546199053
+    }
+   }, 
+   "norwegian-trench": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.6998835081128043, 
+     "108 hours": 0.7161131799474996, 
+     "60 hours": 0.7061109232693223
+    }
+   }, 
+   "irish-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "south-western-approach": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.3432847243951774, 
+     "108 hours": 0.38020848724189493, 
+     "60 hours": 0.35636713500050127
+    }
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.37558941605043594, 
+     "108 hours": 0.4161837884072043, 
+     "60 hours": 0.39560355476240305
+    }
+   }, 
+   "north-western-approach": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "off-shelf": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.3510059519569188, 
+     "108 hours": 0.40318828215558455, 
+     "60 hours": 0.3779949624698872
+    }
+   }
+  }, 
+  "sst-hullsensorship": {
+   "northern-north-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "on-shelf": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "southern-north-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "norwegian-trench": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "irish-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "south-western-approach": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "north-western-approach": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "off-shelf": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }
+  }, 
+  "sst-0": {
+   "northern-north-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "on-shelf": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "southern-north-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "norwegian-trench": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "irish-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "south-western-approach": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "north-western-approach": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "off-shelf": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }
+  }, 
+  "sst-bucketship": {
+   "northern-north-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "on-shelf": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "southern-north-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "norwegian-trench": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.7941988856043815, 
+     "108 hours": 0.775924772639898, 
+     "60 hours": 0.7752307824598158
+    }
+   }, 
+   "irish-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "south-western-approach": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.7665924596340755, 
+     "108 hours": 0.762945454287589, 
+     "60 hours": 0.7594952086894632
+    }
+   }, 
+   "north-western-approach": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "off-shelf": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }
+  }, 
+  "sst-fixedbuoy": {
+   "northern-north-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "on-shelf": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.2931704265881547, 
+     "108 hours": 0.3275137724608695, 
+     "60 hours": 0.30987098087293996
+    }
+   }, 
+   "southern-north-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.29501190391536963, 
+     "108 hours": 0.3204607426122851, 
+     "60 hours": 0.30786628556214496
+    }
+   }, 
+   "norwegian-trench": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "irish-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "south-western-approach": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.30158882040658697, 
+     "108 hours": 0.34329633494145095, 
+     "60 hours": 0.316961121461199
+    }
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.297388892666068, 
+     "108 hours": 0.3370059334155381, 
+     "60 hours": 0.3162387477386317
+    }
+   }, 
+   "north-western-approach": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "off-shelf": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.30146228940394876, 
+     "108 hours": 0.34646155151843977, 
+     "60 hours": 0.3220106525270494
+    }
+   }
+  }, 
+  "sst-eriship": {
+   "northern-north-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "on-shelf": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.5197940030391381, 
+     "108 hours": 0.5482191834711128, 
+     "60 hours": 0.534011341800167
+    }
+   }, 
+   "southern-north-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.4233095790672948, 
+     "108 hours": 0.4589355472042627, 
+     "60 hours": 0.4388887098253108
+    }
+   }, 
+   "norwegian-trench": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.8224498131593115, 
+     "108 hours": 0.8407023886752254, 
+     "60 hours": 0.8291227845086413
+    }
+   }, 
+   "irish-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "south-western-approach": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.5300480158876928, 
+     "108 hours": 0.561279577616681, 
+     "60 hours": 0.5454035263091143
+    }
+   }, 
+   "north-western-approach": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "off-shelf": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.6062274288907156, 
+     "108 hours": 0.6533761844424978, 
+     "60 hours": 0.6333084864372298
+    }
+   }
+  }, 
+  "sst-ship": {
+   "northern-north-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.8426145776211261, 
+     "108 hours": 0.8482933352753848, 
+     "60 hours": 0.8490318033969668
+    }
+   }, 
+   "on-shelf": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.5349934587308044, 
+     "108 hours": 0.5521510320891656, 
+     "60 hours": 0.5430672201857863
+    }
+   }, 
+   "southern-north-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.4551651300100767, 
+     "108 hours": 0.47596817084253984, 
+     "60 hours": 0.46451952598590873
+    }
+   }, 
+   "norwegian-trench": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.7654179268235999, 
+     "108 hours": 0.778723872107353, 
+     "60 hours": 0.772824826749486
+    }
+   }, 
+   "irish-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.8287998429581777, 
+     "108 hours": 0.8356592975708484, 
+     "60 hours": 0.8377814829832512
+    }
+   }, 
+   "south-western-approach": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.5715465785838727, 
+     "108 hours": 0.5922747496839557, 
+     "60 hours": 0.581883099075471
+    }
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.5482746416857873, 
+     "108 hours": 0.566286508104886, 
+     "60 hours": 0.5572874887655189
+    }
+   }, 
+   "north-western-approach": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.8678285807516887, 
+     "108 hours": 0.8644206873881385, 
+     "60 hours": 0.8710318738872999
+    }
+   }, 
+   "off-shelf": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.6487014228692983, 
+     "108 hours": 0.6694024055301997, 
+     "60 hours": 0.6612453266538458
+    }
+   }
+  }, 
+  "sst-driftingbuoy": {
+   "northern-north-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "on-shelf": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "southern-north-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "norwegian-trench": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "irish-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "south-western-approach": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.31443036656379875, 
+     "108 hours": 0.3757389977029316, 
+     "60 hours": 0.3469618131876925
+    }
+   }, 
+   "north-western-approach": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "off-shelf": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": {
+     "12 hours": 0.31605368038570264, 
+     "108 hours": 0.37955634730438503, 
+     "60 hours": 0.34965298775494225
+    }
+   }
+  }, 
+  "sst-cmansst": {
+   "northern-north-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "on-shelf": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "southern-north-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "norwegian-trench": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "irish-sea": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "south-western-approach": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "north-western-approach": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }, 
+   "off-shelf": {
+    "ind": "RMSD", 
+    "units": "(Celcius)", 
+    "values": ""
+   }
+  }
+ },
+
+
+
+
+ "balticsea-analysis-forecast-bio-003-007": {
+  "chla-modis": {
+   "kattegat-skagerak": {
+    "ind": "RMSD", 
+    "units": "(milligram m-3)", 
+    "values": {
+     "12 hours": 1.9694907440656613
+    }
+   }, 
+   "baltic-proper": {
+    "ind": "RMSD", 
+    "units": "(milligram m-3)", 
+    "values": {
+     "12 hours": 2.519928937696357
+    }
+   }, 
+   "gulf-of-bothnia": {
+    "ind": "RMSD", 
+    "units": "(milligram m-3)", 
+    "values": {
+     "12 hours": 2.6447062548290616
+    }
+   }, 
+   "gulf-of-finland-gulf-of-riga": {
+    "ind": "RMSD", 
+    "units": "(milligram m-3)", 
+    "values": {
+     "12 hours": 4.125427785079158
+    }
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(milligram m-3)", 
+    "values": {
+     "12 hours": 2.681192253388188
+    }
+   }, 
+   "danish-straits-ore-sound": {
+    "ind": "RMSD", 
+    "units": "(milligram m-3)", 
+    "values": {
+     "12 hours": 2.1252652292150316
+    }
+   }
+  }
+ },
+
+
+
+ "ibi-analysis-forecast-phys-005-001-b": {
+  "sst-l3": {
+   "gibst": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "analysis": 1.1507415609745884
+    }
+   }, 
+   "nibsh": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "analysis": 0.7031538693251832
+    }
+   }, 
+   "echan": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "analysis": 0.6935005381598306
+    }
+   }, 
+   "cadiz": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "analysis": 0.757049671862333
+    }
+   }, 
+   "irish": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "analysis": 0.7033799159271331
+    }
+   }, 
+   "wibsh": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "analysis": 0.836427505568719
+    }
+   }, 
+   "gobis": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "analysis": 0.635244457125877
+    }
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "analysis": 0.66253118514913
+    }
+   }, 
+   "wsmed": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "analysis": 0.8273276208273094
+    }
+   }, 
+   "icana": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "analysis": 0.6971531489175437
+    }
+   }
+  }, 
+  "salinity": {
+   "gibst": {
+    "ind": "RMSD", 
+    "units": "(PSU)", 
+    "values": ""
+   }, 
+   "nibsh": {
+    "ind": "RMSD", 
+    "units": "(PSU)", 
+    "values": ""
+   }, 
+   "echan": {
+    "ind": "RMSD", 
+    "units": "(PSU)", 
+    "values": ""
+   }, 
+   "cadiz": {
+    "ind": "RMSD", 
+    "units": "(PSU)", 
+    "values": ""
+   }, 
+   "irish": {
+    "ind": "RMSD", 
+    "units": "(PSU)", 
+    "values": ""
+   }, 
+   "wibsh": {
+    "ind": "RMSD", 
+    "units": "(PSU)", 
+    "values": ""
+   }, 
+   "gobis": {
+    "ind": "RMSD", 
+    "units": "(PSU)", 
+    "values": ""
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(PSU)", 
+    "values": ""
+   }, 
+   "wsmed": {
+    "ind": "RMSD", 
+    "units": "(PSU)", 
+    "values": ""
+   }, 
+   "icana": {
+    "ind": "RMSD", 
+    "units": "(PSU)", 
+    "values": ""
+   }
+  }, 
+  "sst-l4": {
+   "gibst": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "108 hours": 1.1430007375993387, 
+     "60 hours": 1.129056141123434, 
+     "analysis": 1.101779688257568
+    }
+   }, 
+   "nibsh": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "108 hours": 0.617040321695304, 
+     "60 hours": 0.6080531353602299, 
+     "analysis": 0.6028008964772331
+    }
+   }, 
+   "echan": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "108 hours": 0.5665817541072855, 
+     "60 hours": 0.5645006929297935, 
+     "analysis": 0.5688515752299934
+    }
+   }, 
+   "cadiz": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "108 hours": 0.7348537162545453, 
+     "60 hours": 0.7316602795048869, 
+     "analysis": 0.7216124731835745
+    }
+   }, 
+   "irish": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "108 hours": 0.6192327481795008, 
+     "60 hours": 0.614013793714409, 
+     "analysis": 0.616143441027165
+    }
+   }, 
+   "wibsh": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "108 hours": 0.8294976003587132, 
+     "60 hours": 0.8151089133062551, 
+     "analysis": 0.7972405854241076
+    }
+   }, 
+   "gobis": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "108 hours": 0.5442240331240543, 
+     "60 hours": 0.5312665845819515, 
+     "analysis": 0.519198324228459
+    }
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "108 hours": 0.5557311449913656, 
+     "60 hours": 0.546324689724684, 
+     "analysis": 0.5451854419952673
+    }
+   }, 
+   "wsmed": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "108 hours": 0.7459755180818253, 
+     "60 hours": 0.7325581933547892, 
+     "analysis": 0.7292959374694139
+    }
+   }, 
+   "icana": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": {
+     "108 hours": 0.5877378744339293, 
+     "60 hours": 0.5869762360577235, 
+     "analysis": 0.600266109324178
+    }
+   }
+  }, 
+  "temperature": {
+   "gibst": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "nibsh": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "echan": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "cadiz": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "irish": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "wibsh": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "gobis": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "wsmed": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }, 
+   "icana": {
+    "ind": "RMSD", 
+    "units": "(K)", 
+    "values": ""
+   }
+  }
+ },
+
+
+
+
+ "arctic-analysis-forecast-bio-002-004": {
+  "chl-a-modis": {
+   "arctic-sector-65w-55e": {
+    "ind": "RMSD", 
+    "units": "(1)", 
+    "values": ""
+   }, 
+   "arctic-svalbard": {
+    "ind": "RMSD", 
+    "units": "(1)", 
+    "values": ""
+   }, 
+   "atlantic-sector": {
+    "ind": "RMSD", 
+    "units": "(1)", 
+    "values": {
+     "12 hours": 1.0699069547541702, 
+     "108 hours": 1.0806253679890085, 
+     "60 hours": 1.0828099164982408
+    }
+   }, 
+   "south-domain": {
+    "ind": "RMSD", 
+    "units": "(1)", 
+    "values": ""
+   }, 
+   "arctic-sector-175e-65w": {
+    "ind": "RMSD", 
+    "units": "(1)", 
+    "values": ""
+   }, 
+   "nordic-seas-south": {
+    "ind": "RMSD", 
+    "units": "(1)", 
+    "values": ""
+   }, 
+   "nordic-seas": {
+    "ind": "RMSD", 
+    "units": "(1)", 
+    "values": {
+     "12 hours": 0.8566945595893832, 
+     "108 hours": 0.8541428943630738, 
+     "60 hours": 0.8482073261482186
+    }
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(1)", 
+    "values": ""
+   }, 
+   "barents-sea": {
+    "ind": "RMSD", 
+    "units": "(1)", 
+    "values": {
+     "12 hours": 1.1308870836878, 
+     "108 hours": 1.105787029653458, 
+     "60 hours": 1.1401354825164132
+    }
+   }, 
+   "arctic-sector-55e-175e": {
+    "ind": "RMSD", 
+    "units": "(1)", 
+    "values": ""
+   }
+  }
+ },
+
+
+
+
+ "ibi-analysis-forecast-bio-005-004-b": {
+  "chl-l3": {
+   "gibst": {
+    "ind": "RMSD", 
+    "units": "(log 10 mg.m-3)", 
+    "values": {
+     "analysis": 1.1200416429015685
+    }
+   }, 
+   "nibsh": {
+    "ind": "RMSD", 
+    "units": "(log 10 mg.m-3)", 
+    "values": {
+     "analysis": 1.0966936863351295
+    }
+   }, 
+   "echan": {
+    "ind": "RMSD", 
+    "units": "(log 10 mg.m-3)", 
+    "values": {
+     "analysis": 2.4087096577558373
+    }
+   }, 
+   "cadiz": {
+    "ind": "RMSD", 
+    "units": "(log 10 mg.m-3)", 
+    "values": {
+     "analysis": 1.0585559439057162
+    }
+   }, 
+   "irish": {
+    "ind": "RMSD", 
+    "units": "(log 10 mg.m-3)", 
+    "values": {
+     "analysis": 1.7607120596069188
+    }
+   }, 
+   "wibsh": {
+    "ind": "RMSD", 
+    "units": "(log 10 mg.m-3)", 
+    "values": {
+     "analysis": 1.4574783493648849
+    }
+   }, 
+   "gobis": {
+    "ind": "RMSD", 
+    "units": "(log 10 mg.m-3)", 
+    "values": {
+     "analysis": 1.1957963163504832
+    }
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(log 10 mg.m-3)", 
+    "values": {
+     "analysis": 0.8982035246290928
+    }
+   }, 
+   "wsmed": {
+    "ind": "RMSD", 
+    "units": "(log 10 mg.m-3)", 
+    "values": {
+     "analysis": 0.7085334936296835
+    }
+   }, 
+   "icana": {
+    "ind": "RMSD", 
+    "units": "(log 10 mg.m-3)", 
+    "values": {
+     "analysis": 0.6153833230693441
+    }
+   }
+  }, 
+  "chl-l4": {
+   "gibst": {
+    "ind": "RMSD", 
+    "units": "(log 10 mg.m-3)", 
+    "values": {
+     "analysis": 0.9270664188897949
+    }
+   }, 
+   "nibsh": {
+    "ind": "RMSD", 
+    "units": "(log 10 mg.m-3)", 
+    "values": {
+     "analysis": 0.7062610332831054
+    }
+   }, 
+   "echan": {
+    "ind": "RMSD", 
+    "units": "(log 10 mg.m-3)", 
+    "values": {
+     "analysis": 2.289536801418587
+    }
+   }, 
+   "cadiz": {
+    "ind": "RMSD", 
+    "units": "(log 10 mg.m-3)", 
+    "values": {
+     "analysis": 0.7805145863243738
+    }
+   }, 
+   "irish": {
+    "ind": "RMSD", 
+    "units": "(log 10 mg.m-3)", 
+    "values": {
+     "analysis": 1.5717387529263778
+    }
+   }, 
+   "wibsh": {
+    "ind": "RMSD", 
+    "units": "(log 10 mg.m-3)", 
+    "values": {
+     "analysis": 1.0957902632201122
+    }
+   }, 
+   "gobis": {
+    "ind": "RMSD", 
+    "units": "(log 10 mg.m-3)", 
+    "values": {
+     "analysis": 0.9831648081717482
+    }
+   }, 
+   "full-domain": {
+    "ind": "RMSD", 
+    "units": "(log 10 mg.m-3)", 
+    "values": {
+     "analysis": 0.7491364186963755
+    }
+   }, 
+   "wsmed": {
+    "ind": "RMSD", 
+    "units": "(log 10 mg.m-3)", 
+    "values": {
+     "analysis": 0.5663980929141988
+    }
+   }, 
+   "icana": {
+    "ind": "RMSD", 
+    "units": "(log 10 mg.m-3)", 
+    "values": {
+     "analysis": 0.5685658647959758
+    }
+   }
+  }
+ }
+}

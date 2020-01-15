@@ -12,6 +12,7 @@ import artic from "../../../../geodata/arctic_zone.geo.json";
 import baltic from "../../../../geodata/baltic_zone.geo.json";
 import nws from "../../../../geodata/nws_zone.geo.json";
 
+import result from "../../../../errors/result.json";
 
 const bounds = [
   {name:'arctic', bb:  [[44.59046718130883,-79.8046875],[87.25291244998124,100.546875]], aliases: ['arctic-ocean']},
@@ -43,6 +44,21 @@ let geojsonMarkerOptions = {
   fillOpacity: 0.5,
   color: 'red',
 };
+const LabeledMarker = require('leaflet-labeled-circle');
+
+const labeled = {
+  "type": "Feature",
+  "properties": {
+    "text": 'toto',
+    "labelPosition": [
+      35, 22
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ 35, 22 ]
+  }
+};
 
 class LeafletMapView extends React.Component {
   constructor(props) {
@@ -59,6 +75,11 @@ class LeafletMapView extends React.Component {
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(this.map);
+    new LabeledMarker(
+      labeled.geometry.coordinates.slice().reverse(),
+      labeled, {
+        markerOptions: { color: '#050' }
+      }).bindPopup('toto').addTo(this.map);
     const onEachFeature = function(feature, layer) {
       if(
           feature.properties 
