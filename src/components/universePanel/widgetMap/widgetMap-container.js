@@ -4,6 +4,6 @@ import {WidgetMapView} from "./widgetMap-view";
 export class WidgetMapContainer extends Component {
 
   render() {
-    return <WidgetView />;
+    return <WidgetMapView />;
   }
 }

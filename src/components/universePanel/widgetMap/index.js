@@ -1,1 +1,1 @@
-export { WidgetMapView as WidgetMap } from './widgetMap-view';
+export { WidgetMapRedux as WidgetMap } from './widgetMap-redux';
