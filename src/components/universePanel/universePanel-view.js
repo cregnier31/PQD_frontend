@@ -11,7 +11,7 @@ import { color } from './../../utils';
 
 export function UniversePanelView(props){
   return (
-    <Card style={{backgroundColor: color[props.universe]['background']}}>
+    <Card style={{backgroundColor: color[props.universe]['background'], marginTop: '20px' }}>
       <TitleRaw universe={props.universe}/>
       <ChartList universe={props.universe}/>
       <Divider />

@@ -23,3 +23,21 @@ export const color = {
     icon: 'grey'
   } 
 }
+
+export const changeNameFilter = (name) => {
+  switch (name) {
+    case 'variables':
+      return 'parameter'
+    case 'datasets':
+      return 'dataset used for validation'
+    case 'products':
+      return 'product name'
+    case 'depths':
+      return 'depth of subsurface layer'
+    case 'stats':
+      return 'geographical area'
+    case 'plot_types':
+      return 'type of metric'
+    default:
+  }
+}

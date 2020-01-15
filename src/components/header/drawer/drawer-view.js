@@ -76,7 +76,7 @@ export function DrawerView(props) {
             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>
         </div>
-        <h4 className={classes.title}>Universes</h4>
+        <h4 className={classes.title}>Parameter families</h4>
         <Divider />
         <List className={classes.list}>
           {universes.map((universe) => (

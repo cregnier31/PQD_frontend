@@ -1,6 +1,7 @@
 import React from "react";
 import FormControl from '@material-ui/core/FormControl';
 import { makeStyles } from '@material-ui/core/styles';
+import {changeNameFilter} from '../../../utils';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -21,7 +22,7 @@ export function SelectorView(props) {
     <div>
       <FormControl className={classes.root}>
         <select value={props.value} onChange={ event => {props.updateValue(event.target.value)}}>
-          <option default value="" hidden>{props.items.length > 0 ? props.name : 'No data'}</option>
+          <option default value="" hidden>{props.items.length > 0 ? changeNameFilter(props.name) : 'No data'}</option>
           {props.items.map(item => <option key={item.id} value={item.id}>{item.name}</option>)}
         </select>
       </FormControl>
