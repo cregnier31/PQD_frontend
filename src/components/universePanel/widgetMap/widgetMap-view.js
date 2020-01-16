@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./widgetMap-styles";
-import { LeafletMap } from "./leafletMap";
+import LeafletMap from "./leafletMap";
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import FullscreenIcon from '@material-ui/icons/Fullscreen';
@@ -30,7 +30,6 @@ const useStyles = makeStyles(theme => ({
 export function WidgetMapView(props){
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
-  const [area, setArea] = React.useState(null);
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClickPopover = event => {
@@ -39,10 +38,6 @@ export function WidgetMapView(props){
 
   const handleClosePopover = () => {
     setAnchorEl(null);
-  };
-
-  const getArea = (value) => {
-    setArea(value);
   };
 
   const handleOpen = () => {
@@ -54,7 +49,6 @@ export function WidgetMapView(props){
   };
   const openAnchor = Boolean(anchorEl);
   const id = open ? 'simple-popover' : undefined;
-
   return (
     <div>
       <Card>
@@ -80,7 +74,7 @@ export function WidgetMapView(props){
             }}
           >
             <List className={classes.list}>
-              <ListItem button key='partager'>
+              <ListItem button key='partager' onClick={(e) => props.setArea(e.target.value)}>
                 Partager
               </ListItem>
               <ListItem button key='doc'>
@@ -93,7 +87,7 @@ export function WidgetMapView(props){
           </Popover>
         </div>
         {!open && 
-          <LeafletMap area={props.area} getArea={getArea} />
+          <LeafletMap open={open} />
         }
         <Modal
           aria-labelledby="simple-modal-title"
@@ -104,7 +98,7 @@ export function WidgetMapView(props){
           <DialogContent className={classes.content}>
             <Card className={classes.content}>
               <CloseIcon className={classes.right} onClick={handleClose} />
-              <LeafletMap area={area} />
+              <LeafletMap open={open} />
             </Card>
           </DialogContent>
         </Modal>

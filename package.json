@@ -11,6 +11,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-react-app": "^9.0.2",
     "leaflet": "^1.6.0",
+    "leaflet-labeled-circle": "^1.0.3",
     "leaflet-omnivore": "^0.3.4",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
