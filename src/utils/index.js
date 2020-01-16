@@ -25,7 +25,6 @@ export const color = {
 }
 
 export const changeNameFilter = (name) => {
-  console.log('name', name);
   switch (name) {
     case 'variable':
       return ('parameter')
@@ -34,10 +33,12 @@ export const changeNameFilter = (name) => {
     case 'product':
       return 'product name'
     case 'subarea':
-      return 'geographical area'
+      return 'geographical area of product'
     case 'depth':
       return 'depth of subsurface layer'
     case 'stat':
+      return 'geographical area'
+    case 'plot_type':
       return 'type of metric'
     default:
   }
