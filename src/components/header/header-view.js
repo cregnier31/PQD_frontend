@@ -106,7 +106,11 @@ export function HeaderView(props) {
           <AreaList props={props} />
         </Toolbar>
       </AppBar>
-      <Drawer handleDrawerClose={handleDrawerClose} open={open} setUniverse={(universe) => props.setUniverse(universe)}
+      <Drawer 
+        handleDrawerClose={handleDrawerClose} 
+        open={open} 
+        setUniverse={(universe) => props.setUniverse(universe)}
+        universe={props.universe}
       />
       <main
         className={clsx(classes.content, {
