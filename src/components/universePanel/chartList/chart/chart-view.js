@@ -1,12 +1,6 @@
 import React, {Component} from "react";
 import Card from "./chart-styles";
-import { makeStyles } from '@material-ui/core/styles';
-import Modal from '@material-ui/core/Modal';
-import FullscreenIcon from '@material-ui/icons/Fullscreen';
-import InfoIcon from '@material-ui/icons/Info';
-import MoreVertSharpIcon from '@material-ui/icons/MoreVertSharp';
-import DialogContent from '@material-ui/core/DialogContent';
-import CloseIcon from '@material-ui/icons/Close';
+import {Widget} from './../../widget';
 import './../../../../../node_modules/react-vis/dist/style.css';
 import {  
   XYPlot,
@@ -19,20 +13,6 @@ import {
   LineSeries,
 } from 'react-vis';
 
-const useStyles = makeStyles(theme => ({
-  right: {
-    float: 'right',
-  },
-  left: {
-    float: 'left',
-  },
-  content: {
-    height: '100% !important',
-    marginTop: '0px !important',
-    marginBottom: '0px !important',
-  }
-}));
-
 
 export default class ChartContent extends Component {
   constructor(props) {
@@ -41,7 +21,6 @@ export default class ChartContent extends Component {
       crosshairValues: []
     };
   }
-
 
   _onMouseLeave = () => {
     this.setState({crosshairValues: []});
@@ -80,50 +59,16 @@ export default class ChartContent extends Component {
 }
 
 export function ChartView(props){
-  const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
   if( typeof(props.data) ==="undefined"){
     return null
   }
-
   return (
-    <div>
-      <Card>
-        <div className={classes.left}>
-          {props.kind}
-          <InfoIcon />
-        </div>
-        <div className={classes.right}>
-          <FullscreenIcon onClick={handleOpen} />
-          <MoreVertSharpIcon />
-        </div>
-        {!open &&
-          <ChartContent height={200} width={350} data={props.data[0].content} />
-        }
-        <Modal
-          aria-labelledby="simple-modal-title"
-          aria-describedby="simple-modal-description"
-          open={open}
-          onClose={handleClose}
-        >
-          <DialogContent className={classes.content}>
-            <Card className={classes.content}>
-              <CloseIcon className={classes.right} onClick={handleClose} />
-              {open &&
-                <ChartContent height={500} width={750} data={props.data[0].content} />
-              }
-            </Card>
-          </DialogContent>
-        </Modal>
-      </Card>
-    </div>
+    <Card>
+      <Widget 
+        title={props.kind}
+        smallContent={<ChartContent height={200} width={350} data={props.data[0].content} />}
+        bigContent={<ChartContent height={500} width={750} data={props.data[0].content} />}
+      />
+    </Card>
   );
 }
