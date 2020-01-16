@@ -59,7 +59,7 @@ export function WidgetMapView(props){
     <div>
       <Card>
         <div className={classes.left}>
-          Title
+          Estimated Accuracy Numbers Cartography
           <InfoIcon style={{ marginLeft: '5px'}}/>
         </div>
         <div className={classes.right}>
