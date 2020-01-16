@@ -25,7 +25,6 @@ export const color = {
 }
 
 export const changeNameFilter = (name) => {
-  console.log('name', name);
   switch (name) {
     case 'variable':
       return ('parameter')

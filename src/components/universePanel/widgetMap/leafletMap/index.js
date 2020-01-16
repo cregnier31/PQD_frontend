@@ -302,8 +302,10 @@ class LeafletMapView extends React.Component {
 }
 
 const mapStateToProps = state => {
+  const universe = state.filtersReducer && state.filtersReducer.universe;
   return {
     area: state.filtersReducer && state.filtersReducer.area,
+    subArea: state.filtersReducer && state.filtersReducer[universe].subarea
   }
 };
 
