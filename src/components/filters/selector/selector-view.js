@@ -15,6 +15,9 @@ const useStyles = makeStyles(theme => ({
       borderRadius: 5
     },
   },
+  label: {
+    fontWeight: 'bold'
+  }
 }));
 
 
@@ -24,27 +27,36 @@ function sortFilters(props, classes) {
       case 'variable':
         return(
           <FormControl className={classes.root}>
+            <label className={classes.label}>{changeNameFilter(props.name)}</label>
             <select value={props.value} onChange={ event => {props.updateValue(event.target.value)}}>
-              <option default value="" hidden>{props.items.length > 0 ? changeNameFilter(props.name) : 'No data'}</option>
-              {props.items.map(item => <option key={item.id} value={item.id}>{item.name}</option>)}
+              <option value="">--Please choose an option--</option>
+              { props.items.length > 0 ? props.items.map(item => <option key={item.id} value={item.id}>{item.name}</option>)
+                : <option key="product" value="">No data</option>
+              }
             </select>
           </FormControl>
         )
       case 'dataset':
         return(
           <FormControl className={classes.root}>
+            <label className={classes.label}>{changeNameFilter(props.name)}</label>
             <select value={props.value} onChange={ event => {props.updateValue(event.target.value)}}>
-              <option default value="" hidden>{props.items.length > 0 ? changeNameFilter(props.name) : 'No data'}</option>
-              {props.items.map(item => <option key={item.id} value={item.id}>{item.name}</option>)}
+              <option value="">--Please choose an option--</option>
+              { props.items.length > 0 ? props.items.map(item => <option key={item.id} value={item.id}>{item.name}</option>)
+                : <option key="product" value="">No data</option>
+              }
             </select>
           </FormControl>
         )
       case 'product':
         return(
           <FormControl className={classes.root}>
+            <label className={classes.label}>{changeNameFilter(props.name)}</label>
             <select value={props.value} onChange={ event => {props.updateValue(event.target.value)}}>
-              <option default value="" hidden>{props.items.length > 0 ? changeNameFilter(props.name) : 'No data'}</option>
-              {props.items.map(item => <option key={item.id} value={item.id}>{item.name}</option>)}
+              <option value="">--Please choose an option--</option>
+              { props.items.length > 0 ? props.items.map(item => <option key={item.id} value={item.id}>{item.name}</option>)
+                : <option key="product" value="">No data</option>
+              }
             </select>
           </FormControl>
         )
@@ -55,36 +67,48 @@ function sortFilters(props, classes) {
       case 'subarea':
         return(
           <FormControl className={classes.root}>
+            <label className={classes.label}>{changeNameFilter(props.name)}</label>
             <select value={props.value} onChange={ event => {props.updateValue(event.target.value)}}>
-              <option default value="" hidden>{props.items.length > 0 ? changeNameFilter(props.name) : 'No data'}</option>
-              {props.items.map(item => <option key={item.id} value={item.id}>{item.name}</option>)}
+              <option value="">--Please choose an option--</option>
+              { props.items.length > 0 ? props.items.map(item => <option key={item.id} value={item.id}>{item.name}</option>)
+                : <option key="product" value="">No data</option>
+              }
             </select>
           </FormControl>
         )
       case 'depth':
         return(
           <FormControl className={classes.root}>
+            <label className={classes.label}>{changeNameFilter(props.name)}</label>
             <select value={props.value} onChange={ event => {props.updateValue(event.target.value)}}>
-              <option default value="" hidden>{props.items.length > 0 ? changeNameFilter(props.name) : 'No data'}</option>
-              {props.items.map(item => <option key={item.id} value={item.id}>{item.name}</option>)}
+              <option value="">--Please choose an option--</option>
+              { props.items.length > 0 ? props.items.map(item => <option key={item.id} value={item.id}>{item.name}</option>)
+                : <option key="product" value="">No data</option>
+              }
             </select>
           </FormControl>
         )
       case 'stat':
         return(
           <FormControl className={classes.root}>
+            <label className={classes.label}>{changeNameFilter(props.name)}</label>
             <select value={props.value} onChange={ event => {props.updateValue(event.target.value)}}>
-              <option default value="" hidden>{props.items.length > 0 ? changeNameFilter(props.name) : 'No data'}</option>
-              {props.items.map(item => <option key={item.id} value={item.id}>{item.name}</option>)}
+              <option value="">--Please choose an option--</option>
+              { props.items.length > 0 ? props.items.map(item => <option key={item.id} value={item.id}>{item.name}</option>)
+                : <option key="product" value="">No data</option>
+              }
             </select>
           </FormControl>
         )
       case 'plot_type':
         return(
           <FormControl className={classes.root}>
+            <label className={classes.label}>{changeNameFilter(props.name)}</label>
             <select value={props.value} onChange={ event => {props.updateValue(event.target.value)}}>
-              <option default value="" hidden>{props.items.length > 0 ? changeNameFilter(props.name) : 'No data'}</option>
-              {props.items.map(item => <option key={item.id} value={item.id}>{item.name}</option>)}
+              <option value="">--Please choose an option--</option>
+              { props.items.length > 0 ? props.items.map(item => <option key={item.id} value={item.id}>{item.name}</option>)
+                : <option key="product" value="">No data</option>
+              }
             </select>
           </FormControl>
         )
