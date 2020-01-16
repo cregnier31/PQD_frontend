@@ -10,6 +10,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import PanoramaFishEyeRoundedIcon from '@material-ui/icons/PanoramaFishEyeRounded';
+import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import {Filter} from '../../filters';
 import { color } from './../../../utils';
 
@@ -85,6 +86,9 @@ export function DrawerView(props) {
                 <PanoramaFishEyeRoundedIcon fontSize="large" style={{ color: color[universe]['icon']}} />
               </ListItemIcon>
               <ListItemText primary={universe}/>
+              {props.universe === universe &&
+                <CheckCircleIcon />
+              }
             </ListItem>
           ))}
         </List>
