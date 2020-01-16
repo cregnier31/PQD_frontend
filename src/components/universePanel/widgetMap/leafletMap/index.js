@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import L from 'leaflet';
 
@@ -11,8 +11,6 @@ import global from "../../../../geodata/global.geo.json";
 import artic from "../../../../geodata/arctic_zone.geo.json";
 import baltic from "../../../../geodata/baltic_zone.geo.json";
 import nws from "../../../../geodata/nws_zone.geo.json";
-
-import result from "../../../../errors/result.json";
 
 const bounds = [
   {name:'arctic', bb:  [[44.59046718130883,-79.8046875],[87.25291244998124,100.546875]], aliases: ['arctic-ocean']},
