@@ -11,15 +11,15 @@ export const config = {
 
 export const color = {
   BLUE:{
-    background: '#92AFCD',
+    background: '#D1DDE5',
     icon: 'blue'
   },
   GREEN:{
-    background: '#C6FAE0',
+    background: '#DAEFE7',
     icon: 'green'
   },
   WHITE:{
-    background: '#DEE2E0',
+    background: '#F4F4F4',
     icon: 'grey'
   } 
 }
