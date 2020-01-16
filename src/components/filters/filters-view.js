@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-function get_selector(name, items, props, generic){
+function get_selector(name, items, props){
   return (
     <Selector 
       key={name + "_selector"}
@@ -19,7 +19,6 @@ function get_selector(name, items, props, generic){
       value={props.filters[name]} 
       updateValue={(n, v) => props.set(n, v)}
       filters={props.filters}
-      generic={generic}
     />
   );
 }
@@ -28,37 +27,40 @@ function filter_is_set_and_data_exists(filters, name, data){
   return (typeof(filters[name]) == "number" && data.filter(item => item.id === filters[name]))
 }
 
-const SelectorList = ({props, generic}) => {
+const SelectorList = ({props}) => {
   const filters = props.filters
   if(typeof(props.data) !== "undefined" && typeof(props.data.variables) !== "undefined"){
     var list = []
     // Select Variable
     const variables = props.data.variables
-    list.push(get_selector("variable", variables, props, generic))
+    list.push(get_selector("variable", variables, props))
     // Select Dataset
     if(filter_is_set_and_data_exists(filters, "variable", variables)){
       const datasets = variables.filter(item => item.id === filters['variable'])[0].datasets
-      list.push(get_selector("dataset", datasets, props, generic))
+      list.push(get_selector("dataset", datasets, props))
       // Select Product
       if(filter_is_set_and_data_exists(filters, "dataset", datasets)){
         const products = datasets.filter(item => item.id === filters['dataset'])[0].products
-        list.push(get_selector("product", products, props, generic))
+        list.push(get_selector("product", products, props))
         // Select Subarea
         if(filter_is_set_and_data_exists(filters, "product", products)){
+          // Add filters category title
+          list.push(<Divider key="divider" />)
+          list.push(<p key="p">Validation expert metrics filters</p>)
           const subareas = products.filter(item => item.id === filters['product'])[0].subareas
-          list.push(get_selector("subarea", subareas, props, generic))
+          list.push(get_selector("subarea", subareas, props))
           // Select Depth
           if(filter_is_set_and_data_exists(filters, "subarea", subareas)){
             const depths = subareas.filter(item => item.id === filters['subarea'])[0].depths
-            list.push(get_selector("depth", depths, props, generic))
+            list.push(get_selector("depth", depths, props))
             // Select Stat
             if(filter_is_set_and_data_exists(filters, "depth", depths)){
               const stats = depths.filter(item => item.id === filters['depth'])[0].stats
-              list.push(get_selector("stat", stats, props, generic))
+              list.push(get_selector("stat", stats, props))
               // Select PlotType
               if(filter_is_set_and_data_exists(filters, "stat", stats)){
                 const plot_types = stats.filter(item => item.id === filters['stat'])[0].plot_types
-                list.push(get_selector("plot_type", plot_types, props, generic))
+                list.push(get_selector("plot_type", plot_types, props))
               }
             }
           }
@@ -95,11 +97,8 @@ export function FiltersView(props){
     <div>
       <h4 className={classes.title}>Criteria</h4>
       <Divider />
-      <p>generic quality information filters</p>
-      <SelectorList props={props} generic/>
-      <Divider />
-      <p>validation expert metrics filters</p>
-      <SelectorList props={props} generic={false} />
+      <p>Generic quality information filters</p>
+      <SelectorList props={props}/>
       {get_validation_button(props)}
     </div>
   );

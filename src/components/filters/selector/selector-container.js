@@ -16,6 +16,13 @@ export class SelectorContainer extends Component {
   }
 
   render() {
-    return <SelectorView items={this.props.items} name={this.props.name} value={this.props.value} updateValue={(value) => this.updateValue(value)} generic={this.props.generic} />
+    return (
+      <SelectorView 
+        items={this.props.items} 
+        name={this.props.name} 
+        value={this.props.value} 
+        updateValue={(value) => this.updateValue(value)}
+      />
+    )
   }
 }
