@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, {Component, useState, useEffect  } from "react";
 import Card from "./chart-styles";
 import {Widget} from './../../widget';
 import './../../../../../node_modules/react-vis/dist/style.css';
@@ -13,62 +13,142 @@ import {
   LineSeries,
 } from 'react-vis';
 
-
-export default class ChartContent extends Component {
+class ChartContent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      crosshairValues: []
+      crosshairValues: [],
     };
+  }
+
+  getData(data){
+    var res = []
+    if( typeof(data) !=="undefined"){
+      if(this.props.see_all){
+        res = data.map((item) => {
+          return item
+        })
+      }else{
+        res = data[0]
+      }
+    }
+    return res
   }
 
   _onMouseLeave = () => {
     this.setState({crosshairValues: []});
   };
-
+  
   _onNearestX = (value, {index}) => {
-    // const to_display = [value]
-    // if multiple values
     const to_display = [this.props.data[index]]
     this.setState({crosshairValues: to_display});
   };
+  
+  getAmplitude(data){
+    if(typeof(data) === "undefined"){
+      return {max: -Infinity, min: Infinity}
+    }
+    var all_data = []
+    if(data.length === 1){
+      all_data = data
+    }else{
+      data.map(item => {
+        if(Array.isArray(item)){
+          item.map(obj => {
+            all_data.push(obj)
+          })
+        }else{
+          all_data.push(item)
+        }
+      }) 
+    }
+    return all_data.reduce(
+      (res, row) => {
+        return {
+          max: Math.max(res.max, row.y),
+          min: Math.min(res.min, row.y)
+        }
+      },
+      {max: -Infinity, min: Infinity}
+    )
+  }
 
-  yDomain = this.props.data.reduce(
-    (res, row) => {
-      return {
-        max: Math.max(res.max, row.y),
-        min: Math.min(res.min, row.y)
-      };
-    },
-    {max: -Infinity, min: Infinity}
-  );
-
+  GraphList = (data) => {
+    var list = []
+    if(typeof(data) === "undefined"){
+      return list
+    }
+    if(!Array.isArray(data[0])){
+      list.push(<VerticalBarSeries key="VerticalBarSeries" onNearestX={this._onNearestX} data={data}/>)
+    }else{
+      list = this.props.data.map((elem, index) => {
+        return <LineSeries key={index} data={elem}/>
+      })
+      list.push(<Crosshair key="crosshair" values={this.state.crosshairValues}/>)
+    }
+    return list
+  }
+  
   render() {
+    const dataToDisplay = this.getData(this.props.data)
     return (
-      <XYPlot onMouseLeave={this._onMouseLeave} width={this.props.width} height={this.props.height} yDomain={[this.yDomain['min'], this.yDomain['max']]} xType="ordinal">
+      <XYPlot 
+        onMouseLeave={this._onMouseLeave} 
+        width={this.props.width} 
+        height={this.props.height} 
+        yDomain={[this.getAmplitude(dataToDisplay)['min'], this.getAmplitude(dataToDisplay)['max']]} 
+        xType="ordinal"
+      >
         <VerticalGridLines />
         <HorizontalGridLines />
         <XAxis tickLabelAngle={-45}/>
         <YAxis />
-        <VerticalBarSeries onNearestX={this._onNearestX} data={this.props.data} />
-        <LineSeries onNearestX={this._onNearestX} data={this.props.data} />
-        <Crosshair values={this.state.crosshairValues} />
+        {this.GraphList(dataToDisplay)}
       </XYPlot>
     );
   }
 }
 
 export function ChartView(props){
+  const [see_all, setSeeAll] = useState(false)
+
   if( typeof(props.data) ==="undefined"){
-    return null
+    return (
+      <Card>
+        <Widget 
+          title="No Data"
+          smallContent={null}
+          bigContent={null}
+        />
+      </Card>
+    );
   }
+
+  const data = props.data.map((item) => {
+    return item.content
+  })
+
+  const toggle = event => {
+    const target = event.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    setSeeAll(value);
+  }
+
   return (
     <Card>
       <Widget 
         title={props.kind}
-        smallContent={<ChartContent height={200} width={350} data={props.data[0].content} />}
-        bigContent={<ChartContent height={500} width={750} data={props.data[0].content} />}
+        smallContent={<ChartContent see_all={see_all} height={200} width={350} data={data} />}
+        bigContent={<ChartContent see_all={see_all} height={500} width={750} data={data} />}
       />
+      <label>
+          See all variable :
+          <input
+            name="see_all"
+            type="checkbox"
+            checked={see_all}
+            onChange={toggle} />
+        </label>
     </Card>
   );
 }
