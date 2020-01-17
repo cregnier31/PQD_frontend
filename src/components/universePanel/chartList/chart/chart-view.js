@@ -4,7 +4,7 @@ import {Widget} from './../../widget';
 import {ChartContent} from './chartContent';
 
 export function ChartView(props){
-  const [see_all, setSeeAll] = useState(false)
+  const [see_all, setSeeAll] = useState(true)
 
   if( typeof(props.data) ==="undefined"){
     return (<Card><Widget title="No Data" smallContent={null} bigContent={null} /></Card>);

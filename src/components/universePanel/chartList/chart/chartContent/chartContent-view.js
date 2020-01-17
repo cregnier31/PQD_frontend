@@ -19,18 +19,30 @@ export function ChartContentView(props){
   };
   
   const _onNearestX = (value, {index}) => {
-    const to_display = [props.data[index]]
+    var to_display = [value]
+    if(isMultipleSeries()){
+      to_display = props.data.map( item => item[index])
+    }
     setCrosshairValues(to_display)
   };
 
+  function isMultipleSeries(){
+    return Array.isArray(props.data[0])
+  }
+
   const GraphList = (data) => {
-    if(!Array.isArray(data[0])){
-      return (<VerticalBarSeries key="VerticalBarSeries" onNearestX={_onNearestX} data={data}/>)
-    }
     var list = []
-    list = data.map((elem, index) => {
-      return <LineSeries key={index} data={elem}/>
-    })
+    if(isMultipleSeries()){
+      list = data.map((elem, index) => {
+        if(index === 0){
+          return <LineSeries onNearestX={_onNearestX} key={index} data={elem}/>
+        }else{
+          return <LineSeries key={index} data={elem}/>
+        }
+      })
+    }else{
+      list.push(<VerticalBarSeries key="VerticalBarSeries" onNearestX={_onNearestX} data={data}/>)
+    }
     list.push(<Crosshair key="crosshair" values={crosshairValues}/>)
     return list
   }
