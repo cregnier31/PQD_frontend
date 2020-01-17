@@ -2,15 +2,10 @@ import React, {Component } from "react";
 import { ChartContentView } from './chartContent-view';
 
 export class ChartContentContainer extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   getData(data){
     if(this.props.see_all){
-      return data.map((item) => {
-        return item
-      })
+      return data.map((item) => { return item })
     }
     return data[0]
   }

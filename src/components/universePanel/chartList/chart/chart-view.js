@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Card from "./chart-styles";
 import {Widget} from './../../widget';
-import './../../../../../node_modules/react-vis/dist/style.css';
 import {ChartContent} from './chartContent';
 
 export function ChartView(props){
