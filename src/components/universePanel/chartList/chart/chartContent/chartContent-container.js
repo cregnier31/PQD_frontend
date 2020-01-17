@@ -3,11 +3,20 @@ import { ChartContentView } from './chartContent-view';
 
 export class ChartContentContainer extends Component {
 
-  getData(data){
-    if(this.props.see_all){
-      return data.map((item) => { return item })
+  getSeriesData(series, want_all){
+    if(want_all){
+      return series.map((item) => item.content)
+    }else{
+      return series[0].content
     }
-    return data[0]
+  }
+
+  getSeriesName(series, want_all){
+    if(want_all){
+      return series.map((item) => item.variable_name)
+    }else{
+      return series[0].variable_name
+    }
   }
 
   getAmplitude(data){
@@ -30,11 +39,13 @@ export class ChartContentContainer extends Component {
   }
   
   render() {
-    const data = this.getData(this.props.data)
+    const series_data = this.getSeriesData(this.props.data, this.props.see_all)
+    const series_name = this.getSeriesName(this.props.data, this.props.see_all)
     return (
       <ChartContentView 
-        data={data} 
-        amplitude={this.getAmplitude(data)}
+        series_data={series_data} 
+        series_name={series_name}
+        amplitude={this.getAmplitude(series_data)}
         height={this.props.height}
         width={this.props.width}
       />

@@ -10,10 +10,6 @@ export function ChartView(props){
     return (<Card><Widget title="No Data" smallContent={null} bigContent={null} /></Card>);
   }
 
-  const data = props.data.map((item) => {
-    return item.content
-  })
-
   const toggle = event => {
     const value = event.target.type === 'checkbox' ? event.target.checked : event.target.value;
     setSeeAll(value);
@@ -23,8 +19,8 @@ export function ChartView(props){
     <Card>
       <Widget 
         title={props.kind}
-        smallContent={<ChartContent see_all={see_all} height={200} width={350} data={data} />}
-        bigContent={<ChartContent see_all={see_all} height={500} width={750} data={data} />}
+        smallContent={<ChartContent see_all={see_all} height={200} width={350} data={props.data} />}
+        bigContent={<ChartContent see_all={see_all} height={500} width={750} data={props.data} />}
       />
       <label>
         See all variable :

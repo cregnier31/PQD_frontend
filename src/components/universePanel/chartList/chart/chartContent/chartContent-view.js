@@ -21,13 +21,13 @@ export function ChartContentView(props){
   const _onNearestX = (value, {index}) => {
     var to_display = [value]
     if(isMultipleSeries()){
-      to_display = props.data.map( item => item[index])
+      to_display = props.series_data.map( item => item[index])
     }
     setCrosshairValues(to_display)
   };
 
   function isMultipleSeries(){
-    return Array.isArray(props.data[0])
+    return Array.isArray(props.series_data[0])
   }
 
   const GraphList = (data) => {
@@ -43,7 +43,15 @@ export function ChartContentView(props){
     }else{
       list.push(<VerticalBarSeries key="VerticalBarSeries" onNearestX={_onNearestX} data={data}/>)
     }
-    list.push(<Crosshair key="crosshair" values={crosshairValues}/>)
+    list.push(<Crosshair key="crosshair" values={crosshairValues}>
+      <div style={{background: 'black'}}>
+        <h3>Values:</h3>
+        {crosshairValues.map((serie, index) => 
+           <p>{props.series_name[index]}: {serie['y']}</p>
+        )}
+      </div>
+    </Crosshair>
+    )
     return list
   }
   
@@ -59,7 +67,7 @@ export function ChartContentView(props){
       <HorizontalGridLines />
       <XAxis tickLabelAngle={-45}/>
       <YAxis />
-      {GraphList(props.data)}
+      {GraphList(props.series_data)}
     </XYPlot>
   )
 }
