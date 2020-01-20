@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./plot-styles";
 import { makeStyles } from '@material-ui/core/styles';
 import {Widget} from './../widget';
-import { config } from './../../../utils';
+import { config, infoPlot } from './../../../utils';
 
 const useStyles = makeStyles(theme => ({
   content: {
@@ -17,6 +17,8 @@ function ImagePlot(props){
     <img 
       src={config['urls']['png']+props.data}
       alt="Plot"
+      width={props.width}
+      height={props.height}
     />
   )
 }
@@ -28,10 +30,11 @@ export function PlotView(props){
   }
   return (
     <Card>
-      <Widget 
+      <Widget
         title="Plot"
-        smallContent={<div className={classes.content}> <ImagePlot data={props.data}/> </div>}
-        bigContent={<div className={classes.content}> <ImagePlot data={props.data}/> </div>}
+        info={infoPlot}
+        smallContent={<div className={classes.content}> <ImagePlot data={props.data} width={'100%'} height={'260px'}/></div>}
+        bigContent={<div className={classes.content}> <ImagePlot data={props.data} width={'100%'} height={'100%'}/> </div>}
       />
     </Card>
   );

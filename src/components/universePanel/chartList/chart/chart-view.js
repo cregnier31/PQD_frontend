@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Card from "./chart-styles";
 import {Widget} from './../../widget';
 import {ChartContent} from './chartContent';
+import {changeNameWidget, changeTooltipWidget} from '../../../../utils';
 
 export function ChartView(props){
   const [see_all, setSeeAll] = useState(true)
@@ -18,9 +19,10 @@ export function ChartView(props){
   return (
     <Card>
       <Widget 
-        title={props.kind}
+        title={changeNameWidget(props.kind)}
+        info={changeTooltipWidget(props.kind)}
         smallContent={<ChartContent see_all={see_all} height={200} width={350} data={props.data} />}
-        bigContent={<ChartContent see_all={see_all} height={500} width={750} data={props.data} />}
+        bigContent={<ChartContent see_all={see_all} height={300} width={1200} data={props.data} />}
       />
       <label>
         See all variable :

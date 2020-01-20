@@ -4,11 +4,19 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import FullscreenIcon from '@material-ui/icons/Fullscreen';
 import InfoIcon from '@material-ui/icons/Info';
-import MoreVertSharpIcon from '@material-ui/icons/MoreVertSharp';
+import GetAppIcon from '@material-ui/icons/GetApp';
 import DialogContent from '@material-ui/core/DialogContent';
 import CloseIcon from '@material-ui/icons/Close';
+import Grid from '@material-ui/core/Grid';
+import Tooltip from '@material-ui/core/Tooltip';
+import ReactToPdf from "react-to-pdf";
 
 const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1,
+    width: '100%',
+    height: '100%'
+  },
   right: {
     float: 'right',
   },
@@ -33,18 +41,33 @@ export function WidgetView(props){
   const handleClose = () => {
     setOpen(false);
   };
+  const ref = React.createRef();
+  const options = {
+    orientation: 'p',
+    unit: 'mm',
+    format: 'a0',
+    putOnlyUsedFonts:true,
+};
 
   return (
     <div>
       <div className={classes.left}>
         {props.title}
-        <InfoIcon />
+        <Tooltip title={props.info ? props.info : ''}>
+          <InfoIcon />
+        </Tooltip>
       </div>
       <div className={classes.right}>
         <FullscreenIcon onClick={handleOpen} />
-        <MoreVertSharpIcon />
+        <ReactToPdf targetRef={ref} filename="Resum_Stage.pdf" options={options}>
+          {({ toPdf }) => <GetAppIcon onClick={toPdf} />}
+        </ReactToPdf>
       </div>
-      {!open && props.smallContent }
+      <Grid container className={classes.root}>
+        <Grid item xs={10} md={10}>
+        {!open && <div ref={ref}>{props.smallContent}</div>}
+        </Grid>
+      </Grid>
       <Modal
         aria-labelledby="simple-modal-title"
         aria-describedby="simple-modal-description"
@@ -54,7 +77,11 @@ export function WidgetView(props){
         <DialogContent className={classes.content}>
           <Card className={classes.content}>
             <CloseIcon className={classes.right} onClick={handleClose} />
-            {open && props.bigContent }
+            <Grid container className={classes.root} justify="center" alignItems="center">
+              <Grid item xs={12} md={12}>
+              {open && props.bigContent }
+              </Grid>
+            </Grid>
           </Card>
         </DialogContent>
       </Modal>
