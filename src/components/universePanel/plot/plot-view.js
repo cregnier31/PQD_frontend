@@ -33,7 +33,7 @@ export function PlotView(props){
       <Widget
         title="Plot"
         info={infoPlot}
-        smallContent={<div className={classes.content}> <ImagePlot data={props.data} width={'100%'} height={'260px'}/></div>}
+        smallContent={<div className={classes.content}> <ImagePlot data={props.data} width={'330px'} height={'260px'}/></div>}
         bigContent={<div className={classes.content}> <ImagePlot data={props.data} width={'100%'} height={'100%'}/> </div>}
       />
     </Card>
