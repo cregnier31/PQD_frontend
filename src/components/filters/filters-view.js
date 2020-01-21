@@ -68,10 +68,6 @@ const SelectorList = ({props}) => {
 }
 
 function get_validation_button(props){
-  // If no data exists for this area/universe
-  if(typeof(props.data) === "undefined"){
-    return (<div>No Data for this Area/Universe</div>)
-  }
   // If some filters are not selected yet
   var displayButton = true
   Object.keys(props.filters).map(key => {
@@ -87,6 +83,17 @@ function get_validation_button(props){
 
 export function FiltersView(props){
   const classes = useStyles();
+
+  // If no data exists for this area/universe
+  if(typeof(props.data) === "undefined"){
+    return (
+      <div>
+        <h4 className={classes.title}>Criteria</h4>
+        <Divider />
+        <div>No Data for this Area/Universe</div>
+      </div>
+    )
+  }
 
   return (
     <div>
