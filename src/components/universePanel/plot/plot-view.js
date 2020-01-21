@@ -7,6 +7,7 @@ import { config, infoPlot } from './../../../utils';
 const useStyles = makeStyles(theme => ({
   content: {
     height: '100% !important',
+    width:'100% !important',
     marginTop: '0x !important',
     marginBottom: '0px !important',
   }
@@ -33,8 +34,8 @@ export function PlotView(props){
       <Widget
         title="Plot"
         info={infoPlot}
-        smallContent={<div className={classes.content}> <ImagePlot data={props.data} width={'330px'} height={'260px'}/></div>}
-        bigContent={<div className={classes.content}> <ImagePlot data={props.data} width={'100%'} height={'100%'}/> </div>}
+        smallContent={<div className={classes.content}> <ImagePlot width="100%" height="100%" data={props.data}/></div>}
+        bigContent={<div className={classes.content}> <ImagePlot width="100%" height="100%" data={props.data}/> </div>}
       />
     </Card>
   );

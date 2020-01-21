@@ -56,7 +56,7 @@ export function WidgetView(props){
         </Grid>
       </Grid>
       <Grid container className={classes.root}>
-        <Grid item xs={10} md={10}>
+        <Grid item xs={12} md={12}>
         {!open && props.smallContent}
         </Grid>
       </Grid>

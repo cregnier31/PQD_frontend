@@ -57,20 +57,18 @@ export function ChartContentView(props){
   }
   
   return (
-    <div style={{width: '50%'}}>
-      <FlexibleXYPlot 
-        onMouseLeave={_onMouseLeave} 
-        width={props.width} 
-        height={props.height} 
-        yDomain={[props.amplitude['min'], props.amplitude['max']]} 
-        xType="ordinal"
-      >
-        <VerticalGridLines />
-        <HorizontalGridLines />
-        <XAxis tickLabelAngle={-45}/>
-        <YAxis />
-        {GraphList(props.series_data)}
-      </FlexibleXYPlot>
-    </div>
+    <FlexibleXYPlot 
+      onMouseLeave={_onMouseLeave}
+      style={{marginLeft: 15}}
+      height={props.height} 
+      yDomain={[props.amplitude['min'], props.amplitude['max']]} 
+      xType="ordinal"
+    >
+      <VerticalGridLines />
+      <HorizontalGridLines />
+      <XAxis tickLabelAngle={-45}/>
+      <YAxis />
+      {GraphList(props.series_data)}
+    </FlexibleXYPlot>
   )
 }

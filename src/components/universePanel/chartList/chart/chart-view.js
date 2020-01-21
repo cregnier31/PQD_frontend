@@ -1,11 +1,27 @@
 import React, { useState } from "react";
 import Card from "./chart-styles";
+import { makeStyles } from '@material-ui/core/styles';
 import {Widget} from './../../widget';
 import {ChartContent} from './chartContent';
 import {changeNameWidget, changeTooltipWidget} from '../../../../utils';
+import Grid from '@material-ui/core/Grid';
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    height: 140,
+    width: 100,
+  },
+  control: {
+    padding: theme.spacing(2),
+  },
+}));
 
 export function ChartView(props){
   const [see_all, setSeeAll] = useState(true)
+  const classes = useStyles();
 
   if( typeof(props.data) ==="undefined"){
     return (<Card><Widget title="No Data" smallContent={null} bigContent={null} /></Card>);
@@ -24,10 +40,20 @@ export function ChartView(props){
         smallContent={<ChartContent see_all={see_all} height={200} width={350} data={props.data} />}
         bigContent={<ChartContent see_all={see_all} height={300} width={1200} data={props.data} />}
       />
-      <label>
-        See all variable :
-        <input name="see_all" type="checkbox" checked={see_all} onChange={toggle} />
-      </label>
+      <Grid
+        container
+        className={classes.root}
+        direction="row"
+        justify="center"
+        alignItems="flex-end"
+      >
+        <Grid item xs={10} md={10} className={classes.control}>
+        <label>
+          See all variable :
+          <input name="see_all" type="checkbox" checked={see_all} onChange={toggle} />
+        </label>
+        </Grid>
+      </Grid>
     </Card>
   );
 }
