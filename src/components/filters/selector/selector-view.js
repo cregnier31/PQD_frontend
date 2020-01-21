@@ -27,7 +27,7 @@ export function SelectorView(props) {
       <label className={classes.label}>{changeNameFilter(props.name)}</label>
       <select value={props.value} onChange={ event => {props.updateValue(event.target.value)}}>
         <option value="">--Please choose an option--</option>
-        { props.items.length > 0 ? props.items.map(item => <option key={item.id} value={item.id}>{item.name}</option>)
+        { props.items.length > 0 ? props.items.map(item => <option key={item.id} value={item.name}>{item.name}</option>)
           : <option key="empty" value="">No data</option>
         }
       </select>

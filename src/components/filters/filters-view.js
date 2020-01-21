@@ -24,7 +24,7 @@ function get_selector(name, items, props){
 }
 
 function filter_is_set_and_data_exists(filters, name, data){
-  return (typeof(filters[name]) == "number" && data.filter(item => item.id === filters[name]))
+  return data.filter(item => item.name === filters[name]).length
 }
 
 const SelectorList = ({props}) => {
@@ -36,32 +36,27 @@ const SelectorList = ({props}) => {
     list.push(get_selector("variable", variables, props))
     // Select Dataset
     if(filter_is_set_and_data_exists(filters, "variable", variables)){
-      const datasets = variables.filter(item => item.id === filters['variable'])[0].datasets
+      const datasets = variables.filter(item => item.name === filters['variable'])[0].datasets
       list.push(get_selector("dataset", datasets, props))
       // Select Product
       if(filter_is_set_and_data_exists(filters, "dataset", datasets)){
-        const products = datasets.filter(item => item.id === filters['dataset'])[0].products
+        const products = datasets.filter(item => item.name === filters['dataset'])[0].products
         list.push(get_selector("product", products, props))
         // Select Subarea
         if(filter_is_set_and_data_exists(filters, "product", products)){
           // Add filters category title
           list.push(<Divider key="divider" />)
           list.push(<p key="p">Validation expert metrics filters</p>)
-          const subareas = products.filter(item => item.id === filters['product'])[0].subareas
+          const subareas = products.filter(item => item.name === filters['product'])[0].subareas
           list.push(get_selector("subarea", subareas, props))
           // Select Depth
           if(filter_is_set_and_data_exists(filters, "subarea", subareas)){
-            const depths = subareas.filter(item => item.id === filters['subarea'])[0].depths
+            const depths = subareas.filter(item => item.name === filters['subarea'])[0].depths
             list.push(get_selector("depth", depths, props))
             // Select Stat
             if(filter_is_set_and_data_exists(filters, "depth", depths)){
-              const stats = depths.filter(item => item.id === filters['depth'])[0].stats
+              const stats = depths.filter(item => item.name === filters['depth'])[0].stats
               list.push(get_selector("stat", stats, props))
-              // Select PlotType
-              if(filter_is_set_and_data_exists(filters, "stat", stats)){
-                const plot_types = stats.filter(item => item.id === filters['stat'])[0].plot_types
-                list.push(get_selector("plot_type", plot_types, props))
-              }
             }
           }
         }

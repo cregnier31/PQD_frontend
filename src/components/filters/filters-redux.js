@@ -26,7 +26,7 @@ const mapStateToProps = (state, props) => {
     return {
         data: concerned_data,
         filters: concerned_filters,
-        zone: selected_area,
+        area: selected_area,
         universe: selected_universe,
         kpi: state.resultsReducer[selected_universe]['kpis'],
         plot: state.resultsReducer[selected_universe]['plot'],
