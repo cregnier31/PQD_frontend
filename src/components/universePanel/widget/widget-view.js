@@ -9,7 +9,6 @@ import DialogContent from '@material-ui/core/DialogContent';
 import CloseIcon from '@material-ui/icons/Close';
 import Grid from '@material-ui/core/Grid';
 import Tooltip from '@material-ui/core/Tooltip';
-import ReactToPdf from "react-to-pdf";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -17,17 +16,17 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
     height: '100%'
   },
-  right: {
-    float: 'right',
-  },
-  left: {
-    float: 'left',
-  },
   content: {
     height: '100% !important',
     marginTop: '0px !important',
     marginBottom: '0px !important',
-  }
+  },
+  right: {
+    float: 'right'
+  },
+  image: {
+    objectFit: 'cover',
+},
 }));
 
 export function WidgetView(props){
@@ -41,31 +40,24 @@ export function WidgetView(props){
   const handleClose = () => {
     setOpen(false);
   };
-  const ref = React.createRef();
-  const options = {
-    orientation: 'p',
-    unit: 'mm',
-    format: 'a0',
-    putOnlyUsedFonts:true,
-};
 
   return (
     <div>
-      <div className={classes.left}>
-        {props.title}
-        <Tooltip title={props.info ? props.info : ''}>
-          <InfoIcon />
-        </Tooltip>
-      </div>
-      <div className={classes.right}>
-        <FullscreenIcon onClick={handleOpen} />
-        <ReactToPdf targetRef={ref} filename="Resum_Stage.pdf" options={options}>
-          {({ toPdf }) => <GetAppIcon onClick={toPdf} />}
-        </ReactToPdf>
-      </div>
+      <Grid container className={classes.root} direction="row" justify="space-between">
+        <Grid item xs={10} md={10}>
+          {props.title}
+          <Tooltip title={props.info ? props.info : ''}>
+            <InfoIcon />
+          </Tooltip>
+        </Grid>
+        <Grid item xs={2} md={2}>
+          <FullscreenIcon onClick={handleOpen} />
+          <GetAppIcon />
+        </Grid>
+      </Grid>
       <Grid container className={classes.root}>
         <Grid item xs={10} md={10}>
-        {!open && <div ref={ref}>{props.smallContent}</div>}
+        {!open && props.smallContent}
         </Grid>
       </Grid>
       <Modal

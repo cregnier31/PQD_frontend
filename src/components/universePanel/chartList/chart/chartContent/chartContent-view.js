@@ -9,6 +9,7 @@ import {
   HorizontalGridLines,
   Crosshair,
   LineSeries,
+  FlexibleXYPlot,
 } from 'react-vis';
 
 export function ChartContentView(props){
@@ -56,18 +57,20 @@ export function ChartContentView(props){
   }
   
   return (
-    <XYPlot 
-      onMouseLeave={_onMouseLeave} 
-      width={props.width} 
-      height={props.height} 
-      yDomain={[props.amplitude['min'], props.amplitude['max']]} 
-      xType="ordinal"
-    >
-      <VerticalGridLines />
-      <HorizontalGridLines />
-      <XAxis tickLabelAngle={-45}/>
-      <YAxis />
-      {GraphList(props.series_data)}
-    </XYPlot>
+    <div style={{width: '50%'}}>
+      <FlexibleXYPlot 
+        onMouseLeave={_onMouseLeave} 
+        width={props.width} 
+        height={props.height} 
+        yDomain={[props.amplitude['min'], props.amplitude['max']]} 
+        xType="ordinal"
+      >
+        <VerticalGridLines />
+        <HorizontalGridLines />
+        <XAxis tickLabelAngle={-45}/>
+        <YAxis />
+        {GraphList(props.series_data)}
+      </FlexibleXYPlot>
+    </div>
   )
 }
