@@ -57,7 +57,7 @@ export const filtersReducer = (state = default_filters_values, action) => {
         subarea: "",
         depth: "",
         stat: "",
-        plot_type: "",
+        plot_type: "timeseries",
       }
       newState["BLUE"] = emptyObj
       newState["GREEN"] = emptyObj
