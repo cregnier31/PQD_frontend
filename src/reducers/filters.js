@@ -2,13 +2,13 @@ const default_filters_values = {
   area: "global",
   universe: "BLUE",
   BLUE: {
-    variable: "",
-    dataset: "",
-    product: "",
-    subarea: "",
-    depth: "",
-    stat: "",
-    plot_type: "",
+    variable: "Temperature",
+    dataset: "temperature",
+    product: "global-analysis-forecast-phy-001-024",
+    subarea: "full-domain",
+    depth: "2000-5000m",
+    stat: "anomaly-correlation",
+    plot_type: "timeseries",
   },
   GREEN: {
     variable: "",
@@ -17,7 +17,7 @@ const default_filters_values = {
     subarea: "",
     depth: "",
     stat: "",
-    plot_type: "",
+    plot_type: "timeseries",
   },
   WHITE: {
     variable: "",
@@ -26,11 +26,12 @@ const default_filters_values = {
     subarea: "",
     depth: "",
     stat: "",
-    plot_type: "",
+    plot_type: "timeseries",
   }
 };
 
-const filtersOrder = ['variable', 'dataset', 'product', 'subarea', 'depth', 'stat', 'plot_type']
+// plot_type isn't in list above because its value is fix for now
+const filtersOrder = ['variable', 'dataset', 'product', 'subarea', 'depth', 'stat']
 
 export const filtersReducer = (state = default_filters_values, action) => {
   var newState = JSON.parse(JSON.stringify(state));
@@ -56,7 +57,7 @@ export const filtersReducer = (state = default_filters_values, action) => {
         subarea: "",
         depth: "",
         stat: "",
-        plot_type: "",
+        plot_type: "timeseries",
       }
       newState["BLUE"] = emptyObj
       newState["GREEN"] = emptyObj

@@ -5,12 +5,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import FullscreenIcon from '@material-ui/icons/Fullscreen';
 import InfoIcon from '@material-ui/icons/Info';
-import MoreVertSharpIcon from '@material-ui/icons/MoreVertSharp';
+import GetAppIcon from '@material-ui/icons/GetApp';
 import DialogContent from '@material-ui/core/DialogContent';
 import CloseIcon from '@material-ui/icons/Close';
-import Popover from '@material-ui/core/Popover';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
 
 const useStyles = makeStyles(theme => ({
   right: {
@@ -47,8 +44,6 @@ export function WidgetMapView(props){
   const handleClose = () => {
     setOpen(false);
   };
-  const openAnchor = Boolean(anchorEl);
-  const id = open ? 'simple-popover' : undefined;
   return (
     <div>
       <Card>
@@ -58,33 +53,7 @@ export function WidgetMapView(props){
         </div>
         <div className={classes.right}>
           <FullscreenIcon onClick={handleOpen} />
-          <MoreVertSharpIcon onClick={handleClickPopover} />
-          <Popover
-            id={id}
-            open={openAnchor}
-            anchorEl={anchorEl}
-            onClose={handleClosePopover}
-            anchorOrigin={{
-              vertical: 'center',
-              horizontal: 'right',
-            }}
-            transformOrigin={{
-              vertical: 'center',
-              horizontal: 'left',
-            }}
-          >
-            <List className={classes.list}>
-              <ListItem button key='partager' onClick={(e) => props.setArea(e.target.value)}>
-                Partager
-              </ListItem>
-              <ListItem button key='doc'>
-                  Partager
-              </ListItem>
-              <ListItem button key='imprimer'>
-                Partager
-              </ListItem>
-            </List>
-          </Popover>
+          <GetAppIcon onClick={handleClickPopover} />
         </div>
         {!open && 
           <LeafletMap open={open} />

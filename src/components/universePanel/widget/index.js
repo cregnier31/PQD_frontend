@@ -1,0 +1,1 @@
+export { WidgetView as Widget } from './widget-view';

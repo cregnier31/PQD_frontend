@@ -11,21 +11,26 @@ const useStyles = makeStyles(theme => ({
       height: 30,
       borderColor: "black",
       fontSize: "20px",
-      backgroundColor: "white"
+      backgroundColor: "white",
+      borderRadius: 5
     },
   },
+  label: {
+    fontWeight: 'bold'
+  }
 }));
+
 export function SelectorView(props) {
   const classes = useStyles();
-
   return (
-    <div>
-      <FormControl className={classes.root}>
-        <select value={props.value} onChange={ event => {props.updateValue(event.target.value)}}>
-          <option default value="" hidden>{props.items.length > 0 ? changeNameFilter(props.name) : 'No data'}</option>
-          {props.items.map(item => <option key={item.id} value={item.id}>{item.name}</option>)}
-        </select>
-      </FormControl>
-    </div>
+    <FormControl className={classes.root}>
+      <label className={classes.label}>{changeNameFilter(props.name)}</label>
+      <select value={props.value} onChange={ event => {props.updateValue(event.target.value)}}>
+        <option value="">--Please choose an option--</option>
+        { props.items.length > 0 ? props.items.map(item => <option key={item.id} value={item.name}>{item.name}</option>)
+          : <option key="empty" value="">No data</option>
+        }
+      </select>
+    </FormControl>
   )
 }

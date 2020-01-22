@@ -6,7 +6,7 @@ export class FiltersContainer extends Component {
 
   async get_plot() {
     const args = {
-      "area": this.props.zone["area"],
+      "area": this.props.area,
       "universe": this.props.universe,
       "variable": this.props.filters["variable"],
       "dataset": this.props.filters["dataset"],
@@ -32,7 +32,7 @@ export class FiltersContainer extends Component {
 
   async get_kpi(){
     const args = {
-      "area": this.props.zone["area"],
+      "area": this.props.area,
       "what": "kpi2b",
       "variable": this.props.filters["variable"]
     }

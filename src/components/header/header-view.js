@@ -64,12 +64,12 @@ const AreaList = ({props}) => {
   if(props.data.length){
     props.data.map( item => {
       var active = 0
-      if(item.id === props.filters["area"]){
+      if(item.name === props.area){
         active = 1
       }
       return list.push(
         <Grid item xs={2} md={2} key={item.id}>
-          <Button value={item.id} active={active} onClick={() => {props.set(item.name)}} color="inherit">
+          <Button value={item.name} active={active} onClick={() => {props.setArea(item.name)}} color="inherit">
             {item.fullname}
           </Button>
         </Grid>
@@ -106,7 +106,11 @@ export function HeaderView(props) {
           <AreaList props={props} />
         </Toolbar>
       </AppBar>
-      <Drawer handleDrawerClose={handleDrawerClose} open={open} setUniverse={(universe) => props.setUniverse(universe)}
+      <Drawer 
+        handleDrawerClose={handleDrawerClose} 
+        open={open} 
+        setUniverse={(universe) => props.setUniverse(universe)}
+        universe={props.universe}
       />
       <main
         className={clsx(classes.content, {

@@ -8,14 +8,17 @@ export class SelectorContainer extends Component {
   }
 
   updateValue(value){
-    var id = ""
-    if(value.length){
-      id = parseInt(value)
-    }
-    this.props.updateValue(this.props.name, id)
+    this.props.updateValue(this.props.name, value)
   }
 
   render() {
-    return <SelectorView items={this.props.items} name={this.props.name} value={this.props.value} updateValue={(value) => this.updateValue(value)}/>
+    return (
+      <SelectorView 
+        items={this.props.items} 
+        name={this.props.name} 
+        value={this.props.value} 
+        updateValue={(value) => this.updateValue(value)}
+      />
+    )
   }
 }
