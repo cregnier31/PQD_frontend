@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import L from 'leaflet';
 
 import 'leaflet/dist/leaflet.css';
-
+import {changeNameAreas} from "../../../../utils";
 import meadSea from "../../../../geodata/medsea_zones.geo.json";
 import ibi from "../../../../geodata/ibi_zones.json";
 import blackSea from "../../../../geodata/blacksea.json";
@@ -41,12 +41,28 @@ let geojsonMarkerOptions = {
   fillOpacity: 0.5,
   color: 'red',
 };
+const LabeledMarker = require('leaflet-labeled-circle');
+
+const labeled = {
+  "type": "Feature",
+  "properties": {
+    "text": 'toto',
+    "labelPosition": [
+      35, 22
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ 35, 22 ]
+  }
+};
 
 export class LeafletMapView extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      area: props.area,
+    area: this.props.area,
+    currentFilters: this.props.filtersReducer,
     };
   }
 
@@ -57,6 +73,11 @@ export class LeafletMapView extends Component {
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(this.map);
+    new LabeledMarker(
+      labeled.geometry.coordinates.slice().reverse(),
+      labeled, {
+        markerOptions: { color: '#050' }
+      }).bindPopup('toto').addTo(this.map);
     const onEachFeature = function(feature, layer) {
       if(
           feature.properties 
@@ -116,6 +137,7 @@ export class LeafletMapView extends Component {
               errorMarkers[feature.properties.zoneCode].push(m);
             }
             m.on('click', function(){
+              console.log(this)
               let pc = this._icon.firstChild.getAttribute('data-popup');
               if(pc) this.setPopupContent(pc.split('|').join('<br>'));
             })
@@ -156,78 +178,78 @@ export class LeafletMapView extends Component {
           }
       }
     }
-    switch (this.state.area) {
+    switch (this.props.area) {
       case 'medsea':
         L.geoJson( meadSea, {
           color: "yellow", weight: 1,
           onEachFeature: function(feature, layer) { onEachFeature(feature,layer) }
         }).addTo(this.map);
-        this.showGeojsonMap2('MED');
+        this.showGeojsonMap('MED');
       break;
       case 'ibi':
         L.geoJson( ibi, {
           color: "yellow", weight: 1,
           onEachFeature(feature, layer) { onEachFeature(feature,layer) }
         }).addTo(this.map);
-        this.showGeojsonMap2('IBI');
+        this.showGeojsonMap('IBI');
       break;
       case 'blacksea':
         L.geoJson( blackSea, {
           color: "yellow", weight: 1,
           onEachFeature(feature, layer) { onEachFeature(feature,layer) }
         }).addTo(this.map);
-        this.showGeojsonMap2('BS');
+        this.showGeojsonMap('BS');
       break;
       case 'global':
         L.geoJson( global, {
           color: "yellow", weight: 1,
           onEachFeature(feature, layer) { onEachFeature(feature,layer) }
         }).addTo(this.map);
-        this.showGeojsonMap2('GLO');
+        this.showGeojsonMap('GLO');
       break;
       case 'arctic':
         L.geoJson( artic, {
           color: "yellow", weight: 1,
           onEachFeature(feature, layer) { onEachFeature(feature,layer) }
         }).addTo(this.map);
-        this.showGeojsonMap2('ARC');
+        this.showGeojsonMap('ARC');
       break;
       case 'balticsea':
         L.geoJson( baltic, {
           color: "yellow", weight: 1,
           onEachFeature(feature, layer) { onEachFeature(feature,layer) }
         }).addTo(this.map);
-        this.showGeojsonMap2('BAL');
+        this.showGeojsonMap('BAL');
       break;
       case 'nws':
         L.geoJson( nws, {
           color: "yellow", weight: 1,
           onEachFeature(feature, layer) { onEachFeature(feature,layer) }
         }).addTo(this.map);
-        this.showGeojsonMap2('NWS');
+        this.showGeojsonMap('NWS');
       break;
       default:
         L.geoJson( global, {
           color: "yellow", weight: 1,
           onEachFeature(feature, layer) { onEachFeature(feature,layer) }
         }).addTo(this.map);
-        this.showGeojsonMap2('GLO');
+        this.showGeojsonMap('GLO');
       break;
     }
   }
 
-  async componentDidUpdate() {
-    if (this.state.area !== this.props.area) {
-      await this.setState({ area: this.props.area});
-      await this.props.getArea(this.props.area);
+  componentDidUpdate() {
+    if(this.state.area !== this.props.area) {
+      this.setState({ area: this.props.area});
     }
     this.componentDidMount();
   }
 
-  async showGeojsonMap2(area) {
+  async showGeojsonMap(area) {
     const errorsFile = await import('../../../../errors/CLASS2/BAL/BALTICSEA_ANALYSIS_FORECAST_PHYS_003_006.json');
     // Use Props and product
     const imgfiles = await import('../../../../plots_class2/BAL/resize/FehmarnBelt_BALTICSEA_ANALYSIS_FORECAST_PHYS_003_006.png');
+    // const imgfiles = await import('../../../../plots_class2/'+'BAL'+'/resize/FehmarnBelt_'+this.state.currentFilters && this.state.currentFilters.product.toUpperCase()+'.png');
     //Use Props and product
     this.pointToLayer(errorsFile, imgfiles);
   };
@@ -252,18 +274,20 @@ export class LeafletMapView extends Component {
         if (rmsd > 1 ) {
           geojsonMarkerOptions.color = "red"
         }
+        const sizeImg = this.props.open ? "700px" : "350px";
         const popupText = "<b>Ref:</b> " + data.properties.NAME.bold() +
           "<br><b>RMSD:</b> " + data.properties.rmse.toFixed(2) +
           "<br><b>Corr:</b> " + data.properties.correlation.toFixed(2) +
           "<br><b>Variance explained:</b> " + data.properties.variance_exp.toFixed(2) +
           "<br><b>Scatter index:</b> " + data.properties.scatter_index.toFixed(2) +
-          "<img src=" + imgfiles.default + "/>";
+          "<img src=" + imgfiles.default + " width=" + sizeImg + "/>";
         return L.circleMarker(data && data.geometry && data.geometry.coordinates,geojsonMarkerOptions).bindPopup(popupText, customOptions).addTo(this.map)
       }
     )
   };
 
   render() {
+    console.log('propsss', this.props)
     return (
       <div
         className='LeafletMap'

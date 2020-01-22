@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./widgetMap-styles";
-import LeafletMap from "./leafletMap";
+import {LeafletMap} from "./leafletMap";
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import FullscreenIcon from '@material-ui/icons/Fullscreen';
