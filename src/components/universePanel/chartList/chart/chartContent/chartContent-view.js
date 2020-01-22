@@ -33,8 +33,14 @@ export function ChartContentView(props){
 
   const GraphList = (data) => {
     var list = []
+    const arrayData = [[]];
+    for(let i = 0; i < data[0].length; i++) {
+      if(data[0][i].x.substring(data[0][i].x.length -2)%2 === 1) {
+        arrayData[0].push(data[0][i]);
+      }
+    }
     if(isMultipleSeries()){
-      list = data.map((elem, index) => {
+      list = arrayData.map((elem, index) => {
         if(index === 0){
           return <LineSeries onNearestX={_onNearestX} key={index} data={elem}/>
         }else{
@@ -42,7 +48,12 @@ export function ChartContentView(props){
         }
       })
     }else{
-      list.push(<VerticalBarSeries key="VerticalBarSeries" onNearestX={_onNearestX} data={data}/>)
+      for(let i = 0; i < data.length; i++) {
+        if(data[i].x.substring(data[i].x.length -2)%2 === 1) {
+          arrayData.push(data[i]);
+        }
+      }
+      list.push(<VerticalBarSeries key="VerticalBarSeries" onNearestX={_onNearestX} data={arrayData}/>)
     }
     list.push(<Crosshair key="crosshair" values={crosshairValues}>
       <div style={{background: 'black'}}>
@@ -55,7 +66,6 @@ export function ChartContentView(props){
     )
     return list
   }
-  
   return (
     <FlexibleXYPlot 
       onMouseLeave={_onMouseLeave}
