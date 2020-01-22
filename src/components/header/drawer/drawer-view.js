@@ -4,8 +4,7 @@ import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import CloseIcon from '@material-ui/icons/Close';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -13,8 +12,9 @@ import PanoramaFishEyeRoundedIcon from '@material-ui/icons/PanoramaFishEyeRounde
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import {Filter} from '../../filters';
 import { color } from './../../../utils';
+import Box from '@material-ui/core/Box';
 
-const drawerWidth = 280;
+const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -26,6 +26,7 @@ const useStyles = makeStyles(theme => ({
   },
   drawerPaper: {
     width: drawerWidth,
+    boxShadow: '3px 0px 7px #B5B5B5'
   },
   toolbar: theme.mixins.toolbar,
   drawerHeader: {
@@ -82,7 +83,7 @@ export function DrawerView(props) {
         <div className={classes.toolbar} />
         <div className={classes.drawerHeader}>
           <IconButton onClick={props.handleDrawerClose}>
-            {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+            <CloseIcon style={{color: "black"}} />
           </IconButton>
         </div>
         <p className={classes.section}>Generic quality information filters</p>

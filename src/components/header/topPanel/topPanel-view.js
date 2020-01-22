@@ -14,11 +14,6 @@ import globalImg from '../../../assets/images/global.jpg';
 import tutoriel from '../../../assets/images/tutoriel.jpeg';
 
 const useStyles = makeStyles(theme => ({
-  heading: {
-    fontSize: theme.typography.pxToRem(30),
-    fontWeight: theme.typography.fontWeightRegular,
-    fontFamily: 'ccl-heading--h3'
-  },
   cardRegion: {
     minWidth: 200,
     width: '100%',
@@ -41,6 +36,9 @@ const useStyles = makeStyles(theme => ({
   },
   para: {
     fontFamily: 'ccl-paragraph--m'
+  },
+  content: {
+    float: 'left'
   }
 }));
 
@@ -55,7 +53,6 @@ export function TopPanelView(props){
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography className={classes.heading}>Title</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
           <Card className={classes.cardRegion}>
@@ -74,7 +71,7 @@ export function TopPanelView(props){
                   image={tutoriel}
                   title="Tutoriel"
                 />
-                <CardContent>
+                <CardContent className={classes.content}>
                   <Typography gutterBottom variant="h5" component="h2">
                     New visitor ?
                   </Typography>
