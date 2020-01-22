@@ -10,7 +10,7 @@ export function TitleRawView(props){
         <PanoramaFishEyeRoundedIcon fontSize="large" style={{ color: color[props.universe]['icon']}} />
       </Grid>
       <Grid item xs={1} md={1}>
-        <h3>{props.universe}</h3>
+        <h3 style={{fontFamily: 'ccl-heading--h3'}}>{props.universe}</h3>
       </Grid>
     </Grid>
   );

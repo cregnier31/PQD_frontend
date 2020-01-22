@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
     },
   },
   label: {
-    fontWeight: 'bold'
+    fontFamily: 'ccl-paragraph--ms'
   }
 }));
 

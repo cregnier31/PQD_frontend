@@ -51,7 +51,15 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     margin: '8px',
-    alignContent: 'flex-start'
+    alignContent: 'flex-start',
+    fontFamily: 'ccl-heading--h5'
+  },
+  universes: {
+    fontFamily: 'ccl-paragraph--ms !important'
+  },
+  section: {
+    fontSize: '20px',
+    fontFamily: 'ccl-paragraph--ms'
   }
 }));
 
@@ -77,11 +85,12 @@ export function DrawerView(props) {
             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>
         </div>
-        <h4 className={classes.title}>Parameter families</h4>
+        <p className={classes.section}>Generic quality information filters</p>
+        <h5 className={classes.title}>Parameter families</h5>
         <Divider />
         <List className={classes.list}>
           {universes.map((universe) => (
-            <ListItem button key={universe} onClick={() => props.setUniverse(universe)}>
+            <ListItem className={classes.universes} button key={universe} onClick={() => props.setUniverse(universe)}>
               <ListItemIcon>
                 <PanoramaFishEyeRoundedIcon fontSize="large" style={{ color: color[universe]['icon']}} />
               </ListItemIcon>

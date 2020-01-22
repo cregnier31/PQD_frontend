@@ -17,6 +17,7 @@ const useStyles = makeStyles(theme => ({
   heading: {
     fontSize: theme.typography.pxToRem(30),
     fontWeight: theme.typography.fontWeightRegular,
+    fontFamily: 'ccl-heading--h3'
   },
   cardRegion: {
     minWidth: 200,
@@ -35,6 +36,12 @@ const useStyles = makeStyles(theme => ({
   mediaGlobal: {
     height: 400,
   },
+  title: {
+    fontFamily: 'ccl-heading--h5'
+  },
+  para: {
+    fontFamily: 'ccl-paragraph--m'
+  }
 }));
 
 export function TopPanelView(props){
