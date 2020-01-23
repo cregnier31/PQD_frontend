@@ -1,36 +1,51 @@
 import React from "react";
-import FormControl from '@material-ui/core/FormControl';
 import { makeStyles } from '@material-ui/core/styles';
 import {changeNameFilter} from '../../../utils';
+import TextField from '@material-ui/core/TextField';
+import MenuItem from '@material-ui/core/MenuItem';
+import './selector.css'
 
 const useStyles = makeStyles(theme => ({
   root: {
     '& > *': {
-      margin: '15px',
+      margin: '13px',
       width: 200,
-      height: 30,
+      maxHeight: '35px !important',
       borderColor: "black",
-      fontSize: "20px",
+      fontSize: "15px",
       backgroundColor: "white",
-      borderRadius: 5
+      marginTop: theme.spacing(3),
     },
   },
   label: {
-    fontFamily: 'ccl-paragraph--ms'
-  }
+    fontFamily: 'ccl-paragraph--ms',
+    textAlign: 'start'
+  },
 }));
 
 export function SelectorView(props) {
   const classes = useStyles();
   return (
-    <FormControl className={classes.root}>
-      <label className={classes.label}>{changeNameFilter(props.name)}</label>
-      <select value={props.value} onChange={ event => {props.updateValue(event.target.value)}}>
-        <option value="">--Please choose an option--</option>
-        { props.items.length > 0 ? props.items.map(item => <option key={item.id} value={item.name}>{item.name}</option>)
-          : <option key="empty" value="">No data</option>
-        }
-      </select>
-    </FormControl>
+    <form className={classes.root} noValidate autoComplete="off">
+      <TextField
+          id="standard-select-currency"
+          select
+          label={changeNameFilter(props.name)}
+          value={props.value}
+          onChange={ event => {props.updateValue(event.target.value)}}
+          variant="outlined"
+          size="small"
+        >
+          {props.items.length > 0 ? props.items.map(item => (
+            <MenuItem key={item.id} value={item.name}>
+              {item.name}
+            </MenuItem>
+          )) : 
+            <MenuItem key={'empty'} value="">
+              No data
+            </MenuItem>
+          }
+        </TextField>
+    </form>
   )
 }

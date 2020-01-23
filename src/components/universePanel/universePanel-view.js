@@ -14,7 +14,7 @@ export function UniversePanelView(props){
     <Card style={{backgroundColor: color[props.universe]['background']}}>
       <TitleRaw universe={props.universe}/>
       <ChartList universe={props.universe}/>
-      <Divider color="white" />
+      <Divider style={{backgroundColor: 'white', marginLeft: '10px', width: '98%'}} />
       <LinkRaw />
       <Grid container>
         <Grid item xs={12} md={8}>

@@ -1,18 +1,16 @@
 import React from 'react';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import PanoramaFishEyeRoundedIcon from '@material-ui/icons/PanoramaFishEyeRounded';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import {Filter} from '../../filters';
 import { color } from './../../../utils';
-import Box from '@material-ui/core/Box';
 
 const drawerWidth = 240;
 
@@ -47,8 +45,8 @@ const useStyles = makeStyles(theme => ({
     marginLeft: -drawerWidth,
   },
   list: {
-    padding: theme.spacing(0),
-    marginBottom: '10px'
+    marginTop: '20px',
+    marginBottom: '20px'
   },
   title: {
     margin: '8px',
@@ -61,6 +59,9 @@ const useStyles = makeStyles(theme => ({
   section: {
     fontSize: '20px',
     fontFamily: 'ccl-paragraph--ms'
+  },
+  areas: {
+    fontFamily: 'ccl-paragraph--ms'
   }
 }));
 
@@ -68,7 +69,6 @@ const universes = ['BLUE', 'GREEN', 'WHITE']
 
 export function DrawerView(props) {
   const classes = useStyles();
-  const theme = useTheme();
 
   return (
     <div className={classes.root}>
@@ -95,9 +95,9 @@ export function DrawerView(props) {
               <ListItemIcon>
                 <PanoramaFishEyeRoundedIcon fontSize="large" style={{ color: color[universe]['icon']}} />
               </ListItemIcon>
-              <ListItemText primary={universe}/>
+              <li>{universe}</li>
               {props.universe === universe &&
-                <CheckCircleIcon />
+                <CheckCircleIcon style={{marginLeft: '10px'}} />
               }
             </ListItem>
           ))}

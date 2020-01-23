@@ -42,7 +42,7 @@ const SelectorList = ({props}) => {
     list.push(get_selector("variable", variables, props))
     // Select Dataset
     if(filter_is_set_and_data_exists(filters, "variable", variables)){
-      list.push(<Divider key="divider" />)
+      list.push(<Divider style={{marginTop: 20}} key="divider" />)
       list.push(<p className={classes.section} key="p">Validation expert metrics filters</p>)
       const datasets = variables.filter(item => item.name === filters['variable'])[0].datasets
       list.push(get_selector("dataset", datasets, props))
@@ -87,7 +87,7 @@ function get_validation_button(props){
     return null
   })
   if(displayButton){
-    return (<Button onClick={() => props.apply()}>Apply</Button>)
+    return (<Button style={{marginTop: 15}} onClick={() => props.apply()}>Apply</Button>)
   }
 }
 
