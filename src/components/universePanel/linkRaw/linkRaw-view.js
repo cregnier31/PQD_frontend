@@ -21,7 +21,8 @@ const useStyles = makeStyles(theme => ({
   },
   root: {
     display: 'inline-flex',
-    width: '50%'
+    width: '50%',
+    marginTop: '10px'
   },
   iconsSite: {
     float: 'left',
