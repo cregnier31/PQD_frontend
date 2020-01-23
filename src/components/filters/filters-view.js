@@ -97,9 +97,8 @@ export function FiltersView(props){
 
   return (
     <div>
-      <h4 className={classes.title}>Criteria</h4>
+      <h4 className={classes.title}>Selection of validation expert metrics</h4>
       <Divider />
-      <p>Generic quality information filters</p>
       <SelectorList props={props}/>
       {get_validation_button(props)}
     </div>

@@ -37,8 +37,8 @@ export function ChartView(props){
       <Widget 
         title={changeNameWidget(props.kind)}
         info={changeTooltipWidget(props.kind)}
-        smallContent={<ChartContent see_all={see_all} height={200} width={350} data={props.data} />}
-        bigContent={<ChartContent see_all={see_all} height={300} width={1200} data={props.data} />}
+        smallContent={<ChartContent {...props} see_all={see_all} height={200} width={350}/>}
+        bigContent={<ChartContent {...props} see_all={see_all} height={300} width={1200}/>}
       />
       <Grid
         container

@@ -5,11 +5,3 @@ export function setPlot(universe, data){
     data
   }
 }
-
-export function setKpis(universe, data){
-  return {
-    type: "SET_UNIVERSE_KPIS",
-    universe,
-    data
-  }
-}

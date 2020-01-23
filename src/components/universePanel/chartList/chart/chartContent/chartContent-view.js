@@ -1,7 +1,6 @@
 import React, { useState  } from "react";
 import './../../../../../../node_modules/react-vis/dist/style.css';
 import {  
-  XYPlot,
   XAxis,
   YAxis,
   VerticalBarSeries,
@@ -46,9 +45,8 @@ export function ChartContentView(props){
     }
     list.push(<Crosshair key="crosshair" values={crosshairValues}>
       <div style={{background: 'black'}}>
-        <h3>Values:</h3>
         {crosshairValues.map((serie, index) => 
-           <p>{props.series_name[index]}: {serie['y']}</p>
+           <p key={index}>{props.series_name[index]}: {serie['y']}</p>
         )}
       </div>
     </Crosshair>

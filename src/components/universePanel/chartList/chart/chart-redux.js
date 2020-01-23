@@ -2,14 +2,16 @@ import { connect } from "react-redux";
 import { ChartContainer } from "./chart-container";
 
 const mapStateToProps = (state, props) => {
-    var concerned_data = {}
+    var area, variable = {}
     try {
-        concerned_data = state.resultsReducer[props.universe]['kpis'][props.kind]
+        area = state.filtersReducer['area']
+        variable = state.filtersReducer[props.universe]['variable']
     } catch (error) {
         console.log(error)
     }
     return {
-        data: concerned_data
+        area: area,
+        variable: variable,
     }
 }
 
