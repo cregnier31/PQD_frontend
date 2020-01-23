@@ -63,7 +63,10 @@ export function ChartContentView(props){
     >
       <VerticalGridLines />
       <HorizontalGridLines />
-      <XAxis tickLabelAngle={-45} />
+      <XAxis 
+        tickValues={props.series_labels}
+        tickLabelAngle={-45}
+      />
       <YAxis />
       {GraphList(props.series_data)}
     </FlexibleXYPlot>

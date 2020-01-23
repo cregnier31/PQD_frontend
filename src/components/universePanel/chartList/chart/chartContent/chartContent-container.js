@@ -7,6 +7,7 @@ export class ChartContentContainer extends Component {
     this.state= {
       series_data: [],
       series_name: [],
+      series_labels: []
     }
   }
 
@@ -23,7 +24,8 @@ export class ChartContentContainer extends Component {
   define_series(){
     const datas = this.getSeriesData(this.props.data, this.props.see_all)
     const names = this.getSeriesName(this.props.data, this.props.see_all)
-    this.setState({series_data: datas, series_name: names})
+    const labels = this.getSeriesLabels(this.props.data, this.props.see_all, 4)
+    this.setState({series_data: datas, series_name: names, series_labels: labels})
   }
 
   getSeriesData(series, want_all){
@@ -56,6 +58,31 @@ export class ChartContentContainer extends Component {
     }
   }
 
+  getSeriesLabels(series, want_all, days_delta){
+    var labels = []
+    if(want_all){
+      series.map((item) => {
+        item.content.map((point, index) => {
+          if(index % days_delta === 0){
+            labels.push(point['x'])
+          }
+        })
+        return null
+      })
+    }else{
+      series.map((item) => {
+        if(item.variable_name === this.props.variable){
+          item.content.map((point, index) => {
+            if(index % days_delta === 0){
+              labels.push(point['x'])
+            }
+          })
+        }
+      })
+    }
+    return labels
+  }
+
   getAmplitude(data){
     var all_data = []
     data.map(item => {
@@ -80,6 +107,7 @@ export class ChartContentContainer extends Component {
       <ChartContentView 
         series_data={this.state['series_data']} 
         series_name={this.state['series_name']}
+        series_labels={this.state['series_labels']}
         amplitude={this.getAmplitude(this.state['series_data'])}
         height={this.props.height}
         width={this.props.width}
