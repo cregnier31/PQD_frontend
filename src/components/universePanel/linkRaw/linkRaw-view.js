@@ -11,7 +11,7 @@ const useStyles = makeStyles(theme => ({
     fontWeight: theme.typography.fontWeightRegular,
     fontFamily: 'ccl-heading--h3',
     float: 'left',
-    marginLeft: '10px'
+    marginLeft: '20px'
   },
   titleRight: {
     fontSize: theme.typography.pxToRem(20),
@@ -20,47 +20,45 @@ const useStyles = makeStyles(theme => ({
     float: 'left',
   },
   root: {
-    display: 'inline-flex'
+    display: 'inline-flex',
+    width: '50%'
+  },
+  iconsSite: {
+    float: 'left',
+    marginTop: '1px',
+    marginRight: '5px'
+  },
+  iconsCatalogue: {
+    float: 'left',
+    marginTop: '3px',
+    marginRight: '5px'
   }
 }));
 
 export function LinkRawView(props){
   const classes = useStyles();
   return (
-    <Grid container direction="row" alignItems="center" className={classes.root}>
-      <Grid item xs={6} md={6}>
-        <Typography className={classes.titleLeft}>Sous titre</Typography>
+    <div>
+      <Grid container direction="row" alignItems="center" justify="flex-start" className={classes.root}>
+        <Grid item xs={12} md={6}>
+          <Typography className={classes.titleLeft}>Sous titre</Typography>
+        </Grid>
       </Grid>
-      <Grid item xs={1} md={1} style={{marginTop: '5px', marginRight: '5px'}} justify="flex-end">
-        <MenuBookIcon />
-      </Grid>
-      <Grid item xs={1} md={1} style={{marginRight: '10px'}} justify="flex-end">
-        <p className={classes.titleRight}>Catalogue</p>
-      </Grid>
-      <Grid item xs={1} md={1} style={{marginTop: '7px', marginRight: '5px'}} justify="flex-end">
-        <WebIcon />
-      </Grid>
-      <Grid item xs={2} md={2}style={{marginRight: '5px'}} justify="flex-end">
-        <p className={classes.titleRight}>Site producteur</p>
-      </Grid>
-    </Grid>
 
-
-// <Grid container direction="row" className={classes.root}>
-//         <Grid item xs={6} md={6}>
-//         <Typography className={classes.titleLeft}>Sous titre</Typography>
-//         </Grid>
-//         <Grid item xs={6} md={6}>
-//           <Typography className={classes.site}>
-//             <WebIcon style={{marginRight: '10px'}}/>
-//             Site producteur
-//           </Typography>
-//           <Typography className={classes.catalogue}>
-//             <MenuBookIcon style={{marginRight: '10px'}} />
-//             Catalogue
-//           </Typography>
-//         </Grid>
-//       </Grid>
-
+      <Grid container direction="row" alignItems="center" justify="flex-end" className={classes.root}>
+        <Grid item xs={5} md={3}>
+          <MenuBookIcon className={classes.iconsSite} />
+          <Typography className={classes.titleRight}>
+            Catalogue
+          </Typography>
+        </Grid>
+        <Grid item xs={7} md={4}>
+          <WebIcon className={classes.iconsCatalogue}/>
+          <Typography className={classes.titleRight}>
+            Site producteur
+          </Typography>
+        </Grid>
+      </Grid>
+    </div> 
   );
 }
