@@ -6,7 +6,9 @@ const mapStateToProps = (state, props) => {
   return {
     area: state.filtersReducer && state.filtersReducer.area,
     subArea: state.filtersReducer && state.filtersReducer[universe].subarea,
-    filtersReducer: state.filtersReducer && state.filtersReducer[universe]
+    filtersReducer: state.filtersReducer && state.filtersReducer[universe],
+    open: props.open,
+    showFloats: props.showFloats
   }
 }
 

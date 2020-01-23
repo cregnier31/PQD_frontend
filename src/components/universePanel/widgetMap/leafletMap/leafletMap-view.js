@@ -46,7 +46,7 @@ const LabeledMarker = require('leaflet-labeled-circle');
 const labeled = {
   "type": "Feature",
   "properties": {
-    "text": 'toto',
+    "text": 'test',
     "labelPosition": [
       35, 22
     ]
@@ -73,11 +73,6 @@ export class LeafletMapView extends Component {
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(this.map);
-    new LabeledMarker(
-      labeled.geometry.coordinates.slice().reverse(),
-      labeled, {
-        markerOptions: { color: '#050' }
-      }).bindPopup('toto').addTo(this.map);
     const onEachFeature = function(feature, layer) {
       if(
           feature.properties 
@@ -245,13 +240,24 @@ export class LeafletMapView extends Component {
     this.componentDidMount();
   }
 
-  async showGeojsonMap(area) {
-    const errorsFile = await import('../../../../errors/CLASS2/BAL/BALTICSEA_ANALYSIS_FORECAST_PHYS_003_006.json');
+  async showGeojsonMap() {
+    if(this.props.showFloats) {
+      new LabeledMarker(
+        labeled.geometry.coordinates.slice().reverse(),
+        labeled, {
+          markerOptions: { color: '#050' }
+        }).bindPopup('test').addTo(this.map);
+    }
+    const product = this.state.currentFilters && this.state.currentFilters.product.toUpperCase();
+    const result = await import('../../../../errors/result.json');
+    const errorsFile = await import('../../../../errors/CLASS2/'+changeNameAreas(this.props.area)+'/'+product+'.json');
     // Use Props and product
     const imgfiles = await import('../../../../plots_class2/BAL/resize/FehmarnBelt_BALTICSEA_ANALYSIS_FORECAST_PHYS_003_006.png');
     // const imgfiles = await import('../../../../plots_class2/'+'BAL'+'/resize/FehmarnBelt_'+this.state.currentFilters && this.state.currentFilters.product.toUpperCase()+'.png');
     //Use Props and product
-    this.pointToLayer(errorsFile, imgfiles);
+    if(this.props.showFloats) {
+      this.pointToLayer(errorsFile, imgfiles);
+    }
   };
 
   pointToLayer(latlng, imgfiles) {
@@ -287,14 +293,13 @@ export class LeafletMapView extends Component {
   };
 
   render() {
-    console.log('propsss', this.props)
     return (
       <div
         className='LeafletMap'
         id='weathermap'
         style={{
           width: '100%',
-          height: '86%',
+          height: !this.props.open ? '80%' : '90%',
         }}
       />
     );
