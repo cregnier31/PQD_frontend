@@ -6,7 +6,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import FilterListIcon from '@material-ui/icons/FilterList';
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import Copernicus from '../../assets/images/copernicus.png';
 import Grid from '@material-ui/core/Grid';
 import {TopPanel} from './topPanel';
 import {UniversePanel} from '../universePanel';
@@ -69,6 +69,10 @@ const useStyles = makeStyles(theme => ({
     fontWeight: theme.typography.fontWeightRegular,
     fontFamily: 'ccl-heading--h3'
   },
+  img: {
+    width: '40px',
+    height: '40px'
+  },
 }));
 
 const AreaList = ({props}) => {
@@ -114,7 +118,7 @@ export function HeaderView(props) {
         })}
       >
         <Toolbar>
-          <ArrowBackIcon />
+          <img src={Copernicus} className={classes.img} />
           <AreaList props={props} />
         </Toolbar>
       </AppBar>
