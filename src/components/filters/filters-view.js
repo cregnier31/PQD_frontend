@@ -7,6 +7,11 @@ import Divider from '@material-ui/core/Divider';
 const useStyles = makeStyles(theme => ({
   title: {
     margin: '8px',
+    fontFamily: 'ccl-heading--h5'
+  },
+  section: {
+    fontSize: '20px',
+    fontFamily: 'ccl-heading--h5'
   }
 }));
 
@@ -28,6 +33,7 @@ function filter_is_set_and_data_exists(filters, name, data){
 }
 
 const SelectorList = ({props}) => {
+  const classes = useStyles();
   const filters = props.filters
   if(typeof(props.data) !== "undefined" && typeof(props.data.variables) !== "undefined"){
     var list = []
@@ -36,7 +42,8 @@ const SelectorList = ({props}) => {
     list.push(get_selector("variable", variables, props))
     // Select Dataset
     if(filter_is_set_and_data_exists(filters, "variable", variables)){
-      list.push(<p key="p">Validation expert metrics filters</p>)
+      list.push(<Divider style={{marginTop: 20}} key="divider" />)
+      list.push(<p className={classes.section} key="p">Selection of validation expert metrics:</p>)
       const datasets = variables.filter(item => item.name === filters['variable'])[0].datasets
       list.push(get_selector("dataset", datasets, props))
       // Select Product
@@ -46,7 +53,6 @@ const SelectorList = ({props}) => {
         // Select Subarea
         if(filter_is_set_and_data_exists(filters, "product", products)){
           // Add filters category title
-          list.push(<Divider key="divider" />)
           const subareas = products.filter(item => item.name === filters['product'])[0].subareas
           list.push(get_selector("subarea", subareas, props))
           // Select Depth
@@ -77,7 +83,7 @@ function get_validation_button(props){
     return null
   })
   if(displayButton){
-    return (<Button onClick={() => props.apply()}>Apply</Button>)
+    return (<Button style={{marginTop: 15}} onClick={() => props.apply()}>Apply</Button>)
   }
 }
 
@@ -97,7 +103,6 @@ export function FiltersView(props){
 
   return (
     <div>
-      <h4 className={classes.title}>Selection of validation expert metrics</h4>
       <Divider />
       <SelectorList props={props}/>
       {get_validation_button(props)}

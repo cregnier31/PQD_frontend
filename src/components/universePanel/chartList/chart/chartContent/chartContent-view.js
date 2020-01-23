@@ -46,14 +46,13 @@ export function ChartContentView(props){
     list.push(<Crosshair key="crosshair" values={crosshairValues}>
       <div style={{background: 'black'}}>
         {crosshairValues.map((serie, index) => 
-           <p key={index}>{props.series_name[index]}: {serie['y']}</p>
+          <p key={index}>{props.series_name[index]}: {serie['y']}</p>
         )}
       </div>
     </Crosshair>
     )
     return list
   }
-  
   return (
     <FlexibleXYPlot 
       onMouseLeave={_onMouseLeave}
@@ -64,7 +63,7 @@ export function ChartContentView(props){
     >
       <VerticalGridLines />
       <HorizontalGridLines />
-      <XAxis tickLabelAngle={-45}/>
+      <XAxis tickLabelAngle={-45} />
       <YAxis />
       {GraphList(props.series_data)}
     </FlexibleXYPlot>
