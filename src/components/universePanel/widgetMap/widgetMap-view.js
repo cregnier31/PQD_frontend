@@ -5,7 +5,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import FullscreenIcon from '@material-ui/icons/Fullscreen';
 import InfoIcon from '@material-ui/icons/Info';
-import GetAppIcon from '@material-ui/icons/GetApp';
 import DialogContent from '@material-ui/core/DialogContent';
 import CloseIcon from '@material-ui/icons/Close';
 
@@ -27,15 +26,6 @@ const useStyles = makeStyles(theme => ({
 export function WidgetMapView(props){
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
-  const [anchorEl, setAnchorEl] = React.useState(null);
-
-  const handleClickPopover = event => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClosePopover = () => {
-    setAnchorEl(null);
-  };
 
   const handleOpen = () => {
     setOpen(true);
@@ -53,7 +43,6 @@ export function WidgetMapView(props){
         </div>
         <div className={classes.right}>
           <FullscreenIcon onClick={handleOpen} />
-          <GetAppIcon onClick={handleClickPopover} />
         </div>
         {!open && 
           <LeafletMap open={open} />

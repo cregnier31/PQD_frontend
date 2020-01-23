@@ -17,6 +17,10 @@ const useStyles = makeStyles(theme => ({
   control: {
     padding: theme.spacing(2),
   },
+  label: {
+    fontSize: '20px',
+    fontFamily: 'ccl-paragraph--ms'
+  }
 }));
 
 export function ChartView(props){
@@ -37,23 +41,13 @@ export function ChartView(props){
       <Widget 
         title={changeNameWidget(props.kind)}
         info={changeTooltipWidget(props.kind)}
-        smallContent={<ChartContent see_all={see_all} height={200} width={350} data={props.data} />}
-        bigContent={<ChartContent see_all={see_all} height={300} width={1200} data={props.data} />}
+        smallContent={<ChartContent {...props} see_all={see_all} height={200} width={350}/>}
+        bigContent={<ChartContent {...props} see_all={see_all} height={300} width={1200}/>}
       />
-      <Grid
-        container
-        className={classes.root}
-        direction="row"
-        justify="center"
-        alignItems="flex-end"
-      >
-        <Grid item xs={10} md={10} className={classes.control}>
-        <label>
-          See all variable :
-          <input name="see_all" type="checkbox" checked={see_all} onChange={toggle} />
-        </label>
-        </Grid>
-      </Grid>
+      <label className={classes.label} >
+        Show all parameters :
+        <input name="see_all" type="checkbox" checked={see_all} onChange={toggle} />
+      </label>
     </Card>
   );
 }

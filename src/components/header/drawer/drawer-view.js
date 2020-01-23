@@ -1,20 +1,18 @@
 import React from 'react';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import CloseIcon from '@material-ui/icons/Close';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import PanoramaFishEyeRoundedIcon from '@material-ui/icons/PanoramaFishEyeRounded';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import {Filter} from '../../filters';
 import { color } from './../../../utils';
 
-const drawerWidth = 280;
+const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -26,6 +24,7 @@ const useStyles = makeStyles(theme => ({
   },
   drawerPaper: {
     width: drawerWidth,
+    boxShadow: '3px 0px 7px #B5B5B5'
   },
   toolbar: theme.mixins.toolbar,
   drawerHeader: {
@@ -46,12 +45,23 @@ const useStyles = makeStyles(theme => ({
     marginLeft: -drawerWidth,
   },
   list: {
-    padding: theme.spacing(0),
-    marginBottom: '10px'
+    marginTop: '20px',
+    marginBottom: '20px'
   },
   title: {
     margin: '8px',
-    alignContent: 'flex-start'
+    alignContent: 'flex-start',
+    fontFamily: 'ccl-heading--h5'
+  },
+  universes: {
+    fontFamily: 'ccl-paragraph--ms !important'
+  },
+  section: {
+    fontSize: '20px',
+    fontFamily: 'ccl-paragraph--ms'
+  },
+  areas: {
+    fontFamily: 'ccl-paragraph--ms'
   }
 }));
 
@@ -59,7 +69,6 @@ const universes = ['BLUE', 'GREEN', 'WHITE']
 
 export function DrawerView(props) {
   const classes = useStyles();
-  const theme = useTheme();
 
   return (
     <div className={classes.root}>
@@ -74,20 +83,20 @@ export function DrawerView(props) {
         <div className={classes.toolbar} />
         <div className={classes.drawerHeader}>
           <IconButton onClick={props.handleDrawerClose}>
-            {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+            <CloseIcon style={{color: "black"}} />
           </IconButton>
         </div>
-        <h4 className={classes.title}>Parameter families</h4>
+        <h5 className={classes.title}>Parameter families</h5>
         <Divider />
         <List className={classes.list}>
           {universes.map((universe) => (
-            <ListItem button key={universe} onClick={() => props.setUniverse(universe)}>
+            <ListItem className={classes.universes} button key={universe} onClick={() => props.setUniverse(universe)}>
               <ListItemIcon>
                 <PanoramaFishEyeRoundedIcon fontSize="large" style={{ color: color[universe]['icon']}} />
               </ListItemIcon>
-              <ListItemText primary={universe}/>
+              <li>{universe}</li>
               {props.universe === universe &&
-                <CheckCircleIcon />
+                <CheckCircleIcon style={{marginLeft: '10px'}} />
               }
             </ListItem>
           ))}

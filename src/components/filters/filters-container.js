@@ -30,26 +30,6 @@ export class FiltersContainer extends Component {
     })
   }
 
-  async get_kpi(){
-    const args = {
-      "area": this.props.area,
-      "what": "kpi2b",
-      "variable": this.props.filters["variable"]
-    }
-    const options = {
-      method: "post",
-      headers: {'Content-Type':'application/json'},
-      body: JSON.stringify(args),
-    }
-    fetch(config['urls']['kpi'], options)
-    .then(response => response.json())
-    .then( data => {
-      if(data){
-        this.props.setKpis(this.props.universe, data)
-      }
-    })
-  }
-
   render() {
     return (
       <FiltersView 
@@ -58,7 +38,6 @@ export class FiltersContainer extends Component {
         filters={this.props.filters} 
         set={(name, value) => this.props.set(this.props.universe, name, value)} 
         apply={() => {
-          this.get_kpi()
           this.get_plot()
         }}
       />

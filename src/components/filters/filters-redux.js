@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { setUniverseFilter, setPlot, setKpis } from "../../actions";
+import { setUniverseFilter, setPlot } from "../../actions";
 import { FiltersContainer } from "./filters-container";
 
 const mapStateToProps = (state, props) => {
@@ -38,7 +38,6 @@ const mapDispatchToProps = dispatch => {
     return {
         set: (universe_id, name, value) => dispatch(setUniverseFilter(universe_id, name, value)),
         setPlot: (universe_id, data) => dispatch(setPlot(universe_id, data)),
-        setKpis: (universe_id, data) => dispatch(setKpis(universe_id, data)),
     };
 }; 
 

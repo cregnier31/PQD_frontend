@@ -12,6 +12,7 @@ import {TopPanel} from './topPanel';
 import {UniversePanel} from '../universePanel';
 import { Button } from '@material-ui/core';
 import { Drawer } from './drawer';
+import Typography from '@material-ui/core/Typography';
 
 
 const drawerWidth = 240;
@@ -31,6 +32,12 @@ const useStyles = makeStyles(theme => ({
   menuButton: {
     float: 'left',
   },
+  title: {
+    float: 'left',
+    height:'5%',
+    color: 'black',
+    padding: theme.spacing(1),
+  },
   hide: {
     display: 'none',
   },
@@ -43,7 +50,7 @@ const useStyles = makeStyles(theme => ({
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
+    padding: theme.spacing(0),
     transition: theme.transitions.create('margin', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -57,6 +64,11 @@ const useStyles = makeStyles(theme => ({
     }),
     marginLeft: 0,
   },
+  heading: {
+    fontSize: theme.typography.pxToRem(30),
+    fontWeight: theme.typography.fontWeightRegular,
+    fontFamily: 'ccl-heading--h3'
+  },
 }));
 
 const AreaList = ({props}) => {
@@ -69,7 +81,7 @@ const AreaList = ({props}) => {
       }
       return list.push(
         <Grid item xs={2} md={2} key={item.id}>
-          <Button value={item.name} active={active} onClick={() => {props.setArea(item.name)}} color="inherit">
+          <Button style={{fontFamily: 'ccl-heading--h5'}} value={item.name} active={active} onClick={() => {props.setArea(item.name)}} color="inherit">
             {item.fullname}
           </Button>
         </Grid>
@@ -124,8 +136,9 @@ export function HeaderView(props) {
             edge="start"
             className={clsx(classes.menuButton, open && classes.hide)}
           >
-            <FilterListIcon />
+            <FilterListIcon style={{color: "black"}} />
           </IconButton>
+          <Typography className={clsx(classes.title)} variant="h4">PAGE TITLE</Typography>
         <TopPanel/>
         <UniversePanel universe={props.universe}/>
       </main>
