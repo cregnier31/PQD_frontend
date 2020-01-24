@@ -10,7 +10,13 @@ import Grid from '@material-ui/core/Grid';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
+import arcticImg from '../../../assets/images/arctic.jpg';
+import balticseaImg from '../../../assets/images/balticsea.jpg';
 import globalImg from '../../../assets/images/global.jpg';
+import ibiImg from '../../../assets/images/ibi.jpg';
+import medseaImg from '../../../assets/images/medsea.jpg';
+import nwsImg from '../../../assets/images/nws.jpg';
+import blackseaImg from '../../../assets/images/blacksea.jpg';
 import tutoriel from '../../../assets/images/tutoriel.jpeg';
 
 const useStyles = makeStyles(theme => ({
@@ -44,6 +50,16 @@ const useStyles = makeStyles(theme => ({
 
 export function TopPanelView(props){
   const classes = useStyles();
+  const areaToImg = {
+    arctic: arcticImg,
+    balticsea: balticseaImg,
+    global: globalImg,
+    ibi: ibiImg,
+    medsea: medseaImg,
+    nws: nwsImg,
+    blacksea: blackseaImg
+  }
+  const imageMap = areaToImg[props.area]
   return (
     <Grid container>
       <Grid item xs={12} md={12}>
@@ -59,7 +75,7 @@ export function TopPanelView(props){
               <CardActionArea>
                 <CardMedia
                   className={classes.mediaGlobal}
-                  image={globalImg}
+                  image={imageMap}
                   title="Region"
                 />
               </CardActionArea>

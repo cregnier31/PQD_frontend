@@ -152,7 +152,7 @@ export function HeaderView(props) {
             <FilterListIcon style={{color: "black"}} />
           </IconButton>
           <Typography className={clsx(classes.title)} variant="h4">PAGE TITLE</Typography>
-        <TopPanel/>
+        <TopPanel area={props.area}/>
         <UniversePanel universe={props.universe}/>
       </main>
     </div>
