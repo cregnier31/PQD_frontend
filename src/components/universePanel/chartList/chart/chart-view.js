@@ -44,10 +44,12 @@ export function ChartView(props){
         smallContent={<ChartContent {...props} see_all={see_all} height={200} width={350}/>}
         bigContent={<ChartContent {...props} see_all={see_all} height={300} width={1200}/>}
       />
-      <label className={classes.label} >
-        Show all parameters :
-        <input name="see_all" type="checkbox" checked={see_all} onChange={toggle} />
-      </label>
+      {props.kind === "INSITU" &&
+        <label className={classes.label} >
+          Show all parameters :
+          <input name="see_all" type="checkbox" checked={see_all} onChange={toggle} />
+        </label>
+      }
     </Card>
   );
 }

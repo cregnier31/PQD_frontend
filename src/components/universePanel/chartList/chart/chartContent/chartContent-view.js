@@ -46,7 +46,7 @@ export function ChartContentView(props){
     list.push(<Crosshair key="crosshair" values={crosshairValues}>
       <div style={{background: 'black'}}>
         {crosshairValues.map((serie, index) => 
-          <p key={index}>{props.series_name[index]}: {serie['y']}</p>
+          <p key={index}>{props.series_name[index]}: {typeof(serie) !== "undefined" && serie['y']}</p>
         )}
       </div>
     </Crosshair>

@@ -13,9 +13,25 @@ export class ChartContainer extends Component {
 
   fetchKpisWithFetchAPI(){
     this.setState({...this.state, isFetching: true});
-    const args = {"area": this.props.area, "what": "kpi2b", "kind": this.props.kind}
-    const options = {method: "post", headers: {'Content-Type':'application/json'}, body: JSON.stringify(args)}
-    fetch(config['urls']['kpi'], options)
+    var args = {}
+    var options = {}
+    var url = ""
+    if(this.props.kind === "INSITU"){
+      args = {"area": this.props.area, "what": "kpi2b"}
+      options = {method: "post", headers: {'Content-Type':'application/json'}, body: JSON.stringify(args)}
+      url = config['urls']['kpi_insitu']
+    }
+    if(this.props.kind === "SAT"){
+      args = {"area": this.props.area}
+      options = {method: "post", headers: {'Content-Type':'application/json'}, body: JSON.stringify(args)}
+      url = config['urls']['kpi_sat']
+    }
+    if(this.props.kind === "SKILL_SCORE"){
+      args = {"area": this.props.area, "what": "kpi2b"}
+      options = {method: "post", headers: {'Content-Type':'application/json'}, body: JSON.stringify(args)}
+      url = config['urls']['kpi_skill_score']
+    }
+    fetch(url, options)
     .then(response => response.json())
     .then( result => {
       this.setState({...this.state, data: result, isFetching: false})
@@ -37,6 +53,6 @@ export class ChartContainer extends Component {
   }
 
   render() {
-    return <ChartView {...this.props} data={this.state['data'][this.props.kind]}/>;
+    return <ChartView {...this.props} data={this.state['data']}/>;
   }
 }

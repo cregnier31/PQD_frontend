@@ -4,7 +4,9 @@ export const config = {
   urls:{
     filters: host + "/data/filters",
     plot: host + "/data/plot",
-    kpi: host + "/data/kpi",
+    kpi_insitu: host + "/data/kpi_insitu",
+    kpi_sat: host + "/data/kpi_sat",
+    kpi_skill_score: host + "/data/kpi_skill_score",
     png: host + "/data/png?filename=",
   }
 }
