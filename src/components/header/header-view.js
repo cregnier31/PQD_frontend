@@ -16,6 +16,7 @@ import Typography from '@material-ui/core/Typography';
 
 
 const drawerWidth = 240;
+const screen = window.screen.width;
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -23,7 +24,7 @@ const useStyles = makeStyles(theme => ({
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
-    backgroundColor: '#273b4b',
+    backgroundColor: '#286E9F'
   },
   drawerPaper: {
     width: drawerWidth,
@@ -31,12 +32,14 @@ const useStyles = makeStyles(theme => ({
   toolbar: theme.mixins.toolbar,
   menuButton: {
     float: 'left',
+    marginTop: screen <= 400 ? 25 : 0,
   },
   title: {
     float: 'left',
     height:'5%',
     color: 'black',
     padding: theme.spacing(1),
+    marginTop: screen <= 400 ? 25 : 0,
   },
   hide: {
     display: 'none',
@@ -73,9 +76,15 @@ const useStyles = makeStyles(theme => ({
     width: '40px',
     height: '40px'
   },
+  button: {
+    fontFamily: 'ccl-heading--h5',
+    textTransform: 'none',
+    fontSize: theme.typography.pxToRem(15),
+  }
 }));
 
 const AreaList = ({props}) => {
+  const classes = useStyles();
   var list = []
   if(props.data.length){
     props.data.map( item => {
@@ -85,7 +94,7 @@ const AreaList = ({props}) => {
       }
       return list.push(
         <Grid item xs={2} md={2} key={item.id}>
-          <Button style={{fontFamily: 'ccl-heading--h5'}} value={item.name} active={active} onClick={() => {props.setArea(item.name)}} color="inherit">
+          <Button className={classes.button} value={item.name} active={active} onClick={() => {props.setArea(item.name)}} color="inherit">
             {item.fullname}
           </Button>
         </Grid>
@@ -118,7 +127,7 @@ export function HeaderView(props) {
         })}
       >
         <Toolbar>
-          <img src={Copernicus} className={classes.img} />
+          <img src={Copernicus} className={classes.img} alt="Copernicus"/>
           <AreaList props={props} />
         </Toolbar>
       </AppBar>

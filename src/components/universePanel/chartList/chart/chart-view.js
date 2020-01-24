@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import {Widget} from './../../widget';
 import {ChartContent} from './chartContent';
 import {changeNameWidget, changeTooltipWidget} from '../../../../utils';
-import Grid from '@material-ui/core/Grid';
+import './chart.css';
 
 const useStyles = makeStyles(theme => ({
   root: {

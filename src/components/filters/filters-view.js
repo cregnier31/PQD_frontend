@@ -43,7 +43,7 @@ const SelectorList = ({props}) => {
     // Select Dataset
     if(filter_is_set_and_data_exists(filters, "variable", variables)){
       list.push(<Divider style={{marginTop: 20}} key="divider" />)
-      list.push(<p className={classes.section} key="p">Selection of validation expert metrics:</p>)
+      list.push(<p className={classes.section} key="p">Selection of validation expert metrics :</p>)
       const datasets = variables.filter(item => item.name === filters['variable'])[0].datasets
       list.push(get_selector("dataset", datasets, props))
       // Select Product

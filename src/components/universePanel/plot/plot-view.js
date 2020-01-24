@@ -32,7 +32,7 @@ export function PlotView(props){
   return (
     <Card>
       <Widget
-        title="Plot"
+        title="Estimated Accuracy Numbers time series"
         info={infoPlot}
         smallContent={<div className={classes.content}> <ImagePlot width="100%" height="100%" data={props.data}/></div>}
         bigContent={<div className={classes.content}> <ImagePlot width="100%" height="100%" data={props.data}/> </div>}

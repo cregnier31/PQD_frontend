@@ -86,7 +86,7 @@ export function DrawerView(props) {
             <CloseIcon style={{color: "black"}} />
           </IconButton>
         </div>
-        <h5 className={classes.title}>Parameter families</h5>
+        <p className={classes.title}>Parameter families</p>
         <Divider />
         <List className={classes.list}>
           {universes.map((universe) => (
