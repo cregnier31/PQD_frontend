@@ -42,7 +42,7 @@ export function LinkRawView(props){
     <div>
       <Grid container direction="row" alignItems="center" justify="flex-start" className={classes.root}>
         <Grid item xs={12} md={6}>
-          <Typography className={classes.titleLeft}>Sous titre</Typography>
+          <Typography className={classes.titleLeft}>Validation expert metrics</Typography>
         </Grid>
       </Grid>
 
