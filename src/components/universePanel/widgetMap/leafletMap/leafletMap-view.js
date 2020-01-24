@@ -10,6 +10,7 @@ import global from "../../../../geodata/global.geo.json";
 import artic from "../../../../geodata/arctic_zone.geo.json";
 import baltic from "../../../../geodata/baltic_zone.geo.json";
 import nws from "../../../../geodata/nws_zone.geo.json";
+import LabeledMarker from "leaflet-labeled-circle";
 
 const bounds = [
   {name:'arctic', bb:  [[44.59046718130883,-79.8046875],[87.25291244998124,100.546875]], aliases: ['arctic-ocean']},
@@ -41,7 +42,6 @@ let geojsonMarkerOptions = {
   fillOpacity: 0.5,
   color: 'red',
 };
-const LabeledMarker = require('leaflet-labeled-circle');
 
 const labeled = {
   "type": "Feature",
