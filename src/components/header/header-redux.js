@@ -12,7 +12,8 @@ const mapStateToProps = (state, props) => {
     return {
         data: concerned_data,
         area: area,
-        universe: universe
+        universe: universe,
+        currentArea: state.filtersReducer && state.filtersReducer.area
     }
 };
 
