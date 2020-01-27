@@ -72,7 +72,7 @@ export function WidgetMapView(props){
           >
             <Grid container item xs={6} md={6}>
             <label className={classes.label} >
-              Show all parameters :
+              Show all moorings :
               <input name="see_all" type="checkbox" checked={showFloats} onChange={toggle} />
             </label>
             </Grid>
@@ -98,7 +98,7 @@ export function WidgetMapView(props){
                 >
                   <Grid container item xs={6} md={6}>
                   <label className={classes.label} >
-                    Show all parameters :
+                    Show all moorings :
                     <input name="see_all" type="checkbox" checked={showFloats} onChange={toggle} />
                   </label>
                   </Grid>
