@@ -11,10 +11,12 @@ import CloseIcon from '@material-ui/icons/Close';
 const useStyles = makeStyles(theme => ({
   right: {
     float: 'right',
+    color: '#ADB0B8'
   },
   left: {
     float: 'left',
-    marginLeft: '10px'
+    marginLeft: '10px',
+    color: '#ADB0B8'
   },
   content: {
     height: '100% !important',

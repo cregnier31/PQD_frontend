@@ -56,7 +56,7 @@ export function ChartContentView(props){
   return (
     <FlexibleXYPlot 
       onMouseLeave={_onMouseLeave}
-      style={{marginLeft: 15}}
+      style={{paddingLeft: 5}}
       height={props.height} 
       yDomain={[props.amplitude['min'], props.amplitude['max']]} 
       xType="ordinal"
