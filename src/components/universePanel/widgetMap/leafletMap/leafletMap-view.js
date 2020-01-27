@@ -63,6 +63,7 @@ export class LeafletMapView extends Component {
     this.state = {
     area: this.props.area,
     currentFilters: this.props.filtersReducer,
+    currentSubZone : this.props.subArea
     };
   }
 
@@ -143,7 +144,7 @@ export class LeafletMapView extends Component {
             layer.bindPopup(
               feature.properties.NAME + '<div class="js-subZone--'+ feature.properties.subZone +'"></div>',
               {className: 'js-popupZone--'+feature.properties.zoneCode}
-            ).on('click', (e) => this.getAreaToClick(e));
+            ).on('dblclick', (e) => this.getAreaToClick(e));
           }
           if(feature.properties.subZoneAlias && feature.properties.subZoneAlias !== feature.properties.subZone){
     
@@ -173,60 +174,123 @@ export class LeafletMapView extends Component {
     }
     switch (this.props.area) {
       case 'medsea':
-        L.geoJson( meadSea, {
-          color: "yellow", weight: 1,
-          onEachFeature: function(feature, layer) { onEachFeature(feature,layer) }
-        }).addTo(this.map);
-        this.showGeojsonMap('MED');
+        const findSubZoneMedSea = meadSea.features.find((data) => data.properties.subZone === this.props.subArea)
+        if(typeof findSubZoneMedSea !== 'undefined') {
+          L.geoJson( findSubZoneMedSea, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        } else {
+          L.geoJson( meadSea, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        }
       break;
       case 'ibi':
-        L.geoJson( ibi, {
-          color: "yellow", weight: 1,
-          onEachFeature(feature, layer) { onEachFeature(feature,layer) }
-        }).addTo(this.map);
-        this.showGeojsonMap('IBI');
+        const findSubZoneIbi = ibi.features.find((data) => data.properties.subZone === this.props.subArea)
+        if(typeof findSubZoneIbi !== 'undefined') {
+          L.geoJson( findSubZoneIbi, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        } else {
+          L.geoJson( ibi, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        }
       break;
       case 'blacksea':
-        L.geoJson( blackSea, {
-          color: "yellow", weight: 1,
-          onEachFeature(feature, layer) { onEachFeature(feature,layer) }
-        }).addTo(this.map);
-        this.showGeojsonMap('BS');
+        const findSubZoneBlackSea = blackSea.features.find((data) => data.properties.subZone === this.props.subArea)
+        if(typeof findSubZoneBlackSea !== 'undefined') {
+          L.geoJson( findSubZoneBlackSea, {
+            color: "yellow", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        } else {
+          L.geoJson( blackSea, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        }
       break;
       case 'global':
-        L.geoJson( global, {
-          color: "yellow", weight: 1,
-          onEachFeature(feature, layer) { onEachFeature(feature,layer) }
-        }).addTo(this.map);
-        this.showGeojsonMap('GLO');
+        const findSubZoneGlobal = global.features.find((data) => data.properties.subZone === this.props.subArea)
+        if(typeof findSubZoneGlobal !== 'undefined') {
+          L.geoJson( findSubZoneGlobal, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        } else {
+          L.geoJson( global, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        }
       break;
       case 'arctic':
-        L.geoJson( artic, {
-          color: "yellow", weight: 1,
-          onEachFeature(feature, layer) { onEachFeature(feature,layer) }
-        }).addTo(this.map);
-        this.showGeojsonMap('ARC');
+        const findSubZoneArctic = artic.features.find((data) => data.properties.subZone === this.props.subArea)
+        if(typeof findSubZoneArctic !== 'undefined') {
+          L.geoJson( findSubZoneArctic, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        } else {
+          L.geoJson( artic, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        }
       break;
       case 'balticsea':
-        L.geoJson( baltic, {
-          color: "yellow", weight: 1,
-          onEachFeature(feature, layer) { onEachFeature(feature,layer) }
-        }).addTo(this.map);
-        this.showGeojsonMap('BAL');
+        const findSubZoneBaltic = baltic.features.find((data) => data.properties.subZone === this.props.subArea)
+        if(typeof findSubZoneBaltic !== 'undefined') {
+          L.geoJson( findSubZoneBaltic, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        } else {
+          L.geoJson( baltic, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        }
       break;
       case 'nws':
-        L.geoJson( nws, {
-          color: "yellow", weight: 1,
-          onEachFeature(feature, layer) { onEachFeature(feature,layer) }
-        }).addTo(this.map);
-        this.showGeojsonMap('NWS');
+        const findSubZoneNws = nws.features.find((data) => data.properties.subZone === this.props.subArea)
+        if(typeof findSubZoneNws !== 'undefined') {
+          L.geoJson( findSubZoneNws, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        } else {
+          L.geoJson( nws, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        }
       break;
       default:
         L.geoJson( global, {
-          color: "yellow", weight: 1,
+          color: "orange", weight: 1,
           onEachFeature(feature, layer) { onEachFeature(feature,layer) }
         }).addTo(this.map);
-        this.showGeojsonMap('GLO');
+        this.showGeojsonMap();
       break;
     }
   }
@@ -251,14 +315,14 @@ export class LeafletMapView extends Component {
     }
     const product = this.state.currentFilters && this.state.currentFilters.product.toUpperCase();
     const result = await import('../../../../errors/result.json');
-    // const errorsFile = await import('../../../../errors/CLASS2/'+changeNameAreas(this.props.area)+'/'+product+'.json');
+    const errorsFile = await import('../../../../errors/CLASS2/'+changeNameAreas(this.props.area)+'/'+product+'.json');
     // Use Props and product
     const imgfiles = await import('../../../../plots_class2/BAL/resize/FehmarnBelt_BALTICSEA_ANALYSIS_FORECAST_PHYS_003_006.png');
     // const imgfiles = await import('../../../../plots_class2/'+'BAL'+'/resize/FehmarnBelt_'+this.state.currentFilters && this.state.currentFilters.product.toUpperCase()+'.png');
     //Use Props and product
-    // if(this.props.showFloats) {
-    //   this.pointToLayer(errorsFile, imgfiles);
-    // }
+    if(this.props.showFloats) {
+      this.pointToLayer(errorsFile, imgfiles);
+    }
   };
   getAreaToClick(e) {
     this.props.setSubarea(this.props.universe, 'subarea', e.target.feature.properties.subZone);
