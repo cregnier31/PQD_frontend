@@ -1,5 +1,6 @@
 import { connect } from "react-redux";
 import { LeafletMapContainer } from "./leafletMap-container";
+import {setUniverseFilter} from "../../../../actions/filters"
 
 const mapStateToProps = (state, props) => {
   const universe = state.filtersReducer && state.filtersReducer.universe;
@@ -8,12 +9,15 @@ const mapStateToProps = (state, props) => {
     subArea: state.filtersReducer && state.filtersReducer[universe].subarea,
     filtersReducer: state.filtersReducer && state.filtersReducer[universe],
     open: props.open,
-    showFloats: props.showFloats
+    showFloats: props.showFloats,
+    universe: universe
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
-    return {}
+    return {
+      setSubarea: (universe, name, value) => dispatch(setUniverseFilter(universe, name, value))
+    }
 }
 
 export const LeafletMapRedux = connect(

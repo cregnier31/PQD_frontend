@@ -73,7 +73,7 @@ export class LeafletMapView extends Component {
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(this.map);
-    const onEachFeature = function(feature, layer) {
+    const onEachFeature = (feature, layer) => {
       if(
           feature.properties 
           && feature.properties.NAME 
@@ -95,15 +95,15 @@ export class LeafletMapView extends Component {
               bb = layer.getBounds();
             _center = bb.getCenter();
             feature.properties.bb = layer.getBounds();
-
+    
           }
           if(feature.properties.subZoneAlias || feature.properties.subZoneAlias === feature.properties.subZone){
-
+    
               let myIcon_1 = L.divIcon({
                 className: 'ZoneIcon js-zoneIcon'+feature.properties.zoneCode , 
                 html: '<span title="click to display the RMSD " id="di_'+feature.properties.subZoneAlias+'" class="ZoneIcon-subZone js-subZone--'+feature.properties.subZoneAlias+' is-hidden"></span>'
               });
-
+    
               let m1 = L.marker(_center, {icon: myIcon_1});
               if(errorMarkers[feature.properties.zoneCode]) {
                 errorMarkers[feature.properties.zoneCode].push(m1);
@@ -112,7 +112,7 @@ export class LeafletMapView extends Component {
                 let pc = this._icon.firstChild.getAttribute('data-popup');
                 if(pc) this.setPopupContent(pc.split('|').join('<br>'));
               })
-
+    
               m1.bindPopup(
                 feature.properties.NAME + '<div id="dip_'+ feature.properties.subZone +'" class="js-subZone--'+ feature.properties.subZoneAlias +'"></div>',
                 {className: 'js-popupZoneError--'+feature.properties.zoneCode}
@@ -126,7 +126,7 @@ export class LeafletMapView extends Component {
               className: 'ZoneIcon js-zoneIcon'+feature.properties.zoneCode , 
               html: '<span title="click to display the RMSD " id="di_'+feature.properties.subZone+'" class="ZoneIcon-subZone js-subZone--'+feature.properties.subZone+' is-hidden"></span>'
             
-            }); 
+            });
             let m = L.marker(_center, {icon: myIcon});
             if(errorMarkers[feature.properties.zoneCode]) {
               errorMarkers[feature.properties.zoneCode].push(m);
@@ -136,7 +136,6 @@ export class LeafletMapView extends Component {
               let pc = this._icon.firstChild.getAttribute('data-popup');
               if(pc) this.setPopupContent(pc.split('|').join('<br>'));
             })
-
             m.bindPopup(
               feature.properties.NAME + '<div id="dip_'+ feature.properties.subZone +'" class="js-subZone--'+ feature.properties.subZone +'"></div>',
               {className: 'js-popupZoneError--'+feature.properties.zoneCode}
@@ -144,15 +143,14 @@ export class LeafletMapView extends Component {
             layer.bindPopup(
               feature.properties.NAME + '<div class="js-subZone--'+ feature.properties.subZone +'"></div>',
               {className: 'js-popupZone--'+feature.properties.zoneCode}
-            )
+            ).on('click', (e) => this.getAreaToClick(e));
           }
           if(feature.properties.subZoneAlias && feature.properties.subZoneAlias !== feature.properties.subZone){
-
+    
             let myIcon2 = L.divIcon({
               className: 'ZoneIcon js-zoneIcon'+feature.properties.zoneCode , 
               html: '<span title="click to display the RMSD" id="di_'+feature.properties.subZone+'" class="ZoneIcon-subZone js-subZone--'+feature.properties.subZone+' is-hidden"></span>'
             });
-
             let m2 = L.marker(_center, {icon: myIcon2});
             if(errorMarkers[feature.properties.zoneCode]) {
               errorMarkers[feature.properties.zoneCode].push(m2);
@@ -161,7 +159,7 @@ export class LeafletMapView extends Component {
               let pc = this._icon.firstChild.getAttribute('data-popup');
               if(pc) this.setPopupContent(pc.split('|').join('<br>'));
             })
-
+    
             m2.bindPopup(
               feature.properties.NAME +'<div id="dip_'+ feature.properties.subZone +'" class="js-subZone--'+ feature.properties.subZone +'"></div>',
               {className: 'js-popupZoneError--'+feature.properties.zoneCode}
@@ -237,6 +235,9 @@ export class LeafletMapView extends Component {
     if(this.state.area !== this.props.area) {
       this.setState({ area: this.props.area});
     }
+    if(this.state.currentFilters !== this.props.filtersReducer) {
+      this.setState({ currentFilters: this.props.filtersReducer});
+    }
     this.componentDidMount();
   }
 
@@ -250,16 +251,18 @@ export class LeafletMapView extends Component {
     }
     const product = this.state.currentFilters && this.state.currentFilters.product.toUpperCase();
     const result = await import('../../../../errors/result.json');
-    const errorsFile = await import('../../../../errors/CLASS2/'+changeNameAreas(this.props.area)+'/'+product+'.json');
+    // const errorsFile = await import('../../../../errors/CLASS2/'+changeNameAreas(this.props.area)+'/'+product+'.json');
     // Use Props and product
     const imgfiles = await import('../../../../plots_class2/BAL/resize/FehmarnBelt_BALTICSEA_ANALYSIS_FORECAST_PHYS_003_006.png');
     // const imgfiles = await import('../../../../plots_class2/'+'BAL'+'/resize/FehmarnBelt_'+this.state.currentFilters && this.state.currentFilters.product.toUpperCase()+'.png');
     //Use Props and product
-    if(this.props.showFloats) {
-      this.pointToLayer(errorsFile, imgfiles);
-    }
+    // if(this.props.showFloats) {
+    //   this.pointToLayer(errorsFile, imgfiles);
+    // }
   };
-
+  getAreaToClick(e) {
+    this.props.setSubarea(this.props.universe, 'subarea', e.target.feature.properties.subZone);
+  }
   pointToLayer(latlng, imgfiles) {
     const customOptions =
       {
@@ -287,7 +290,7 @@ export class LeafletMapView extends Component {
           "<br><b>Variance explained:</b> " + data.properties.variance_exp.toFixed(2) +
           "<br><b>Scatter index:</b> " + data.properties.scatter_index.toFixed(2) +
           "<img src=" + imgfiles.default + " width=" + sizeImg + "/>";
-        return L.circleMarker(data && data.geometry && data.geometry.coordinates,geojsonMarkerOptions).bindPopup(popupText, customOptions).addTo(this.map)
+        return L.circleMarker(data && data.geometry && data.geometry.coordinates,geojsonMarkerOptions).bindPopup(popupText, customOptions).addTo(this.map);
       }
     )
   };
