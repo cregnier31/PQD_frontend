@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import L from 'leaflet';
 
 import 'leaflet/dist/leaflet.css';
-
+import {changeNameAreas} from "../../../../utils";
 import meadSea from "../../../../geodata/medsea_zones.geo.json";
 import ibi from "../../../../geodata/ibi_zones.json";
 import blackSea from "../../../../geodata/blacksea.json";
@@ -10,6 +10,7 @@ import global from "../../../../geodata/global.geo.json";
 import artic from "../../../../geodata/arctic_zone.geo.json";
 import baltic from "../../../../geodata/baltic_zone.geo.json";
 import nws from "../../../../geodata/nws_zone.geo.json";
+import LabeledMarker from "leaflet-labeled-circle";
 
 const bounds = [
   {name:'arctic', bb:  [[44.59046718130883,-79.8046875],[87.25291244998124,100.546875]], aliases: ['arctic-ocean']},
@@ -42,11 +43,27 @@ let geojsonMarkerOptions = {
   color: 'red',
 };
 
+const labeled = {
+  "type": "Feature",
+  "properties": {
+    "text": 'test',
+    "labelPosition": [
+      35, 22
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [ 35, 22 ]
+  }
+};
+
 export class LeafletMapView extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      area: props.area,
+    area: this.props.area,
+    currentFilters: this.props.filtersReducer,
+    currentSubZone : this.props.subArea
     };
   }
 
@@ -57,7 +74,7 @@ export class LeafletMapView extends Component {
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(this.map);
-    const onEachFeature = function(feature, layer) {
+    const onEachFeature = (feature, layer) => {
       if(
           feature.properties 
           && feature.properties.NAME 
@@ -79,15 +96,15 @@ export class LeafletMapView extends Component {
               bb = layer.getBounds();
             _center = bb.getCenter();
             feature.properties.bb = layer.getBounds();
-
+    
           }
           if(feature.properties.subZoneAlias || feature.properties.subZoneAlias === feature.properties.subZone){
-
+    
               let myIcon_1 = L.divIcon({
                 className: 'ZoneIcon js-zoneIcon'+feature.properties.zoneCode , 
                 html: '<span title="click to display the RMSD " id="di_'+feature.properties.subZoneAlias+'" class="ZoneIcon-subZone js-subZone--'+feature.properties.subZoneAlias+' is-hidden"></span>'
               });
-
+    
               let m1 = L.marker(_center, {icon: myIcon_1});
               if(errorMarkers[feature.properties.zoneCode]) {
                 errorMarkers[feature.properties.zoneCode].push(m1);
@@ -96,7 +113,7 @@ export class LeafletMapView extends Component {
                 let pc = this._icon.firstChild.getAttribute('data-popup');
                 if(pc) this.setPopupContent(pc.split('|').join('<br>'));
               })
-
+    
               m1.bindPopup(
                 feature.properties.NAME + '<div id="dip_'+ feature.properties.subZone +'" class="js-subZone--'+ feature.properties.subZoneAlias +'"></div>',
                 {className: 'js-popupZoneError--'+feature.properties.zoneCode}
@@ -110,16 +127,16 @@ export class LeafletMapView extends Component {
               className: 'ZoneIcon js-zoneIcon'+feature.properties.zoneCode , 
               html: '<span title="click to display the RMSD " id="di_'+feature.properties.subZone+'" class="ZoneIcon-subZone js-subZone--'+feature.properties.subZone+' is-hidden"></span>'
             
-            }); 
+            });
             let m = L.marker(_center, {icon: myIcon});
             if(errorMarkers[feature.properties.zoneCode]) {
               errorMarkers[feature.properties.zoneCode].push(m);
             }
             m.on('click', function(){
+              console.log(this)
               let pc = this._icon.firstChild.getAttribute('data-popup');
               if(pc) this.setPopupContent(pc.split('|').join('<br>'));
             })
-
             m.bindPopup(
               feature.properties.NAME + '<div id="dip_'+ feature.properties.subZone +'" class="js-subZone--'+ feature.properties.subZone +'"></div>',
               {className: 'js-popupZoneError--'+feature.properties.zoneCode}
@@ -127,15 +144,14 @@ export class LeafletMapView extends Component {
             layer.bindPopup(
               feature.properties.NAME + '<div class="js-subZone--'+ feature.properties.subZone +'"></div>',
               {className: 'js-popupZone--'+feature.properties.zoneCode}
-            )
+            ).on('dblclick', (e) => this.getAreaToClick(e));
           }
           if(feature.properties.subZoneAlias && feature.properties.subZoneAlias !== feature.properties.subZone){
-
+    
             let myIcon2 = L.divIcon({
               className: 'ZoneIcon js-zoneIcon'+feature.properties.zoneCode , 
               html: '<span title="click to display the RMSD" id="di_'+feature.properties.subZone+'" class="ZoneIcon-subZone js-subZone--'+feature.properties.subZone+' is-hidden"></span>'
             });
-
             let m2 = L.marker(_center, {icon: myIcon2});
             if(errorMarkers[feature.properties.zoneCode]) {
               errorMarkers[feature.properties.zoneCode].push(m2);
@@ -144,7 +160,7 @@ export class LeafletMapView extends Component {
               let pc = this._icon.firstChild.getAttribute('data-popup');
               if(pc) this.setPopupContent(pc.split('|').join('<br>'));
             })
-
+    
             m2.bindPopup(
               feature.properties.NAME +'<div id="dip_'+ feature.properties.subZone +'" class="js-subZone--'+ feature.properties.subZone +'"></div>',
               {className: 'js-popupZoneError--'+feature.properties.zoneCode}
@@ -156,82 +172,162 @@ export class LeafletMapView extends Component {
           }
       }
     }
-    switch (this.state.area) {
+    switch (this.props.area) {
       case 'medsea':
-        L.geoJson( meadSea, {
-          color: "yellow", weight: 1,
-          onEachFeature: function(feature, layer) { onEachFeature(feature,layer) }
-        }).addTo(this.map);
-        this.showGeojsonMap2('MED');
+        const findSubZoneMedSea = meadSea.features.find((data) => data.properties.subZone === this.props.subArea)
+        if(typeof findSubZoneMedSea !== 'undefined') {
+          L.geoJson( findSubZoneMedSea, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        } else {
+          L.geoJson( meadSea, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        }
       break;
       case 'ibi':
-        L.geoJson( ibi, {
-          color: "yellow", weight: 1,
-          onEachFeature(feature, layer) { onEachFeature(feature,layer) }
-        }).addTo(this.map);
-        this.showGeojsonMap2('IBI');
+        const findSubZoneIbi = ibi.features.find((data) => data.properties.subZone === this.props.subArea)
+        if(typeof findSubZoneIbi !== 'undefined') {
+          L.geoJson( findSubZoneIbi, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        } else {
+          L.geoJson( ibi, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        }
       break;
       case 'blacksea':
-        L.geoJson( blackSea, {
-          color: "yellow", weight: 1,
-          onEachFeature(feature, layer) { onEachFeature(feature,layer) }
-        }).addTo(this.map);
-        this.showGeojsonMap2('BS');
+        const findSubZoneBlackSea = blackSea.features.find((data) => data.properties.subZone === this.props.subArea)
+        if(typeof findSubZoneBlackSea !== 'undefined') {
+          L.geoJson( findSubZoneBlackSea, {
+            color: "yellow", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        } else {
+          L.geoJson( blackSea, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        }
       break;
       case 'global':
-        L.geoJson( global, {
-          color: "yellow", weight: 1,
-          onEachFeature(feature, layer) { onEachFeature(feature,layer) }
-        }).addTo(this.map);
-        this.showGeojsonMap2('GLO');
+        const findSubZoneGlobal = global.features.find((data) => data.properties.subZone === this.props.subArea)
+        if(typeof findSubZoneGlobal !== 'undefined') {
+          L.geoJson( findSubZoneGlobal, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        } else {
+          L.geoJson( global, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        }
       break;
       case 'arctic':
-        L.geoJson( artic, {
-          color: "yellow", weight: 1,
-          onEachFeature(feature, layer) { onEachFeature(feature,layer) }
-        }).addTo(this.map);
-        this.showGeojsonMap2('ARC');
+        const findSubZoneArctic = artic.features.find((data) => data.properties.subZone === this.props.subArea)
+        if(typeof findSubZoneArctic !== 'undefined') {
+          L.geoJson( findSubZoneArctic, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        } else {
+          L.geoJson( artic, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        }
       break;
       case 'balticsea':
-        L.geoJson( baltic, {
-          color: "yellow", weight: 1,
-          onEachFeature(feature, layer) { onEachFeature(feature,layer) }
-        }).addTo(this.map);
-        this.showGeojsonMap2('BAL');
+        const findSubZoneBaltic = baltic.features.find((data) => data.properties.subZone === this.props.subArea)
+        if(typeof findSubZoneBaltic !== 'undefined') {
+          L.geoJson( findSubZoneBaltic, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        } else {
+          L.geoJson( baltic, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        }
       break;
       case 'nws':
-        L.geoJson( nws, {
-          color: "yellow", weight: 1,
-          onEachFeature(feature, layer) { onEachFeature(feature,layer) }
-        }).addTo(this.map);
-        this.showGeojsonMap2('NWS');
+        const findSubZoneNws = nws.features.find((data) => data.properties.subZone === this.props.subArea)
+        if(typeof findSubZoneNws !== 'undefined') {
+          L.geoJson( findSubZoneNws, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        } else {
+          L.geoJson( nws, {
+            color: "orange", weight: 1,
+            onEachFeature(feature, layer) { onEachFeature(feature,layer) }
+          }).addTo(this.map);
+          this.showGeojsonMap();
+        }
       break;
       default:
         L.geoJson( global, {
-          color: "yellow", weight: 1,
+          color: "orange", weight: 1,
           onEachFeature(feature, layer) { onEachFeature(feature,layer) }
         }).addTo(this.map);
-        this.showGeojsonMap2('GLO');
+        this.showGeojsonMap();
       break;
     }
   }
 
-  async componentDidUpdate() {
-    if (this.state.area !== this.props.area) {
-      await this.setState({ area: this.props.area});
-      await this.props.getArea(this.props.area);
+  componentDidUpdate() {
+    if(this.state.area !== this.props.area) {
+      this.setState({ area: this.props.area});
+    }
+    if(this.state.currentFilters !== this.props.filtersReducer) {
+      this.setState({ currentFilters: this.props.filtersReducer});
     }
     this.componentDidMount();
   }
 
-  async showGeojsonMap2(area) {
-    const errorsFile = await import('../../../../errors/CLASS2/BAL/BALTICSEA_ANALYSIS_FORECAST_PHYS_003_006.json');
+  async showGeojsonMap() {
+    if(this.props.showFloats) {
+      new LabeledMarker(
+        labeled.geometry.coordinates.slice().reverse(),
+        labeled, {
+          markerOptions: { color: '#050' }
+        }).bindPopup('test').addTo(this.map);
+    }
+    const product = this.state.currentFilters && this.state.currentFilters.product.toUpperCase();
+    const result = await import('../../../../errors/result.json');
+    // const errorsFile = await import('../../../../errors/CLASS2/'+changeNameAreas(this.props.area)+'/'+product+'.json');
+    const errorsFile = await import('../../../../errors/CLASS2/GLO/GLOBAL-ANALYSIS-FORECAST-PHY-001-024.json')
     // Use Props and product
     const imgfiles = await import('../../../../plots_class2/BAL/resize/FehmarnBelt_BALTICSEA_ANALYSIS_FORECAST_PHYS_003_006.png');
+    // const imgfiles = await import('../../../../plots_class2/'+'BAL'+'/resize/FehmarnBelt_'+this.state.currentFilters && this.state.currentFilters.product.toUpperCase()+'.png');
     //Use Props and product
-    this.pointToLayer(errorsFile, imgfiles);
+    if(this.props.showFloats) {
+      this.pointToLayer(errorsFile, imgfiles);
+    }
   };
-
+  getAreaToClick(e) {
+    this.props.setSubarea(this.props.universe, 'subarea', e.target.feature.properties.subZone);
+  }
   pointToLayer(latlng, imgfiles) {
     const customOptions =
       {
@@ -252,13 +348,14 @@ export class LeafletMapView extends Component {
         if (rmsd > 1 ) {
           geojsonMarkerOptions.color = "red"
         }
+        const sizeImg = this.props.open ? "700px" : "350px";
         const popupText = "<b>Ref:</b> " + data.properties.NAME.bold() +
           "<br><b>RMSD:</b> " + data.properties.rmse.toFixed(2) +
           "<br><b>Corr:</b> " + data.properties.correlation.toFixed(2) +
           "<br><b>Variance explained:</b> " + data.properties.variance_exp.toFixed(2) +
           "<br><b>Scatter index:</b> " + data.properties.scatter_index.toFixed(2) +
-          "<img src=" + imgfiles.default + "/>";
-        return L.circleMarker(data && data.geometry && data.geometry.coordinates,geojsonMarkerOptions).bindPopup(popupText, customOptions).addTo(this.map)
+          "<img src=" + imgfiles.default + " width=" + sizeImg + "/>";
+        return L.circleMarker(data && data.geometry && data.geometry.coordinates,geojsonMarkerOptions).bindPopup(popupText, customOptions).addTo(this.map);
       }
     )
   };
@@ -270,7 +367,7 @@ export class LeafletMapView extends Component {
         id='weathermap'
         style={{
           width: '100%',
-          height: '86%',
+          height: !this.props.open ? '80%' : '90%',
         }}
       />
     );
