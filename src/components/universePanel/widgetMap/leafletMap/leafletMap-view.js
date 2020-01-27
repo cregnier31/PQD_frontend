@@ -315,7 +315,8 @@ export class LeafletMapView extends Component {
     }
     const product = this.state.currentFilters && this.state.currentFilters.product.toUpperCase();
     const result = await import('../../../../errors/result.json');
-    const errorsFile = await import('../../../../errors/CLASS2/'+changeNameAreas(this.props.area)+'/'+product+'.json');
+    // const errorsFile = await import('../../../../errors/CLASS2/'+changeNameAreas(this.props.area)+'/'+product+'.json');
+    const errorsFile = await import('../../../../errors/CLASS2/GLO/GLOBAL-ANALYSIS-FORECAST-PHY-001-024.json')
     // Use Props and product
     const imgfiles = await import('../../../../plots_class2/BAL/resize/FehmarnBelt_BALTICSEA_ANALYSIS_FORECAST_PHYS_003_006.png');
     // const imgfiles = await import('../../../../plots_class2/'+'BAL'+'/resize/FehmarnBelt_'+this.state.currentFilters && this.state.currentFilters.product.toUpperCase()+'.png');

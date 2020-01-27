@@ -66,11 +66,11 @@ export function WidgetMapView(props){
           <Grid
             container
             direction="row"
-            justify="flex-start"
+            justify="flex-end"
             alignItems="flex-end"
             style={{height: '85%', marginTop: '30px'}}
           >
-            <Grid container item xs={6} md={6}>
+            <Grid container item xs={6} md={3}>
             <label className={classes.label} >
               Show all moorings :
               <input name="see_all" type="checkbox" checked={showFloats} onChange={toggle} />
@@ -92,11 +92,11 @@ export function WidgetMapView(props){
                 <Grid
                   container
                   direction="row"
-                  justify="flex-start"
+                  justify="flex-end"
                   alignItems="flex-end"
                   style={{height: '85%', marginTop: '30px'}}
                 >
-                  <Grid container item xs={6} md={6}>
+                  <Grid container item xs={6} md={3}>
                   <label className={classes.label} >
                     Show all moorings :
                     <input name="see_all" type="checkbox" checked={showFloats} onChange={toggle} />
