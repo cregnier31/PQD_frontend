@@ -32,6 +32,12 @@ Your component-name directory can have its own utils as well. This allows you to
 
 In the project directory, you can run:
 
+### `npm install`
+Or
+### `yarn install`
+
+To setup the project installing dependancies.
+
 ### `npm start`
 
 Runs the app in the development mode.<br />
