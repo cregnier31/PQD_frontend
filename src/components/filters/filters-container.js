@@ -4,6 +4,10 @@ import {config} from "./../../utils";
 
 export class FiltersContainer extends Component {
 
+  componentDidMount(){
+    this.get_plot()
+  }
+
   async get_plot() {
     const args = {
       "area": this.props.area,

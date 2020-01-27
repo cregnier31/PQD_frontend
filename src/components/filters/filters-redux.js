@@ -3,10 +3,10 @@ import { setUniverseFilter, setPlot } from "../../actions";
 import { FiltersContainer } from "./filters-container";
 
 const mapStateToProps = (state, props) => {
-    var concerned_data = {} 
-    var concerned_filters = {}
-    const selected_universe = state.filtersReducer['universe']
     const selected_area = state.filtersReducer['area']
+    const selected_universe = state.filtersReducer['universe']
+    var concerned_filters = state.filtersReducer[selected_universe]
+    var concerned_data = {} 
     try {
         if(state.dataReducer['areas']){
             if(typeof(selected_area) === "string"){
@@ -18,7 +18,6 @@ const mapStateToProps = (state, props) => {
                 .filter(area => area.id === selected_area)[0]['universes']
                 .filter(universe => universe.name === selected_universe)[0]
             }
-            concerned_filters = state.filtersReducer[concerned_data['name']]
         }
     } catch (error) {
         console.log(error)
