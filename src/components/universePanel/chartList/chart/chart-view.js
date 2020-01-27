@@ -19,7 +19,10 @@ const useStyles = makeStyles(theme => ({
   },
   label: {
     fontSize: '20px',
-    fontFamily: 'ccl-paragraph--ms'
+    fontFamily: 'ccl-paragraph--ms',
+    float: 'right',
+    marginRight: 10,
+    color: '#ADB0B8'
   }
 }));
 

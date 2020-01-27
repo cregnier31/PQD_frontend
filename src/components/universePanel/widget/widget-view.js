@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
     objectFit: 'cover',
   },
   title: {
-    fontSize: 20
+    fontSize: 20,
   }
 }));
 
@@ -48,7 +48,7 @@ export function WidgetView(props){
     <div>
       <Grid container className={classes.root} direction="row" justify="space-between">
         <Grid item xs={props.title.length > 30 ? 10 : 7} md={props.title.length > 30 ? 10 : 7}>
-          <div style={{fontSize: '20px', marginBottom: props.title.length > 30 ? '0px' : '27px', fontFamily: 'ccl-heading--h5'}}>
+          <div style={{fontSize: '20px',color: '#ADB0B8', marginBottom: props.title.length > 30 ? '0px' : '27px', fontFamily: 'ccl-heading--h5'}}>
             {props.title}
             <Tooltip title={props.info ? props.info : ''}>
               <InfoIcon />
@@ -56,8 +56,8 @@ export function WidgetView(props){
           </div>
         </Grid>
         <Grid item xs={2} md={2}>
-          <FullscreenIcon onClick={handleOpen} />
-          <GetAppIcon />
+          <FullscreenIcon onClick={handleOpen} style={{color: '#ADB0B8'}} />
+          <GetAppIcon style={{color: '#ADB0B8'}} />
         </Grid>
       </Grid>
       <Grid container className={classes.root}>
