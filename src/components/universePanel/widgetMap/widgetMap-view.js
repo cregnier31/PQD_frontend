@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
   left: {
     float: 'left',
     marginLeft: '10px',
-    fontFamily: 'ccl-heading--h5',
+    fontFamily: 'ccl-font',
     fontSize: '20px',
     color: '#ADB0B8'
   },
@@ -29,7 +29,8 @@ const useStyles = makeStyles(theme => ({
   },
   label: {
     fontSize: '20px',
-    fontFamily: 'ccl-paragraph--ms'
+    fontFamily: 'ccl-paragraph--ms',
+    color: '#ADB0B8'
   }
 }));
 
