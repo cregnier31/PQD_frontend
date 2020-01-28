@@ -315,7 +315,7 @@ export class LeafletMapView extends Component {
     }
     const product = this.state.currentFilters && this.state.currentFilters.product.toUpperCase();
     const result = await import('../../../../errors/result.json');
-    // const errorsFile = await import('../../../../errors/CLASS2/'+changeNameAreas(this.props.area)+'/'+product+'.json');
+    // const errorsFile = await import('../../../../errors/CLASS2/'NAME++changeNameAreas(this.props.area)+'/'+product+'.json');
     const errorsFile = await import('../../../../errors/CLASS2/GLO/GLOBAL-ANALYSIS-FORECAST-PHY-001-024.json')
     // Use Props and product
     const imgfiles = await import('../../../../plots_class2/BAL/resize/FehmarnBelt_BALTICSEA_ANALYSIS_FORECAST_PHYS_003_006.png');
@@ -348,6 +348,7 @@ export class LeafletMapView extends Component {
         if (rmsd > 1 ) {
           geojsonMarkerOptions.color = "red"
         }
+        const coordinates = data && data.geometry && data.geometry.coordinates.reverse();
         const sizeImg = this.props.open ? "700px" : "350px";
         const popupText = "<b>Ref:</b> " + data.properties.NAME.bold() +
           "<br><b>RMSD:</b> " + data.properties.rmse.toFixed(2) +
@@ -355,7 +356,7 @@ export class LeafletMapView extends Component {
           "<br><b>Variance explained:</b> " + data.properties.variance_exp.toFixed(2) +
           "<br><b>Scatter index:</b> " + data.properties.scatter_index.toFixed(2) +
           "<img src=" + imgfiles.default + " width=" + sizeImg + "/>";
-        return L.circleMarker(data && data.geometry && data.geometry.coordinates,geojsonMarkerOptions).bindPopup(popupText, customOptions).addTo(this.map);
+        return L.circleMarker(coordinates,geojsonMarkerOptions).bindPopup(popupText, customOptions).addTo(this.map);
       }
     )
   };
