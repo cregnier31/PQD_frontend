@@ -9,6 +9,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import CloseIcon from '@material-ui/icons/Close';
 import GetAppIcon from '@material-ui/icons/GetApp';
 import Grid from '@material-ui/core/Grid';
+import Tooltip from '@material-ui/core/Tooltip';
 
 const useStyles = makeStyles(theme => ({
   right: {
@@ -38,6 +39,7 @@ export function WidgetMapView(props){
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const [showFloats, setShowFloats] = React.useState(true);
+  const infoTooltip = 'Estimated Accuracy Numbers or EANs are computed on agiven geographical area for a given day. The EANs are mean or root mean square departures at several forecast lengths. These statistics provide an estimate of the uncertainty depending on the validation datasets available (you can choose between validation datasets available using the filters). It is acknowledged that the uncertainty as recorded by users can be larger than EANs locally, especially in high variability areas (strong currents, meanders, mesoscalevariability areas, coastal areas,upwelling areas etc...).'
 
   const handleOpen = () => {
     setOpen(true);
@@ -56,7 +58,9 @@ export function WidgetMapView(props){
       <Card>
         <div className={classes.left}>
           Estimated Accuracy Numbers Cartography
-          <InfoIcon style={{ marginLeft: '5px'}}/>
+          <Tooltip title={infoTooltip}>
+            <InfoIcon style={{ marginLeft: '5px'}}/>
+          </Tooltip>
         </div>
         <div className={classes.right}>
           <FullscreenIcon onClick={handleOpen} />
