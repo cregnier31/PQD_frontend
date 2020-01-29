@@ -30,7 +30,7 @@ export function PlotView(props){
     return null
   }
   return (
-    <Card>
+    <Card data-tut="reactour__16">
       <Widget
         title="Estimated Accuracy Numbers time series"
         info={infoPlot}

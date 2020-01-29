@@ -86,7 +86,7 @@ export function DrawerView(props) {
             <CloseIcon style={{color: "black"}} />
           </IconButton>
         </div>
-        <p className={classes.title}>Parameter families</p>
+        <p data-tut="reactour__4" className={classes.title}>Parameter families</p>
         <Divider />
         <List className={classes.list}>
           {universes.map((universe) => (
@@ -94,10 +94,7 @@ export function DrawerView(props) {
               <ListItemIcon>
                 <PanoramaFishEyeRoundedIcon fontSize="large" style={{ color: color[universe]['icon']}} />
               </ListItemIcon>
-              <li>{universe}</li>
-              {props.universe === universe &&
-                <CheckCircleIcon style={{marginLeft: '10px'}} />
-              }
+              <li style={{backgroundColor: color[universe]['background'], boxShadow: props.universe === universe && '0px 0px 17px #080606', fontSize: 18}}>{universe + ' OCEAN'}</li>
             </ListItem>
           ))}
         </List>

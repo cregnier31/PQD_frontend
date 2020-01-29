@@ -13,7 +13,9 @@ const mapStateToProps = (state, props) => {
         data: concerned_data,
         area: area,
         universe: universe,
-        currentArea: state.filtersReducer && state.filtersReducer.area
+        currentArea: state.filtersReducer && state.filtersReducer.area,
+        product: state.filtersReducer && state.filtersReducer[universe] && state.filtersReducer[universe].product,
+        openTour: props.openTour
     }
 };
 

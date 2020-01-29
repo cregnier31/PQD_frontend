@@ -12,10 +12,10 @@ import { color } from './../../utils';
 export function UniversePanelView(props){
   return (
     <Card style={{backgroundColor: color[props.universe]['background']}}>
-      <TitleRaw universe={props.universe}/>
+      <TitleRaw universe={props.universe} area={props.area} />
       <ChartList universe={props.universe}/>
       <Divider style={{backgroundColor: 'white', marginLeft: '10px', width: '98%'}} />
-      <LinkRaw />
+      <LinkRaw product={props.product} />
       <Grid container>
         <Grid item xs={12} md={8}>
           <WidgetMap area={props.area} />
