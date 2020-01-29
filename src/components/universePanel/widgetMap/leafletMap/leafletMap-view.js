@@ -78,7 +78,7 @@ export class LeafletMapView extends Component {
     this.state = {
     area: this.props.area,
     currentFilters: this.props.filtersReducer,
-    currentSubZone : this.props.subArea
+    currentSubZone : this.props.subArea,
     };
   }
 
@@ -320,17 +320,18 @@ export class LeafletMapView extends Component {
   }
 
   async showGeojsonMap() {
-    if(this.props.showFloats) {
-      labeled.map((data) =>
-        new LabeledMarker(
-        data && data.geometry.coordinates.slice().reverse(),
-        data && data, {
-          markerOptions: { color: '#050' }
-        }).bindPopup('test').addTo(this.map));
-    }
+    // if(this.props.showFloats) {
+    //   labeled.map((data) =>
+    //     new LabeledMarker(
+    //     data && data.geometry.coordinates.slice().reverse(),
+    //     data && data, {
+    //       markerOptions: { color: '#050' }
+    //     }).bindPopup('test').addTo(this.map));
+    // }
     const product = this.state.currentFilters && this.state.currentFilters.product.toUpperCase();
-    const result = await import('../../../../errors/result.json');
+    // const result = await import('../../../../errors/result.json');
     let errorsFile = await import('../../../../errors/CLASS2/'+changeNameAreas(this.props.area)+'/'+product+'.json');
+
     // const errorsFile = await import('../../../../errors/CLASS2/GLO/GLOBAL-ANALYSIS-FORECAST-PHY-001-024.json')
     const imgfiles = await import('../../../../plots_class2/BAL/resize/FehmarnBelt_BALTICSEA_ANALYSIS_FORECAST_PHYS_003_006.png');
     if(this.props.showFloats) {
@@ -361,7 +362,11 @@ export class LeafletMapView extends Component {
         if (rmsd > 1 ) {
           geojsonMarkerOptions.color = "red"
         }
-        const coordinates = data && data.geometry && data.geometry.coordinates.reverse();
+        let coordinates = [];
+        coordinates.push(...data && data.geometry && data.geometry.coordinates);
+        if(coordinates[0] === data.geometry.coordinates[0]) {
+          coordinates.reverse();
+        }
         const sizeImg = this.props.open ? "700px" : "350px";
         const popupText = "<b>Ref:</b> " + data.properties.NAME.bold() +
           "<br><b>RMSD:</b> " + data.properties.rmse.toFixed(2) +
