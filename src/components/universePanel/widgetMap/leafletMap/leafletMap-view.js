@@ -329,26 +329,37 @@ export class LeafletMapView extends Component {
     //     }).bindPopup('test').addTo(this.map));
     // }
     const product = this.state.currentFilters && this.state.currentFilters.product.toUpperCase();
+    let errorsFile = null;
     // const result = await import('../../../../errors/result.json');
-    let errorsFile = await import('../../../../errors/CLASS2/'+changeNameAreas(this.props.area)+'/'+product+'.json');
-
+    // let errorsFile = await import('../../../../errors/CLASS2/'+changeNameAreas(this.props.area)+'/'+product+'.json');
+    try {
+      await import('../../../../errors/CLASS2/'+changeNameAreas(this.props.area)+'/'+product+'.json');
+      // The check succeeded
+      errorsFile = await import('../../../../errors/CLASS2/'+changeNameAreas(this.props.area)+'/'+product+'.json')
+    } catch (error) {
+    }
     // const errorsFile = await import('../../../../errors/CLASS2/GLO/GLOBAL-ANALYSIS-FORECAST-PHY-001-024.json')
-    const imgfiles = await import('../../../../plots_class2/BAL/resize/FehmarnBelt_BALTICSEA_ANALYSIS_FORECAST_PHYS_003_006.png');
     if(this.props.showFloats) {
-      this.pointToLayer(errorsFile, imgfiles);
+      this.pointToLayer(errorsFile);
     }
   };
   getAreaToClick(e) {
     this.props.setSubarea(this.props.universe, 'subarea', e.target.feature.properties.subZone);
   }
-  pointToLayer(latlng, imgfiles) {
+  async pointToLayer(latlng) {
+    const product = this.state.currentFilters && this.state.currentFilters.product.toUpperCase().replace(/-/g, '_');
     const customOptions =
       {
         'maxWidth': '900',
         'maxHeight': '600',
       }
-      latlng && latlng.features.map((data) => {
-        // const toto = await import('../../../../plots_class2/'+changeNameAreas(this.props.area)+'/resize/'+data && data.properties.NAME+'_'+this.state.currentFilters && this.state.currentFilters.product.toUpperCase()+'.png');
+      latlng && latlng.features.forEach(async(data) => {
+        let imgfiles = null;
+        try {
+          await import('../../../../plots_class2/'+changeNameAreas(this.props.area)+'/'+data.properties.NAME+'_'+product+'.png');
+          imgfiles = await import('../../../../plots_class2/'+changeNameAreas(this.props.area)+'/'+data.properties.NAME+'_'+product+'.png');
+        } catch (error) {
+        }
         let rmsd = data.properties.rmse;
         if (rmsd <= 0.3) {
           geojsonMarkerOptions.color = "green"
@@ -372,8 +383,8 @@ export class LeafletMapView extends Component {
           "<br><b>RMSD:</b> " + data.properties.rmse.toFixed(2) +
           "<br><b>Corr:</b> " + data.properties.correlation.toFixed(2) +
           "<br><b>Variance explained:</b> " + data.properties.variance_exp.toFixed(2) +
-          "<br><b>Scatter index:</b> " + data.properties.scatter_index.toFixed(2) +
-          "<img src=" + imgfiles.default + " width=" + sizeImg + "/>";
+          "<br><b>Scatter index:</b> " + data.properties.scatter_index.toFixed(2)  + imgfiles &&
+          "<img src=" +imgfiles.default+ " width=" + sizeImg + "/>";
         return L.circleMarker(coordinates,geojsonMarkerOptions).bindPopup(popupText, customOptions).addTo(this.map);
       }
     )
