@@ -43,19 +43,34 @@ let geojsonMarkerOptions = {
   color: 'red',
 };
 
-const labeled = {
-  "type": "Feature",
-  "properties": {
-    "text": 'test',
-    "labelPosition": [
-      35, 22
-    ]
+const labeled = [
+  {
+    "type": "Feature",
+    "properties": {
+      "text": 'test',
+      "labelPosition": [
+        35, 22
+      ]
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [ 35, 22 ]
+    }
   },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [ 35, 22 ]
+  {
+    "type": "Feature",
+    "properties": {
+      "text": 'test2',
+      "labelPosition": [
+        38, 22
+      ]
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [ 35, 22 ]
+    }
   }
-};
+];
 
 export class LeafletMapView extends Component {
   constructor(props) {
@@ -133,7 +148,6 @@ export class LeafletMapView extends Component {
               errorMarkers[feature.properties.zoneCode].push(m);
             }
             m.on('click', function(){
-              console.log(this)
               let pc = this._icon.firstChild.getAttribute('data-popup');
               if(pc) this.setPopupContent(pc.split('|').join('<br>'));
             })
@@ -307,20 +321,18 @@ export class LeafletMapView extends Component {
 
   async showGeojsonMap() {
     if(this.props.showFloats) {
-      new LabeledMarker(
-        labeled.geometry.coordinates.slice().reverse(),
-        labeled, {
+      labeled.map((data) =>
+        new LabeledMarker(
+        data && data.geometry.coordinates.slice().reverse(),
+        data && data, {
           markerOptions: { color: '#050' }
-        }).bindPopup('test').addTo(this.map);
+        }).bindPopup('test').addTo(this.map));
     }
     const product = this.state.currentFilters && this.state.currentFilters.product.toUpperCase();
     const result = await import('../../../../errors/result.json');
-    // const errorsFile = await import('../../../../errors/CLASS2/'NAME++changeNameAreas(this.props.area)+'/'+product+'.json');
-    const errorsFile = await import('../../../../errors/CLASS2/GLO/GLOBAL-ANALYSIS-FORECAST-PHY-001-024.json')
-    // Use Props and product
+    let errorsFile = await import('../../../../errors/CLASS2/'+changeNameAreas(this.props.area)+'/'+product+'.json');
+    // const errorsFile = await import('../../../../errors/CLASS2/GLO/GLOBAL-ANALYSIS-FORECAST-PHY-001-024.json')
     const imgfiles = await import('../../../../plots_class2/BAL/resize/FehmarnBelt_BALTICSEA_ANALYSIS_FORECAST_PHYS_003_006.png');
-    // const imgfiles = await import('../../../../plots_class2/'+'BAL'+'/resize/FehmarnBelt_'+this.state.currentFilters && this.state.currentFilters.product.toUpperCase()+'.png');
-    //Use Props and product
     if(this.props.showFloats) {
       this.pointToLayer(errorsFile, imgfiles);
     }
@@ -334,7 +346,8 @@ export class LeafletMapView extends Component {
         'maxWidth': '900',
         'maxHeight': '600',
       }
-      latlng.features.map((data) => {
+      latlng && latlng.features.map((data) => {
+        // const toto = await import('../../../../plots_class2/'+changeNameAreas(this.props.area)+'/resize/'+data && data.properties.NAME+'_'+this.state.currentFilters && this.state.currentFilters.product.toUpperCase()+'.png');
         let rmsd = data.properties.rmse;
         if (rmsd <= 0.3) {
           geojsonMarkerOptions.color = "green"
