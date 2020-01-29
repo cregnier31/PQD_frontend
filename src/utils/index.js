@@ -91,3 +91,23 @@ export const changeNameAreas = (name) => {
 export const infoPlot = "Estimated Accuracy Numbers or EANs are computed on a given geographical area for a given day. The EANs are mean or root mean square departures at several forecast lengths. These statistics provide an estimate of the uncertainty depending on the validation datasets available (you can choose between validation datasets available using the filters). It is acknowledged that the uncertainty as recorded by users can be larger than EANs locally, especially in high variability areas (strong currents, meanders, mesoscalevariability areas, coastal areas,upwelling areas etc...)."
 
 export const infoMap = "Estimated Accuracy Numbers or EANs are computed on a given geographical area for a given day. The EANs are mean or root mean square departures at several forecast lengths. These statistics provide an estimate of the uncertainty depending on the validation datasets available (you can choose between validation datasets available using the filters). It is acknowledged that the uncertainty as recorded by users can be larger than EANs locally, especially in high variability areas (strong currents, meanders, mesoscalevariability areas, coastal areas,upwelling areas etc...)."
+
+export const changeNameAreasForTitle = (name) => {
+  switch (name) {
+    case 'arctic':
+      return 'Arctic'
+    case 'balticsea':
+      return 'Baltic sea'
+    case 'global':
+      return 'Global'
+    case 'ibi':
+      return 'Iberian-Biscay-Island'
+    case 'medsea':
+      return 'Mediterranean sea'
+    case 'nws':
+      return 'North western shelves'
+    case 'blacksea':
+      return 'Black sea'
+    default:
+  }
+}

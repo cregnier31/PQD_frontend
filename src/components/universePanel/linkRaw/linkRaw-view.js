@@ -11,7 +11,7 @@ const useStyles = makeStyles(theme => ({
     fontWeight: theme.typography.fontWeightRegular,
     fontFamily: 'ccl-heading--h3',
     float: 'left',
-    marginLeft: '20px'
+    marginLeft: '20px',
   },
   titleRight: {
     fontSize: theme.typography.pxToRem(20),
@@ -41,12 +41,12 @@ export function LinkRawView(props){
   return (
     <div>
       <Grid container direction="row" alignItems="center" justify="flex-start" className={classes.root}>
-        <Grid item xs={12} md={6}>
-          <Typography className={classes.titleLeft}>Validation expert metrics</Typography>
+        <Grid item xs={12} md={8}>
+          <Typography className={classes.titleLeft} data-tut="reactour__11">Quality information for product: {props.product ? props.product : ''} </Typography>
         </Grid>
       </Grid>
 
-      <Grid container direction="row" alignItems="center" justify="flex-end" className={classes.root}>
+      <Grid container direction="row" alignItems="center" justify="flex-end" className={classes.root} data-tut="reactour__12">
         <Grid item xs={5} md={3}>
           <MenuBookIcon className={classes.iconsSite} />
           <Typography className={classes.titleRight}>

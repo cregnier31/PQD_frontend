@@ -12,6 +12,8 @@ export class HeaderContainer extends Component {
         setArea={(value) => this.props.setArea(value)}
         setUniverse={(value) => this.props.setUniverse(value)}
         currentArea={this.props.currentArea}
+        product={this.props.product}
+        openTour={this.props.openTour}
         />
     )
   }

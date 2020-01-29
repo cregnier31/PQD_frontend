@@ -79,7 +79,7 @@ const useStyles = makeStyles(theme => ({
   button: {
     fontFamily: 'ccl-heading--h5',
     textTransform: 'none',
-    fontSize: theme.typography.pxToRem(15),
+    fontSize: 18,
   }
 }));
 
@@ -121,6 +121,7 @@ export function HeaderView(props) {
     <div className={classes.root}>
       <CssBaseline />
       <AppBar
+        data-tut="reactour__2"
         position="fixed"
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
@@ -151,9 +152,9 @@ export function HeaderView(props) {
           >
             <FilterListIcon style={{color: "black"}} />
           </IconButton>
-          <Typography className={clsx(classes.title)} variant="h4">PAGE TITLE</Typography>
-        <TopPanel area={props.area}/>
-        <UniversePanel universe={props.universe}/>
+          <Typography className={clsx(classes.title)} data-tut="reactour__1" variant="h4">CMEMS Product Quality Dashboard</Typography>
+        <TopPanel area={props.area} universe={props.universe} openTour={props.openTour} />
+        <UniversePanel universe={props.universe} product={props.product} area={props.area} />
       </main>
     </div>
   );

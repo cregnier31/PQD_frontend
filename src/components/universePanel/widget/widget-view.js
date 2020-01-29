@@ -9,6 +9,8 @@ import DialogContent from '@material-ui/core/DialogContent';
 import CloseIcon from '@material-ui/icons/Close';
 import Grid from '@material-ui/core/Grid';
 import Tooltip from '@material-ui/core/Tooltip';
+import {MyDocument} from '../../pdfDocument';
+import { PDFDownloadLink } from '@react-pdf/renderer';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -35,6 +37,7 @@ const useStyles = makeStyles(theme => ({
 export function WidgetView(props){
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
+  const [isClient, setIsClient] = React.useState(false)
   
   const handleOpen = () => {
     setOpen(true);
@@ -43,6 +46,10 @@ export function WidgetView(props){
   const handleClose = () => {
     setOpen(false);
   };
+
+  React.useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   return (
     <div>
@@ -57,7 +64,11 @@ export function WidgetView(props){
         </Grid>
         <Grid item xs={2} md={2}>
           <FullscreenIcon onClick={handleOpen} style={{color: '#ADB0B8'}} />
-          <GetAppIcon style={{color: '#ADB0B8'}} />
+          {isClient && (
+            <PDFDownloadLink document={<MyDocument smallContent={props.smallContent}/>} fileName="resume.pdf">
+              {({ blob, url, loading, error }) => (loading ? 'Loading document...' : <GetAppIcon style={{color: '#ADB0B8'}} />)}
+            </PDFDownloadLink> 
+          )}
         </Grid>
       </Grid>
       <Grid container className={classes.root}>

@@ -10,7 +10,6 @@ import Grid from '@material-ui/core/Grid';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import tutoriel from '../../../assets/images/tutoriel.jpeg';
 import { ReactComponent as Global } from '../../../assets/images/all_area_sphere.svg';
 import { ReactComponent as Arctic } from '../../../assets/images/arctic_sphere.svg';
 import { ReactComponent as Baltic } from '../../../assets/images/baltic_sphere.svg';
@@ -18,6 +17,9 @@ import { ReactComponent as Ibi } from '../../../assets/images/ibi_sphere.svg';
 import { ReactComponent as Medsea } from '../../../assets/images/medsea_sphere.svg';
 import { ReactComponent as Nws } from '../../../assets/images/nws_sphere.svg';
 import { ReactComponent as BlackSea } from '../../../assets/images/blacksea_sphere.svg';
+import blue from '../../../assets/images/blue.png';
+import green from '../../../assets/images/green.png';
+import white from '../../../assets/images/white.png';
 
 const useStyles = makeStyles(theme => ({
   cardRegion: {
@@ -91,11 +93,25 @@ export function TopPanelView(props){
     }
   }
 
+  const displayPngTuto = () => {
+    switch (props.universe) {
+      case 'BLUE':
+        return blue
+      case 'GREEN':
+        return green
+      case 'WHITE':
+        return white
+      default:
+        return blue
+    }
+  }
+
   return (
     <Grid container>
       <Grid item xs={12} md={12}>
-        <ExpansionPanel onClick={() => setPanel(!panel)} expanded={panel}>
+        <ExpansionPanel expanded={panel}>
           <ExpansionPanelSummary
+            onClick={() => setPanel(!panel)}
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
             id="panel1a-header"
@@ -111,11 +127,11 @@ export function TopPanelView(props){
               <CardActionArea>
                 <CardMedia
                   className={classes.media}
-                  image={tutoriel}
+                  image={displayPngTuto()}
                   title="Tutoriel"
                 />
                 <CardContent className={classes.content}>
-                  <Typography gutterBottom variant="h5" component="h2">
+                  <Typography gutterBottom variant="h5" component="h2" onClick={props.openTour}>
                     New visitor ?
                   </Typography>
                   <Typography variant="body2" component="p">

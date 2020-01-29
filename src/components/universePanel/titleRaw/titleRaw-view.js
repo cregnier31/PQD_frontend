@@ -2,8 +2,8 @@ import React from "react";
 import Grid from '@material-ui/core/Grid';
 import PanoramaFishEyeRoundedIcon from '@material-ui/icons/PanoramaFishEyeRounded';
 import { color } from '../../../utils';
-import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+import {changeNameAreasForTitle} from '../../../utils';
 
 const useStyles = makeStyles(theme => ({
   title: {
@@ -17,6 +17,9 @@ const useStyles = makeStyles(theme => ({
     marginLeft: '10px',
     height: '40px',
     marginTop: '10px'
+  },
+  subTitle: {
+    display: 'inline-flex',
   }
 }));
 
@@ -24,9 +27,12 @@ export function TitleRawView(props){
   const classes = useStyles();
   return (
     <Grid container direction="row" alignItems="center">
-      <Grid item xs={4} md={4} className={classes.root}>
+      <Grid item xs={12} md={12} className={classes.root} data-tut="reactour__6">
         <PanoramaFishEyeRoundedIcon fontSize="large" style={{ color: color[props.universe]['icon']}} />
-        <div className={classes.title}>{props.universe}</div>
+        <div className={classes.title}>{props.universe + ' OCEAN'}</div>
+      </Grid>
+      <Grid item xs={12} md={12} className={classes.root}>
+        <div className={classes.title}>CMEMS monitoring and forecasting capacity: {props.area ? changeNameAreasForTitle(props.area) : ''}</div>
       </Grid>
     </Grid>
   );

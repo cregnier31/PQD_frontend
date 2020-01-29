@@ -78,8 +78,8 @@ export function WidgetMapView(props){
             style={{height: '85%', marginTop: '30px'}}
           >
             <Grid container item xs={6} md={3}>
-            <label className={classes.label} >
-              Show all moorings :
+            <label className={classes.label} data-tut="reactour__14">
+              Show moorings :
               <input name="see_all" type="checkbox" checked={showFloats} onChange={toggle} />
             </label>
             </Grid>
@@ -105,7 +105,7 @@ export function WidgetMapView(props){
                 >
                   <Grid container item xs={6} md={3}>
                   <label className={classes.label} >
-                    Show all moorings :
+                    Show moorings :
                     <input name="see_all" type="checkbox" checked={showFloats} onChange={toggle} />
                   </label>
                   </Grid>
