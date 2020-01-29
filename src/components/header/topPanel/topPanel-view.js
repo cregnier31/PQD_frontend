@@ -75,21 +75,21 @@ export function TopPanelView(props){
   const displaySvg = () => {
     switch (props.area) {
       case 'arctic':
-        return <Arctic style={{height: 400}} />
+        return <Arctic style={{height: 400, marginTop: 50}} />
       case 'balticsea':
-        return <Baltic style={{height: 400}} />
+        return <Baltic style={{height: 400, marginTop: 50}} />
       case 'global':
-        return <Global style={{height: 400}} />
+        return <Global style={{height: 400, marginTop: 50}} />
       case 'ibi':
-        return <Ibi style={{height: 400}} />
+        return <Ibi style={{height: 400, marginTop: 50}} />
       case 'medsea':
-        return <Medsea style={{height: 400}} />
+        return <Medsea style={{height: 400, marginTop: 50}} />
       case 'nws':
-        return <Nws style={{height: 400}} />
+        return <Nws style={{height: 400, marginTop: 50}} />
       case 'blacksea':
-        return <BlackSea style={{height: 400}} />
+        return <BlackSea style={{height: 400, marginTop: 50}} />
       default:
-        return <Global style={{height: 400}} />
+        return <Global style={{height: 400, marginTop: 50}} />
     }
   }
 
