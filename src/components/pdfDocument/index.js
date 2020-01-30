@@ -15,11 +15,10 @@ const styles = StyleSheet.create({
 // Create Document Component
 export function MyDocument(props)  {
   return(
-    <Document>
+    <Document >
       <Page size="A4" style={styles.page}>
         <View style={styles.section}>
-          {/* <Image style={styles.image}  src={img} alt="images" /> */}
-          <Text>toto</Text>
+          <Text>{props.text}</Text>
         </View>
       </Page>
     </Document>

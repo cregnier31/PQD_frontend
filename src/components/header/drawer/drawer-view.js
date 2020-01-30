@@ -8,12 +8,11 @@ import CloseIcon from '@material-ui/icons/Close';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import PanoramaFishEyeRoundedIcon from '@material-ui/icons/PanoramaFishEyeRounded';
-import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import {Filter} from '../../filters';
 import { color } from './../../../utils';
 
 const drawerWidth = 240;
-
+const screen = window.screen.width;
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
@@ -24,9 +23,16 @@ const useStyles = makeStyles(theme => ({
   },
   drawerPaper: {
     width: drawerWidth,
-    boxShadow: '3px 0px 7px #B5B5B5'
+    boxShadow: '3px 0px 7px #B5B5B5',
+    // marginTop: 70
   },
-  toolbar: theme.mixins.toolbar,
+  toolbar: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    padding: '8px',
+    minHeight: 130,
+  },
   drawerHeader: {
     display: 'flex',
     alignItems: 'flex-end',
@@ -81,20 +87,15 @@ export function DrawerView(props) {
         }}
       >
         <div className={classes.toolbar} />
-        <div className={classes.drawerHeader}>
-          <IconButton onClick={props.handleDrawerClose}>
-            <CloseIcon style={{color: "black"}} />
-          </IconButton>
+        <div>
+        <CloseIcon onClick={props.handleDrawerClose} style={{color: "black", float: 'right', marginTop: screen <= 400 ? 70 : 0}} />
         </div>
-        <p data-tut="reactour__4" className={classes.title}>Parameter families</p>
-        <Divider />
         <List className={classes.list}>
           {universes.map((universe) => (
             <ListItem className={classes.universes} button key={universe} onClick={() => props.setUniverse(universe)}>
-              <ListItemIcon>
-                <PanoramaFishEyeRoundedIcon fontSize="large" style={{ color: color[universe]['icon']}} />
-              </ListItemIcon>
-              <li style={{backgroundColor: color[universe]['background'], boxShadow: props.universe === universe && '0px 0px 17px #080606', fontSize: 18}}>{universe + ' OCEAN'}</li>
+              <li style={{backgroundColor: color[universe]['background'], boxShadow: props.universe === universe && '0px 0px 17px #080606', fontSize: 18, width: '100%'}}>
+                <PanoramaFishEyeRoundedIcon fontSize="large" style={{ color: color[universe]['icon'], marginTop: 10}} />{universe + ' OCEAN'}
+              </li>
             </ListItem>
           ))}
         </List>
