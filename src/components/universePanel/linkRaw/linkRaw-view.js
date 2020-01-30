@@ -4,6 +4,7 @@ import MenuBookIcon from '@material-ui/icons/MenuBook';
 import WebIcon from '@material-ui/icons/Web';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+import { colorUniverses } from './../../../utils';
 
 const useStyles = makeStyles(theme => ({
   titleLeft: {
@@ -42,7 +43,7 @@ export function LinkRawView(props){
     <div>
       <Grid container direction="row" alignItems="center" justify="flex-start" className={classes.root}>
         <Grid item xs={12} md={8}>
-          <Typography className={classes.titleLeft} data-tut="reactour__11">Quality information for product: {props.product ? props.product : ''} </Typography>
+          <Typography className={classes.titleLeft} data-tut="reactour__11" style={{color: colorUniverses(props.universe)}}>Quality information for product: {props.product ? props.product : ''} </Typography>
         </Grid>
       </Grid>
 
@@ -50,7 +51,7 @@ export function LinkRawView(props){
         {typeof(props.data.catalogue_url) !== 'undefined' && props.data.catalogue_url !== null && 
           <Grid item xs={5} md={3}>
             <MenuBookIcon className={classes.iconsSite} />
-            <Typography className={classes.titleRight}>
+            <Typography className={classes.titleRight} style={{color: colorUniverses(props.universe)}}>
               <a href={props.data.catalogue_url}>Catalogue</a>
             </Typography>
           </Grid>
@@ -58,7 +59,7 @@ export function LinkRawView(props){
         {typeof(props.data.documentation_url) !== 'undefined' && props.data.documentation_url !== null &&
           <Grid item xs={7} md={4}>
             <WebIcon className={classes.iconsCatalogue}/>
-            <Typography className={classes.titleRight}>
+            <Typography className={classes.titleRight} style={{color: colorUniverses(props.universe)}}>
               <a href={props.data.documentation_url}>Site producteur</a>
             </Typography>
           </Grid>

@@ -11,6 +11,8 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-react-app": "^9.0.2",
+    "html2canvas": "^1.0.0-rc.5",
+    "jspdf": "^1.5.3",
     "leaflet": "^1.6.0",
     "leaflet-labeled-circle": "^1.0.3",
     "leaflet-omnivore": "^0.3.4",
