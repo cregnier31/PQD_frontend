@@ -24,7 +24,8 @@ const useStyles = makeStyles(theme => ({
   },
   drawerPaper: {
     width: drawerWidth,
-    boxShadow: '3px 0px 7px #B5B5B5'
+    boxShadow: '3px 0px 7px #B5B5B5',
+    marginTop: '100px'
   },
   toolbar: theme.mixins.toolbar,
   drawerHeader: {
@@ -86,15 +87,13 @@ export function DrawerView(props) {
             <CloseIcon style={{color: "black"}} />
           </IconButton>
         </div>
-        <p data-tut="reactour__4" className={classes.title}>Parameter families</p>
         <Divider />
         <List className={classes.list}>
           {universes.map((universe) => (
             <ListItem className={classes.universes} button key={universe} onClick={() => props.setUniverse(universe)}>
-              <ListItemIcon>
-                <PanoramaFishEyeRoundedIcon fontSize="large" style={{ color: color[universe]['icon']}} />
-              </ListItemIcon>
-              <li style={{backgroundColor: color[universe]['background'], boxShadow: props.universe === universe && '0px 0px 17px #080606', fontSize: 18}}>{universe + ' OCEAN'}</li>
+              <li style={{backgroundColor: color[universe]['background'], boxShadow: props.universe === universe && '0px 0px 17px #080606', fontSize: 18, width: '100%'}}>
+                <PanoramaFishEyeRoundedIcon fontSize="large" style={{ color: color[universe]['icon'], marginTop: 10}} />{universe + ' OCEAN'}
+              </li>
             </ListItem>
           ))}
         </List>

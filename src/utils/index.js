@@ -13,7 +13,7 @@ export const config = {
 
 export const color = {
   BLUE:{
-    background: '#D1DDE5',
+    background: '#286E9F',
     icon: 'blue'
   },
   GREEN:{

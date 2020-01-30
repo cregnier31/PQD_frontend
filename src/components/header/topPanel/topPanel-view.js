@@ -20,7 +20,7 @@ import { ReactComponent as BlackSea } from '../../../assets/images/blacksea_sphe
 import blue from '../../../assets/images/blue.png';
 import green from '../../../assets/images/green.png';
 import white from '../../../assets/images/white.png';
-
+const screen = window.screen.width;
 const useStyles = makeStyles(theme => ({
   cardRegion: {
     minWidth: 200,
@@ -107,7 +107,7 @@ export function TopPanelView(props){
   }
 
   return (
-    <Grid container>
+    <Grid container style={{marginTop: screen <= 400 ? 120 : 80}}>
       <Grid item xs={12} md={12}>
         <ExpansionPanel expanded={panel}>
           <ExpansionPanelSummary
