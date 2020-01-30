@@ -4,7 +4,7 @@ import { Chart } from "./chart";
 
 export function ChartListView(props){
   var list = []
-  const kinds = ["INSITU", "SAT", "SKILL_SCORE"]
+  const kinds = ["SAT", "INSITU", "SKILL_SCORE"]
   kinds.map(kind => {
     return list.push(
       <Grid key={kind} item xs={12} md={4}>

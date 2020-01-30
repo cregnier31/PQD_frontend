@@ -13,7 +13,7 @@ import {Filter} from '../../filters';
 import { color } from './../../../utils';
 
 const drawerWidth = 240;
-
+const screen = window.screen.width;
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
   drawerPaper: {
     width: drawerWidth,
     boxShadow: '3px 0px 7px #B5B5B5',
-    marginTop: '100px'
+    marginTop: 70
   },
   toolbar: theme.mixins.toolbar,
   drawerHeader: {
@@ -82,12 +82,9 @@ export function DrawerView(props) {
         }}
       >
         <div className={classes.toolbar} />
-        <div className={classes.drawerHeader}>
-          <IconButton onClick={props.handleDrawerClose}>
-            <CloseIcon style={{color: "black"}} />
-          </IconButton>
+        <div>
+        <CloseIcon onClick={props.handleDrawerClose} style={{color: "black", float: 'right', marginTop: screen <= 400 ? 70 : 0}} />
         </div>
-        <Divider />
         <List className={classes.list}>
           {universes.map((universe) => (
             <ListItem className={classes.universes} button key={universe} onClick={() => props.setUniverse(universe)}>

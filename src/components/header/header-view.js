@@ -32,7 +32,7 @@ const useStyles = makeStyles(theme => ({
   toolbar: theme.mixins.toolbar,
   menuButton: {
     float: 'left',
-    marginTop: screen <= 400 ? 25 : 0,
+    marginTop: screen <= 400 ? 100 : 30
   },
   title: {
     float: 'left',
@@ -47,9 +47,9 @@ const useStyles = makeStyles(theme => ({
   drawerHeader: {
     display: 'flex',
     alignItems: 'center',
-    padding: theme.spacing(0, 1),
     ...theme.mixins.toolbar,
     justifyContent: 'flex-end',
+    marginTop: 30
   },
   content: {
     flexGrow: 1,
