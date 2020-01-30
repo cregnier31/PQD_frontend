@@ -47,18 +47,22 @@ export function LinkRawView(props){
       </Grid>
 
       <Grid container direction="row" alignItems="center" justify="flex-end" className={classes.root} data-tut="reactour__12">
-        <Grid item xs={5} md={3}>
-          <MenuBookIcon className={classes.iconsSite} />
-          <Typography className={classes.titleRight}>
-            Catalogue
-          </Typography>
-        </Grid>
-        <Grid item xs={7} md={4}>
-          <WebIcon className={classes.iconsCatalogue}/>
-          <Typography className={classes.titleRight}>
-            Site producteur
-          </Typography>
-        </Grid>
+        {typeof(props.data.catalogue_url) !== 'undefined' && props.data.catalogue_url !== null && 
+          <Grid item xs={5} md={3}>
+            <MenuBookIcon className={classes.iconsSite} />
+            <Typography className={classes.titleRight}>
+              <a href={props.data.catalogue_url}>Catalogue</a>
+            </Typography>
+          </Grid>
+        }
+        {typeof(props.data.documentation_url) !== 'undefined' && props.data.documentation_url !== null &&
+          <Grid item xs={7} md={4}>
+            <WebIcon className={classes.iconsCatalogue}/>
+            <Typography className={classes.titleRight}>
+              <a href={props.data.documentation_url}>Site producteur</a>
+            </Typography>
+          </Grid>
+        }
       </Grid>
     </div> 
   );

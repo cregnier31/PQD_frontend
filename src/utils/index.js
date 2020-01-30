@@ -8,6 +8,7 @@ export const config = {
     kpi_sat: host + "/data/kpi_sat",
     kpi_skill_score: host + "/data/kpi_score",
     png: host + "/data/png?filename=",
+    product: host + "/data/product?name=",
   }
 }
 
@@ -63,7 +64,7 @@ export const changeTooltipWidget = (name) => {
     case 'SAT':
       return 'Basin scale (on the geographical area of the product) estimate of the dailynumber of in situ observations (platforms) used to produce CMEMS observational and model products: the number of good platforms (quality controlled) per parameter is used to monitor changes in time in theobservations number effectively used by CMEMS products. A drop in the observations number indicatesa potential drop in quality for this parameter in all CMEMS products except satellite only products.'
     case 'SKILL_SCORE':
-      return 'uncertainty at basin scale formodel forecast products: 1- day forecast skill score, explained variance, and scatter index'
+      return 'Uncertainty at basin scale formodel forecast products: 1- day forecast skill score, explained variance, and scatter index'
     default:
   }
 }

@@ -1,1 +1,1 @@
-export { LinkRawView as LinkRaw } from './linkRaw-view';
+export { LinkRawContainer as LinkRaw } from './linkRaw-container';
