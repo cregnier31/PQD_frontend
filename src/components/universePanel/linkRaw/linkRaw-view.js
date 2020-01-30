@@ -4,6 +4,7 @@ import MenuBookIcon from '@material-ui/icons/MenuBook';
 import WebIcon from '@material-ui/icons/Web';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+import {producers} from '../../../utils'
 
 const useStyles = makeStyles(theme => ({
   titleLeft: {
@@ -37,6 +38,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export function LinkRawView(props){
+  console.log('props', props)
   const classes = useStyles();
   return (
     <div>
@@ -56,7 +58,7 @@ export function LinkRawView(props){
         <Grid item xs={7} md={4}>
           <WebIcon className={classes.iconsCatalogue}/>
           <Typography className={classes.titleRight}>
-            Site producteur
+            <a style={{color: 'black', textDecoration: 'none'}} href={producers(props.area)}>Site producteur</a>
           </Typography>
         </Grid>
       </Grid>
