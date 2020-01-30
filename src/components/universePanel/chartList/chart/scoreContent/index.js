@@ -1,0 +1,1 @@
+export { ScoreContentContainer as ScoreContent } from './scoreContent-container';

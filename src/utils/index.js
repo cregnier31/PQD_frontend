@@ -6,7 +6,7 @@ export const config = {
     plot: host + "/data/plot",
     kpi_insitu: host + "/data/kpi_insitu",
     kpi_sat: host + "/data/kpi_sat",
-    kpi_skill_score: host + "/data/kpi_score",
+    kpi_scores: host + "/data/scores",
     png: host + "/data/png?filename=",
     product: host + "/data/product?name=",
   }

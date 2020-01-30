@@ -3,6 +3,7 @@ import Card from "./chart-styles";
 import { makeStyles } from '@material-ui/core/styles';
 import {Widget} from './../../widget';
 import {ChartContent} from './chartContent';
+import {ScoreContent} from './scoreContent';
 import {changeNameWidget, changeTooltipWidget} from '../../../../utils';
 import './chart.css';
 
@@ -41,12 +42,22 @@ export function ChartView(props){
 
   return (
     <Card>
-      <Widget 
-        title={changeNameWidget(props.kind)}
-        info={changeTooltipWidget(props.kind)}
-        smallContent={<ChartContent {...props} see_all={see_all} height={200} width={350}/>}
-        bigContent={<ChartContent {...props} see_all={see_all} height={300} width={1200}/>}
-      />
+      {(props.kind === "INSITU"|| props.kind ==="SAT") &&
+        <Widget 
+          title={changeNameWidget(props.kind)}
+          info={changeTooltipWidget(props.kind)}
+          smallContent={<ChartContent {...props} see_all={see_all} height={200} width={350}/>}
+          bigContent={<ChartContent {...props} see_all={see_all} height={300} width={1200}/>}
+        />
+      }
+      {props.kind === "SKILL_SCORE" &&
+        <Widget 
+          title={changeNameWidget(props.kind)}
+          info={changeTooltipWidget(props.kind)}
+          smallContent={<ScoreContent {...props} see_all={see_all} height={200} width={350}/>}
+          bigContent={<ScoreContent {...props} see_all={see_all} height={300} width={1200}/>}
+        />
+      }
       {props.kind === "INSITU" &&
         <label className={classes.label} >
           Show all parameters :
