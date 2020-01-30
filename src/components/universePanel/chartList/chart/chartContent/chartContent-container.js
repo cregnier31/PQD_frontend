@@ -44,18 +44,25 @@ export class ChartContentContainer extends Component {
   }
 
   getSeriesName(series, want_all){
+    var name = []
     if(want_all){
-      return series.map((item) => item.variable_name)
+      series.map((item) => {
+        if(typeof(item.variable_name) !== 'undefined'){
+          name.push(item.variable_name)
+        }
+        if(typeof(item.sat) !== 'undefined'){
+          name.push(item.sat)
+        }
+      })
     }else{
-      var name = []
       series.map((item) => {
         if(item.variable_name === this.props.variable){
           name.push(item.variable_name)
         }
         return null
       })
-      return name
     }
+    return name
   }
 
   getSeriesLabels(series, want_all, days_delta){

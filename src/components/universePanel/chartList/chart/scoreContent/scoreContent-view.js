@@ -38,7 +38,7 @@ export function ScoreContentView(props){
       <Crosshair key="crosshair" values={crosshairValues}>
         <div style={{background: 'black'}}>
           {crosshairValues.map((data, index) => 
-            <p key={index}>{props.name[index]}: {typeof(data) !== "undefined" && data['y']}</p>
+            <p key={index}>{typeof(data) !== "undefined" && data['x']}: {typeof(data) !== "undefined" && data['y']}</p>
           )}
         </div>
       </Crosshair>
