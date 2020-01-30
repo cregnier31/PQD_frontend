@@ -47,9 +47,9 @@ export const changeNameFilter = (name) => {
 
 export const changeNameWidget = (name) => {
   switch (name) {
-    case 'INSITU':
-      return 'Daily number of incoming satellite observations'
     case 'SAT':
+      return 'Daily number of incoming satellite observations'
+    case 'INSITU':
       return 'Daily number of incoming in situ observations'
     case 'SKILL_SCORE':
       return 'Forecast uncertainty'
