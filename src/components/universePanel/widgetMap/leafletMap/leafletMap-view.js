@@ -10,7 +10,6 @@ import global from "../../../../geodata/global.geo.json";
 import artic from "../../../../geodata/arctic_zone.geo.json";
 import baltic from "../../../../geodata/baltic_zone.geo.json";
 import nws from "../../../../geodata/nws_zone.geo.json";
-import LabeledMarker from "leaflet-labeled-circle";
 
 const bounds = [
   {name:'arctic', bb:  [[44.59046718130883,-79.8046875],[87.25291244998124,100.546875]], aliases: ['arctic-ocean']},
@@ -42,35 +41,6 @@ let geojsonMarkerOptions = {
   fillOpacity: 0.5,
   color: 'red',
 };
-
-const labeled = [
-  {
-    "type": "Feature",
-    "properties": {
-      "text": 'test',
-      "labelPosition": [
-        35, 22
-      ]
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [ 35, 22 ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "text": 'test2',
-      "labelPosition": [
-        38, 22
-      ]
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [ 35, 22 ]
-    }
-  }
-];
 
 export class LeafletMapView extends Component {
   constructor(props) {
@@ -320,25 +290,14 @@ export class LeafletMapView extends Component {
   }
 
   async showGeojsonMap() {
-    // if(this.props.showFloats) {
-    //   labeled.map((data) =>
-    //     new LabeledMarker(
-    //     data && data.geometry.coordinates.slice().reverse(),
-    //     data && data, {
-    //       markerOptions: { color: '#050' }
-    //     }).bindPopup('test').addTo(this.map));
-    // }
     const product = this.state.currentFilters && this.state.currentFilters.product.toUpperCase();
     let errorsFile = null;
-    // const result = await import('../../../../errors/result.json');
-    // let errorsFile = await import('../../../../errors/CLASS2/'+changeNameAreas(this.props.area)+'/'+product+'.json');
     try {
       await import('../../../../errors/CLASS2/'+changeNameAreas(this.props.area)+'/'+product+'.json');
       // The check succeeded
       errorsFile = await import('../../../../errors/CLASS2/'+changeNameAreas(this.props.area)+'/'+product+'.json')
     } catch (error) {
     }
-    // const errorsFile = await import('../../../../errors/CLASS2/GLO/GLOBAL-ANALYSIS-FORECAST-PHY-001-024.json')
     if(this.props.showFloats) {
       this.pointToLayer(errorsFile);
     }

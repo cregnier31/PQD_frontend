@@ -27,6 +27,19 @@ export const color = {
   } 
 }
 
+export const colorUniverses = (universe) => {
+  switch (universe) {
+    case 'BLUE':
+      return 'white'
+    case 'WHITE':
+      return 'grey'
+    case 'GREEN':
+      return 'black'
+    default:
+      return 'black'
+  }
+}
+
 export const changeNameFilter = (name) => {
   switch (name) {
     case 'variable':

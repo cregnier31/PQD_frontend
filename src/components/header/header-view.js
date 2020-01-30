@@ -32,12 +32,12 @@ const useStyles = makeStyles(theme => ({
   toolbar: theme.mixins.toolbar,
   menuButton: {
     float: 'left',
-    marginTop: screen <= 400 ? 100 : 30
+    marginTop: screen <= 400 ? 115 : 45
   },
   title: {
     float: 'left',
     height:'5%',
-    color: 'black',
+    color: 'white',
     padding: theme.spacing(1),
     marginTop: screen <= 400 ? 25 : 0,
   },
@@ -80,7 +80,7 @@ const useStyles = makeStyles(theme => ({
   button: {
     fontFamily: 'ccl-heading--h5',
     textTransform: 'none',
-    fontSize: 18,
+    fontSize: 20,
   }
 }));
 

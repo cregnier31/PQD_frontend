@@ -9,7 +9,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import PanoramaFishEyeRoundedIcon from '@material-ui/icons/PanoramaFishEyeRounded';
 import {Filter} from '../../filters';
-import { color } from './../../../utils';
+import { color, colorUniverses } from './../../../utils';
 
 const drawerWidth = 240;
 const screen = window.screen.width;
@@ -31,7 +31,7 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     justifyContent: 'flex-end',
     padding: '8px',
-    minHeight: 130,
+    minHeight: 150,
   },
   drawerHeader: {
     display: 'flex',
@@ -93,8 +93,17 @@ export function DrawerView(props) {
         <List className={classes.list}>
           {universes.map((universe) => (
             <ListItem className={classes.universes} button key={universe} onClick={() => props.setUniverse(universe)}>
-              <li style={{backgroundColor: color[universe]['background'], boxShadow: props.universe === universe && '0px 0px 17px #080606', fontSize: 18, width: '100%'}}>
-                <PanoramaFishEyeRoundedIcon fontSize="large" style={{ color: color[universe]['icon'], marginTop: 10}} />{universe + ' OCEAN'}
+              <li style={
+                {
+                  backgroundColor: color[universe]['background'],
+                  boxShadow: props.universe === universe && '0px 0px 17px #080606',
+                  fontSize: 18,
+                  width: '100%',
+                  color: colorUniverses(universe)
+                }
+              }>
+                <PanoramaFishEyeRoundedIcon fontSize="large" style={{ color: color[universe]['icon'], marginTop: 10}} />
+                {universe + ' OCEAN'}
               </li>
             </ListItem>
           ))}
