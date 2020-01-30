@@ -379,12 +379,19 @@ export class LeafletMapView extends Component {
           coordinates.reverse();
         }
         const sizeImg = this.props.open ? "700px" : "350px";
-        const popupText = "<b>Ref:</b> " + data.properties.NAME.bold() +
+        let popupText = "<b>Ref:</b> " + data.properties.NAME.bold() +
           "<br><b>RMSD:</b> " + data.properties.rmse.toFixed(2) +
           "<br><b>Corr:</b> " + data.properties.correlation.toFixed(2) +
           "<br><b>Variance explained:</b> " + data.properties.variance_exp.toFixed(2) +
-          "<br><b>Scatter index:</b> " + data.properties.scatter_index.toFixed(2)  + imgfiles &&
+          "<br><b>Scatter index:</b> " + data.properties.scatter_index.toFixed(2);
+        if(imgfiles && imgfiles.default) {
+          popupText = "<b>Ref:</b> " + data.properties.NAME.bold() +
+          "<br><b>RMSD:</b> " + data.properties.rmse.toFixed(2) +
+          "<br><b>Corr:</b> " + data.properties.correlation.toFixed(2) +
+          "<br><b>Variance explained:</b> " + data.properties.variance_exp.toFixed(2) +
+          "<br><b>Scatter index:</b> " + data.properties.scatter_index.toFixed(2) + imgfiles && imgfiles.default && 
           "<img src=" +imgfiles.default+ " width=" + sizeImg + "/>";
+        }
         return L.circleMarker(coordinates,geojsonMarkerOptions).bindPopup(popupText, customOptions).addTo(this.map);
       }
     )
