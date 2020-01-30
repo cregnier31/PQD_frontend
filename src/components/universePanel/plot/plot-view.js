@@ -14,14 +14,18 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function ImagePlot(props){
-  return(
-    <img 
-      src={config['urls']['png']+props.data}
-      alt="Plot"
-      width={props.width}
-      height={props.height}
-    />
-  )
+  if(props.data === ""){
+    return ('No data');
+  } else {
+    return(
+      <img 
+        src={config['urls']['png']+props.data}
+        alt="Plot"
+        width={props.width}
+        height={props.height}
+      />
+    )
+  }
 }
 
 export function PlotView(props){
@@ -30,7 +34,7 @@ export function PlotView(props){
     return null
   }
   return (
-    <Card data-tut="reactour__16">
+    <Card data-tut="reactour__16" style={{opacity: props.data === "" && 0.4}}>
       <Widget
         title="Estimated Accuracy Numbers time series"
         info={infoPlot}
