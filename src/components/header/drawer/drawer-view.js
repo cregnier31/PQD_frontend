@@ -8,7 +8,6 @@ import CloseIcon from '@material-ui/icons/Close';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import PanoramaFishEyeRoundedIcon from '@material-ui/icons/PanoramaFishEyeRounded';
-import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import {Filter} from '../../filters';
 import { color } from './../../../utils';
 
@@ -25,9 +24,15 @@ const useStyles = makeStyles(theme => ({
   drawerPaper: {
     width: drawerWidth,
     boxShadow: '3px 0px 7px #B5B5B5',
-    marginTop: 70
+    // marginTop: 70
   },
-  toolbar: theme.mixins.toolbar,
+  toolbar: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    padding: '8px',
+    minHeight: 130,
+  },
   drawerHeader: {
     display: 'flex',
     alignItems: 'flex-end',

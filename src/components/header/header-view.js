@@ -158,7 +158,6 @@ export function HeaderView(props) {
           >
             <FilterListIcon style={{color: "black"}} />
           </IconButton>
-          {/* <Typography className={clsx(classes.title)} data-tut="reactour__1" variant="h4">CMEMS Product Quality Dashboard</Typography> */}
         <TopPanel area={props.area} universe={props.universe} openTour={props.openTour} />
         <UniversePanel universe={props.universe} product={props.product} area={props.area} />
       </main>
