@@ -32,7 +32,7 @@ const useStyles = makeStyles(theme => ({
   toolbar: theme.mixins.toolbar,
   menuButton: {
     float: 'left',
-    marginTop: screen <= 400 ? 25 : 0,
+    marginTop: screen <= 400 ? 100 : 30
   },
   title: {
     float: 'left',
@@ -47,9 +47,9 @@ const useStyles = makeStyles(theme => ({
   drawerHeader: {
     display: 'flex',
     alignItems: 'center',
-    padding: theme.spacing(0, 1),
     ...theme.mixins.toolbar,
     justifyContent: 'flex-end',
+    marginTop: 30
   },
   content: {
     flexGrow: 1,
@@ -74,7 +74,8 @@ const useStyles = makeStyles(theme => ({
   },
   img: {
     width: '40px',
-    height: '40px'
+    height: '40px',
+    marginRight: 10
   },
   button: {
     fontFamily: 'ccl-heading--h5',
@@ -127,8 +128,13 @@ export function HeaderView(props) {
           [classes.appBarShift]: open,
         })}
       >
+        <Grid container className={classes.root} direction="row" justify="center">
+          <Typography className={clsx(classes.title)} data-tut="reactour__1" variant="h5">
+            <img src={Copernicus} className={classes.img} alt="Copernicus"/> 
+            CMEMS Product Quality Dashboard
+          </Typography>
+        </Grid>
         <Toolbar>
-          <img src={Copernicus} className={classes.img} alt="Copernicus"/>
           <AreaList props={props} />
         </Toolbar>
       </AppBar>
@@ -152,7 +158,6 @@ export function HeaderView(props) {
           >
             <FilterListIcon style={{color: "black"}} />
           </IconButton>
-          <Typography className={clsx(classes.title)} data-tut="reactour__1" variant="h4">CMEMS Product Quality Dashboard</Typography>
         <TopPanel area={props.area} universe={props.universe} openTour={props.openTour} />
         <UniversePanel universe={props.universe} product={props.product} area={props.area} />
       </main>

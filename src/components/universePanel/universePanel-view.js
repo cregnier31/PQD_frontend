@@ -15,7 +15,7 @@ export function UniversePanelView(props){
       <TitleRaw universe={props.universe} area={props.area} />
       <ChartList universe={props.universe}/>
       <Divider style={{backgroundColor: 'white', marginLeft: '10px', width: '98%'}} />
-      <LinkRaw product={props.product} />
+      <LinkRaw product={props.product} area={props.area} />
       <Grid container>
         <Grid item xs={12} md={8}>
           <WidgetMap area={props.area} />

@@ -11,6 +11,9 @@ import Grid from '@material-ui/core/Grid';
 import Tooltip from '@material-ui/core/Tooltip';
 import {MyDocument} from '../../pdfDocument';
 import { PDFDownloadLink } from '@react-pdf/renderer';
+import ReactToPdf from "react-to-pdf";
+
+const ref = React.createRef();
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -33,6 +36,12 @@ const useStyles = makeStyles(theme => ({
     fontSize: 20,
   }
 }));
+const options = {
+  orientation: 'p',
+  unit: 'mm',
+  format: 'a0',
+  putOnlyUsedFonts:true,
+};
 
 export function WidgetView(props){
   const classes = useStyles();
@@ -51,6 +60,13 @@ export function WidgetView(props){
     setIsClient(true)
   }, [])
 
+  const Pdf = () => (
+      <ReactToPdf targetRef={ref} filename="Resum_Stage.pdf" options={options}>
+        {({ toPdf }) => <GetAppIcon onClick={toPdf} style={{color: '#ADB0B8'}} />}
+      </ReactToPdf>
+      
+  )
+
   return (
     <div>
       <Grid container className={classes.root} direction="row" justify="space-between">
@@ -64,16 +80,19 @@ export function WidgetView(props){
         </Grid>
         <Grid item xs={2} md={2}>
           <FullscreenIcon onClick={handleOpen} style={{color: '#ADB0B8'}} />
-          {isClient && (
-            <PDFDownloadLink document={<MyDocument smallContent={props.smallContent}/>} fileName="resume.pdf">
+          {/* {isClient && (
+            <PDFDownloadLink document={<MyDocument text="Voila le texte" smallContent={props.smallContent}/>} fileName="resume.pdf">
               {({ blob, url, loading, error }) => (loading ? 'Loading document...' : <GetAppIcon style={{color: '#ADB0B8'}} />)}
             </PDFDownloadLink> 
-          )}
+          )} */}
+          <Pdf />
         </Grid>
       </Grid>
       <Grid container className={classes.root}>
         <Grid item xs={12} md={12}>
-        {!open && props.smallContent}
+          {/* <div style={{width: 500, height: 500, background: 'red'}}  ref={ref}> */}
+            {!open && props.smallContent}
+          {/* </div> */}
         </Grid>
       </Grid>
       <Modal

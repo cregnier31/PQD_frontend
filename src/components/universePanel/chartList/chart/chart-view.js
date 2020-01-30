@@ -32,14 +32,13 @@ export function ChartView(props){
   const classes = useStyles();
 
   if( typeof(props.data) ==="undefined"){
-    return (<Card><Widget title="No Data" smallContent={null} bigContent={null} /></Card>);
+    return (<Card style={{opacity: 0.4}}><Widget title="No Data" smallContent={null} bigContent={null} /></Card>);
   }
 
   const toggle = event => {
     const value = event.target.type === 'checkbox' ? event.target.checked : event.target.value;
     setSeeAll(value);
   }
-
   return (
     <Card>
       {(props.kind === "INSITU"|| props.kind ==="SAT") &&

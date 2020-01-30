@@ -14,7 +14,7 @@ export const config = {
 
 export const color = {
   BLUE:{
-    background: '#D1DDE5',
+    background: '#286E9F',
     icon: 'blue'
   },
   GREEN:{
@@ -109,6 +109,26 @@ export const changeNameAreasForTitle = (name) => {
       return 'North western shelves'
     case 'blacksea':
       return 'Black sea'
+    default:
+  }
+}
+
+export const producers = (area) => {
+  switch (area) {
+    case 'arctic':
+      return 'http://marine.copernicus.eu/about-us/about-producers/arc-mfc/'
+    case 'balticsea':
+      return 'http://marine.copernicus.eu/about-us/about-producers/bal-mfc/'
+    case 'global':
+      return 'http://marine.copernicus.eu/about-us/about-producers/glo-mfc/'
+    case 'ibi':
+      return 'http://marine.copernicus.eu/about-us/about-producers/ibi-mfc/'
+    case 'medsea':
+      return 'http://marine.copernicus.eu/about-us/about-producers/med-mfc/'
+    case 'nws':
+      return 'http://marine.copernicus.eu/about-us/about-producers/nws-mfc/'
+    case 'blacksea':
+      return 'http://marine.copernicus.eu/about-us/about-producers/bs-mfc/'
     default:
   }
 }
