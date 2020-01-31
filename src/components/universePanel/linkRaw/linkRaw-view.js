@@ -50,7 +50,7 @@ export function LinkRawView(props){
       <Grid container direction="row" alignItems="center" justify="flex-end" className={classes.root} data-tut="reactour__12">
         {typeof(props.data.catalogue_url) !== 'undefined' && props.data.catalogue_url !== null && 
           <Grid item xs={5} md={3}>
-            <MenuBookIcon className={classes.iconsSite} />
+            <MenuBookIcon className={classes.iconsSite} style={{color: colorUniverses(props.universe)}} />
             <Typography className={classes.titleRight} style={{color: colorUniverses(props.universe)}}>
               <a href={props.data.catalogue_url}>Catalogue</a>
             </Typography>
@@ -58,7 +58,7 @@ export function LinkRawView(props){
         }
         {typeof(props.data.documentation_url) !== 'undefined' && props.data.documentation_url !== null &&
           <Grid item xs={7} md={4}>
-            <WebIcon className={classes.iconsCatalogue}/>
+            <WebIcon className={classes.iconsCatalogue} style={{color: colorUniverses(props.universe)}}/>
             <Typography className={classes.titleRight} style={{color: colorUniverses(props.universe)}}>
               <a href={props.data.documentation_url}>Site producteur</a>
             </Typography>
