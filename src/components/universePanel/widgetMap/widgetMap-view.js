@@ -7,7 +7,6 @@ import FullscreenIcon from '@material-ui/icons/Fullscreen';
 import InfoIcon from '@material-ui/icons/Info';
 import DialogContent from '@material-ui/core/DialogContent';
 import CloseIcon from '@material-ui/icons/Close';
-import GetAppIcon from '@material-ui/icons/GetApp';
 import Grid from '@material-ui/core/Grid';
 import Tooltip from '@material-ui/core/Tooltip';
 const screen = window.screen.width;

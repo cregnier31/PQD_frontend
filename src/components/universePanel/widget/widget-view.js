@@ -4,7 +4,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import FullscreenIcon from '@material-ui/icons/Fullscreen';
 import InfoIcon from '@material-ui/icons/Info';
-import GetAppIcon from '@material-ui/icons/GetApp';
 import DialogContent from '@material-ui/core/DialogContent';
 import CloseIcon from '@material-ui/icons/Close';
 import Grid from '@material-ui/core/Grid';
