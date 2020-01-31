@@ -22,10 +22,12 @@ export class ChartContentContainer extends Component {
   }
 
   define_series(){
-    const datas = this.getSeriesData(this.props.data, this.props.see_all)
-    const names = this.getSeriesName(this.props.data, this.props.see_all)
-    const labels = this.getSeriesLabels(this.props.data, this.props.see_all, 4)
-    this.setState({series_data: datas, series_name: names, series_labels: labels})
+    if(this.props.data.length){
+      const datas = this.getSeriesData(this.props.data, this.props.see_all)
+      const names = this.getSeriesName(this.props.data, this.props.see_all)
+      const labels = this.getSeriesLabels(this.props.data, this.props.see_all, 4)
+      this.setState({series_data: datas, series_name: names, series_labels: labels})
+    }
   }
 
   getSeriesData(series, want_all){
@@ -53,6 +55,7 @@ export class ChartContentContainer extends Component {
         if(typeof(item.sat) !== 'undefined'){
           name.push(item.sat)
         }
+        return null
       })
     }else{
       series.map((item) => {
@@ -73,6 +76,7 @@ export class ChartContentContainer extends Component {
           if(index % days_delta === 0){
             labels.push(point['x'])
           }
+          return null
         })
         return null
       })
@@ -83,8 +87,10 @@ export class ChartContentContainer extends Component {
             if(index % days_delta === 0){
               labels.push(point['x'])
             }
+            return null
           })
         }
+        return null
       })
     }
     return labels

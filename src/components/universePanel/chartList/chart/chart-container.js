@@ -13,11 +13,12 @@ export class ChartContainer extends Component {
 
   fetchKpisWithFetchAPI(){
     this.setState({...this.state, isFetching: true});
-    const today = new Date()
-    var displayDate = new Date()
-    displayDate.setUTCMonth(today.getUTCMonth()-1)
-    const month = displayDate.getUTCMonth()+1
-    const year = displayDate.getFullYear()
+    // TODO: uncomment when pass month/year
+    // const today = new Date()
+    // var displayDate = new Date()
+    // displayDate.setUTCMonth(today.getUTCMonth()-1)
+    // const month = displayDate.getUTCMonth()+1
+    // const year = displayDate.getFullYear()
     var args = {}
     var options = {}
     var url = ""
