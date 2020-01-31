@@ -66,8 +66,9 @@ export function ChartContentView(props){
       <XAxis 
         tickValues={props.series_labels}
         tickLabelAngle={-45}
+        style={{fontSize: 7}}
       />
-      <YAxis />
+      <YAxis style={{fontSize: 7}} />
       {GraphList(props.series_data)}
     </FlexibleXYPlot>
   )

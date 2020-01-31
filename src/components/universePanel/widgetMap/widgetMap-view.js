@@ -10,7 +10,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import GetAppIcon from '@material-ui/icons/GetApp';
 import Grid from '@material-ui/core/Grid';
 import Tooltip from '@material-ui/core/Tooltip';
-
+const screen = window.screen.width;
 const useStyles = makeStyles(theme => ({
   right: {
     float: 'right',
@@ -31,7 +31,9 @@ const useStyles = makeStyles(theme => ({
   label: {
     fontSize: '20px',
     fontFamily: 'ccl-paragraph--ms',
-    color: '#ADB0B8'
+    color: '#ADB0B8',
+    marginTop: 5,
+    marginLeft: screen > 1900 ? 100 : 0
   }
 }));
 
@@ -64,7 +66,7 @@ export function WidgetMapView(props){
         </div>
         <div className={classes.right}>
           <FullscreenIcon onClick={handleOpen} />
-          <GetAppIcon />
+          {/* <GetAppIcon /> */}
         </div>
         {!open && 
           <LeafletMap open={open} showFloats={showFloats} />
@@ -103,7 +105,7 @@ export function WidgetMapView(props){
                   alignItems="flex-end"
                   style={{height: '85%', marginTop: '30px'}}
                 >
-                  <Grid container item xs={6} md={3}>
+                  <Grid item xs={6} md={3} lg={10}>
                   <label className={classes.label} >
                     Show moorings :
                     <input name="see_all" type="checkbox" checked={showFloats} onChange={toggle} />

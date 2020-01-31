@@ -9,7 +9,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import CloseIcon from '@material-ui/icons/Close';
 import Grid from '@material-ui/core/Grid';
 import Tooltip from '@material-ui/core/Tooltip';
-
+const screen = window.screen.width;
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
@@ -22,7 +22,8 @@ const useStyles = makeStyles(theme => ({
     marginBottom: '0px !important',
   },
   right: {
-    float: 'right'
+    float: 'right',
+    color: '#ADB0B8',
   },
   image: {
     objectFit: 'cover',
@@ -44,21 +45,30 @@ export function WidgetView(props){
     setOpen(false);
   };
 
+  const margin = (name) => {
+    if(name === 'Forecast uncertainty' && screen > 1900) {
+      return '80px'
+    }
+    if(name === 'Estimated Accuracy Numbers time series' && screen > 1900 ) {
+      return '40px'
+    }
+  }
+
   return (
     <div>
       <Grid container className={classes.root} direction="row" justify="space-between">
         <Grid item xs={props.title.length > 30 ? 10 : 7} md={props.title.length > 30 ? 10 : 7}>
-          <div style={{fontSize: '20px',color: '#ADB0B8', marginBottom: props.title.length > 30 ? '0px' : '27px', fontFamily: 'ccl-heading--h5'}}>
+          <div style={{fontSize: '20px',color: '#ADB0B8', marginBottom: props.title.length > 30 ? '0px' : '27px', fontFamily: 'ccl-heading--h5', marginRight: margin(props.title)}}>
             {props.title}
             <Tooltip title={props.info ? props.info : ''}>
               <InfoIcon />
             </Tooltip>
           </div>
         </Grid>
-        <Grid item xs={2} md={2}>
-          <FullscreenIcon onClick={handleOpen} style={{color: '#ADB0B8'}} />
-          <GetAppIcon style={{color: '#ADB0B8'}} />
-        </Grid>
+        <div className={classes.right}>
+          <FullscreenIcon onClick={handleOpen} />
+          {/* <GetAppIcon /> */}
+        </div>
       </Grid>
       <Grid container className={classes.root}>
         <Grid item xs={12} md={12}>

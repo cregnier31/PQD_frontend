@@ -6,7 +6,7 @@ import {ChartContent} from './chartContent';
 import {ScoreContent} from './scoreContent';
 import {changeNameWidget, changeTooltipWidget} from '../../../../utils';
 import './chart.css';
-
+const screen = window.screen.width;
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
@@ -58,7 +58,7 @@ export function ChartView(props){
         <Widget 
           title={changeNameWidget(props.kind)}
           info={changeTooltipWidget(props.kind)}
-          smallContent={<ChartContent {...props} see_all={see_all} height={200} width={350}/>}
+          smallContent={<ChartContent {...props} see_all={see_all} height={screen > 1900 ? 230 : 200} width={350}/>}
           bigContent={<ChartContent {...props} see_all={see_all} height={300} width={1200}/>}
         />
       }
@@ -66,7 +66,7 @@ export function ChartView(props){
         <Widget 
           title={changeNameWidget(props.kind)}
           info={changeTooltipWidget(props.kind)}
-          smallContent={<ScoreContent {...props} see_all={see_all} height={200} width={350}/>}
+          smallContent={<ScoreContent {...props} see_all={see_all} height={screen > 1900 ? 230 : 200} width={350}/>}
           bigContent={<ScoreContent {...props} see_all={see_all} height={300} width={1200}/>}
         />
       }

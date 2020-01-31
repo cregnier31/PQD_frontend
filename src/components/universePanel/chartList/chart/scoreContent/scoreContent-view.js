@@ -31,8 +31,8 @@ export function ScoreContentView(props){
     >
       <VerticalGridLines />
       <HorizontalGridLines />
-      <XAxis tickLabelAngle={-45} />
-      <YAxis />
+      <XAxis tickLabelAngle={-45}  style={{fontSize: 7}}/>
+      <YAxis style={{fontSize: 7}} />
       <VerticalBarSeries key="VerticalBarSeries" onNearestX={_onNearestX} data={props.data}/>
       <Crosshair key="crosshair" values={crosshairValues}>
         <div style={{background: 'black'}}>
