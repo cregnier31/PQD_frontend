@@ -67,10 +67,10 @@ export function TopPanelView(props){
   }, [scrollTop]);
 
   useEffect(() => {
-    if(scrollTop >= 550) {
+    if(scrollTop >= 550 && !props.isTourOpen) {
       setPanel(false)
     }
-  }, [scrollTop])
+  }, [scrollTop, props.isTourOpen])
 
   const displaySvg = () => {
     switch (props.area) {
@@ -107,7 +107,7 @@ export function TopPanelView(props){
   }
 
   return (
-    <Grid container style={{marginTop: screen <= 400 ? 120 : 80}}>
+    <Grid container style={{marginTop: screen <= 400 ? 120 : 80}} data-tut="reactour__6">
       <Grid item xs={12} md={12}>
         <ExpansionPanel expanded={panel}>
           <ExpansionPanelSummary
@@ -123,7 +123,7 @@ export function TopPanelView(props){
                 {displaySvg()}
               </CardActionArea>
             </Card>
-            <Card className={classes.cardTutoriel}>
+            <Card className={classes.cardTutoriel} onClick={props.openTour}>
               <CardActionArea>
                 <CardMedia
                   className={classes.media}
@@ -131,7 +131,7 @@ export function TopPanelView(props){
                   title="Tutoriel"
                 />
                 <CardContent className={classes.content}>
-                  <Typography gutterBottom variant="h5" component="h2" onClick={props.openTour}>
+                  <Typography gutterBottom variant="h5" component="h2">
                     New visitor ?
                   </Typography>
                   <Typography variant="body2" component="p">

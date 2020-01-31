@@ -14,6 +14,7 @@ export class HeaderContainer extends Component {
         currentArea={this.props.currentArea}
         product={this.props.product}
         openTour={this.props.openTour}
+        isTourOpen={this.props.isTourOpen}
         />
     )
   }

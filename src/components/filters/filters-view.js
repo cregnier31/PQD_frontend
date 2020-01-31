@@ -83,7 +83,7 @@ function get_validation_button(props){
     return null
   })
   if(displayButton){
-    return (<Button style={{marginTop: 15}} onClick={() => props.apply()}>Apply</Button>)
+    return (<Button data-tut="reactour__10" style={{marginTop: 15}} onClick={() => props.apply()}>Apply</Button>)
   }
 }
 

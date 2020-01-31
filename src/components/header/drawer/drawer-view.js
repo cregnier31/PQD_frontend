@@ -90,7 +90,7 @@ export function DrawerView(props) {
         <div>
         <CloseIcon onClick={props.handleDrawerClose} style={{color: "black", float: 'right', marginTop: screen <= 400 ? 70 : 0}} />
         </div>
-        <List className={classes.list}>
+        <List className={classes.list} data-tut="reactour__4">
           {universes.map((universe) => (
             <ListItem className={classes.universes} button key={universe} onClick={() => props.setUniverse(universe)}>
               <li style={
