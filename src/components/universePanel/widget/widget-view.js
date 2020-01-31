@@ -9,7 +9,6 @@ import DialogContent from '@material-ui/core/DialogContent';
 import CloseIcon from '@material-ui/icons/Close';
 import Grid from '@material-ui/core/Grid';
 import Tooltip from '@material-ui/core/Tooltip';
-import Pdf from '../../pdfDocument';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -32,12 +31,6 @@ const useStyles = makeStyles(theme => ({
     fontSize: 20,
   }
 }));
-const options = {
-  orientation: 'p',
-  unit: 'mm',
-  format: 'a0',
-  putOnlyUsedFonts:true,
-};
 
 export function WidgetView(props){
   const classes = useStyles();

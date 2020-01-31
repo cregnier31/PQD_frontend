@@ -7,7 +7,6 @@ import {
   VerticalGridLines,
   HorizontalGridLines,
   Crosshair,
-  LineSeries,
   FlexibleXYPlot,
 } from 'react-vis';
 

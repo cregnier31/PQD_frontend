@@ -130,7 +130,7 @@ export function HeaderView(props) {
       >
         <Grid container className={classes.root} direction="row" justify="center">
           <Typography className={clsx(classes.title)} data-tut="reactour__1" variant="h5">
-            <img src={Copernicus} className={classes.img} alt="Copernicus"/> 
+            <a href="http://marine.copernicus.eu/"><img src={Copernicus} className={classes.img} alt="Copernicus"/></a>
             CMEMS Product Quality Dashboard
           </Typography>
         </Grid>

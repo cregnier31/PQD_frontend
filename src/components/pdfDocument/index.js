@@ -30,9 +30,7 @@ const print = () => {
   html2canvas(input)
     .then((canvas) => {
       const imgWidth = 210; 
-      const pageHeight = 1000;  
       const imgHeight = canvas.height * imgWidth / canvas.width;
-      const heightLeft = imgHeight;
       const position = 0;
       const imgData = canvas.toDataURL('image/png');
       const pdf = new jsPDF('landscape');
@@ -42,15 +40,9 @@ const print = () => {
 };
 
 export default function PDF(props) {
-    console.log('props', props)
   return (
     <div style={styles}>
-      <button
-        style={btnStyle}
-        onClick={print}
-      >
-        Download PDF
-      </button>
+      <GetAppIcon style={btnStyle} onClick={print}/>
       <Prints props={props} />
     </div>
   );
