@@ -52,7 +52,7 @@ export function LinkRawView(props){
           <Grid item xs={5} md={3}>
             <MenuBookIcon className={classes.iconsSite} style={{color: colorUniverses(props.universe)}} />
             <Typography className={classes.titleRight} style={{color: colorUniverses(props.universe)}}>
-              <a href={props.data.catalogue_url}>Catalogue</a>
+              <a style={{color: 'black', textDecoration: 'none'}} href={props.data.catalogue_url}>Catalogue</a>
             </Typography>
           </Grid>
         }
@@ -60,7 +60,7 @@ export function LinkRawView(props){
           <Grid item xs={7} md={4}>
             <WebIcon className={classes.iconsCatalogue} style={{color: colorUniverses(props.universe)}}/>
             <Typography className={classes.titleRight} style={{color: colorUniverses(props.universe)}}>
-              <a href={props.data.documentation_url}>Site producteur</a>
+              <a style={{color: 'black', textDecoration: 'none'}} href={props.data.documentation_url}>Site producteur</a>
             </Typography>
           </Grid>
         }
