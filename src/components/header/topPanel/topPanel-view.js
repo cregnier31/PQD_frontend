@@ -123,7 +123,7 @@ export function TopPanelView(props){
                 {displaySvg()}
               </CardActionArea>
             </Card>
-            <Card className={classes.cardTutoriel}>
+            <Card className={classes.cardTutoriel} onClick={props.openTour}>
               <CardActionArea>
                 <CardMedia
                   className={classes.media}
@@ -131,7 +131,7 @@ export function TopPanelView(props){
                   title="Tutoriel"
                 />
                 <CardContent className={classes.content}>
-                  <Typography gutterBottom variant="h5" component="h2" onClick={props.openTour}>
+                  <Typography gutterBottom variant="h5" component="h2">
                     New visitor ?
                   </Typography>
                   <Typography variant="body2" component="p">
