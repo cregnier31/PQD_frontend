@@ -52,9 +52,20 @@ export function ChartView(props){
         return "reactour__7"
     }
   }
-  console.log('props', props)
+
+  const noData = (kind, data) => {
+    if(kind === 'SKILL_SCORE' && typeof(data) === 'undefined') {
+      return '0.4'
+    }
+    if(kind === 'INSITU' && typeof(data) === 'undefined') {
+      return '0.4'
+    }
+    if(kind === 'SAT' && typeof(data) === 'undefined') {
+      return '0.4'
+    }
+  }
   return (
-    <Card data-tut={takeATour(props.kind)} style={{opacity: typeof(props.data) ==="undefined" && 0.4 }}>
+    <Card data-tut={takeATour(props.kind)} style={{opacity: noData(props.kind, props.data)}}>
       {(props.kind === "INSITU"|| props.kind ==="SAT") &&
         <Widget 
           title={changeNameWidget(props.kind)}
