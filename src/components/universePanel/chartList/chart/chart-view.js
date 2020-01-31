@@ -55,7 +55,6 @@ export function ChartView(props){
 
   const noData = (kind, data) => {
     if(kind === 'SKILL_SCORE' && data.length === 0) {
-      console.log('data', data)
       return '0.4'
     }
     if(kind === 'INSITU' && data.length === 0) {
