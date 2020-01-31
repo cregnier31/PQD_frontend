@@ -67,10 +67,10 @@ export function TopPanelView(props){
   }, [scrollTop]);
 
   useEffect(() => {
-    if(scrollTop >= 550) {
+    if(scrollTop >= 550 && !props.isTourOpen) {
       setPanel(false)
     }
-  }, [scrollTop])
+  }, [scrollTop, props.isTourOpen])
 
   const displaySvg = () => {
     switch (props.area) {
@@ -107,7 +107,7 @@ export function TopPanelView(props){
   }
 
   return (
-    <Grid container style={{marginTop: screen <= 400 ? 120 : 80}}>
+    <Grid container style={{marginTop: screen <= 400 ? 120 : 80}} data-tut="reactour__6">
       <Grid item xs={12} md={12}>
         <ExpansionPanel expanded={panel}>
           <ExpansionPanelSummary

@@ -39,8 +39,21 @@ export function ChartView(props){
     const value = event.target.type === 'checkbox' ? event.target.checked : event.target.value;
     setSeeAll(value);
   }
+
+  const takeATour = (kind) => {
+    switch (kind) {
+      case 'SAT':
+        return "reactour__7"
+      case 'INSITU':
+        return "reactour__8"
+      case 'SKILL_SCORE':
+        return "reactour__9"
+      default:
+        return "reactour__7"
+    }
+  }
   return (
-    <Card>
+    <Card data-tut={takeATour(props.kind)}>
       {(props.kind === "INSITU"|| props.kind ==="SAT") &&
         <Widget 
           title={changeNameWidget(props.kind)}

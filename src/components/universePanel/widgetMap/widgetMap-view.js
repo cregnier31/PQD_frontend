@@ -55,7 +55,7 @@ export function WidgetMapView(props){
   }
   return (
     <div>
-      <Card>
+      <Card data-tut="reactour__13">
         <div className={classes.left}>
           Estimated Accuracy Numbers Cartography
           <Tooltip title={infoTooltip}>

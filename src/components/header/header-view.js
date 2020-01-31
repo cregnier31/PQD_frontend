@@ -158,7 +158,7 @@ export function HeaderView(props) {
           >
             <FilterListIcon style={{color: "black"}} />
           </IconButton>
-        <TopPanel area={props.area} universe={props.universe} openTour={props.openTour} />
+        <TopPanel isTourOpen={props.isTourOpen} area={props.area} universe={props.universe} openTour={props.openTour} />
         <UniversePanel universe={props.universe} product={props.product} area={props.area} />
       </main>
     </div>

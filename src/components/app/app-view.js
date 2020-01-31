@@ -13,10 +13,10 @@ export function AppView(props) {
       selector: '[data-tut="reactour__2"]',
       content: `You want to have a global view of the CMEMS products’quality on your area of interest? Choose your area of interest using this banner and display the area on the map just below. The website will then show you quality information related to products available for this area. Come back to this banner to change the area of interest.`
     },
-    {
-      selector: '[data-tut="reactour__3"]',
-      content: `You are looking for recent uncertainty estimates for one given CMEMS product?You can use this search zone to display directly the quality information related to a given product using the CMEMS product name (ex: GLO_ANALYSIS_FORECAST_001_024)`
-    },
+    // {
+    //   selector: '[data-tut="reactour__3"]',
+    //   content: `You are looking for recent uncertainty estimates for one given CMEMS product?You can use this search zone to display directly the quality information related to a given product using the CMEMS product name (ex: GLO_ANALYSIS_FORECAST_001_024)`
+    // },
     {
       selector: '[data-tut="reactour__4"]',
       content: 'You want to have a global view of the CMEMS products’quality for a given family of parameters?Select either Blue, Green or White parameter families to display quality information for the blue ocean (currents, waves,temperature, salinity ...), the green ocean (phytoplankton, CO2, pH, ...), or the white ocean (sea ice concentration, sea ice drift...)'
@@ -61,10 +61,10 @@ export function AppView(props) {
       selector: '[data-tut="reactour__14"]',
       content: 'Whenever available, correlations with fixed buoyscan be shown on this map by clicking this box.'
     },
-    {
-      selector: '[data-tut="reactour__15"]',
-      content: 'Click on a buoy to display the observed time series and the equivalent time series in other CMEMS products at this location and for this parameter. '
-    },
+    // {
+    //   selector: '[data-tut="reactour__15"]',
+    //   content: 'Click on a buoy to display the observed time series and the equivalent time series in other CMEMS products at this location and for this parameter. '
+    // },
     {
       selector: '[data-tut="reactour__16"]',
       content: 'Time series of estimated accuracy numbers appear in thiswindow, so do potential other expert validation diagnostics provided by observational products producers'
@@ -82,7 +82,7 @@ export function AppView(props) {
   return(
     <div className="App">
       <div className="App-header">
-        <Header openTour={openTour} />
+        <Header openTour={openTour} isTourOpen={isTourOpen} />
         <Tour
             onRequestClose={closeTour}
             steps={tourConfig}
