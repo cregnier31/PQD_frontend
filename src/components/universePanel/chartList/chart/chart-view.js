@@ -52,8 +52,9 @@ export function ChartView(props){
         return "reactour__7"
     }
   }
+  console.log('props', props)
   return (
-    <Card data-tut={takeATour(props.kind)}>
+    <Card data-tut={takeATour(props.kind)} style={{opacity: typeof(props.data) ==="undefined" && 0.4 }}>
       {(props.kind === "INSITU"|| props.kind ==="SAT") &&
         <Widget 
           title={changeNameWidget(props.kind)}
