@@ -39,11 +39,11 @@ export const filtersReducer = (state = default_filters_values, action) => {
     case "SET_UNIVERSE_FILTER":
       newState[action.universe][action.name] = action.value
       var clearNext = false
-      for(var i=0; i<filtersOrder.length; i++){
-        if(clearNext){
+      for (var i = 0; i < filtersOrder.length; i++) {
+        if (clearNext) {
           newState[action.universe][filtersOrder[i]] = ""
         }
-        if(action.name === filtersOrder[i]){
+        if (action.name === filtersOrder[i]) {
           clearNext = true
         }
       }
@@ -66,6 +66,19 @@ export const filtersReducer = (state = default_filters_values, action) => {
     case "SET_CURRENT_UNIVERSE":
       newState["universe"] = action.value
       break;
+    case "FORCE_FILTERS":
+      const values = action.values
+      newState["area"] = values.area
+      newState["universe"] = values.universe
+      newState[values.universe] = {
+        variable: values.variable,
+        dataset: values.dataset,
+        product: values.product,
+        subarea: values.subarea,
+        depth: values.depth,
+        stat: values.stat,
+        plot_type: "timeseries",
+      }
     default:
       break;
   }

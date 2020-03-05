@@ -1,4 +1,5 @@
 import React from "react";
+import {Search} from './search';
 import {Selector} from './selector';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from "@material-ui/core/Button";
@@ -103,6 +104,7 @@ export function FiltersView(props){
 
   return (
     <div>
+      <Search />
       <Divider />
       <SelectorList props={props}/>
       {get_validation_button(props)}

@@ -9,6 +9,7 @@ export const config = {
     kpi_scores: host + "/data/scores",
     png: host + "/data/png?filename=",
     product: host + "/data/product?name=",
+    autocomplete: host + "/data/autocomplete",
   }
 }
 

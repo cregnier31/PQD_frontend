@@ -20,3 +20,10 @@ export function setCurrentUniverse(value){
     value
   }
 }
+
+export function forceFilters(values){
+  return {
+    type: "FORCE_FILTERS",
+    values
+  }
+}
