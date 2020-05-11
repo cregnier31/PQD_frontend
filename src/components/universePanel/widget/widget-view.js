@@ -57,7 +57,7 @@ export function WidgetView(props){
     <div>
       <Grid container className={classes.root} direction="row" justify="space-between">
         <Grid item xs={props.title.length > 30 ? 10 : 7} md={props.title.length > 30 ? 10 : 7}>
-          <div style={{fontSize: '20px',color: '#ADB0B8', marginBottom: props.title.length > 30 ? '0px' : '27px', fontFamily: 'ccl-heading--h5', marginRight: margin(props.title)}}>
+          <div style={{fontSize: '20px',color: '#53565f', marginBottom: props.title.length > 30 ? '0px' : '27px', fontFamily: 'ccl-heading--h5', marginRight: margin(props.title)}}>
             {props.title}
             <Tooltip title={props.info ? props.info : ''}>
               <InfoIcon />

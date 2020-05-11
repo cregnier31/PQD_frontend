@@ -44,7 +44,7 @@ export function ChartContentView(props){
       list.push(<VerticalBarSeries key="VerticalBarSeries" onNearestX={_onNearestX} data={data}/>)
     }
     list.push(<Crosshair key="crosshair" values={crosshairValues}>
-      <div style={{background: 'black'}}>
+      <div style={{background: 'black', fontSize: 20}}>
         {crosshairValues.map((serie, index) => 
           <p key={index}>{props.series_name[index]}: {typeof(serie) !== "undefined" && serie['y']}</p>
         )}
@@ -54,7 +54,7 @@ export function ChartContentView(props){
     return list
   }
   return (
-    <FlexibleXYPlot 
+    <FlexibleXYPlot
       onMouseLeave={_onMouseLeave}
       style={{paddingLeft: 5}}
       height={props.height} 
@@ -63,12 +63,12 @@ export function ChartContentView(props){
     >
       <VerticalGridLines />
       <HorizontalGridLines />
-      <XAxis 
+      <XAxis
         tickValues={props.series_labels}
         tickLabelAngle={-45}
-        style={{fontSize: 7}}
+        style={{fontSize: 8}}
       />
-      <YAxis style={{fontSize: 7}} />
+      <YAxis style={{fontSize: 8}} />
       {GraphList(props.series_data)}
     </FlexibleXYPlot>
   )

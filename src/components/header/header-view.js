@@ -24,7 +24,8 @@ const useStyles = makeStyles(theme => ({
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
-    backgroundColor: '#286E9F'
+    backgroundColor: '#286E9F',
+    opacity: 0.7
   },
   drawerPaper: {
     width: drawerWidth,
@@ -73,14 +74,15 @@ const useStyles = makeStyles(theme => ({
     fontFamily: 'ccl-heading--h3'
   },
   img: {
-    width: '40px',
-    height: '40px',
+    width: '100px',
+    height: '100px',
     marginRight: 10
   },
   button: {
     fontFamily: 'ccl-heading--h5',
     textTransform: 'none',
-    fontSize: 20,
+    fontWeight: '700',
+    fontSize: 23,
   }
 }));
 
@@ -128,11 +130,21 @@ export function HeaderView(props) {
           [classes.appBarShift]: open,
         })}
       >
-        <Grid container className={classes.root} direction="row" justify="center">
-          <Typography className={clsx(classes.title)} data-tut="reactour__1" variant="h5">
-            <a href="http://marine.copernicus.eu/"><img src={Copernicus} className={classes.img} alt="Copernicus"/></a>
-            CMEMS Product Quality Dashboard
-          </Typography>
+        <Grid container className={classes.root} spacing={1} alignItems='center'>
+            <Grid item xs={2}>
+                <Grid container justify="center">
+                    <a href="http://marine.copernicus.eu/"><img src={Copernicus} className={classes.img} alt="Copernicus"/></a>
+                </Grid>
+            </Grid>
+            <Grid item xs={2}>
+            </Grid>
+            <Grid item xs={4}>
+                <Grid container justify="center">
+                    <Typography className={clsx(classes.title)} data-tut="reactour__1" variant="h4">
+                    CMEMS Product Quality Dashboard
+                    </Typography>
+                </Grid>
+            </Grid>
         </Grid>
         <Toolbar>
           <AreaList props={props} />

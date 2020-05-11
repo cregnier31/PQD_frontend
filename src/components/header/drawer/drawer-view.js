@@ -9,6 +9,8 @@ import {Filter} from '../../filters';
 import { color, colorUniverses } from './../../../utils';
 
 const drawerWidth = 240;
+const drawerHeight = 800;
+
 const screen = window.screen.width;
 const useStyles = makeStyles(theme => ({
   root: {
@@ -19,16 +21,19 @@ const useStyles = makeStyles(theme => ({
     flexShrink: 0,
   },
   drawerPaper: {
+    top: '200px',
     width: drawerWidth,
+    height: drawerHeight,
     boxShadow: '3px 0px 7px #B5B5B5',
     // marginTop: 70
   },
   toolbar: {
     display: 'flex',
     alignItems: 'center',
+    minHeight: '12px',
     justifyContent: 'flex-end',
     padding: '8px',
-    minHeight: 150,
+    minHeight: 2,
   },
   drawerHeader: {
     display: 'flex',
@@ -48,7 +53,7 @@ const useStyles = makeStyles(theme => ({
     marginLeft: -drawerWidth,
   },
   list: {
-    marginTop: '20px',
+    marginTop: '2px',
     marginBottom: '20px'
   },
   title: {
@@ -95,12 +100,16 @@ export function DrawerView(props) {
                   backgroundColor: color[universe]['background'],
                   boxShadow: props.universe === universe && '0px 0px 17px #080606',
                   fontSize: 18,
+                  borderRadius: 15,
+                  textAlign: 'center',
+                  width : 0.8,
+                  opacity: 1.0,
                   width: '100%',
+                  padding: '20px',
                   color: colorUniverses(universe)
                 }
               }>
-                <PanoramaFishEyeRoundedIcon fontSize="large" style={{ color: color[universe]['icon'], marginTop: 10}} />
-                {universe + ' OCEAN'}
+                {universe + ' Ocean'}
               </li>
             </ListItem>
           ))}

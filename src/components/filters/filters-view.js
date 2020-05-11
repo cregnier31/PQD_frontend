@@ -13,16 +13,20 @@ const useStyles = makeStyles(theme => ({
   section: {
     fontSize: '20px',
     fontFamily: 'ccl-heading--h5'
+  },
+  disclaimer: {
+    fontSize: '20px',
+    fontFamily: 'ccl-heading--h5'
   }
 }));
 
 function get_selector(name, items, props){
   return (
-    <Selector 
+    <Selector
       key={name + "_selector"}
-      items={items} 
+      items={items}
       name={name}
-      value={props.filters[name]} 
+      value={props.filters[name]}
       updateValue={(n, v) => props.set(n, v)}
       filters={props.filters}
     />
@@ -97,7 +101,7 @@ export function FiltersView(props){
       <div>
         <h4 className={classes.title}>Criteria</h4>
         <Divider />
-        <div>No validation diagnostics are available yet for this area and these parameters</div>
+        <div className={classes.disclaimer}>No validation diagnostics are available yet for this area and these parameters</div>
       </div>
     )
   }

@@ -10,27 +10,28 @@ import Grid from '@material-ui/core/Grid';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import { ReactComponent as Global } from '../../../assets/images/all_area_sphere.svg';
-import { ReactComponent as Arctic } from '../../../assets/images/arctic_sphere.svg';
-import { ReactComponent as Baltic } from '../../../assets/images/baltic_sphere.svg';
-import { ReactComponent as Ibi } from '../../../assets/images/ibi_sphere.svg';
-import { ReactComponent as Medsea } from '../../../assets/images/medsea_sphere.svg';
-import { ReactComponent as Nws } from '../../../assets/images/nws_sphere.svg';
-import { ReactComponent as BlackSea } from '../../../assets/images/blacksea_sphere.svg';
+import { ReactComponent as Global } from '../../../assets/images/all_area_sphere_new.svg';
+import { ReactComponent as Arctic } from '../../../assets/images/arctic_sphere_new.svg';
+import { ReactComponent as Baltic } from '../../../assets/images/baltic_sphere_new.svg';
+import { ReactComponent as Ibi } from '../../../assets/images/ibi_sphere_new.svg';
+import { ReactComponent as Medsea } from '../../../assets/images/medsea_sphere_new.svg';
+import { ReactComponent as Nws } from '../../../assets/images/nws_sphere_new.svg';
+import { ReactComponent as BlackSea } from '../../../assets/images/blacksea_sphere_new.svg';
 import blue from '../../../assets/images/blue.png';
 import green from '../../../assets/images/green.png';
 import white from '../../../assets/images/white.png';
 const screen = window.screen.width;
 const useStyles = makeStyles(theme => ({
   cardRegion: {
-    minWidth: 200,
-    width: '100%',
-    backgroundColor: '#286E9F'
+    minWidth: 100,
+    width: '60%',
+    opacity: '1.0',
+    backgroundColor: '#F0F0F0'
   },
   cardTutoriel: {
-    minWidth: 200,
+    minWidth: 100,
     marginLeft: 30,
-    width: '60%',
+    width: '40%',
     backgroundColor: '#273b4b',
     color: 'white'
   },
@@ -47,7 +48,8 @@ const useStyles = makeStyles(theme => ({
     fontFamily: 'ccl-paragraph--m'
   },
   content: {
-    float: 'left'
+    float: 'left',
+    height: 100
   }
 }));
 
@@ -75,21 +77,21 @@ export function TopPanelView(props){
   const displaySvg = () => {
     switch (props.area) {
       case 'arctic':
-        return <Arctic style={{height: 400, marginTop: 50}} />
+        return <Arctic style={{height: 400, marginTop: 0}} />
       case 'balticsea':
-        return <Baltic style={{height: 400, marginTop: 50}} />
+        return <Baltic style={{height: 400, marginTop: 0}} />
       case 'global':
-        return <Global style={{height: 400, marginTop: 50}} />
+        return <Global style={{height: 400, marginTop: 0}} />
       case 'ibi':
-        return <Ibi style={{height: 400, marginTop: 50}} />
+        return <Ibi style={{height: 400, marginTop: 0}} />
       case 'medsea':
-        return <Medsea style={{height: 400, marginTop: 50}} />
+        return <Medsea style={{height: 400, marginTop: 0}} />
       case 'nws':
-        return <Nws style={{height: 400, marginTop: 50}} />
+        return <Nws style={{height: 400, marginTop: 0}} />
       case 'blacksea':
-        return <BlackSea style={{height: 400, marginTop: 50}} />
+        return <BlackSea style={{height: 400, marginTop: 0}} />
       default:
-        return <Global style={{height: 400, marginTop: 50}} />
+        return <Global style={{height: 400, marginTop: 0}} />
     }
   }
 

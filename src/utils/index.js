@@ -1,4 +1,4 @@
-export const host = "http://127.0.0.1:8000"
+export const host = "http://px-116.mercator-ocean.fr:8001"
 
 export const config = {
   urls:{
@@ -15,8 +15,9 @@ export const config = {
 
 export const color = {
   BLUE:{
-    background: '#286E9F',
-    icon: 'blue'
+    background: '#286e9f',
+    icon: '#69a8db',
+    opacity: '0.7'
   },
   GREEN:{
     background: '#DAEFE7',
@@ -25,7 +26,7 @@ export const color = {
   WHITE:{
     background: '#F4F4F4',
     icon: 'grey'
-  } 
+  }
 }
 
 export const colorUniverses = (universe) => {
@@ -33,9 +34,9 @@ export const colorUniverses = (universe) => {
     case 'BLUE':
       return 'white'
     case 'WHITE':
-      return 'grey'
+      return '#696969'
     case 'GREEN':
-      return 'black'
+      return '#013220'
     default:
       return 'black'
   }
