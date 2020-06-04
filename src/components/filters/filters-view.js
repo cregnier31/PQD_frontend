@@ -147,6 +147,9 @@ const SelectorList = ({props}) => {
               if(filter_is_set_and_data_exists(filters, "depth", depths)){
                 const stats = depths.filter(item => item.name === filters['depth'])[0].stats
                 list.push(get_selector("stat", stats, props))
+                if (filter_is_set_and_data_exists(filters, "stat", stats)){
+                  list.push(get_validation_button(props))
+                }
               } 
             }
           }
@@ -191,7 +194,6 @@ export function FiltersView(props){
       <Divider style={{marginBottom: 25, background: '#31485E', height: '2px'}}/>
       <Search />
       <SelectorList props={props}/>
-      {get_validation_button(props)}
     </div>
   );
 }
