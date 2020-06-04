@@ -13,19 +13,33 @@ import {UniversePanel} from '../universePanel';
 import { Button } from '@material-ui/core';
 import { Drawer } from './drawer';
 import Typography from '@material-ui/core/Typography';
+import { color } from './../../utils';
+import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 
-
-const drawerWidth = 240;
+const drawerWidth = 259;
+const drawerHeight = '3.6em';
 const screen = window.screen.width;
+
+const useStyles2 = makeStyles(theme => ({
+  root: {
+    display: 'flex',
+    backgroundColor: '#F1F1F3',
+    marginTop: '0.28em',
+    borderBottom: '3px solid #273b4b'
+  }
+}));
 
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
   },
   appBar: {
-    zIndex: theme.zIndex.drawer + 1,
-    backgroundColor: '#286E9F',
-    opacity: 0.7
+    zIndex: theme.zIndex.drawer,
+    backgroundColor: '#273b4b',
+    borderBottom: '6px solid #AABB2A',
+    boxShadow: 'none',
+    opacity: 1,
+    height: drawerHeight,
   },
   drawerPaper: {
     width: drawerWidth,
@@ -33,24 +47,24 @@ const useStyles = makeStyles(theme => ({
   toolbar: theme.mixins.toolbar,
   menuButton: {
     float: 'left',
-    marginTop: screen <= 400 ? 115 : 45
+    marginTop: screen <= 400 ? 125 : 115,
+    marginLeft: '0.2em'
   },
   title: {
-    float: 'left',
-    height:'5%',
     color: 'white',
     padding: theme.spacing(1),
-    marginTop: screen <= 400 ? 25 : 0,
+    fontSize: '1em',
+    fontWeight: 500
   },
   hide: {
     display: 'none',
   },
   drawerHeader: {
     display: 'flex',
-    alignItems: 'center',
+    alignItems: 'left',
     ...theme.mixins.toolbar,
-    justifyContent: 'flex-end',
-    marginTop: 30
+    justifyContent: 'left',
+    marginTop: '-0.6em'
   },
   content: {
     flexGrow: 1,
@@ -71,18 +85,25 @@ const useStyles = makeStyles(theme => ({
   heading: {
     fontSize: theme.typography.pxToRem(30),
     fontWeight: theme.typography.fontWeightRegular,
-    fontFamily: 'ccl-heading--h3'
+    fontFamily: 'Lato'
   },
   img: {
-    width: '100px',
-    height: '100px',
-    marginRight: 10
+    width: '2.6em',
+    height: '2.6em',
+    marginTop: '0.33em',
   },
   button: {
-    fontFamily: 'ccl-heading--h5',
+    left: drawerWidth+10,
+    right: '1.6em',
+    fontFamily: 'Lato',
     textTransform: 'none',
-    fontWeight: '700',
-    fontSize: 23,
+    fontWeight: '500',
+    fontSize: '0.7em',
+    color: '#273b4b',
+    marginTop: '0.8em',
+    marginBottom: '0.8em',
+    marginRight: '1.6em',
+    marginLeft: '1.6em',
   }
 }));
 
@@ -96,8 +117,8 @@ const AreaList = ({props}) => {
         active = 1
       }
       return list.push(
-        <Grid item xs={2} md={2} key={item.id}>
-          <Button className={classes.button} style={{borderBottom : props.currentArea === item.name ? 'solid' : 'none'}} value={item.name} active={active} onClick={() => {props.setArea(item.name)}} color="inherit">
+        <Grid item xs={0} md={'flex'} key={item.id}>
+          <Button className={classes.button} style={{color: props.currentArea === item.name ?  color[props.universe]['write_color'] : '#273b4b',  background : props.currentArea === item.name ? color[props.universe]['background'] : 'none', border : props.currentArea === item.name ? '1.2px solid #273b4b' : 'none', borderRadius: props.currentArea === item.name ? 12 : 'none', boxShadow: props.currentArea === item.name ?  '0px 0px 6px #080606' : 'none'}} value={item.name} active={active} onClick={() => {props.setArea(item.name)}} color="inherit">
             {item.fullname}
           </Button>
         </Grid>
@@ -110,6 +131,7 @@ const AreaList = ({props}) => {
 
 export function HeaderView(props) {
   const classes = useStyles();
+  const classes2 = useStyles2();
   const [open, setOpen] = React.useState(true);
 
   const handleDrawerOpen = () => {
@@ -146,13 +168,13 @@ export function HeaderView(props) {
                 </Grid>
             </Grid>
         </Grid>
-        <Toolbar>
+        <Toolbar className={classes2.root}>
           <AreaList props={props} />
         </Toolbar>
       </AppBar>
-      <Drawer 
-        handleDrawerClose={handleDrawerClose} 
-        open={open} 
+      <Drawer
+        handleDrawerClose={handleDrawerClose}
+        open={open}
         setUniverse={(universe) => props.setUniverse(universe)}
         universe={props.universe}
       />
@@ -168,7 +190,7 @@ export function HeaderView(props) {
             edge="start"
             className={clsx(classes.menuButton, open && classes.hide)}
           >
-            <FilterListIcon style={{color: "black"}} />
+            <DoubleArrowIcon style={{color: '#273b4b'}} />
           </IconButton>
         <TopPanel isTourOpen={props.isTourOpen} area={props.area} universe={props.universe} openTour={props.openTour} />
         <UniversePanel universe={props.universe} product={props.product} area={props.area} />
@@ -176,3 +198,4 @@ export function HeaderView(props) {
     </div>
   );
 }
+                                           

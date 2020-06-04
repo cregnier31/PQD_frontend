@@ -2,14 +2,17 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
-import CloseIcon from '@material-ui/icons/Close';
+import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 import ListItem from '@material-ui/core/ListItem';
 import PanoramaFishEyeRoundedIcon from '@material-ui/icons/PanoramaFishEyeRounded';
 import {Filter} from '../../filters';
-import { color, colorUniverses } from './../../../utils';
+import { color, colorUniverses, iconcolorUniverses } from './../../../utils';
+import EcoIcon from '@material-ui/icons/Eco';
+import WavesIcon from '@material-ui/icons/Waves';
+import AcUnitIcon from '@material-ui/icons/AcUnit';
 
-const drawerWidth = 240;
-const drawerHeight = 800;
+const drawerWidth = 262;
+const drawerHeight = '3.6em';
 
 const screen = window.screen.width;
 const useStyles = makeStyles(theme => ({
@@ -17,20 +20,23 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
   },
   drawer: {
+    display: 'flex',
+    height: '100%',
     width: drawerWidth,
     flexShrink: 0,
   },
   drawerPaper: {
-    top: '200px',
+    top: drawerHeight,
     width: drawerWidth,
-    height: drawerHeight,
-    boxShadow: '3px 0px 7px #B5B5B5',
-    // marginTop: 70
+    height: '89%',
+    boxShadow: 'None',
+    borderRight: '6px solid #273b4b',
+    borderTop: '6px solid white',
+    background: '#7BA2BC',
   },
   toolbar: {
     display: 'flex',
     alignItems: 'center',
-    minHeight: '12px',
     justifyContent: 'flex-end',
     padding: '8px',
     minHeight: 2,
@@ -61,6 +67,11 @@ const useStyles = makeStyles(theme => ({
     alignContent: 'flex-start',
     fontFamily: 'ccl-heading--h5'
   },
+  icons: {
+    float: 'left',
+    marginLeft: '0.8em',
+    marginRight: '-0.7em'
+  },
   universes: {
     fontFamily: 'ccl-paragraph--ms !important'
   },
@@ -78,6 +89,17 @@ const universes = ['BLUE', 'GREEN', 'WHITE']
 export function DrawerView(props) {
   const classes = useStyles();
 
+  let icon = universe => {
+      switch (universe) {
+        case 'BLUE':
+          return React.createElement(WavesIcon)
+        case 'GREEN':
+          return React.createElement(EcoIcon)
+        case 'WHITE':
+          return React.createElement(AcUnitIcon)
+        }
+    }
+
   return (
     <div className={classes.root}>
       <Drawer
@@ -90,7 +112,7 @@ export function DrawerView(props) {
       >
         <div className={classes.toolbar} />
         <div>
-        <CloseIcon onClick={props.handleDrawerClose} style={{color: "black", float: 'right', marginTop: screen <= 400 ? 70 : 0}} />
+        <DoubleArrowIcon onClick={props.handleDrawerClose} style={{transform: 'scaleX(-1)', color: '#273b4b', float: 'right', marginTop: screen <= 400 ? 70 : -10, marginRight: 10}} />
         </div>
         <List className={classes.list} data-tut="reactour__4">
           {universes.map((universe) => (
@@ -98,17 +120,20 @@ export function DrawerView(props) {
               <li style={
                 {
                   backgroundColor: color[universe]['background'],
-                  boxShadow: props.universe === universe && '0px 0px 17px #080606',
+                  boxShadow: props.universe === universe ? '0px 0px 18px #080606' : '0px 0px 4px #273b4b',
                   fontSize: 18,
-                  borderRadius: 15,
+                  fontFamily: 'Lato',
+                  borderRadius: 18,
                   textAlign: 'center',
-                  width : 0.8,
+                  width : 0.5,
                   opacity: 1.0,
                   width: '100%',
-                  padding: '20px',
+                  padding: '15px',
+                  border: props.universe === universe ? '2px solid #273b4b' : '0.6px solid #273b4b',
                   color: colorUniverses(universe)
                 }
               }>
+                <div className={classes.icons} style={{color: iconcolorUniverses(universe)}}>{icon(universe)}</div>
                 {universe + ' Ocean'}
               </li>
             </ListItem>

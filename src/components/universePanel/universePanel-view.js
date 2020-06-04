@@ -11,16 +11,16 @@ import { color } from './../../utils';
 
 export function UniversePanelView(props){
   return (
-    <Card style={{backgroundColor: color[props.universe]['background']}}>
+    <Card style={{background: color[props.universe]['bg_page']}}>
       <TitleRaw universe={props.universe} area={props.area} />
       <ChartList universe={props.universe}/>
-      <Divider style={{backgroundColor: 'white', marginLeft: '10px', width: '98%'}} />
+      <Divider style={{backgroundColor: color[props.universe]['bg_map'], marginLeft: '10px', width: '98%', height: 4, marginTop: 30}} />
       <LinkRaw product={props.product} area={props.area} universe={props.universe} />
       <Grid container>
-        <Grid item xs={12} md={8}>
+        <Grid item xs={12} md={7}>
           <WidgetMap area={props.area} />
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} md={5}>
           <Plot universe={props.universe}/>
         </Grid>
       </Grid>

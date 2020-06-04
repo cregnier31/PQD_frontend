@@ -5,6 +5,7 @@ import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 import Card from '@material-ui/core/Card';
 import Grid from '@material-ui/core/Grid';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -20,20 +21,25 @@ import { ReactComponent as BlackSea } from '../../../assets/images/blacksea_sphe
 import blue from '../../../assets/images/blue.png';
 import green from '../../../assets/images/green.png';
 import white from '../../../assets/images/white.png';
+
 const screen = window.screen.width;
 const useStyles = makeStyles(theme => ({
   cardRegion: {
-    minWidth: 100,
-    width: '60%',
+    minWidth: 60,
+    width: '40%',
+    marginLeft: 40,
     opacity: '1.0',
-    backgroundColor: '#F0F0F0'
+    backgroundColor: 'white',
+    boxShadow: 'none',
   },
   cardTutoriel: {
     minWidth: 100,
-    marginLeft: 30,
-    width: '40%',
+    marginLeft: 70,
+    width: '45%',
     backgroundColor: '#273b4b',
-    color: 'white'
+    color: 'white',
+    boxShadow: 'none',
+    border: '1px solid #273b4b'
   },
   media: {
     height: 300,
@@ -46,6 +52,13 @@ const useStyles = makeStyles(theme => ({
   },
   para: {
     fontFamily: 'ccl-paragraph--m'
+  },
+  custom: {
+    boxShadow: 'none',
+  },
+  expanded: {
+    color: '#273b4b',
+    top: 15,
   },
   content: {
     float: 'left',
@@ -109,12 +122,12 @@ export function TopPanelView(props){
   }
 
   return (
-    <Grid container style={{marginTop: screen <= 400 ? 120 : 80}} data-tut="reactour__6">
+    <Grid container style={{marginTop: screen <= 400 ? 120 : 90, marginBottom: -20}} data-tut="reactour__6">
       <Grid item xs={12} md={12}>
-        <ExpansionPanel expanded={panel}>
-          <ExpansionPanelSummary
+        <ExpansionPanel className={classes.custom} expanded={panel}>
+          <ExpansionPanelSummary classes={{expanded: classes.expanded}}
             onClick={() => setPanel(!panel)}
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<DoubleArrowIcon className={classes.expanded} style={{transform: 'rotate(90deg)', marginTop: 23}}/>}
             aria-controls="panel1a-content"
             id="panel1a-header"
           >

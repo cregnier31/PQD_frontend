@@ -17,7 +17,7 @@ export function ChartContentView(props){
   const _onMouseLeave = () => {
     setCrosshairValues([])
   };
-  
+
   const _onNearestX = (value, {index}) => {
     var to_display = [value]
     if(isMultipleSeries()){
@@ -44,8 +44,8 @@ export function ChartContentView(props){
       list.push(<VerticalBarSeries key="VerticalBarSeries" onNearestX={_onNearestX} data={data}/>)
     }
     list.push(<Crosshair key="crosshair" values={crosshairValues}>
-      <div style={{background: 'black', fontSize: 20}}>
-        {crosshairValues.map((serie, index) => 
+      <div style={{background: 'black'}}>
+        {crosshairValues.map((serie, index) =>
           <p key={index}>{props.series_name[index]}: {typeof(serie) !== "undefined" && serie['y']}</p>
         )}
       </div>

@@ -8,6 +8,7 @@ import {
   HorizontalGridLines,
   Crosshair,
   FlexibleXYPlot,
+  WhiskerSeries,
 } from 'react-vis';
 
 export function ScoreContentView(props){
@@ -25,19 +26,20 @@ export function ScoreContentView(props){
   return (
     <FlexibleXYPlot 
       onMouseLeave={_onMouseLeave}
-      style={{paddingLeft: 5}}
-      height={props.height} 
+      style={{paddingLeft: 10}}
+      height={280} 
+      stackby="y"
       xType="ordinal"
     >
-      <VerticalGridLines />
-      <HorizontalGridLines />
-      <XAxis tickLabelAngle={-45}  style={{fontSize: 7}}/>
-      <YAxis style={{fontSize: 7}} />
-      <VerticalBarSeries key="VerticalBarSeries" onNearestX={_onNearestX} data={props.data}/>
+      <HorizontalGridLines/>
+      <XAxis tickLabelAngle={0}  style={{fontSize: 12, fontWeight: 'bold', color: 'black'}}/>
+      <YAxis style={{fontSize: 12, fontWeight: 'bold', color: 'black'}} />
+      <VerticalBarSeries key="VerticalBarSeries" barWidth='0.5' color='Tomato' onNearestX={_onNearestX} data={props.data}/>
+      <WhiskerSeries key="WhiskerSeries" color='blue' data={props.data}/>
       <Crosshair key="crosshair" values={crosshairValues}>
-        <div style={{background: 'black'}}>
+        <div style={{background: '#273b4b', border: '1px solid white', borderRadius: 15, fontSize: 10, color: 'white', width:140, textAlign: 'center'}}>
           {crosshairValues.map((data, index) => 
-            <p key={index}>{typeof(data) !== "undefined" && data['x']}: {typeof(data) !== "undefined" && data['y']}</p>
+            <p style={{fontWeight: 'bold'}} key={index}>{typeof(data) !== "undefined" && data['x']}: {typeof(data) !== "undefined" && parseFloat(data['y']*100).toFixed(0)}%</p>
           )}
         </div>
       </Crosshair>

@@ -55,3 +55,32 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## Localchanges to maketo run the app
+ src/serviceWorker.js
+View file @ b1bb701f
+... ... @@ -13,6 +13,7 @@
+    
+    const isLocalhost = Boolean(
+    
+      window.location.hostname === 'localhost' ||
+    
+        // [::1] is the IPv6 localhost address.
+    
+        window.location.hostname === 'px-116.mercator-ocean.fr' ||
+    
+        window.location.hostname === '[::1]' ||
+    
+        // 127.0.0.1/8 is considered localhost for IPv4.
+    
+        window.location.hostname.match(
+... ... 
+src/utils/index.js
+View file @ b1bb701f
+    
+    export const host = "http://127.0.0.1:8000"
+    
+    export const host = 'http://px-116.mercator-ocean.fr:8001'
+    
+    
+    

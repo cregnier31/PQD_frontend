@@ -15,17 +15,27 @@ export const config = {
 
 export const color = {
   BLUE:{
-    background: '#286e9f',
+    background: '#187EA0',
+    bg_map: '#187EA0',
+    bg_page: '#E8F6FC',
     icon: '#69a8db',
-    opacity: '0.7'
+    write_color: 'white',
+    opacity: '0.9'
   },
   GREEN:{
-    background: '#DAEFE7',
+    background: '#AABB2A',
+    bg_map: '#AABB2A',
+    bg_page: '#F6FAE0',
+    write_color: 'white',
     icon: 'green'
   },
   WHITE:{
-    background: '#F4F4F4',
-    icon: 'grey'
+    background: '#FFFFFF',
+    bg_map: '#C0C0C9',
+    bg_page: '#FAFAFA',
+    icon: 'grey',
+    write_color: 'black',
+    bordercolor: 'black'
   }
 }
 
@@ -34,11 +44,22 @@ export const colorUniverses = (universe) => {
     case 'BLUE':
       return 'white'
     case 'WHITE':
-      return '#696969'
+      return '#1F313D'
     case 'GREEN':
-      return '#013220'
+      return 'white'
     default:
       return 'black'
+  }
+}
+
+export const iconcolorUniverses = (universe) => {
+  switch (universe) {
+    case 'BLUE':
+      return '#9BDCF3'
+    case 'WHITE':
+      return '#A9BDD1'
+    case 'GREEN':
+      return '#424A17'
   }
 }
 

@@ -3,6 +3,7 @@ import TextField from '@material-ui/core/TextField';
 
 export const StyledContainer = styled.div`
     padding: 15px;
+    padding-left: 3px;
     box-sizing:border-box;
 `;
 
